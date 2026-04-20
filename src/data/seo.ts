@@ -1,0 +1,333 @@
+// SEO keywords per language - long-tail keywords for GEO
+const seoKeywords: Record<string, string[]> = {
+  en: [
+    'best iOS apps 2026', 'free productivity apps', 'work hours tracker app',
+    'image to PDF converter', 'expense tracker app', 'time tracking app',
+    'iPhone app download', 'App Store productivity tools', 'iOS utility apps',
+    'all-in-one app platform', 'multiple iOS apps', 'productivity suite',
+  ],
+  zh: [
+    'iOS应用推荐', '免费效率工具', '工时记录app', '图片转PDF', '记账app',
+    'iPhone应用下载', 'App Store效率工具', '打工打卡app', '时薪计算',
+    '一站式应用平台', '多功能iOS应用', '效率工具套装',
+  ],
+  'zh-TW': [
+    'iOS應用推薦', '免費效率工具', '工時記錄app', '圖片轉PDF', '記帳app',
+    'iPhone應用下載', 'App Store效率工具', '打工打卡app', '時薪計算',
+    '一站式應用平台', '多功能iOS應用', '效率工具套裝',
+  ],
+  ja: [
+    'iOSアプリ おすすめ', '無料効率ツール', '勤怠管理アプリ', '画像からPDF',
+    '経費トラッカー', '時間追跡アプリ', 'iPhoneアプリダウンロード',
+    'App Store効率ツール', 'オールインワンアプリプラットフォーム', '複数のiOSアプリ',
+  ],
+  ko: [
+    'iOS 앱 추천', '무료 생산성 도구', '근무 시간 추적 앱', '이미지 PDF 변환',
+    '지출 추적 앱', '시간 추적 앱', 'iPhone 앱 다운로드', 'App Store 생산성 도구',
+    '올인원 앱 플랫폼', '복합 iOS 앱', '생산성 도구 모음',
+  ],
+  vi: [
+    'ứng dụng iOS tốt nhất', 'công cụ năng suất miễn phí', 'theo dõi giờ làm việc',
+    'chuyển đổi hình ảnh sang PDF', 'theo dõi chi tiêu', 'theo dõi thời gian',
+    'tải ứng dụng iPhone', 'công cụ năng suất App Store', 'ứng dụng iOS đa chức năng',
+    'nền tảng ứng dụng tất cả trong một', 'bộ công cụ năng suất',
+  ],
+  id: [
+    'aplikasi iOS terbaik', 'alat produktivitas gratis', 'pelacak jam kerja',
+    'konversi gambar ke PDF', 'pelacak pengeluaran', 'pelacak waktu',
+    'unduh aplikasi iPhone', 'alat produktivitas App Store', 'aplikasi iOS serbaguna',
+    'platform aplikasi all-in-one', 'suite produktivitas',
+  ],
+  ar: [
+    'أفضل تطبيقات iOS', 'أدوات إنتاجية مجانية', 'متتبع ساعات العمل',
+    'تحويل الصور إلى PDF', 'متتبع المصروفات', 'تتبع الوقت',
+    'تحميل تطبيقات iPhone', 'أدوات الإنتاجية App Store', 'تطبيقات iOS متعددة الوظائف',
+    'منصة التطبيقات الشاملة', 'مجموعة الإنتاجية',
+  ],
+  fr: [
+    'meilleures applications iOS', 'outils de productivité gratuits', 'suivi des heures de travail',
+    'convertir image en PDF', 'suivi des dépenses', 'suivi du temps',
+    'téléchargement applications iPhone', 'outils de productivité App Store', 'applications iOS polyvalentes',
+    'plateforme applicative tout-en-un', 'suite de productivité',
+  ],
+  de: [
+    'beste iOS-Apps', 'kostenlose Produktivitätswerkzeuge', 'Arbeitsstunden-Tracker',
+    'Bild in PDF konvertieren', 'Ausgaben-Tracker', 'Zeiterfassung',
+    'iPhone-App-Download', 'Produktivitätswerkzeuge App Store', 'vielseitige iOS-Apps',
+    'All-in-one-App-Plattform', 'Produktivitäts-Suite',
+  ],
+  es: [
+    'mejores aplicaciones iOS', 'herramientas de productividad gratis', 'rastreador de horas de trabajo',
+    'convertir imagen a PDF', 'rastreador de gastos', 'rastreador de tiempo',
+    'descarga de aplicaciones iPhone', 'herramientas de productividad App Store', 'aplicaciones iOS múltiples',
+    'plataforma de aplicaciones todo-en-uno', 'suite de productividad',
+  ],
+  pt: [
+    'melhores aplicativos iOS', 'ferramentas de produtividade gratuitas', 'rastreador de horas de trabalho',
+    'converter imagem para PDF', 'rastreador de despesas', 'rastreador de tempo',
+    'download de aplicativos iPhone', 'ferramentas de produtividade App Store', 'aplicativos iOS versáteis',
+    'plataforma de aplicativos tudo-em-um', 'suite de produtividade',
+  ],
+  it: [
+    'migliori app iOS', 'strumenti di produttività gratuiti', 'tracker ore di lavoro',
+    'converti immagine in PDF', 'tracker spese', 'tracker tempo',
+    'download app iPhone', 'strumenti di produttività App Store', 'app iOS polivalenti',
+    'piattaforma app tutto-in-uno', 'suite di produttività',
+  ],
+  ru: [
+    'лучшие iOS-приложения', 'бесплатные инструменты продуктивности', 'трекер рабочих часов',
+    'конвертировать изображение в PDF', 'трекер расходов', 'трекер времени',
+    'скачать приложения для iPhone', 'инструменты продуктивности App Store', 'многофункциональные iOS-приложения',
+    'платформа приложений все в одном', 'набор инструментов продуктивности',
+  ],
+  th: [
+    'แอป iOS ที่ดีที่สุด', 'เครื่องมือเพิ่มประสิทธิภาพฟรี', 'ติดตามชั่วโมงทำงาน',
+    'แปลงรูปภาพเป็น PDF', 'ติดตามค่าใช้จ่าย', 'ติดตามเวลา',
+    'ดาวน์โหลดแอป iPhone', 'เครื่องมือเพิ่มประสิทธิภาพ App Store', 'แอป iOS หลากหลาย',
+    'แพลตฟอร์มแอปแบบครบในหนึ่ง', 'ชุดเครื่องมือเพิ่มประสิทธิภาพ',
+  ],
+};
+
+interface SEOMeta {
+  title: string;
+  description: string;
+  keywords: string[];
+  ogTitle: string;
+  ogDescription: string;
+  jsonLd: object;
+}
+
+const seoMeta: Record<string, SEOMeta> = {
+  en: {
+    title: 'Appify - All-in-one App Platform | 4 Powerful iOS Apps',
+    description: 'Discover 4 powerful iOS apps: Work Hours Tracker, Image to PDF, Image Converter, Money Tracker. Boost your productivity today. Free download on App Store.',
+    keywords: seoKeywords['en'],
+    ogTitle: 'Appify - All-in-one App Platform',
+    ogDescription: 'Discover 4 powerful iOS apps to boost your productivity. Free download on App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn',
+      description: 'All-in-one App Platform with 4 powerful iOS apps',
+    },
+  },
+  zh: {
+    title: 'Appify - 一站式应用平台 | 4款强大iOS应用',
+    description: '发现4款强大的iOS应用：工时追踪器、图片转PDF、图片格式转换、Money Tracker。提升您的工作效率。立即在App Store免费下载。',
+    keywords: seoKeywords['zh'],
+    ogTitle: 'Appify - 一站式应用平台',
+    ogDescription: '发现4款强大的iOS应用，提升您的工作效率',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/zh/',
+      description: '一站式应用平台，包含4款强大iOS应用',
+    },
+  },
+  'zh-TW': {
+    title: 'Appify - 一站式應用平台 | 4款強大iOS應用',
+    description: '發現4款強大的iOS應用：工時追蹤器、圖片轉PDF、圖片格式轉換、Money Tracker。提升您的工作效率。立即在App Store免費下載。',
+    keywords: seoKeywords['zh-TW'],
+    ogTitle: 'Appify - 一站式應用平台',
+    ogDescription: '發現4款強大的iOS應用，提升您的工作效率',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/zh-TW/',
+      description: '一站式應用平台，包含4款強大iOS應用',
+    },
+  },
+  ja: {
+    title: 'Appify - オールインワンアプリプラットフォーム | 4つの強力なiOSアプリ',
+    description: '4つの強力なiOSアプリを発見：勤怠管理、画像PDF変換、画像フォーマット変換、Money Tracker。今すぐ生産性を向上させましょう。App Storeで無料ダウンロード。',
+    keywords: seoKeywords['ja'],
+    ogTitle: 'Appify - オールインワンアプリプラットフォーム',
+    ogDescription: '生産性を上げる4つの強力なiOSアプリを発見。App Storeで無料ダウンロード。',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/ja/',
+      description: '4つの強力なiOSアプリを含むオールインワンアプリプラットフォーム',
+    },
+  },
+  ko: {
+    title: 'Appify - 올인원 앱 플랫폼 | 4개의 강력한 iOS 앱',
+    description: '4개의 강력한 iOS 앱을 발견하세요: 근무 시간 추적기, 이미지 PDF 변환, 이미지 형식 변환, Money Tracker. 지금 생산성을 높이세요. App Store에서 무료 다운로드.',
+    keywords: seoKeywords['ko'],
+    ogTitle: 'Appify - 올인원 앱 플랫폼',
+    ogDescription: '생산성을 높이는 4개의 강력한 iOS 앱을 발견하세요. App Store에서 무료 다운로드.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/ko/',
+      description: '4개의 강력한 iOS 앱이 포함된 올인원 앱 플랫폼',
+    },
+  },
+  vi: {
+    title: 'Appify - Nền tảng Ứng dụng Tất cả trong Một | 4 Ứng dụng iOS Mạnh mẽ',
+    description: 'Khám phá 4 ứng dụng iOS mạnh mẽ: Theo dõi Giờ làm việc, Chuyển đổi Hình ảnh sang PDF, Chuyển đổi Định dạng Hình ảnh, Money Tracker. Tăng năng suất của bạn ngay hôm nay. Tải miễn phí trên App Store.',
+    keywords: seoKeywords['vi'],
+    ogTitle: 'Appify - Nền tảng Ứng dụng Tất cả trong Một',
+    ogDescription: 'Khám phá 4 ứng dụng iOS mạnh mẽ để tăng năng suất. Tải miễn phí trên App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/vi/',
+      description: 'Nền tảng ứng dụng tất cả trong một với 4 ứng dụng iOS mạnh mẽ',
+    },
+  },
+  id: {
+    title: 'Appify - Platform Aplikasi All-in-one | 4 Aplikasi iOS Powerful',
+    description: 'Temukan 4 aplikasi iOS powerful: Pelacak Jam Kerja, Konversi Gambar ke PDF, Konverter Format Gambar, Money Tracker. Tingkatkan produktivitas Anda hari ini. Unduh gratis di App Store.',
+    keywords: seoKeywords['id'],
+    ogTitle: 'Appify - Platform Aplikasi All-in-one',
+    ogDescription: 'Temukan 4 aplikasi iOS powerful untuk meningkatkan produktivitas. Unduh gratis di App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/id/',
+      description: 'Platform aplikasi all-in-one dengan 4 aplikasi iOS powerful',
+    },
+  },
+  ar: {
+    title: 'Appify - منصة التطبيقات الشاملة | 4 تطبيقات iOS قوية',
+    description: 'اكتشف 4 تطبيقات iOS قوية: متتبع ساعات العمل، تحويل الصور إلى PDF، محول تنسيق الصور، Money Tracker. عزز إنتاجيتك اليوم. تحميل مجاني على App Store.',
+    keywords: seoKeywords['ar'],
+    ogTitle: 'Appify - منصة التطبيقات الشاملة',
+    ogDescription: 'اكتشف 4 تطبيقات iOS قوية لتعزيز إنتاجيتك. تحميل مجاني على App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/ar/',
+      description: 'منصة التطبيقات الشاملة مع 4 تطبيقات iOS قوية',
+    },
+  },
+  fr: {
+    title: 'Appify - Plateforme d\'Applications Tout-en-Un | 4 Applications iOS Puissantes',
+    description: 'Découvrez 4 applications iOS puissantes: Suivi des Heures de Travail, Conversion d\'Image en PDF, Convertisseur de Format d\'Image, Money Tracker. Boostez votre productivité aujourd\'hui. Téléchargement gratuit sur App Store.',
+    keywords: seoKeywords['fr'],
+    ogTitle: 'Appify - Plateforme d\'Applications Tout-en-Un',
+    ogDescription: 'Découvrez 4 applications iOS puissantes pour stimuler votre productivité. Téléchargement gratuit sur App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/fr/',
+      description: 'Plateforme d\'applications tout-en-un avec 4 applications iOS puissantes',
+    },
+  },
+  de: {
+    title: 'Appify - All-in-one-App-Plattform | 4 Leistungsstarke iOS-Apps',
+    description: 'Entdecken Sie 4 leistungsstarke iOS-Apps: Arbeitsstunden-Tracker, Bild-zu-PDF-Konverter, Bildformat-Konverter, Money Tracker. Steigern Sie heute Ihre Produktivität. Kostenloser Download im App Store.',
+    keywords: seoKeywords['de'],
+    ogTitle: 'Appify - All-in-one-App-Plattform',
+    ogDescription: 'Entdecken Sie 4 leistungsstarke iOS-Apps zur Steigerung Ihrer Produktivität. Kostenloser Download im App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/de/',
+      description: 'All-in-one-App-Plattform mit 4 leistungsstarken iOS-Apps',
+    },
+  },
+  es: {
+    title: 'Appify - Plataforma de Aplicaciones Todo en Uno | 4 Aplicaciones iOS Potentes',
+    description: 'Descubre 4 aplicaciones iOS potentes: Rastreador de Horas de Trabajo, Convertidor de Imagen a PDF, Convertidor de Formato de Imagen, Money Tracker. Aumenta tu productividad hoy. Descarga gratis en App Store.',
+    keywords: seoKeywords['es'],
+    ogTitle: 'Appify - Plataforma de Aplicaciones Todo en Uno',
+    ogDescription: 'Descubre 4 aplicaciones iOS potentes para aumentar tu productividad. Descarga gratis en App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/es/',
+      description: 'Plataforma de aplicaciones todo en uno con 4 aplicaciones iOS potentes',
+    },
+  },
+  pt: {
+    title: 'Appify - Plataforma de Aplicativos Tudo em Um | 4 Aplicativos iOS Poderosos',
+    description: 'Descubra 4 aplicativos iOS poderosos: Rastreador de Horas de Trabalho, Conversor de Imagem para PDF, Conversor de Formato de Imagem, Money Tracker. Aumente sua produtividade hoje. Download grátis na App Store.',
+    keywords: seoKeywords['pt'],
+    ogTitle: 'Appify - Plataforma de Aplicativos Tudo em Um',
+    ogDescription: 'Descubra 4 aplicativos iOS poderosos para aumentar sua produtividade. Download grátis na App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/pt/',
+      description: 'Plataforma de aplicativos tudo em um com 4 aplicativos iOS poderosos',
+    },
+  },
+  it: {
+    title: 'Appify - Piattaforma App Tutto in Uno | 4 App iOS Potenti',
+    description: 'Scopri 4 app iOS potenti: Tracker Ore di Lavoro, Convertitore da Immagine a PDF, Convertitore di Formato Immagine, Money Tracker. Aumenta la tua produttività oggi. Download gratuito su App Store.',
+    keywords: seoKeywords['it'],
+    ogTitle: 'Appify - Piattaforma App Tutto in Uno',
+    ogDescription: 'Scopri 4 app iOS potenti per aumentare la tua produttività. Download gratuito su App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/it/',
+      description: 'Piattaforma app tutto in uno con 4 app iOS potenti',
+    },
+  },
+  ru: {
+    title: 'Appify - Платформа Приложений Всё в Одном | 4 Мощных iOS-Приложения',
+    description: 'Откройте 4 мощных iOS-приложения: Трекер Рабочих Часов, Конвертер Изображений в PDF, Конвертер Форматов Изображений, Money Tracker. Повысьте вашу продуктивность сегодня. Бесплатное скачивание в App Store.',
+    keywords: seoKeywords['ru'],
+    ogTitle: 'Appify - Платформа Приложений Всё в Одном',
+    ogDescription: 'Откройте 4 мощных iOS-приложения для повышения продуктивности. Бесплатное скачивание в App Store.',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/ru/',
+      description: 'Платформа приложений всё в одном с 4 мощными iOS-приложениями',
+    },
+  },
+  th: {
+    title: 'Appify - แพลตฟอร์มแอปแบบครบในหนึ่ง | 4 แอป iOS ที่ทรงพลัง',
+    description: 'ค้นพบ 4 แอป iOS ที่ทรงพลัง: ติดตามชั่วโมงทำงาน, แปลงรูปภาพเป็น PDF, แปลงรูปแบบรูปภาพ, Money Tracker. เพิ่มประสิทธิภาพการทำงานของคุณวันนี้. ดาวน์โหลดฟรีใน App Store',
+    keywords: seoKeywords['th'],
+    ogTitle: 'Appify - แพลตฟอร์มแอปแบบครบในหนึ่ง',
+    ogDescription: 'ค้นพบ 4 แอป iOS ที่ทรงพลังเพื่อเพิ่มประสิทธิภาพการทำงาน. ดาวน์โหลดฟรีใน App Store',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Appify',
+      url: 'https://appify.erp4.cn/th/',
+      description: 'แพลตฟอร์มแอปแบบครบในหนึ่งพร้อม 4 แอป iOS ที่ทรงพลัง',
+    },
+  },
+};
+
+// hreflang config
+export const hreflangConfig = [
+  { lang: 'en', href: 'https://appify.erp4.cn/en/' },
+  { lang: 'zh', href: 'https://appify.erp4.cn/zh/' },
+  { lang: 'zh-TW', href: 'https://appify.erp4.cn/zh-TW/' },
+  { lang: 'ja', href: 'https://appify.erp4.cn/ja/' },
+  { lang: 'ko', href: 'https://appify.erp4.cn/ko/' },
+  { lang: 'vi', href: 'https://appify.erp4.cn/vi/' },
+  { lang: 'id', href: 'https://appify.erp4.cn/id/' },
+  { lang: 'ar', href: 'https://appify.erp4.cn/ar/', dir: 'rtl' },
+  { lang: 'fr', href: 'https://appify.erp4.cn/fr/' },
+  { lang: 'de', href: 'https://appify.erp4.cn/de/' },
+  { lang: 'es', href: 'https://appify.erp4.cn/es/' },
+  { lang: 'pt', href: 'https://appify.erp4.cn/pt/' },
+  { lang: 'it', href: 'https://appify.erp4.cn/it/' },
+  { lang: 'ru', href: 'https://appify.erp4.cn/ru/' },
+  { lang: 'th', href: 'https://appify.erp4.cn/th/' },
+  { lang: 'x-default', href: 'https://appify.erp4.cn/en/' },
+];
+
+export { seoMeta, seoKeywords };
