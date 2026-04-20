@@ -1,12 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0F172A;
+  --color-primary: #14B8A6;
+  --color-primary-dark: #0D9488;
+  --color-accent: #F97316;
+  --color-card: #1E293B;
+  --font-family-sans: 'DM Sans', sans-serif;
+  --font-family-heading: 'Space Grotesk', sans-serif;
+}
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-bg text-gray-100 font-sans antialiased;
+    background-color: var(--color-bg);
+    color: #f9fafb;
+    font-family: var(--font-family-sans);
+    -webkit-font-smoothing: antialiased;
   }
 }
