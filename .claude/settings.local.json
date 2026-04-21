@@ -7,7 +7,13 @@
       "Bash(kill %1)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit -m ':*)"
+      "Bash(git commit -m ':*)",
+      "Bash(npm test:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(cp /c/Users/nhsof/WebstormProjects/work_tracker_website/images/icon-512.png /c/Users/nhsof/WebstormProjects/appify_website/public/icons/work-hours-tracker.png)",
+      "Bash(cp /c/Users/nhsof/WebstormProjects/my_imagetopdf_website/images/app-icon.png /c/Users/nhsof/WebstormProjects/appify_website/public/icons/image-to-pdf.png)",
+      "Bash(cp /c/Users/nhsof/WebstormProjects/work_tracker_website/images/icon-512.png /c/Users/nhsof/WebstormProjects/appify_website/public/icons/image-converter.png)",
+      "Bash(cp /c/Users/nhsof/WebstormProjects/work_tracker_website/images/icon-512.png /c/Users/nhsof/WebstormProjects/appify_website/public/icons/money-tracker.png)"
     ]
   }
 }
