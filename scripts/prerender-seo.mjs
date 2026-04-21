@@ -152,7 +152,7 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
       '@type': 'WebSite',
       name: 'Appify',
       url: siteOrigin,
-      description: 'All-in-one App Platform with 4 powerful iOS apps',
+      description: 'All-in-one App Platform with 5 powerful iOS apps',
       inLanguage: lang,
       potentialAction: {
         '@type': 'SearchAction',
