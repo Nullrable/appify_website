@@ -60,6 +60,17 @@ function langToOgLocale(lang) {
   return localeMap[lang] || 'en_US';
 }
 
+function getAppCategory(appId) {
+  const categories = {
+    'work-hours-tracker': 'ProductivityApplication',
+    'money-tracker': 'FinanceApplication',
+    'image-to-pdf': 'UtilityApplication',
+    'image-converter': 'UtilityApplication',
+    'cleanphoto': 'UtilityApplication',
+  };
+  return categories[appId] || 'ProductivityApplication';
+}
+
 async function transpileToTempModule(tempDir, inputFile) {
   const inputCode = await fs.readFile(inputFile, 'utf8');
   const output = ts.transpileModule(inputCode, {
@@ -277,9 +288,14 @@ function renderHtmlForRoute(templateHtml, route) {
     }),
     '',
   ];
-  const jsonLdContent = jsonLdBlockLines.join('\n') + (appContent || '');
+  const jsonLdContent = jsonLdBlockLines.join('\n');
 
   html = replaceSection(html, MARKERS.jsonLd, '<script type="module"', jsonLdContent);
+
+  // Inject pre-rendered App content into body (for SEO crawlers)
+  if (appContent) {
+    html = html.replace('<!-- PRE_RENDERED_APP_CONTENT -->', appContent);
+  }
 
   return html;
 }
@@ -344,6 +360,26 @@ function buildAppContent({ app, lang, pageData }) {
   return `<section class="app-content"><header><h1>${escapeHtml(appName)}</h1><p>${escapeHtml(appDesc)}</p><a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">${escapeHtml(downloadBtnText)}</a></header><main><section class="features"><h2>Features</h2><ul>${featuresHtml}</ul></section><section class="stats"><p>Rating: ${rating}${ratingCount ? ` (${escapeHtml(ratingCount)})` : ''}</p><p>Downloads: ${escapeHtml(downloads)}</p></section></main></section>`;
 }
 
+function buildHomeContent({ apps, lang }) {
+  const downloadText = lang === 'zh' || lang === 'zh-TW'
+    ? '在 App Store 下载'
+    : lang === 'ja'
+      ? 'App Storeでダウンロード'
+      : lang === 'ko'
+        ? 'App Store에서 다운로드'
+        : lang === 'ar'
+          ? 'تحميل من App Store'
+          : 'Download on App Store';
+
+  const appListItems = apps.map(app => {
+    const appName = app.name?.[lang] ?? app.name?.en ?? app.id;
+    const appDesc = app.description?.[lang] ?? app.description?.en ?? '';
+    return `<li><a href="/${lang}/${app.id}/"><strong>${escapeHtml(appName)}</strong></a> - ${escapeHtml(appDesc)} <a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">[${escapeHtml(downloadText)}]</a></li>`;
+  }).join('');
+
+  return `<section class="app-content"><header><h1>Appify - All-in-one App Platform</h1><p>Discover 5 powerful iOS apps to boost your productivity.</p></header><main><section class="apps"><h2>Our Apps</h2><ul>${appListItems}</ul></section></main></section>`;
+}
+
 async function main() {
   const templatePath = path.join(DIST_DIR, 'index.html');
   const templateHtml = await fs.readFile(templatePath, 'utf8');
@@ -373,6 +409,45 @@ async function main() {
     const homeKeywords = (seoKeywords[lang] ?? seoKeywords.en ?? []).join(', ');
     const homeCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/`;
 
+    // Build pre-rendered content for home page
+    const homeContent = buildHomeContent({ apps, lang });
+
+    // Build JSON-LD with WebSite + Organization + all Apps (for home page SEO)
+    const homeJsonLdScripts = [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Appify',
+        url: siteOrigin,
+        description: 'All-in-one App Platform with 5 powerful iOS apps',
+        inLanguage: lang,
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: `${siteOrigin}/{search_term_string}`,
+          'query-input': 'required name=search_term_string',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Appify',
+        url: siteOrigin,
+      },
+      ...apps.map(app => ({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: app.name?.[lang] ?? app.name?.en ?? app.id,
+        description: app.description?.[lang] ?? app.description?.en ?? '',
+        url: `${siteOrigin}/${lang}/${app.id}/`,
+        image: `${siteOrigin}${app.iconPath}`,
+        applicationCategory: getAppCategory(app.id),
+        operatingSystem: 'iOS',
+        downloadUrl: app.appStoreUrl,
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        inLanguage: lang,
+      })),
+    ];
+
     const homeHtml = renderHtmlForRoute(templateHtml, {
       siteOrigin,
       hreflangConfig,
@@ -382,13 +457,10 @@ async function main() {
       description: homeDescription,
       keywords: homeKeywords,
       canonicalUrl: homeCanonical,
-      ogImage: `${siteOrigin}/icons/image-to-pdf.png`,
-      jsonLdScripts: buildJsonLdScripts({
-        siteOrigin,
-        lang,
-        canonicalUrl: homeCanonical,
-      }),
+      ogImage: `${siteOrigin}/icons/og-image.png`,
+      jsonLdScripts: homeJsonLdScripts,
       isRtl: lang === 'ar',
+      appContent: homeContent,
     });
 
     const homeOut = path.join(DIST_DIR, lang, 'index.html');
