@@ -26,7 +26,7 @@
 - [ไทย](https://appify.show/th/)
 
 ## Developer
-- [Appify on App Store](https://apps.apple.com/us/developer/appify)
+- Appify
 
 ## Key Facts
 - All apps are free with all features included

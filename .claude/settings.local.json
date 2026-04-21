@@ -26,11 +26,16 @@
       "Bash(vercel --prod --yes --no-git)",
       "Bash(vercel deploy:*)",
       "Bash(vercel projects:*)",
-      "Bash(curl -s https://api.vercel.com/v1/deployments?teamId=team_ioVuVnylURGLIQ63YigB1i7P)",
-      "Bash(npx vercel:*)",
-      "mcp__plugin_everything-claude-code_context7__resolve-library-id",
-      "WebFetch(domain:vercel.com)",
-      "mcp__plugin_everything-claude-code_exa__web_search_exa"
+      "Bash(vercel --version)",
+      "Bash(vercel whoami:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)",
+      "Bash(npm list:*)",
+      "Bash(convert:*)",
+      "Bash(magick convert:*)",
+      "Bash(grep -rn \"4款\\\\|4个\\\\|4 Powerful\\\\|4 powerful\\\\|4 Apps\\\\|4 apps\\\\|4个强\\\\|4款强\\\\|with 4\\\\|with 4\" src/ public/ --include=*.ts --include=*.tsx --include=*.html --include=*.svg --include=*.json)",
+      "Bash(grep -rn \"4款\\\\|4个\\\\|4 Powerful\\\\|4 powerful\\\\|4 Apps\\\\|4 apps\\\\|with 4\\\\|with 4\" src/ --include=*.ts --include=*.tsx)",
+      "Bash(vercel:*)"
     ]
   }
 }

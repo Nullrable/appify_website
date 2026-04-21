@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="orb1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="orb2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#c084fc"/>
+    </linearGradient>
+    <linearGradient id="orb3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="200" cy="200" r="300" fill="url(#glow1)" filter="url(#blur)"/>
+  <circle cx="1000" cy="500" r="350" fill="url(#glow2)" filter="url(#blur)"/>
+
+  <!-- Floating app-like icons - abstract representation -->
+  <!-- Icon 1: productivity orb -->
+  <g transform="translate(180, 180)">
+    <circle cx="60" cy="60" r="55" fill="url(#orb1)" opacity="0.9"/>
+    <circle cx="45" cy="50" r="8" fill="white" opacity="0.9"/>
+    <circle cx="75" cy="50" r="8" fill="white" opacity="0.9"/>
+    <path d="M40 75 Q60 90 80 75" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Icon 2: utility orb -->
+  <g transform="translate(380, 140)">
+    <circle cx="55" cy="55" r="50" fill="url(#orb2)" opacity="0.85"/>
+    <rect x="30" y="35" width="50" height="40" rx="6" fill="none" stroke="white" stroke-width="3.5"/>
+    <line x1="30" y1="50" x2="80" y2="50" stroke="white" stroke-width="3"/>
+    <line x1="30" y1="60" x2="65" y2="60" stroke="white" stroke-width="3"/>
+  </g>
+
+  <!-- Icon 3: finance orb -->
+  <g transform="translate(580, 160)">
+    <circle cx="60" cy="60" r="55" fill="url(#orb3)" opacity="0.9"/>
+    <text x="60" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="50" font-weight="700" fill="white" text-anchor="middle">$</text>
+  </g>
+
+  <!-- Icon 4: creative orb -->
+  <g transform="translate(780, 140)">
+    <circle cx="55" cy="55" r="50" fill="url(#orb1)" opacity="0.8"/>
+    <circle cx="40" cy="45" r="15" fill="none" stroke="white" stroke-width="3"/>
+    <circle cx="70" cy="45" r="15" fill="none" stroke="white" stroke-width="3"/>
+    <circle cx="55" cy="70" r="12" fill="white" opacity="0.8"/>
+    <line x1="55" y1="58" x2="55" y2="70" stroke="white" stroke-width="3"/>
+  </g>
+
+  <!-- Icon 5: photo orb -->
+  <g transform="translate(970, 180)">
+    <circle cx="50" cy="50" r="45" fill="#ec4899" opacity="0.9"/>
+    <circle cx="50" cy="45" r="20" fill="none" stroke="white" stroke-width="3"/>
+    <circle cx="50" cy="45" r="10" fill="white" opacity="0.8"/>
+    <rect x="35" y="62" width="30" height="20" rx="3" fill="white" opacity="0.7"/>
+  </g>
+
+  <!-- iPhone outline framing -->
+  <g transform="translate(340, 280)" opacity="0.6">
+    <rect x="0" y="0" width="520" height="280" rx="36" fill="none" stroke="#475569" stroke-width="2"/>
+    <rect x="210" y="10" width="100" height="20" rx="10" fill="#475569"/>
+  </g>
+
+  <!-- Central Appify badge -->
+  <g transform="translate(470, 310)">
+    <rect x="0" y="0" width="260" height="70" rx="18" fill="#6366f1"/>
+    <text x="130" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="700" fill="white" text-anchor="middle">Appify</text>
+  </g>
+
+  <!-- Top bar -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#accent)"/>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">All-in-one App Platform</text>
+  <text x="600" y="550" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#64748b" text-anchor="middle">Free • No Ads • Privacy First</text>
+
+  <!-- Domain -->
+  <text x="600" y="600" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#475569" text-anchor="middle">appify.show</text>
+
+  <!-- Decorative line -->
+  <rect x="400" y="570" width="400" height="2" rx="1" fill="#334155"/>
+
+  <!-- Small floating dots for depth -->
+  <circle cx="120" cy="500" r="4" fill="#6366f1" opacity="0.4"/>
+  <circle cx="1080" cy="150" r="6" fill="#8b5cf6" opacity="0.3"/>
+  <circle cx="150" cy="100" r="3" fill="#6366f1" opacity="0.5"/>
+  <circle cx="1050" cy="450" r="4" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="300" cy="580" r="3" fill="#10b981" opacity="0.3"/>
+  <circle cx="900" cy="560" r="3" fill="#ec4899" opacity="0.3"/>
+</svg>
