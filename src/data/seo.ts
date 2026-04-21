@@ -259,254 +259,249 @@ interface SEOMeta {
 
 const seoMeta: Record<string, SEOMeta> = {
   en: {
-    title: "5 Powerful iOS Apps 2026 | Appify - All-in-one App Platform",
+    title: "Powerful Apps 2026 | Appify - All-in-one App Platform",
     description:
-      "5 top-rated free iOS apps for work & life in 2026. Track hours, manage money, convert images — all in one platform. Download free!",
+      "Top-rated free apps for work & life in 2026. Track hours, manage money, convert images — all in one platform. Download free!",
     keywords: seoKeywords["en"],
-    ogTitle: "5 Powerful iOS Apps 2026 | Appify - All-in-one App Platform",
+    ogTitle: "Powerful Apps 2026 | Appify - All-in-one App Platform",
     ogDescription:
-      "5 top-rated free iOS apps for work & life in 2026. Track hours, manage money, convert images — all in one platform. Download free!",
+      "Top-rated free apps for work & life in 2026. Track hours, manage money, convert images — all in one platform. Download free!",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show",
-      description: "All-in-one App Platform with 5 powerful iOS apps",
+      description: "All-in-one App Platform with Powerful Apps",
     },
   },
   zh: {
-    title: "Appify - 一站式应用平台 | 5款强大iOS应用",
+    title: "Appify - 一站式应用平台 | 强大应用精选",
     description:
-      "发现5款强大的iOS应用：工时追踪器、图片转PDF、图片格式转换、Money Tracker、CleanPhoto。提升您的工作效率。立即在App Store免费下载。",
+      "强大应用精选，涵盖工时追踪、图片处理、资产管理。提升您的工作效率。立即免费下载。",
     keywords: seoKeywords["zh"],
     ogTitle: "Appify - 一站式应用平台",
-    ogDescription: "发现5款强大的iOS应用，提升您的工作效率",
+    ogDescription: "强大应用精选，提升您的工作效率",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/zh/",
-      description: "一站式应用平台，包含5款强大iOS应用",
+      description: "一站式应用平台，强大应用精选",
     },
   },
   "zh-TW": {
-    title: "Appify - 一站式應用平台 | 5款強大iOS應用",
+    title: "Appify - 一站式應用平台 | 強大應用精選",
     description:
-      "發現5款強大的iOS應用：工時追蹤器、圖片轉PDF、圖片格式轉換、Money Tracker、CleanPhoto。提升您的工作效率。立即在App Store免費下載。",
+      "強大應用精選，涵蓋工時追蹤、圖片處理、資產管理。提升您的工作效率。立即免費下載。",
     keywords: seoKeywords["zh-TW"],
     ogTitle: "Appify - 一站式應用平台",
-    ogDescription: "發現5款強大的iOS應用，提升您的工作效率",
+    ogDescription: "強大應用精選，提升您的工作效率",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/zh-TW/",
-      description: "一站式應用平台，包含5款強大iOS應用",
+      description: "一站式應用平台，強大應用精選",
     },
   },
   ja: {
-    title:
-      "Appify - オールインワンアプリプラットフォーム | 5つの強力なiOSアプリ",
+    title: "Appify - オールインワンアプリプラットフォーム | 強力なアプリ精选",
     description:
-      "5つの強力なiOSアプリを発見：勤怠管理、画像PDF変換、画像フォーマット変換、Money Tracker、CleanPhoto。今すぐ生産性を向上させましょう。App Storeで無料ダウンロード。",
+      "強力なアプリ精选：勤怠管理、画像処理、資産管理。今すぐ生産性を向上させましょう。無料ダウンロード。",
     keywords: seoKeywords["ja"],
     ogTitle: "Appify - オールインワンアプリプラットフォーム",
     ogDescription:
-      "生産性を上げる5つの強力なiOSアプリを発見。App Storeで無料ダウンロード。",
+      "強力なアプリ精选で生産性を向上。App Storeで無料ダウンロード。",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/ja/",
-      description:
-        "5つの強力なiOSアプリを含むオールインワンアプリプラットフォーム",
+      description: "オールインワンアプリプラットフォーム、強力なアプリ精选",
     },
   },
   ko: {
-    title: "Appify - 올인원 앱 플랫폼 | 5개의 강력한 iOS 앱",
+    title: "Appify - 올인원 앱 플랫폼 | 강력한 앱精选",
     description:
-      "5개의 강력한 iOS 앱을 발견하세요: 근무 시간 추적기, 이미지 PDF 변환, 이미지 형식 변환, Money Tracker, CleanPhoto. 지금 생산성을 높이세요. App Store에서 무료 다운로드.",
+      "강력한 앱精选：근무 시간 추적, 이미지 처리, 자산 관리. 지금 생산성을 높이세요. 무료 다운로드.",
     keywords: seoKeywords["ko"],
     ogTitle: "Appify - 올인원 앱 플랫폼",
     ogDescription:
-      "생산성을 높이는 5개의 강력한 iOS 앱을 발견하세요. App Store에서 무료 다운로드.",
+      "강력한 앱精选으로 생산성 향상. App Store에서 무료 다운로드.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/ko/",
-      description: "5개의 강력한 iOS 앱이 포함된 올인원 앱 플랫폼",
+      description: "올인원 앱 플랫폼, 강력한 앱精选",
     },
   },
   vi: {
-    title:
-      "Appify - Nền tảng Ứng dụng Tất cả trong Một | 5 Ứng dụng iOS Mạnh mẽ",
+    title: "Appify - Nền tảng Ứng dụng Tất cả trong Một | Ứng dụng Mạnh mẽ精选",
     description:
-      "Khám phá 5 ứng dụng iOS mạnh mẽ: Theo dõi Giờ làm việc, Chuyển đổi Hình ảnh sang PDF, Chuyển đổi Định dạng Hình ảnh, Money Tracker, CleanPhoto. Tăng năng suất của bạn ngay hôm nay. Tải miễn phí trên App Store.",
+      "Ứng dụng mạnh mẽ精选: Theo dõi giờ làm, Xử lý hình ảnh, Quản lý tài sản. Tăng năng suất của bạn ngay hôm nay. Tải miễn phí trên App Store.",
     keywords: seoKeywords["vi"],
     ogTitle: "Appify - Nền tảng Ứng dụng Tất cả trong Một",
     ogDescription:
-      "Khám phá 5 ứng dụng iOS mạnh mẽ để tăng năng suất. Tải miễn phí trên App Store.",
+      "Ứng dụng mạnh mẽ精选 để tăng năng suất. Tải miễn phí trên App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/vi/",
       description:
-        "Nền tảng ứng dụng tất cả trong một với 5 ứng dụng iOS mạnh mẽ",
+        "Nền tảng ứng dụng tất cả trong một với ứng dụng mạnh mẽ精选",
     },
   },
   id: {
-    title: "Appify - Platform Aplikasi All-in-one | 5 Aplikasi iOS Powerful",
+    title: "Appify - Platform Aplikasi All-in-one | Aplikasi Powerful精选",
     description:
-      "Temukan 5 aplikasi iOS powerful: Pelacak Jam Kerja, Konversi Gambar ke PDF, Konverter Format Gambar, Money Tracker, CleanPhoto. Tingkatkan produktivitas Anda hari ini. Unduh gratis di App Store.",
+      "Aplikasi powerful精选: Pelacak jam kerja, Pemrosesan gambar, Manajemen aset. Tingkatkan produktivitas Anda hari ini. Unduh gratis di App Store.",
     keywords: seoKeywords["id"],
     ogTitle: "Appify - Platform Aplikasi All-in-one",
     ogDescription:
-      "Temukan 5 aplikasi iOS powerful untuk meningkatkan produktivitas. Unduh gratis di App Store.",
+      "Aplikasi powerful精选 untuk meningkatkan produktivitas. Unduh gratis di App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/id/",
-      description:
-        "Platform aplikasi all-in-one dengan 5 aplikasi iOS powerful",
+      description: "Platform aplikasi all-in-one dengan aplikasi powerful精选",
     },
   },
   ar: {
-    title: "Appify - منصة التطبيقات الشاملة | 5 تطبيقات iOS قوية",
+    title: "Appify - منصة التطبيقات الشاملة | تطبيقات قوية精选",
     description:
-      "اكتشف 5 تطبيقات iOS قوية: متتبع ساعات العمل، تحويل الصور إلى PDF، محول تنسيق الصور، Money Tracker، CleanPhoto. عزز إنتاجيتك اليوم. تحميل مجاني على App Store.",
+      "تطبيقات قوية精选: تتبع ساعات العمل، معالجة الصور، إدارة الأصول. عزز إنتاجيتك اليوم. تحميل مجاني على App Store.",
     keywords: seoKeywords["ar"],
     ogTitle: "Appify - منصة التطبيقات الشاملة",
     ogDescription:
-      "اكتشف 5 تطبيقات iOS قوية لتعزيز إنتاجيتك. تحميل مجاني على App Store.",
+      "تطبيقات قوية精选 لتعزيز إنتاجيتك. تحميل مجاني على App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/ar/",
-      description: "منصة التطبيقات الشاملة مع 5 تطبيقات iOS قوية",
+      description: "منصة التطبيقات الشاملة مع تطبيقات قوية精选",
     },
   },
   fr: {
     title:
-      "Appify - Plateforme d'Applications Tout-en-Un | 5 Applications iOS Puissantes",
+      "Appify - Plateforme d'Applications Tout-en-Un | Applications Puissantes精选",
     description:
-      "Découvrez 5 applications iOS puissantes: Suivi des Heures de Travail, Conversion d'Image en PDF, Convertisseur de Format d'Image, Money Tracker, CleanPhoto. Boostez votre productivité aujourd'hui. Téléchargement gratuit sur App Store.",
+      "Applications puissantes精选: Suivi des heures, Traitement d'images, Gestion de patrimoine. Boostez votre productivité aujourd'hui. Téléchargement gratuit sur App Store.",
     keywords: seoKeywords["fr"],
     ogTitle: "Appify - Plateforme d'Applications Tout-en-Un",
     ogDescription:
-      "Découvrez 5 applications iOS puissantes pour stimuler votre productivité. Téléchargement gratuit sur App Store.",
+      "Applications puissantes精选 pour stimuler votre productivité. Téléchargement gratuit sur App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/fr/",
       description:
-        "Plateforme d'applications tout-en-un avec 5 applications iOS puissantes",
+        "Plateforme d'applications tout-en-un avec applications puissantes精选",
     },
   },
   de: {
-    title: "Appify - All-in-one-App-Plattform | 5 Leistungsstarke iOS-Apps",
+    title: "Appify - All-in-one-App-Plattform | Leistungsstarke Apps精选",
     description:
-      "Entdecken Sie 5 leistungsstarke iOS-Apps: Arbeitsstunden-Tracker, Bild-zu-PDF-Konverter, Bildformat-Konverter, Money Tracker, CleanPhoto. Steigern Sie heute Ihre Produktivität. Kostenloser Download im App Store.",
+      "Leistungsstarke Apps精选: Arbeitszeiterfassung, Bildverarbeitung, Vermögensverwaltung. Steigern Sie heute Ihre Produktivität. Kostenloser Download im App Store.",
     keywords: seoKeywords["de"],
     ogTitle: "Appify - All-in-one-App-Plattform",
     ogDescription:
-      "Entdecken Sie 5 leistungsstarke iOS-Apps zur Steigerung Ihrer Produktivität. Kostenloser Download im App Store.",
+      "Leistungsstarke Apps精选 zur Steigerung Ihrer Produktivität. Kostenloser Download im App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/de/",
-      description: "All-in-one-App-Plattform mit 5 leistungsstarken iOS-Apps",
+      description: "All-in-one-App-Plattform mit leistungsstarken Apps精选",
     },
   },
   es: {
     title:
-      "Appify - Plataforma de Aplicaciones Todo en Uno | 5 Aplicaciones iOS Potentes",
+      "Appify - Plataforma de Aplicaciones Todo en Uno | Aplicaciones Poderosas精选",
     description:
-      "Descubre 5 aplicaciones iOS potentes: Rastreador de Horas de Trabajo, Convertidor de Imagen a PDF, Convertidor de Formato de Imagen, Money Tracker, CleanPhoto. Aumenta tu productividad hoy. Descarga gratis en App Store.",
+      "Aplicaciones poderosas精选: Seguimiento de horas, Procesamiento de imágenes, Gestión de activos. Aumenta tu productividad hoy. Descarga gratis en App Store.",
     keywords: seoKeywords["es"],
     ogTitle: "Appify - Plataforma de Aplicaciones Todo en Uno",
     ogDescription:
-      "Descubre 5 aplicaciones iOS potentes para aumentar tu productividad. Descarga gratis en App Store.",
+      "Aplicaciones poderosas精选 para aumentar tu productividad. Descarga gratis en App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/es/",
       description:
-        "Plataforma de aplicaciones todo en uno con 5 aplicaciones iOS potentes",
+        "Plataforma de aplicaciones todo en uno con aplicaciones poderosas精选",
     },
   },
   pt: {
     title:
-      "Appify - Plataforma de Aplicativos Tudo em Um | 5 Aplicativos iOS Poderosos",
+      "Appify - Plataforma de Aplicativos Tudo em Um | Aplicativos Poderosos精选",
     description:
-      "Descubra 5 aplicativos iOS poderosos: Rastreador de Horas de Trabalho, Conversor de Imagem para PDF, Conversor de Formato de Imagem, Money Tracker, CleanPhoto. Aumente sua produtividade hoje. Download grátis na App Store.",
+      "Aplicativos poderosos精选: Controle de horas, Processamento de imagens, Gestão de ativos. Aumente sua produtividade hoje. Download grátis na App Store.",
     keywords: seoKeywords["pt"],
     ogTitle: "Appify - Plataforma de Aplicativos Tudo em Um",
     ogDescription:
-      "Descubra 5 aplicativos iOS poderosos para aumentar sua produtividade. Download grátis na App Store.",
+      "Aplicativos poderosos精选 para aumentar sua produtividade. Download grátis na App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/pt/",
       description:
-        "Plataforma de aplicativos tudo em um com 5 aplicativos iOS poderosos",
+        "Plataforma de aplicativos tudo em um com aplicativos poderosos精选",
     },
   },
   it: {
-    title: "Appify - Piattaforma App Tutto in Uno | 5 App iOS Potenti",
+    title: "Appify - Piattaforma App Tutto in Uno | App Potenti精选",
     description:
-      "Scopri 5 app iOS potenti: Tracker Ore di Lavoro, Convertitore da Immagine a PDF, Convertitore di Formato Immagine, Money Tracker, CleanPhoto. Aumenta la tua produttività oggi. Download gratuito su App Store.",
+      "App potenti精选: Tracciamento ore, Elaborazione immagini, Gestione patrimonio. Aumenta la tua produttività oggi. Download gratuito su App Store.",
     keywords: seoKeywords["it"],
     ogTitle: "Appify - Piattaforma App Tutto in Uno",
     ogDescription:
-      "Scopri 5 app iOS potenti per aumentare la tua produttività. Download gratuito su App Store.",
+      "App potenti精选 per aumentare la tua produttività. Download gratuito su App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/it/",
-      description: "Piattaforma app tutto in uno con 5 app iOS potenti",
+      description: "Piattaforma app tutto in uno con app potenti精选",
     },
   },
   ru: {
-    title:
-      "Appify - Платформа Приложений Всё в Одном | 5 Мощных iOS-Приложения",
+    title: "Appify - Платформа Приложений Всё в Одном | Мощные Приложения精选",
     description:
-      "Откройте 5 мощных iOS-приложений: Трекер Рабочих Часов, Конвертер Изображений в PDF, Конвертер Форматов Изображений, Money Tracker, CleanPhoto. Повысьте вашу продуктивность сегодня. Бесплатное скачивание в App Store.",
+      "Мощные приложения精选: Трекинг часов, Обработка изображений, Управление активами. Повысьте вашу продуктивность сегодня. Бесплатное скачивание в App Store.",
     keywords: seoKeywords["ru"],
     ogTitle: "Appify - Платформа Приложений Всё в Одном",
     ogDescription:
-      "Откройте 5 мощных iOS-приложений для повышения продуктивности. Бесплатное скачивание в App Store.",
+      "Мощные приложения精选 для повышения продуктивности. Бесплатное скачивание в App Store.",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/ru/",
       description:
-        "Платформа приложений всё в одном с 5 мощными iOS-приложениями",
+        "Платформа приложений всё в одном с мощными приложениями精选",
     },
   },
   th: {
-    title: "Appify - แพลตฟอร์มแอปแบบครบในหนึ่ง | 5 แอป iOS ที่ทรงพลัง",
+    title: "Appify - แพลตฟอร์มแอปแบบครบในหนึ่ง | แอปที่ทรงพลัง精选",
     description:
-      "ค้นพบ 5 แอป iOS ที่ทรงพลัง: ติดตามชั่วโมงทำงาน, แปลงรูปภาพเป็น PDF, แปลงรูปแบบรูปภาพ, Money Tracker, CleanPhoto. เพิ่มประสิทธิภาพการทำงานของคุณวันนี้. ดาวน์โหลดฟรีใน App Store",
+      "แอปที่ทรงพลัง精选: ติดตามชั่วโมงทำงาน, ประมวลผลรูปภาพ, จัดการสินทรัพย์. เพิ่มประสิทธิภาพการทำงานของคุณวันนี้. ดาวน์โหลดฟรีใน App Store",
     keywords: seoKeywords["th"],
     ogTitle: "Appify - แพลตฟอร์มแอปแบบครบในหนึ่ง",
     ogDescription:
-      "ค้นพบ 5 แอป iOS ที่ทรงพลังเพื่อเพิ่มประสิทธิภาพการทำงาน. ดาวน์โหลดฟรีใน App Store",
+      "แอปที่ทรงพลัง精选เพื่อเพิ่มประสิทธิภาพการทำงาน. ดาวน์โหลดฟรีใน App Store",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "WebSite",
       name: "Appify",
       url: "https://appify.show/th/",
-      description: "แพลตฟอร์มแอปแบบครบในหนึ่งพร้อม 5 แอป iOS ที่ทรงพลัง",
+      description: "แพลตฟอร์มแอปแบบครบในหนึ่งพร้อมแอปที่ทรงพลัง精选",
     },
   },
 };

@@ -152,7 +152,7 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
       '@type': 'WebSite',
       name: 'Appify',
       url: siteOrigin,
-      description: 'All-in-one App Platform with 5 powerful iOS apps',
+      description: 'All-in-one App Platform with Powerful Apps',
       inLanguage: lang,
       potentialAction: {
         '@type': 'SearchAction',
@@ -377,7 +377,7 @@ function buildHomeContent({ apps, lang }) {
     return `<li><a href="/${lang}/${app.id}/"><strong>${escapeHtml(appName)}</strong></a> - ${escapeHtml(appDesc)} <a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">[${escapeHtml(downloadText)}]</a></li>`;
   }).join('');
 
-  return `<section class="app-content"><header><h1>Appify - All-in-one App Platform</h1><p>Discover 5 powerful iOS apps to boost your productivity.</p></header><main><section class="apps"><h2>Our Apps</h2><ul>${appListItems}</ul></section></main></section>`;
+  return `<section class="app-content"><header><h1>Appify - All-in-one App Platform</h1><p>Powerful Apps to boost your productivity.</p></header><main><section class="apps"><h2>Our Apps</h2><ul>${appListItems}</ul></section></main></section>`;
 }
 
 async function main() {
@@ -419,7 +419,7 @@ async function main() {
         '@type': 'WebSite',
         name: 'Appify',
         url: siteOrigin,
-        description: 'All-in-one App Platform with 5 powerful iOS apps',
+        description: 'All-in-one App Platform with Powerful Apps',
         inLanguage: lang,
         potentialAction: {
           '@type': 'SearchAction',

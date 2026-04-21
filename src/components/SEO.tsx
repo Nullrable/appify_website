@@ -189,7 +189,7 @@ export default function SEO({
         "@type": "WebSite",
         name: "Appify",
         url: origin,
-        description: "All-in-one App Platform with 5 powerful iOS apps",
+        description: "All-in-one App Platform with Powerful Apps",
         publisher: {
           "@type": "Organization",
           name: "Appify",
