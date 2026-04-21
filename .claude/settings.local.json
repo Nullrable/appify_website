@@ -27,7 +27,9 @@
       "Bash(vercel deploy:*)",
       "Bash(vercel projects:*)",
       "Bash(vercel --version)",
-      "Bash(vercel whoami:*)"
+      "Bash(vercel whoami:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)"
     ]
   }
 }

@@ -151,12 +151,13 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
     });
   }
 
+  // Organization schema - Appify is a website name, not an App Store developer
+  // SameAs intentionally empty to avoid 404 on apps.apple.com
   scripts.push({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Appify',
     url: siteOrigin,
-    sameAs: ['https://apps.apple.com/us/developer/appify'],
   });
 
   if (appId && app) {
@@ -203,6 +204,7 @@ function renderHtmlForRoute(templateHtml, route) {
     ogImage,
     jsonLdScripts,
     isRtl,
+    appContent,
   } = route;
 
   let html = templateHtml;
@@ -234,15 +236,15 @@ function renderHtmlForRoute(templateHtml, route) {
     `    <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />`,
     '    <meta property="og:site_name" content="Appify" />',
     `    <meta property="og:image" content="${escapeHtml(ogImage)}" />`,
-    '    <meta property="og:image:width" content="512" />',
-    '    <meta property="og:image:height" content="512" />',
+    '    <meta property="og:image:width" content="1200" />',
+    '    <meta property="og:image:height" content="630" />',
     `    <meta property="og:locale" content="${escapeHtml(langToOgLocale(lang))}" />`,
     ...ogAlternates.map(
       (alt) => `    <meta property="og:locale:alternate" content="${escapeHtml(alt)}" />`,
     ),
     '',
     '    <!-- Twitter tags -->',
-    '    <meta name="twitter:card" content="summary" />',
+    '    <meta name="twitter:card" content="summary_large_image" />',
     `    <meta name="twitter:title" content="${escapeHtml(title)}" />`,
     `    <meta name="twitter:description" content="${escapeHtml(description)}" />`,
     `    <meta name="twitter:image" content="${escapeHtml(ogImage)}" />`,
@@ -275,7 +277,9 @@ function renderHtmlForRoute(templateHtml, route) {
     }),
     '',
   ];
-  html = replaceSection(html, MARKERS.jsonLd, '<script type="module"', jsonLdBlockLines.join('\n'));
+  const jsonLdContent = jsonLdBlockLines.join('\n') + (appContent || '');
+
+  html = replaceSection(html, MARKERS.jsonLd, '<script type="module"', jsonLdContent);
 
   return html;
 }
@@ -283,9 +287,9 @@ function renderHtmlForRoute(templateHtml, route) {
 function toSitemapXml({ siteOrigin, languages, apps, lastmod }) {
   const urls = [];
   for (const lang of languages) {
-    urls.push({ loc: `${siteOrigin}/${lang}/`, priority: 1.0 });
+    urls.push({ loc: `${siteOrigin}/${lang}/`, priority: 0.8 });
     for (const app of apps) {
-      urls.push({ loc: `${siteOrigin}/${lang}/${app.id}/`, priority: 0.8 });
+      urls.push({ loc: `${siteOrigin}/${lang}/${app.id}/`, priority: 0.9 });
     }
   }
 
@@ -304,6 +308,40 @@ function toSitemapXml({ siteOrigin, languages, apps, lastmod }) {
   ];
 
   return lines.join('\n');
+}
+
+function buildAppContent({ app, lang, pageData }) {
+  const appName = app.name?.[lang] ?? app.name?.en ?? app.id;
+  const appDesc = app.description?.[lang] ?? app.description?.en ?? '';
+
+  const features = (pageData?.features ?? []).map((f) => ({
+    title: f.title?.[lang] ?? f.title?.en ?? '',
+    description: f.description?.[lang] ?? f.description?.en ?? '',
+  })).filter((f) => f.title);
+
+  const stats = pageData?.stats ?? {};
+  const rating = stats.rating ?? 4.8;
+  const ratingCount = stats.ratingCount ?? '';
+  const downloads = stats.downloads ?? '';
+
+  // Build HTML content for SEO crawlers
+  const featuresHtml = features.map((f) =>
+    `      <li>
+        <strong>${escapeHtml(f.title)}</strong>: ${escapeHtml(f.description)}
+      </li>`,
+  ).join('\n');
+
+  const downloadBtnText = lang === 'zh' || lang === 'zh-TW'
+    ? '在 App Store 下载'
+    : lang === 'ja'
+      ? 'App Storeでダウンロード'
+      : lang === 'ko'
+        ? 'App Store에서 다운로드'
+        : lang === 'ar'
+          ? 'تحميل من App Store'
+          : 'Download on App Store';
+
+  return `<section class="app-content"><header><h1>${escapeHtml(appName)}</h1><p>${escapeHtml(appDesc)}</p><a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">${escapeHtml(downloadBtnText)}</a></header><main><section class="features"><h2>Features</h2><ul>${featuresHtml}</ul></section><section class="stats"><p>Rating: ${rating}${ratingCount ? ` (${escapeHtml(ratingCount)})` : ''}</p><p>Downloads: ${escapeHtml(downloads)}</p></section></main></section>`;
 }
 
 async function main() {
@@ -370,6 +408,9 @@ async function main() {
         answer: f.answer?.[lang] ?? f.answer?.en ?? '',
       })).filter((f) => f.question && f.answer);
 
+      // Generate pre-rendered HTML content for App detail page
+      const appContent = buildAppContent({ app, lang, pageData });
+
       const appHtml = renderHtmlForRoute(templateHtml, {
         siteOrigin,
         hreflangConfig,
@@ -395,6 +436,7 @@ async function main() {
           pageData: { faqs: localizedFaqs },
         }),
         isRtl: lang === 'ar',
+        appContent,
       });
 
       const appOut = path.join(DIST_DIR, lang, app.id, 'index.html');

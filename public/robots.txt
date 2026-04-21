@@ -2,6 +2,15 @@ User-agent: *
 Allow: /
 
 # AI Crawlers - Allowed for AI search visibility
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /icons/
+
+User-agent: Applebot
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
