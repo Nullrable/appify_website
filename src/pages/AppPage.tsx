@@ -20,7 +20,7 @@ export default function AppPageRoute() {
   const { lang, appId } = useParams<{ lang: string; appId: string }>();
 
   if (!lang || !appId) {
-    return <Navigate to={`/${lang || 'en'}`} replace />;
+    return <Navigate to={`/${lang || 'en'}/`} replace />;
   }
 
   const app = apps.find(a => a.id === appId);
@@ -33,7 +33,7 @@ export default function AppPageRoute() {
           <h1 className="font-heading font-bold text-4xl text-white mb-4">404</h1>
           <p className="text-gray-400 mb-6">App not found</p>
           <a
-            href={`/${lang}`}
+            href={`/${lang}/`}
             className="text-primary hover:text-primary/80 transition-colors"
           >
             ← Back to Home
@@ -45,6 +45,10 @@ export default function AppPageRoute() {
 
   const localizedTitle = `${app.name[lang] || app.name['en']} - Appify`;
   const localizedDescription = app.description[lang] || app.description['en'];
+  const localizedFaqs = pageData.faqs.map((f) => ({
+    question: f.question[lang] || f.question['en'],
+    answer: f.answer[lang] || f.answer['en'],
+  }));
 
   return (
     <>
@@ -53,6 +57,9 @@ export default function AppPageRoute() {
         description={localizedDescription}
         lang={lang}
         appId={appId}
+        appName={app.name[lang] || app.name['en']}
+        appStoreUrl={app.appStoreUrl}
+        faqs={localizedFaqs}
       />
       <AppPage app={app} pageData={pageData} lang={lang} />
     </>

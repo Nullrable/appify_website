@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
@@ -11,15 +11,8 @@ import { seoMeta } from '../data/seo';
 
 export default function Home() {
   const { lang: urlLang } = useParams<{ lang: string }>();
-  const [currentLang, setCurrentLang] = useState(urlLang || 'en');
+  const currentLang = urlLang || 'en';
   const [selectedApp, setSelectedApp] = useState<typeof apps[0] | null>(null);
-
-  // Sync state with URL when lang param changes
-  useEffect(() => {
-    if (urlLang && urlLang !== currentLang) {
-      setCurrentLang(urlLang);
-    }
-  }, [urlLang, currentLang]);
 
   const currentSeo = seoMeta[currentLang] || seoMeta['en'];
 
@@ -31,7 +24,7 @@ export default function Home() {
         lang={currentLang}
       />
       <div className="min-h-screen bg-bg">
-        <Nav currentLang={currentLang} onLangChange={setCurrentLang} />
+        <Nav currentLang={currentLang} onLangChange={() => {}} />
 
         <main>
           <Hero lang={currentLang} />

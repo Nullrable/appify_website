@@ -25,7 +25,9 @@
       "Bash(vercel --prod --debug)",
       "Bash(vercel --prod --yes --no-git)",
       "Bash(vercel deploy:*)",
-      "Bash(vercel projects:*)"
+      "Bash(vercel projects:*)",
+      "Bash(vercel --version)",
+      "Bash(vercel whoami:*)"
     ]
   }
 }
