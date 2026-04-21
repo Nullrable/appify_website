@@ -1,0 +1,36 @@
+# Appify - All-in-one iOS App Platform
+> 4 powerful iOS productivity apps: Work Hours Tracker, Image to PDF, Image Converter, Money Tracker. Boost your productivity today.
+
+## Apps
+- [Work Hours Tracker](https://appify.show/en/work-hours-tracker/): Time tracking with auto hourly wage calculation, built-in labor law presets for 18 countries
+- [Image to PDF](https://appify.show/en/image-to-pdf/): Convert images to PDF, encrypt/decrypt, print. 100% private processing
+- [Image Converter](https://appify.show/en/image-converter/): Compress, crop, resize, enhance photos. Works entirely in browser
+- [Money Tracker](https://appify.show/en/money-tracker/): Privacy-first expense and income tracking app
+- [CleanPhoto](https://appify.show/en/cleanphoto/): Smart photo cleaner that removes similar photos, screenshots, and blurry images
+
+## Languages (16 languages)
+- [English](https://appify.show/en/)
+- [简体中文](https://appify.show/zh/)
+- [繁體中文](https://appify.show/zh-TW/)
+- [日本語](https://appify.show/ja/)
+- [한국어](https://appify.show/ko/)
+- [Tiếng Việt](https://appify.show/vi/)
+- [Bahasa Indonesia](https://appify.show/id/)
+- [العربية](https://appify.show/ar/)
+- [Français](https://appify.show/fr/)
+- [Deutsch](https://appify.show/de/)
+- [Español](https://appify.show/es/)
+- [Português](https://appify.show/pt/)
+- [Italiano](https://appify.show/it/)
+- [Русский](https://appify.show/ru/)
+- [ไทย](https://appify.show/th/)
+
+## Developer
+- [Appify on App Store](https://apps.apple.com/us/developer/appify)
+
+## Key Facts
+- All apps are free with all features included
+- No ads, no subscriptions
+- 100% privacy - all processing done on device
+- Supports 16 languages
+- Built-in labor law presets for 18 countries (Work Hours Tracker)

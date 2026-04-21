@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://appify.erp4.cn/sitemap.xml
+# AI Crawlers - Allowed for AI search visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Training crawlers - Blocked
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://appify.show/sitemap.xml
