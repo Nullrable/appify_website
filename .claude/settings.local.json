@@ -25,7 +25,12 @@
       "Bash(vercel --prod --debug)",
       "Bash(vercel --prod --yes --no-git)",
       "Bash(vercel deploy:*)",
-      "Bash(vercel projects:*)"
+      "Bash(vercel projects:*)",
+      "Bash(curl -s https://api.vercel.com/v1/deployments?teamId=team_ioVuVnylURGLIQ63YigB1i7P)",
+      "Bash(npx vercel:*)",
+      "mcp__plugin_everything-claude-code_context7__resolve-library-id",
+      "WebFetch(domain:vercel.com)",
+      "mcp__plugin_everything-claude-code_exa__web_search_exa"
     ]
   }
 }
