@@ -1,64 +1,69 @@
-import { useEffect } from 'react';
-import { hreflangConfig, seoKeywords } from '../data/seo';
+import { useEffect } from "react";
+import { hreflangConfig, seoKeywords } from "../data/seo";
 
 // Map lang code to Open Graph locale
 function langToOgLocale(lang: string): string {
   const localeMap: Record<string, string> = {
-    en: 'en_US',
-    zh: 'zh_CN',
-    'zh-TW': 'zh_TW',
-    ja: 'ja_JP',
-    ko: 'ko_KR',
-    vi: 'vi_VN',
-    id: 'id_ID',
-    ar: 'ar_AR',
-    fr: 'fr_FR',
-    de: 'de_DE',
-    es: 'es_ES',
-    pt: 'pt_BR',
-    it: 'it_IT',
-    ru: 'ru_RU',
-    th: 'th_TH',
+    en: "en_US",
+    zh: "zh_CN",
+    "zh-TW": "zh_TW",
+    ja: "ja_JP",
+    ko: "ko_KR",
+    vi: "vi_VN",
+    id: "id_ID",
+    ar: "ar_AR",
+    fr: "fr_FR",
+    de: "de_DE",
+    es: "es_ES",
+    pt: "pt_BR",
+    it: "it_IT",
+    ru: "ru_RU",
+    th: "th_TH",
   };
-  return localeMap[lang] || 'en_US';
+  return localeMap[lang] || "en_US";
 }
 
 function ensureTrailingSlash(pathname: string): string {
-  if (pathname === '/') return pathname;
-  return pathname.endsWith('/') ? pathname : `${pathname}/`;
+  if (pathname === "/") return pathname;
+  return pathname.endsWith("/") ? pathname : `${pathname}/`;
 }
 
 function buildLocalizedPathname(pathname: string, targetLang: string): string {
   const supportedLangs = hreflangConfig
     .map(({ lang }) => lang)
-    .filter((lang) => lang !== 'x-default');
+    .filter((lang) => lang !== "x-default");
 
-  const segments = pathname.split('/').filter(Boolean);
-  const hasLeadingLang = segments.length > 0 && supportedLangs.includes(segments[0]);
+  const segments = pathname.split("/").filter(Boolean);
+  const hasLeadingLang =
+    segments.length > 0 && supportedLangs.includes(segments[0]);
   const restSegments = hasLeadingLang ? segments.slice(1) : segments;
 
   if (restSegments.length === 0) return `/${targetLang}/`;
-  return `/${targetLang}/${restSegments.join('/')}/`;
+  return `/${targetLang}/${restSegments.join("/")}/`;
 }
 
 function setMetaByName(name: string, content: string) {
-  let meta = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+  let meta = document.querySelector(
+    `meta[name="${name}"]`,
+  ) as HTMLMetaElement | null;
   if (!meta) {
-    meta = document.createElement('meta') as HTMLMetaElement;
-    meta.setAttribute('name', name);
+    meta = document.createElement("meta") as HTMLMetaElement;
+    meta.setAttribute("name", name);
     document.head.appendChild(meta);
   }
-  meta.setAttribute('content', content);
+  meta.setAttribute("content", content);
 }
 
 function setMetaByProperty(property: string, content: string) {
-  let meta = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
+  let meta = document.querySelector(
+    `meta[property="${property}"]`,
+  ) as HTMLMetaElement | null;
   if (!meta) {
-    meta = document.createElement('meta') as HTMLMetaElement;
-    meta.setAttribute('property', property);
+    meta = document.createElement("meta") as HTMLMetaElement;
+    meta.setAttribute("property", property);
     document.head.appendChild(meta);
   }
-  meta.setAttribute('content', content);
+  meta.setAttribute("content", content);
 }
 
 interface SEOProps {
@@ -71,82 +76,98 @@ interface SEOProps {
   faqs?: Array<{ question: string; answer: string }>;
 }
 
-export default function SEO({ title, description, lang, appId, appName, appStoreUrl, faqs }: SEOProps) {
+export default function SEO({
+  title,
+  description,
+  lang,
+  appId,
+  appName,
+  appStoreUrl,
+  faqs,
+}: SEOProps) {
   useEffect(() => {
     // Set document language attribute for accessibility and SEO
     document.documentElement.lang = lang;
-    const isRtl = hreflangConfig.some((l) => l.lang === lang && l.dir === 'rtl');
-    document.documentElement.dir = isRtl ? 'rtl' : 'ltr';
+    const isRtl = hreflangConfig.some(
+      (l) => l.lang === lang && l.dir === "rtl",
+    );
+    document.documentElement.dir = isRtl ? "rtl" : "ltr";
 
     const origin = window.location.origin;
     const pathname = ensureTrailingSlash(window.location.pathname);
     const canonicalUrl = `${origin}${pathname}`;
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    let canonical = document.querySelector(
+      'link[rel="canonical"]',
+    ) as HTMLLinkElement | null;
     if (!canonical) {
-      canonical = document.createElement('link') as HTMLLinkElement;
-      canonical.rel = 'canonical';
+      canonical = document.createElement("link") as HTMLLinkElement;
+      canonical.rel = "canonical";
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', canonicalUrl);
+    canonical.setAttribute("href", canonicalUrl);
 
     // Set meta keywords (keep short-tail only to avoid keyword stuffing)
-    const keywordList = seoKeywords[lang] || seoKeywords['en'];
+    const keywordList = seoKeywords[lang] || seoKeywords["en"];
     const shortTailKeywords = keywordList.slice(0, 12);
     const pageKeywords = appId
       ? [appName || title, ...shortTailKeywords].slice(0, 12)
       : shortTailKeywords;
-    setMetaByName('keywords', pageKeywords.join(', '));
+    setMetaByName("keywords", pageKeywords.join(", "));
     setMetaByName(
-      'robots',
-      'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1',
+      "robots",
+      "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
     );
 
     // Set title
     document.title = title;
-    setMetaByName('description', description);
+    setMetaByName("description", description);
 
     const ogImage = appId
       ? `${origin}/icons/${encodeURIComponent(appId)}.png`
-      : `${origin}/icons/image-to-pdf.png`;
+      : `${origin}/icons/og-image.png`;
 
     // Open Graph tags
-    setMetaByProperty('og:title', title);
-    setMetaByProperty('og:description', description);
-    setMetaByProperty('og:type', 'website');
-    setMetaByProperty('og:url', canonicalUrl);
-    setMetaByProperty('og:site_name', 'Appify');
-    setMetaByProperty('og:image', ogImage);
-    setMetaByProperty('og:image:width', '512');
-    setMetaByProperty('og:image:height', '512');
-    setMetaByProperty('og:image:alt', appId ? title : 'Appify');
-    setMetaByProperty('og:locale', langToOgLocale(lang));
+    setMetaByProperty("og:title", title);
+    setMetaByProperty("og:description", description);
+    setMetaByProperty("og:type", "website");
+    setMetaByProperty("og:url", canonicalUrl);
+    setMetaByProperty("og:site_name", "Appify");
+    setMetaByProperty("og:image", ogImage);
+    setMetaByProperty("og:image:width", "1200");
+    setMetaByProperty("og:image:height", "630");
+    setMetaByProperty("og:image:alt", appId ? title : "Appify");
+    setMetaByProperty("og:locale", langToOgLocale(lang));
 
     // Open Graph locale alternates
-    document.querySelectorAll('meta[property="og:locale:alternate"]').forEach((el) => el.remove());
+    document
+      .querySelectorAll('meta[property="og:locale:alternate"]')
+      .forEach((el) => el.remove());
     hreflangConfig
       .map(({ lang: l }) => l)
-      .filter((l) => l !== 'x-default' && l !== lang)
+      .filter((l) => l !== "x-default" && l !== lang)
       .forEach((altLang) => {
-        const meta = document.createElement('meta') as HTMLMetaElement;
-        meta.setAttribute('property', 'og:locale:alternate');
-        meta.setAttribute('content', langToOgLocale(altLang));
+        const meta = document.createElement("meta") as HTMLMetaElement;
+        meta.setAttribute("property", "og:locale:alternate");
+        meta.setAttribute("content", langToOgLocale(altLang));
         document.head.appendChild(meta);
       });
 
     // Twitter tags
-    setMetaByName('twitter:card', 'summary');
-    setMetaByName('twitter:title', title);
-    setMetaByName('twitter:description', description);
-    setMetaByName('twitter:image', ogImage);
-    setMetaByName('twitter:url', canonicalUrl);
+    setMetaByName("twitter:card", "summary_large_image");
+    setMetaByName("twitter:title", title);
+    setMetaByName("twitter:description", description);
+    setMetaByName("twitter:image", ogImage);
+    setMetaByName("twitter:url", canonicalUrl);
 
     // Add hreflang tags (remove old ones first)
-    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
+    document
+      .querySelectorAll('link[rel="alternate"][hreflang]')
+      .forEach((el) => el.remove());
     hreflangConfig.forEach(({ lang: hreflang }) => {
-      const link = document.createElement('link') as HTMLLinkElement;
-      link.rel = 'alternate';
+      const link = document.createElement("link") as HTMLLinkElement;
+      link.rel = "alternate";
       link.hreflang = hreflang;
-      const targetLang = hreflang === 'x-default' ? 'en' : hreflang;
+      const targetLang = hreflang === "x-default" ? "en" : hreflang;
       link.href = `${origin}${buildLocalizedPathname(pathname, targetLang)}`;
       document.head.appendChild(link);
     });
@@ -154,81 +175,79 @@ export default function SEO({ title, description, lang, appId, appName, appStore
     // Remove previous JSON-LD scripts managed by this component
     document
       .querySelectorAll(
-        'script[data-app-detail-page], script[data-app-faq-schema], script[data-website-schema], script[data-organization-schema]',
+        "script[data-app-detail-page], script[data-app-faq-schema], script[data-website-schema], script[data-organization-schema]",
       )
       .forEach((el) => el.remove());
 
     // WebSite schema for homepage
     if (!appId) {
-      const websiteScript = document.createElement('script');
-      websiteScript.type = 'application/ld+json';
-      websiteScript.setAttribute('data-website-schema', 'true');
+      const websiteScript = document.createElement("script");
+      websiteScript.type = "application/ld+json";
+      websiteScript.setAttribute("data-website-schema", "true");
       websiteScript.text = JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'WebSite',
-        name: 'Appify',
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Appify",
         url: origin,
-        description: 'All-in-one App Platform with 4 powerful iOS apps',
+        description: "All-in-one App Platform with 5 powerful iOS apps",
         publisher: {
-          '@type': 'Organization',
-          name: 'Appify',
+          "@type": "Organization",
+          name: "Appify",
           url: origin,
         },
         potentialAction: {
-          '@type': 'SearchAction',
+          "@type": "SearchAction",
           target: `${origin}/{search_term_string}`,
-          'query-input': 'required name=search_term_string',
+          "query-input": "required name=search_term_string",
         },
       });
       document.head.appendChild(websiteScript);
     }
 
     // Organization schema
-    const orgScript = document.createElement('script');
-    orgScript.type = 'application/ld+json';
-    orgScript.setAttribute('data-organization-schema', 'true');
+    const orgScript = document.createElement("script");
+    orgScript.type = "application/ld+json";
+    orgScript.setAttribute("data-organization-schema", "true");
     orgScript.text = JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: 'Appify',
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Appify",
       url: origin,
-      sameAs: [
-        'https://apps.apple.com/us/developer/appify',
-      ],
+      sameAs: [],
     });
     document.head.appendChild(orgScript);
 
     // App detail schemas
     if (appId) {
-      const appSchema = document.createElement('script');
-      appSchema.type = 'application/ld+json';
-      appSchema.setAttribute('data-app-detail-page', 'true');
+      const appSchema = document.createElement("script");
+      appSchema.type = "application/ld+json";
+      appSchema.setAttribute("data-app-detail-page", "true");
       appSchema.text = JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'SoftwareApplication',
-        name: appName || title.replace(/\s+-\s+Appify$/, ''),
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        name: appName || title.replace(/\s+-\s+Appify$/, ""),
         description: description,
         url: canonicalUrl,
         image: ogImage,
-        applicationCategory: 'ProductivityApplication',
-        operatingSystem: 'iOS',
+        applicationCategory: "ProductivityApplication",
+        operatingSystem: "iOS",
         ...(appStoreUrl ? { downloadUrl: appStoreUrl } : {}),
         inLanguage: lang,
       });
       document.head.appendChild(appSchema);
 
       if (faqs && faqs.length > 0) {
-        const faqSchema = document.createElement('script');
-        faqSchema.type = 'application/ld+json';
-        faqSchema.setAttribute('data-app-faq-schema', 'true');
+        const faqSchema = document.createElement("script");
+        faqSchema.type = "application/ld+json";
+        faqSchema.setAttribute("data-app-faq-schema", "true");
         faqSchema.text = JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'FAQPage',
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
           mainEntity: faqs.map((f) => ({
-            '@type': 'Question',
+            "@type": "Question",
             name: f.question,
             acceptedAnswer: {
-              '@type': 'Answer',
+              "@type": "Answer",
               text: f.answer,
             },
           })),
