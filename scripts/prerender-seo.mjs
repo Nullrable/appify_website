@@ -186,18 +186,9 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
       inLanguage: lang,
     });
 
-    const faqs = pageData?.faqs ?? [];
-    if (Array.isArray(faqs) && faqs.length > 0) {
-      scripts.push({
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: faqs.map((f) => ({
-          '@type': 'Question',
-          name: f.question,
-          acceptedAnswer: { '@type': 'Answer', text: f.answer },
-        })),
-      });
-    }
+    // Note: FAQPage schema is NOT included here because it is added dynamically
+    // by the SEO component's useEffect on the client side. Including it in the
+    // pre-rendered HTML would cause duplicate FAQPage errors in Google Search Console.
   }
 
   return scripts;

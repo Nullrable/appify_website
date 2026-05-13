@@ -257,11 +257,39 @@ export default function SEO({
     }
 
     return () => {
-      document
-        .querySelectorAll(
-          'link[rel="canonical"], script[data-app-detail-page], script[data-app-faq-schema], script[data-website-schema], script[data-organization-schema]',
-        )
-        .forEach((el) => el.remove());
+      // Split queries because meta[property^="og:"] is invalid (colon in attribute name)
+      const selectors = [
+        'link[rel="canonical"]',
+        'meta[name="robots"]',
+        'meta[name="keywords"]',
+        'meta[name="description"]',
+        'meta[name="twitter:card"]',
+        'meta[name="twitter:title"]',
+        'meta[name="twitter:description"]',
+        'meta[name="twitter:image"]',
+        'meta[name="twitter:url"]',
+        "script[data-app-detail-page]",
+        "script[data-app-faq-schema]",
+        "script[data-website-schema]",
+        "script[data-organization-schema]",
+        'link[rel="alternate"][hreflang]',
+      ];
+      const ogMetaSelectors = [
+        'meta[property="og:title"]',
+        'meta[property="og:description"]',
+        'meta[property="og:type"]',
+        'meta[property="og:url"]',
+        'meta[property="og:site_name"]',
+        'meta[property="og:image"]',
+        'meta[property="og:image:width"]',
+        'meta[property="og:image:height"]',
+        'meta[property="og:image:alt"]',
+        'meta[property="og:locale"]',
+        'meta[property="og:locale:alternate"]',
+      ];
+      [...selectors, ...ogMetaSelectors].forEach((sel) => {
+        document.querySelectorAll(sel).forEach((el) => el.remove());
+      });
     };
   }, [title, description, lang, appId, appName, appStoreUrl, faqs]);
 
