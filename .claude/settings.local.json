@@ -47,7 +47,16 @@
       "Bash(curl -s http://localhost:5173/en/)",
       "Bash(tmux capture-pane:*)",
       "Bash(curl -s http://localhost:5173/)",
-      "Bash(curl -s \"http://localhost:5173/src/main.tsx\")"
+      "Bash(curl -s \"http://localhost:5173/src/main.tsx\")",
+      "Bash(export https_proxy=http://127.0.0.1:7897)",
+      "Bash(export http_proxy=http://127.0.0.1:7897)",
+      "Bash(export all_proxy=socks5://127.0.0.1:7897)",
+      "Bash(HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 ALL_PROXY=socks5://127.0.0.1:7897 vercel --prod)",
+      "Bash(HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 ALL_PROXY=socks5://127.0.0.1:7897 vercel --prod --force)",
+      "Bash(HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 ALL_PROXY=socks5://127.0.0.1:7897 vercel inspect DqBez98bWTN6jZh5hswRR3Ddc7Wu)",
+      "Bash(HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 ALL_PROXY=socks5://127.0.0.1:7897 vercel ls)",
+      "Bash(HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 ALL_PROXY=socks5://127.0.0.1:7897 vercel logs appifywebsite-pci66ullh-nhsoftlsd-3926s-projects.vercel.app)",
+      "WebFetch(domain:appifywebsite-pci66ullh-nhsoftlsd-3926s-projects.vercel.app)"
     ]
   }
 }
