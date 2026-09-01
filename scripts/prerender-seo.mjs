@@ -14,6 +14,19 @@ const MARKERS = {
   jsonLd: '<!-- Pre-rendered JSON-LD structured data -->',
 };
 
+// Per-App content sections. Each entry gets a static index.html so the route
+// resolves on Vercel (there is no SPA rewrite - routes are real directories).
+//
+// `indexable: false` emits `noindex,follow` and keeps the route out of
+// sitemap.xml. Flip an entry to `indexable: true` once real Markdown lands in
+// content/{appId}/{section}/ - see the loadAppContent() extension point below.
+const SECTIONS = [
+  { id: 'about', indexable: false },
+  { id: 'blog', indexable: false },
+  { id: 'terms', indexable: false },
+  { id: 'privacy', indexable: false },
+];
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll('&', '&amp;')
@@ -92,9 +105,11 @@ async function loadSeoData() {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'appify-seo-'));
   const appsModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/apps.ts'));
   const seoModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/seo.ts'));
+  const sectionModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/sectionLabels.ts'));
 
   const appsMod = await import(pathToFileURL(appsModPath).href);
   const seoMod = await import(pathToFileURL(seoModPath).href);
+  const sectionMod = await import(pathToFileURL(sectionModPath).href);
 
   const appPagesDir = path.join(PROJECT_ROOT, 'src/data/appPages');
   const appPages = new Map();
@@ -121,17 +136,32 @@ async function loadSeoData() {
     seoMeta: seoMod.seoMeta ?? {},
     seoKeywords: seoMod.seoKeywords ?? {},
     hreflangConfig: seoMod.hreflangConfig ?? [],
+    sectionLabels: sectionMod.sectionLabels ?? {},
     appPages,
   };
 }
 
-function buildHreflangLinks({ siteOrigin, hreflangConfig, appId }) {
+// Extension point: once Markdown files land under content/{appId}/{section}/,
+// parse them here (front matter -> title/description/date, body -> HTML) and
+// pass the result into buildSectionContent(). Flip the matching SECTIONS entry
+// to `indexable: true` so the route gets `index,follow` and enters sitemap.xml.
+async function loadAppContent(appId, section) {
+  const dir = path.join(PROJECT_ROOT, 'content', appId, section);
+  try {
+    const files = await fs.readdir(dir);
+    return files.filter((f) => f.endsWith('.md'));
+  } catch {
+    return [];
+  }
+}
+
+function buildHreflangLinks({ siteOrigin, hreflangConfig, appId, section }) {
   return hreflangConfig.map(({ lang: hreflang }) => {
     const targetLang = hreflang === 'x-default' ? 'en' : hreflang;
-    const pathname = appId
-      ? `/${encodeURIComponent(targetLang)}/${encodeURIComponent(appId)}/`
-      : `/${encodeURIComponent(targetLang)}/`;
-    const href = new URL(pathname, siteOrigin).toString();
+    const segments = [encodeURIComponent(targetLang)];
+    if (appId) segments.push(encodeURIComponent(appId));
+    if (appId && section) segments.push(encodeURIComponent(section));
+    const href = new URL(`/${segments.join('/')}/`, siteOrigin).toString();
     return { hreflang, href };
   });
 }
@@ -222,7 +252,9 @@ function renderHtmlForRoute(templateHtml, route) {
     `    <title>${escapeHtml(title)}</title>`,
     `    <meta name="description" content="${escapeHtml(description)}" />`,
     `    <meta name="keywords" content="${escapeHtml(keywords)}" />`,
-    '    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />',
+    route.noIndex
+      ? '    <meta name="robots" content="noindex,follow" />'
+      : '    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />',
     `    <link rel="canonical" href="${escapeHtml(canonicalUrl)}" />`,
     '',
     '',
@@ -260,6 +292,7 @@ function renderHtmlForRoute(templateHtml, route) {
     siteOrigin,
     hreflangConfig,
     appId: route.appId,
+    section: route.section,
   });
   const hreflangBlockLines = [
     `    ${MARKERS.hreflang}`,
@@ -292,11 +325,15 @@ function renderHtmlForRoute(templateHtml, route) {
 }
 
 function toSitemapXml({ siteOrigin, languages, apps, lastmod }) {
+  const indexableSections = SECTIONS.filter((s) => s.indexable);
   const urls = [];
   for (const lang of languages) {
     urls.push({ loc: `${siteOrigin}/${lang}/`, priority: 0.8 });
     for (const app of apps) {
       urls.push({ loc: `${siteOrigin}/${lang}/${app.id}/`, priority: 0.9 });
+      for (const section of indexableSections) {
+        urls.push({ loc: `${siteOrigin}/${lang}/${app.id}/${section.id}/`, priority: 0.6 });
+      }
     }
   }
 
@@ -371,6 +408,16 @@ function buildHomeContent({ apps, lang }) {
   return `<section class="app-content"><header><h1>Appify - All-in-one App Platform</h1><p>Powerful Apps to boost your productivity.</p></header><main><section class="apps"><h2>Our Apps</h2><ul>${appListItems}</ul></section></main></section>`;
 }
 
+function buildSectionContent({ app, lang, section, labels, articles }) {
+  const appName = app.name?.[lang] ?? app.name?.en ?? app.id;
+  const sectionName = labels[section] ?? section;
+  const body = articles.length > 0
+    ? `<ul>${articles.map((f) => `<li>${escapeHtml(f.replace(/\.[a-zA-Z-]+\.md$/, ''))}</li>`).join('')}</ul>`
+    : `<p>${escapeHtml(labels.comingSoonDesc ?? '')}</p>`;
+
+  return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)}</h1><p>${escapeHtml(appName)}</p></header><main>${body}</main></section>`;
+}
+
 async function main() {
   const templatePath = path.join(DIST_DIR, 'index.html');
   const templateHtml = await fs.readFile(templatePath, 'utf8');
@@ -381,6 +428,7 @@ async function main() {
     seoMeta,
     seoKeywords,
     hreflangConfig,
+    sectionLabels,
     appPages,
   } = await loadSeoData();
 
@@ -505,6 +553,47 @@ async function main() {
       const appOut = path.join(DIST_DIR, lang, app.id, 'index.html');
       await fs.mkdir(path.dirname(appOut), { recursive: true });
       await fs.writeFile(appOut, appHtml, 'utf8');
+
+      // Per-App content sections. These need real HTML files because Vercel has
+      // no SPA rewrite - without them the route would 404 on direct access.
+      const labels = sectionLabels[lang] ?? sectionLabels.en ?? {};
+      for (const section of SECTIONS) {
+        const sectionName = labels[section.id] ?? section.id;
+        const sectionCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(section.id)}/`;
+        const articles = await loadAppContent(app.id, section.id);
+
+        const sectionHtml = renderHtmlForRoute(templateHtml, {
+          siteOrigin,
+          hreflangConfig,
+          langCodes,
+          lang,
+          appId: app.id,
+          section: section.id,
+          title: `${sectionName} - ${appName} - Appify`,
+          description: `${sectionName} - ${appName}. ${labels.comingSoonDesc ?? appDesc}`,
+          keywords: appKeywords,
+          canonicalUrl: sectionCanonical,
+          ogImage,
+          // No JSON-LD yet: the right schema type depends on the content that
+          // lands here (BlogPosting for blog, WebPage for terms/privacy).
+          // Emitting WebSite/SoftwareApplication again would duplicate the
+          // home and App detail pages.
+          jsonLdScripts: [],
+          isRtl: lang === 'ar',
+          noIndex: !section.indexable,
+          appContent: buildSectionContent({
+            app,
+            lang,
+            section: section.id,
+            labels,
+            articles,
+          }),
+        });
+
+        const sectionOut = path.join(DIST_DIR, lang, app.id, section.id, 'index.html');
+        await fs.mkdir(path.dirname(sectionOut), { recursive: true });
+        await fs.writeFile(sectionOut, sectionHtml, 'utf8');
+      }
     }
   }
 

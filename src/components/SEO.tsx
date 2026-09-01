@@ -74,6 +74,7 @@ interface SEOProps {
   appName?: string;
   appStoreUrl?: string;
   faqs?: Array<{ question: string; answer: string }>;
+  noIndex?: boolean;
 }
 
 export default function SEO({
@@ -84,6 +85,7 @@ export default function SEO({
   appName,
   appStoreUrl,
   faqs,
+  noIndex = false,
 }: SEOProps) {
   useEffect(() => {
     // Set document language attribute for accessibility and SEO
@@ -115,7 +117,9 @@ export default function SEO({
     setMetaByName("keywords", pageKeywords.join(", "));
     setMetaByName(
       "robots",
-      "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
+      noIndex
+        ? "noindex,follow"
+        : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
     );
 
     // Set title
@@ -180,7 +184,7 @@ export default function SEO({
       .forEach((el) => el.remove());
 
     // WebSite schema for homepage
-    if (!appId) {
+    if (!appId && !noIndex) {
       const websiteScript = document.createElement("script");
       websiteScript.type = "application/ld+json";
       websiteScript.setAttribute("data-website-schema", "true");
@@ -205,20 +209,22 @@ export default function SEO({
     }
 
     // Organization schema
-    const orgScript = document.createElement("script");
-    orgScript.type = "application/ld+json";
-    orgScript.setAttribute("data-organization-schema", "true");
-    orgScript.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Appify",
-      url: origin,
-      sameAs: [],
-    });
-    document.head.appendChild(orgScript);
+    if (!noIndex) {
+      const orgScript = document.createElement("script");
+      orgScript.type = "application/ld+json";
+      orgScript.setAttribute("data-organization-schema", "true");
+      orgScript.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Appify",
+        url: origin,
+        sameAs: [],
+      });
+      document.head.appendChild(orgScript);
+    }
 
     // App detail schemas
-    if (appId) {
+    if (appId && !noIndex) {
       const appSchema = document.createElement("script");
       appSchema.type = "application/ld+json";
       appSchema.setAttribute("data-app-detail-page", "true");
@@ -291,7 +297,7 @@ export default function SEO({
         document.querySelectorAll(sel).forEach((el) => el.remove());
       });
     };
-  }, [title, description, lang, appId, appName, appStoreUrl, faqs]);
+  }, [title, description, lang, appId, appName, appStoreUrl, faqs, noIndex]);
 
   return null;
 }

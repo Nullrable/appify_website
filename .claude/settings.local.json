@@ -56,7 +56,12 @@
       "Bash(HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 ALL_PROXY=socks5://127.0.0.1:7897 vercel inspect DqBez98bWTN6jZh5hswRR3Ddc7Wu)",
       "Bash(HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 ALL_PROXY=socks5://127.0.0.1:7897 vercel ls)",
       "Bash(HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 ALL_PROXY=socks5://127.0.0.1:7897 vercel logs appifywebsite-pci66ullh-nhsoftlsd-3926s-projects.vercel.app)",
-      "WebFetch(domain:appifywebsite-pci66ullh-nhsoftlsd-3926s-projects.vercel.app)"
+      "WebFetch(domain:appifywebsite-pci66ullh-nhsoftlsd-3926s-projects.vercel.app)",
+      "Bash(for app:*)",
+      "Bash(do for:*)",
+      "Bash(do mkdir:*)",
+      "Bash(touch \"content/$app/$sec/.gitkeep\")",
+      "Bash(done)"
     ]
   }
 }
