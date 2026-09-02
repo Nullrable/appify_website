@@ -61,7 +61,13 @@
       "Bash(do for:*)",
       "Bash(do mkdir:*)",
       "Bash(touch \"content/$app/$sec/.gitkeep\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(find . -maxdepth 2 -iname *screenshot* -o -maxdepth 2 -iname *store* -o -maxdepth 2 -iname fastlane -type d)",
+      "Bash(npm i:*)",
+      "Bash(grep -l 'prose' /Users/lusudong/Documents/fronted-work/appify_website/src/components/*.tsx /Users/lusudong/Documents/fronted-work/appify_website/src/index.css)",
+      "Bash(cat /Users/lusudong/Documents/fronted-work/appify_website/tailwind.config.*)",
+      "Bash(cat /Users/lusudong/Documents/fronted-work/appify_website/postcss.config.*)",
+      "Bash(echo '=== content files ===' ls -la /Users/lusudong/Documents/fronted-work/appify_website/content/translate-offline-translator/terms/ /Users/lusudong/Documents/fronted-work/appify_website/content/translate-offline-translator/privacy/ echo echo '=== generated entries ===' node -e \"import\\(''''./src/generated/content.ts''''\\).catch\\(\\(\\)=>{}\\); const {execSync}=require\\(''''node:child_process''''\\); console.log\\(execSync\\(''''npx tsx -e \"\"import {contentEntries} from \\\\''''./src/generated/content.ts\\\\''''; console.log\\(JSON.stringify\\(contentEntries, \\(k,v\\)=>k===\\\\''''html\\\\''''?v.slice\\(0,60\\)+\\\\''''...\\\\'''':v, 2\\)\\)\"\"'''', {encoding:''''utf8''''}\\)\\)\")"
     ]
   }
 }

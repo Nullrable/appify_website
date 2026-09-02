@@ -209,6 +209,47 @@ export const apps: App[] = [
     appStoreUrl: "https://apps.apple.com/us/app/cleanphoto/id6758242073",
     iconPath: "/icons/cleanphoto.png",
   },
+  {
+    id: "translate-offline-translator",
+    name: {
+      en: "Translate - Offline Translator",
+      zh: "翻译 - 离线翻译器",
+      "zh-TW": "翻譯 - 離線翻譯器",
+      ja: "翻訳 - オフライン翻訳機",
+      ko: "번역 - 오프라인 번역기",
+      vi: "Dịch - Trình dịch ngoại tuyến",
+      id: "Terjemahan - Penerjemah Offline",
+      ar: "ترجمة - مترجم بدون اتصال",
+      fr: "Traduire - Traducteur hors ligne",
+      de: "Übersetzen - Offline-Übersetzer",
+      es: "Traducir - Traductor sin conexión",
+      pt: "Traduzir - Tradutor Offline",
+      it: "Traduci - Traduttore Offline",
+      ru: "Перевод - Офлайн-переводчик",
+      th: "แปลภาษา - เครื่องมือแปลออฟไลน์",
+    },
+    description: {
+      en: "Offline photo translator for iOS. Snap a picture, extract text with on-device OCR, and translate it instantly. Works without internet after model setup. Privacy-first, no image upload.",
+      zh: "iOS 离线拍照翻译。拍照后通过本地 OCR 提取文字并即时翻译。模型下载后即可完全离线使用。注重隐私，不上传图片。",
+      "zh-TW":
+        "iOS 離線拍照翻譯。拍照後透過本地 OCR 擷取文字並即時翻譯。模型下載後即可完全離線使用。注重隱私，不上傳圖片。",
+      ja: "iOS オフライン写真翻訳。写真を撮影し、本地 OCR でテキストを抽出して即座に翻訳。モデル取得後はネットなしで動作。プライバシー重視、画像アップロードなし。",
+      ko: "iOS 오프라인 사진 번역기. 사진을 찍고 기기 내 OCR로 텍스트를 추출해 즉시 번역합니다. 모델 설치 후 인터넷 없이 동작. 프라이버시 우선, 이미지 업로드 없음.",
+      vi: "Trình dịch ảnh ngoại tuyến cho iOS. Chụp ảnh, trích xuất văn bản bằng OCR trên thiết bị và dịch ngay. Hoạt động không cần internet sau khi cài mô hình. Ưu tiên quyền riêng tư, không tải ảnh lên.",
+      id: "Penerjemah foto offline untuk iOS. Ambil foto, ekstrak teks dengan OCR di perangkat, lalu terjemahkan seketika. Berfungsi tanpa internet setelah pemasangan model. Privasi diutamakan, tanpa unggah gambar.",
+      ar: "مترجم الصور بدون اتصال لـ iOS. التقط صورة، استخرج النص باستخدام OCR على الجهاز، وترجمه فورًا. يعمل بدون إنترنت بعد إعداد النموذج. الخصوصية أولًا، دون رفع الصور.",
+      fr: "Traducteur photo hors ligne pour iOS. Prenez une photo, extrayez le texte avec OCR sur l'appareil et traduisez-le instantanément. Fonctionne sans Internet après l'installation du modèle. Confidentialité d'abord, aucun envoi d'image.",
+      de: "Offline-Fotoübersetzer für iOS. Foto aufnehmen, Text mit geräteseitiger OCR extrahieren und sofort übersetzen. Funktioniert nach Modellinstallation ohne Internet. Datenschutz zuerst, kein Bild-Upload.",
+      es: "Traductor de fotos sin conexión para iOS. Toma una foto, extrae el texto con OCR en el dispositivo y tradúcelo al instante. Funciona sin internet tras instalar el modelo. Privacidad primero, sin subir imágenes.",
+      pt: "Tradutor de fotos offline para iOS. Tire uma foto, extraia o texto com OCR no dispositivo e traduza instantaneamente. Funciona sem internet após instalar o modelo. Privacidade em primeiro lugar, sem envio de imagens.",
+      it: "Traduttore foto offline per iOS. Scatta una foto, estrai il testo con OCR sul dispositivo e traduci all'istante. Funziona senza internet dopo l'installazione del modello. Privacy prima di tutto, nessun caricamento di immagini.",
+      ru: "Офлайн-переводчик фото для iOS. Сфотографируйте, извлеките текст с помощью OCR на устройстве и переведите мгновенно. Работает без интернета после установки модели. Конфиденциальность прежде всего, изображения не загружаются.",
+      th: "เครื่องมือแปลภาษาจากภาพถ่ายแบบออฟไลน์สำหรับ iOS ถ่ายภาพ ดึงข้อความด้วย OCR บนเครื่อง แล้วแปลทันที ใช้งานได้โดยไม่ต้องใช้อินเทอร์เน็ตหลังจากติดตั้งโมเดล เน้นความเป็นส่วนตัว ไม่อัปโหลดภาพ",
+    },
+    appStoreUrl:
+      "https://apps.apple.com/us/app/translate-offline-translator/id6807403604",
+    iconPath: "/icons/translate-offline-translator.png",
+  },
 ];
 
 export const languages = [

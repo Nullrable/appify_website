@@ -17,15 +17,16 @@ const MARKERS = {
 // Per-App content sections. Each entry gets a static index.html so the route
 // resolves on Vercel (there is no SPA rewrite - routes are real directories).
 //
-// `indexable: false` emits `noindex,follow` and keeps the route out of
-// sitemap.xml. Flip an entry to `indexable: true` once real Markdown lands in
-// content/{appId}/{section}/ - see the loadAppContent() extension point below.
-const SECTIONS = [
-  { id: 'about', indexable: false },
-  { id: 'blog', indexable: false },
-  { id: 'terms', indexable: false },
-  { id: 'privacy', indexable: false },
-];
+// Indexability is content-driven: see the route loop in main() - if a Markdown
+// article exists for (appId, section), the route gets `index,follow` and joins
+// the sitemap. Otherwise it stays `noindex,follow` and out of the sitemap.
+//
+// Sections that are authored in English only and reused across all locales
+// (legal text - terms and privacy). For these, the canonical URL collapses to
+// the English path and hreflang narrows to `en` + `x-default`, so Google sees
+// one canonical page instead of 15 near-duplicates.
+const SECTIONS = ['about', 'blog', 'terms', 'privacy'];
+const LEGAL_SECTIONS = new Set(['terms', 'privacy']);
 
 function escapeHtml(value) {
   return String(value)
@@ -80,6 +81,7 @@ function getAppCategory(appId) {
     'image-to-pdf': 'UtilityApplication',
     'image-converter': 'UtilityApplication',
     'cleanphoto': 'UtilityApplication',
+    'translate-offline-translator': 'UtilityApplication',
   };
   return categories[appId] || 'ProductivityApplication';
 }
@@ -107,9 +109,14 @@ async function loadSeoData() {
   const seoModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/seo.ts'));
   const sectionModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/sectionLabels.ts'));
 
+  // src/generated/content.ts is emitted by `npm run content`. The build pipeline
+  // guarantees it exists before prerender runs.
+  const contentModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/generated/content.ts'));
+
   const appsMod = await import(pathToFileURL(appsModPath).href);
   const seoMod = await import(pathToFileURL(seoModPath).href);
   const sectionMod = await import(pathToFileURL(sectionModPath).href);
+  const contentMod = await import(pathToFileURL(contentModPath).href);
 
   const appPagesDir = path.join(PROJECT_ROOT, 'src/data/appPages');
   const appPages = new Map();
@@ -137,26 +144,19 @@ async function loadSeoData() {
     seoKeywords: seoMod.seoKeywords ?? {},
     hreflangConfig: seoMod.hreflangConfig ?? [],
     sectionLabels: sectionMod.sectionLabels ?? {},
+    contentEntries: contentMod.contentEntries ?? [],
+    getContent: contentMod.getContent,
     appPages,
   };
 }
 
-// Extension point: once Markdown files land under content/{appId}/{section}/,
-// parse them here (front matter -> title/description/date, body -> HTML) and
-// pass the result into buildSectionContent(). Flip the matching SECTIONS entry
-// to `indexable: true` so the route gets `index,follow` and enters sitemap.xml.
-async function loadAppContent(appId, section) {
-  const dir = path.join(PROJECT_ROOT, 'content', appId, section);
-  try {
-    const files = await fs.readdir(dir);
-    return files.filter((f) => f.endsWith('.md'));
-  } catch {
-    return [];
-  }
-}
+function buildHreflangLinks({ siteOrigin, hreflangConfig, appId, section, narrowToEn = false }) {
+  const configs = narrowToEn
+    ? hreflangConfig.filter((c) => c.lang === 'en' || c.lang === 'x-default')
+    : hreflangConfig;
 
-function buildHreflangLinks({ siteOrigin, hreflangConfig, appId, section }) {
-  return hreflangConfig.map(({ lang: hreflang }) => {
+  return configs.map((entry) => {
+    const hreflang = entry.lang;
     const targetLang = hreflang === 'x-default' ? 'en' : hreflang;
     const segments = [encodeURIComponent(targetLang)];
     if (appId) segments.push(encodeURIComponent(appId));
@@ -237,6 +237,7 @@ function renderHtmlForRoute(templateHtml, route) {
     jsonLdScripts,
     isRtl,
     appContent,
+    narrowHreflangToEn,
   } = route;
 
   let html = templateHtml;
@@ -293,6 +294,7 @@ function renderHtmlForRoute(templateHtml, route) {
     hreflangConfig,
     appId: route.appId,
     section: route.section,
+    narrowToEn: narrowHreflangToEn === true,
   });
   const hreflangBlockLines = [
     `    ${MARKERS.hreflang}`,
@@ -324,15 +326,23 @@ function renderHtmlForRoute(templateHtml, route) {
   return html;
 }
 
-function toSitemapXml({ siteOrigin, languages, apps, lastmod }) {
-  const indexableSections = SECTIONS.filter((s) => s.indexable);
+function toSitemapXml({ siteOrigin, languages, apps, lastmod, sectionUrls }) {
   const urls = [];
   for (const lang of languages) {
     urls.push({ loc: `${siteOrigin}/${lang}/`, priority: 0.8 });
     for (const app of apps) {
       urls.push({ loc: `${siteOrigin}/${lang}/${app.id}/`, priority: 0.9 });
-      for (const section of indexableSections) {
-        urls.push({ loc: `${siteOrigin}/${lang}/${app.id}/${section.id}/`, priority: 0.6 });
+      for (const entry of sectionUrls) {
+        if (entry.appId !== app.id) continue;
+        // entry.lang === null means the section is legal-only and emits one
+        // sitemap entry pointing at /en/... regardless of which loop iteration
+        // we're in.
+        const targetLang = entry.lang ?? 'en';
+        if (targetLang !== lang) continue;
+        urls.push({
+          loc: `${siteOrigin}/${targetLang}/${app.id}/${entry.section}/`,
+          priority: 0.6,
+        });
       }
     }
   }
@@ -408,14 +418,17 @@ function buildHomeContent({ apps, lang }) {
   return `<section class="app-content"><header><h1>Appify - All-in-one App Platform</h1><p>Powerful Apps to boost your productivity.</p></header><main><section class="apps"><h2>Our Apps</h2><ul>${appListItems}</ul></section></main></section>`;
 }
 
-function buildSectionContent({ app, lang, section, labels, articles }) {
+function buildSectionContent({ app, lang, section, labels, article }) {
   const appName = app.name?.[lang] ?? app.name?.en ?? app.id;
   const sectionName = labels[section] ?? section;
-  const body = articles.length > 0
-    ? `<ul>${articles.map((f) => `<li>${escapeHtml(f.replace(/\.[a-zA-Z-]+\.md$/, ''))}</li>`).join('')}</ul>`
-    : `<p>${escapeHtml(labels.comingSoonDesc ?? '')}</p>`;
 
-  return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)}</h1><p>${escapeHtml(appName)}</p></header><main>${body}</main></section>`;
+  // Content-bearing route: render the article's HTML straight into the
+  // pre-rendered page so search engines can index it.
+  if (article) {
+    return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(article.title)}</h1>${article.date ? `<p class="meta">Last updated: ${escapeHtml(article.date)}</p>` : ''}</header><main>${article.html}</main></section>`;
+  }
+
+  return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)}</h1><p>${escapeHtml(appName)}</p></header><main><p>${escapeHtml(labels.comingSoonDesc ?? '')}</p></main></section>`;
 }
 
 async function main() {
@@ -430,7 +443,31 @@ async function main() {
     hreflangConfig,
     sectionLabels,
     appPages,
+    contentEntries,
+    getContent,
   } = await loadSeoData();
+
+  // Indexability is content-driven: for each (appId, section) we emit a real
+  // index.html (because Vercel has no SPA rewrite), but only mark it
+  // `index,follow` and add it to the sitemap when a Markdown article exists.
+  // Legal sections (terms/privacy) are authored in English only - the canonical
+  // URL collapses to /en/.../ and hreflang narrows to `en` + `x-default` so we
+  // don't ship 15 near-duplicate pages.
+  const lookupArticle = (appId, section, lang) => {
+    const tryLang = (l) => getContent?.(appId, section, l) ?? null;
+    const article = tryLang(lang);
+    if (article) return { article, usedLang: lang };
+    if (LEGAL_SECTIONS.has(section)) {
+      const en = tryLang('en');
+      if (en) return { article: en, usedLang: 'en' };
+    }
+    return null;
+  };
+
+  // Sitemap section entries: one per (appId, section) that has content.
+  // lang === null means the section is legal-only and only emits a single
+  // sitemap URL pointing at /en/... so we don't list 15 near-duplicates.
+  const sectionUrls = [];
 
   const siteOrigin = (() => {
     const enHref = hreflangConfig.find((h) => h.lang === 'en')?.href;
@@ -556,11 +593,51 @@ async function main() {
 
       // Per-App content sections. These need real HTML files because Vercel has
       // no SPA rewrite - without them the route would 404 on direct access.
+      // Indexability is content-driven: only routes with a Markdown article get
+      // `index,follow` and join the sitemap. Legal sections (terms/privacy) are
+      // authored in English only - all language URLs share the English body,
+      // canonical collapses to /en/..., and hreflang narrows to en + x-default.
       const labels = sectionLabels[lang] ?? sectionLabels.en ?? {};
-      for (const section of SECTIONS) {
-        const sectionName = labels[section.id] ?? section.id;
-        const sectionCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(section.id)}/`;
-        const articles = await loadAppContent(app.id, section.id);
+      for (const sectionId of SECTIONS) {
+        const sectionName = labels[sectionId] ?? sectionId;
+        const hit = lookupArticle(app.id, sectionId, lang);
+        const isLegal = LEGAL_SECTIONS.has(sectionId);
+        const hasContent = hit !== null;
+
+        // Canonical: localized URL for multi-lang content, English URL for
+        // legal-only content (so non-/en/ langs canonicalize to /en/).
+        const canonicalLang = hasContent && isLegal ? 'en' : lang;
+        const sectionCanonical = `${siteOrigin}/${encodeURIComponent(canonicalLang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(sectionId)}/`;
+
+        // For content pages, the localized title uses the section label in the
+        // viewer's language even if the body is English - this keeps the title
+        // and breadcrumb readable while the body remains authoritative.
+        const sectionTitle = hasContent && hit
+          ? (isLegal && lang !== 'en'
+              ? `${sectionName} - ${appName} - Appify`
+              : `${hit.article.title} - Appify`)
+          : `${sectionName} - ${appName} - Appify`;
+        const sectionDescription = hasContent && hit
+          ? (hit.article.description || `${sectionName} - ${appName}.`)
+          : `${sectionName} - ${appName}. ${labels.comingSoonDesc ?? appDesc}`;
+
+        // WebPage JSON-LD for content-bearing sections. Helps Google understand
+        // the page as a long-form document rather than an app page.
+        const sectionJsonLd = hasContent && hit
+          ? [
+              {
+                '@context': 'https://schema.org',
+                '@type': 'WebPage',
+                name: hit.article.title,
+                description: hit.article.description,
+                url: sectionCanonical,
+                inLanguage: 'en',
+                isPartOf: { '@type': 'WebSite', name: 'Appify', url: siteOrigin },
+                about: { '@type': 'SoftwareApplication', name: appName, url: `${siteOrigin}/${encodeURIComponent(canonicalLang)}/${encodeURIComponent(app.id)}/` },
+                ...(hit.article.date ? { dateModified: hit.article.date } : {}),
+              },
+            ]
+          : [];
 
         const sectionHtml = renderHtmlForRoute(templateHtml, {
           siteOrigin,
@@ -568,38 +645,53 @@ async function main() {
           langCodes,
           lang,
           appId: app.id,
-          section: section.id,
-          title: `${sectionName} - ${appName} - Appify`,
-          description: `${sectionName} - ${appName}. ${labels.comingSoonDesc ?? appDesc}`,
+          section: sectionId,
+          title: sectionTitle,
+          description: sectionDescription,
           keywords: appKeywords,
           canonicalUrl: sectionCanonical,
           ogImage,
-          // No JSON-LD yet: the right schema type depends on the content that
-          // lands here (BlogPosting for blog, WebPage for terms/privacy).
-          // Emitting WebSite/SoftwareApplication again would duplicate the
-          // home and App detail pages.
-          jsonLdScripts: [],
+          jsonLdScripts: sectionJsonLd,
           isRtl: lang === 'ar',
-          noIndex: !section.indexable,
+          noIndex: !hasContent,
+          narrowHreflangToEn: hasContent && isLegal,
           appContent: buildSectionContent({
             app,
             lang,
-            section: section.id,
+            section: sectionId,
             labels,
-            articles,
+            article: hasContent && hit ? hit.article : null,
           }),
         });
 
-        const sectionOut = path.join(DIST_DIR, lang, app.id, section.id, 'index.html');
+        const sectionOut = path.join(DIST_DIR, lang, app.id, sectionId, 'index.html');
         await fs.mkdir(path.dirname(sectionOut), { recursive: true });
         await fs.writeFile(sectionOut, sectionHtml, 'utf8');
+
+        // Sitemap inclusion rules:
+// - No content -> never include.
+// - Legal (terms/privacy) with English-only content -> include /en/... once.
+// - Other content -> include every lang URL where the route renders.
+        if (hasContent && isLegal) {
+          if (!sectionUrls.some((s) => s.appId === app.id && s.section === sectionId)) {
+            sectionUrls.push({ appId: app.id, section: sectionId, lang: null });
+          }
+        } else if (hasContent) {
+          sectionUrls.push({ appId: app.id, section: sectionId, lang });
+        }
       }
     }
   }
 
   // Generate sitemap.xml into dist (overwrites public copy)
   const lastmod = new Date().toISOString().slice(0, 10);
-  const sitemapXml = toSitemapXml({ siteOrigin, languages: langCodes, apps, lastmod });
+  const sitemapXml = toSitemapXml({
+    siteOrigin,
+    languages: langCodes,
+    apps,
+    lastmod,
+    sectionUrls,
+  });
   await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf8');
 
   console.log(`[seo] prerendered ${langCodes.length} languages, ${apps.length} apps, wrote sitemap.xml (${lastmod})`);
