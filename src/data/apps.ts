@@ -293,7 +293,7 @@ export const apps: App[] = [
       ru: "Профессиональный сканер документов для iOS. Сверхширокоугольная съёмка, шесть GPU-фильтров, OCR на устройстве, экспорт многостраничных PDF и синхронизация с Google Drive / iCloud без конфликтов. По умолчанию работает офлайн.",
       th: "เครื่องสแกนเอกสารระดับมืออาชีพสำหรับ iOS ถ่ายภาพมุมกว้างพิเศษ ฟิลเตอร์ GPU หกแบบ OCR บนเครื่อง ส่งออก PDF หลายหน้า และซิงค์ Google Drive / iCloud โดยไม่มีข้อขัดแย้ง ทำงานออฟไลน์เป็นค่าเริ่มต้น",
     },
-    appStoreUrl: "https://apps.apple.com/us/app/paper-scan/id6805063444",
+    appStoreUrl: "https://apps.apple.com/us/app/paper-scan-ocr/id6805063444",
     iconPath: "/icons/paperscan.png",
     externalLinks: {
       terms: "https://paperscan.cloud/legal/terms/",
