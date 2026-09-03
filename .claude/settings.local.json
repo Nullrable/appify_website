@@ -118,7 +118,21 @@
       "Bash(grep -oE href=\"\"/en/paperscan/features/[^\"\"]*\"\" /Users/lusudong/Documents/fronted-work/appify_website/dist/en/paperscan/features/index.html)",
       "Bash(grep -c \"/features/\" /Users/lusudong/Documents/fronted-work/appify_website/dist/assets/index-*.js)",
       "Bash(grep -oE '/en/paperscan/features/[a-z-]+/' /Users/lusudong/Documents/fronted-work/appify_website/dist/assets/index-*.js)",
-      "Bash(grep -oE 'features/[^\"\"\"\"]*' /Users/lusudong/Documents/fronted-work/appify_website/dist/assets/index-*.js)"
+      "Bash(grep -oE 'features/[^\"\"\"\"]*' /Users/lusudong/Documents/fronted-work/appify_website/dist/assets/index-*.js)",
+      "Bash(find /Users/lusudong/.claude -maxdepth 3 -name *.json)",
+      "Bash(find /Users/lusudong/.claude -maxdepth 4 -name *.json)",
+      "Bash(find /Users/lusudong/.claude -type f \\\\\\(-name *.json -o -name *.md \\\\\\))",
+      "Bash(cat /Users/lusudong/.claude/hooks/*)",
+      "Bash(grep -rn BLOCKED.*Unnecessary /Users/lusudong/.claude)",
+      "Bash(grep -E \"\\\\.\\(ja|ko|vi|id|ar|fr|de|es|pt|it|ru|th\\)\\\\.md$\")",
+      "Bash(xargs -I {} dirname {})",
+      "Bash(find /Users/lusudong/Documents/fronted-work/appify_website -type d -name translate*)",
+      "Bash(grep -l quotes /Users/lusudong/Documents/fronted-work/appify_website/eslint.config.js /Users/lusudong/Documents/fronted-work/appify_website/.prettierrc*)",
+      "Bash(git checkout:*)",
+      "Bash(grep:*)",
+      "Bash(find dist:*)",
+      "Bash(git push:*)",
+      "Bash(git config:*)"
     ]
   }
 }
