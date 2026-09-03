@@ -6,8 +6,6 @@ lang: en
 slug: index
 ---
 
-# Terms of Service
-
 These Terms of Service ("**Terms**") govern your access to and use of **Translate - Offline Translator** (the "**App**"), operated by the developer ("**we**", "**us**", or "**our**"). By downloading, installing, or using the App, you agree to these Terms.
 
 If you do not agree, do not install or use the App.
@@ -117,7 +115,3 @@ We may update these Terms from time to time. The "**Last updated**" date at the 
 ## 16. Contact
 
 If you have any questions about these Terms, please contact us through the App's support channel listed on its App Store page.
-
----
-
-**Last updated:** 2026-09-01

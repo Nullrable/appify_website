@@ -6,8 +6,6 @@ lang: en
 slug: index
 ---
 
-# Privacy Policy
-
 **Translate - Offline Translator** ("**we**", "**us**", or "**our**") is designed so that your translations and images stay on your device. This Privacy Policy explains what data the App processes, why, and the choices you have.
 
 By using the App, you agree to the practices described in this Policy.
@@ -166,7 +164,3 @@ We may update this Policy from time to time. The "**Last updated**" date at the 
 ## 12. Contact
 
 If you have any questions about this Policy, please contact us through the App's support channel listed on its App Store page.
-
----
-
-**Last updated:** 2026-09-01

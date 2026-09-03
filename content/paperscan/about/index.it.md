@@ -6,8 +6,6 @@ lang: it
 slug: index
 ---
 
-# Informazioni su Paper Scan
-
 Paper Scan è uno scanner di documenti pensato per iPhone e iPad. Cattura un'intera pagina A4 da una distanza comoda, raddrizza la prospettiva automaticamente, ti permette di rifinire il risultato con sei filtri GPU ed esporta PDF multipagina con testo ricercabile, il tutto senza inviare un solo byte a un server a meno che tu non attivi la sincronizzazione cloud.
 
 ## Acquisizione e rilevamento bordi

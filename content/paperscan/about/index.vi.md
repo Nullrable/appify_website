@@ -6,8 +6,6 @@ lang: vi
 slug: index
 ---
 
-# Giới thiệu Paper Scan
-
 Paper Scan là máy quét tài liệu được xây cho iPhone và iPad. Nó chụp trọn một tờ A4 từ khoảng cách thoải mái, chỉnh phối cảnh tự động, cho phép bạn tinh chỉnh bằng sáu bộ lọc GPU, và xuất các PDF nhiều trang có văn bản có thể tìm kiếm - tất cả không gửi đi một byte nào đến máy chủ trừ khi bạn bật đồng bộ đám mây.
 
 ## Chụp và nhận diện cạnh

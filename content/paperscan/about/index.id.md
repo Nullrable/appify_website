@@ -6,8 +6,6 @@ lang: id
 slug: index
 ---
 
-# Tentang Paper Scan
-
 Paper Scan adalah pemindai dokumen yang dibuat untuk iPhone dan iPad. Ia dapat menangkap satu halaman A4 utuh dari jarak yang nyaman, meluruskan perspektif secara otomatis, memungkinkan Anda menghaluskan hasilnya dengan enam filter GPU, dan mengekspor PDF multi-halaman dengan teks yang dapat dicari - semuanya tanpa mengirim satu byte pun ke server kecuali Anda mengaktifkan sinkronisasi cloud.
 
 ## Pengambilan dan deteksi tepi
