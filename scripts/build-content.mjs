@@ -17,7 +17,16 @@ function parseFrontMatter(raw) {
     const idx = line.indexOf(':');
     if (idx === -1) continue;
     const key = line.slice(0, idx).trim();
-    const value = line.slice(idx + 1).trim();
+    let value = line.slice(idx + 1).trim();
+    // Strip a single layer of surrounding double or single quotes so authors
+    // can wrap titles/descriptions that contain colons or leading whitespace.
+    if (
+      value.length >= 2 &&
+      ((value.startsWith('"') && value.endsWith('"')) ||
+        (value.startsWith("'") && value.endsWith("'")))
+    ) {
+      value = value.slice(1, -1);
+    }
     if (key) data[key] = value;
   }
   return { data, body };

@@ -14,6 +14,8 @@ export interface Feature {
   icon: string;
   title: Record<string, string>;
   description: Record<string, string>;
+  /** Optional slug for the detail page. When set, the card becomes a link. */
+  slug?: string;
 }
 
 export interface FAQ {

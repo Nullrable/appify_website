@@ -111,7 +111,14 @@
       "Bash(do)",
       "Bash(echo \"=== $f ===\")",
       "Read(//Users/lusudong/Documents/fronted-work/appify_website/**)",
-      "Bash(find /Users/lusudong/Documents/fronted-work/paperscan_website/src/content/blog -name *.md -o -name *.mdx)"
+      "Bash(find /Users/lusudong/Documents/fronted-work/paperscan_website/src/content/blog -name *.md -o -name *.mdx)",
+      "Bash(cat /Users/lusudong/Documents/fronted-work/paperscan_website/src/pages/features/[feature].astro)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\(''''/Users/lusudong/Documents/fronted-work/paperscan_website/src/i18n/en.json''''\\)\\); print\\(''''Keys:'''', [k for k in d[''''features''''].keys\\(\\)]\\)\")",
+      "Bash(python3:*)",
+      "Bash(grep -oE href=\"\"/en/paperscan/features/[^\"\"]*\"\" /Users/lusudong/Documents/fronted-work/appify_website/dist/en/paperscan/features/index.html)",
+      "Bash(grep -c \"/features/\" /Users/lusudong/Documents/fronted-work/appify_website/dist/assets/index-*.js)",
+      "Bash(grep -oE '/en/paperscan/features/[a-z-]+/' /Users/lusudong/Documents/fronted-work/appify_website/dist/assets/index-*.js)",
+      "Bash(grep -oE 'features/[^\"\"\"\"]*' /Users/lusudong/Documents/fronted-work/appify_website/dist/assets/index-*.js)"
     ]
   }
 }

@@ -25,7 +25,7 @@ const MARKERS = {
 // (legal text - terms and privacy). For these, the canonical URL collapses to
 // the English path and hreflang narrows to `en` + `x-default`, so Google sees
 // one canonical page instead of 15 near-duplicates.
-const SECTIONS = ['about', 'blog', 'terms', 'privacy'];
+const SECTIONS = ['about', 'features', 'blog', 'terms', 'privacy'];
 const LEGAL_SECTIONS = new Set(['terms', 'privacy']);
 
 function escapeHtml(value) {
@@ -431,13 +431,16 @@ function buildSectionContent({ app, lang, section, labels, article, externalUrl,
     return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(article.title)}</h1>${article.date ? `<p class="meta">Last updated: ${escapeHtml(article.date)}</p>` : ''}</header><main>${article.html}</main></section>`;
   }
 
-  // Blog post-list view: emit one card per post so the index page is
-  // crawlable before client-side JS hydrates.
+  // Multi-post list view (blog, features): emit one card per post so the
+  // index page is crawlable before client-side JS hydrates.
   if (Array.isArray(posts) && posts.length > 0) {
+    const desc = section === 'features'
+      ? (labels.featuresDesc ?? sectionName)
+      : (labels.blogDesc ?? sectionName);
     const items = posts.map((p) => (
-      `<li><a href="/${lang}/${app.id}/blog/${encodeURIComponent(p.slug)}/"><strong>${escapeHtml(p.title)}</strong></a><p>${escapeHtml(p.description || '')}</p>${p.date ? `<p class="meta">${escapeHtml(p.date)}</p>` : ''}</li>`
+      `<li><a href="/${lang}/${app.id}/${encodeURIComponent(section)}/${encodeURIComponent(p.slug)}/"><strong>${escapeHtml(p.title)}</strong></a><p>${escapeHtml(p.description || '')}</p>${p.date ? `<p class="meta">${escapeHtml(p.date)}</p>` : ''}</li>`
     )).join('');
-    return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)} - ${escapeHtml(appName)}</h1><p>${escapeHtml(labels.blogDesc ?? sectionName)}</p></header><main><ul class="post-list">${items}</ul></main></section>`;
+    return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)} - ${escapeHtml(appName)}</h1><p>${escapeHtml(desc)}</p></header><main><ul class="post-list">${items}</ul></main></section>`;
   }
 
   // External legal page: emit a redirect card so crawlers see a clear pointer
@@ -637,10 +640,11 @@ async function main() {
         const isExternalLegal = externalUrl !== undefined;
 
         const hit = !isExternalLegal ? lookupArticle(app.id, sectionId, lang) : null;
-        // Blog section can render a post-list view when multiple posts exist
-        // even without an `index.{lang}.md` landing file.
-        const sectionPosts = !isExternalLegal && sectionId === 'blog'
-          ? (typeof listContentSlugs === 'function' ? listContentSlugs(app.id, 'blog', lang) : [])
+        // Blog and Features sections render a post-list view when multiple posts
+        // exist, even without an `index.{lang}.md` landing file.
+        const isMultiSection = sectionId === 'blog' || sectionId === 'features';
+        const sectionPosts = !isExternalLegal && isMultiSection
+          ? (typeof listContentSlugs === 'function' ? listContentSlugs(app.id, sectionId, lang) : [])
           : [];
         const hasMultiPosts = sectionPosts.length > 0;
         const hasContent = hit !== null || hasMultiPosts;
@@ -734,61 +738,63 @@ async function main() {
         }
       }
 
-      // Blog post routes: one index.html per (lang, slug). Only emit when the
-      // post actually exists for the requested language; the index page above
-      // already shows the list view when multiple posts exist.
+      // Multi-post sections (blog, features): one index.html per (lang, slug).
+      // Only emit when the post actually exists for the requested language; the
+      // index page above already shows the list view when multiple posts exist.
       if (typeof listContentSlugs === 'function') {
-        const posts = listContentSlugs(app.id, 'blog', lang);
-        for (const post of posts) {
-          const postCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/blog/${encodeURIComponent(post.slug)}/`;
-          const postTitle = `${post.title} - ${appName}`;
-          const postDescription = post.description || `${post.title} - ${appName}`;
-          const postJsonLd = [
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BlogPosting',
-              headline: post.title,
-              description: post.description,
-              url: postCanonical,
-              inLanguage: lang,
-              datePublished: post.date,
-              dateModified: post.date,
-              isPartOf: { '@type': 'WebSite', name: 'Appify', url: siteOrigin },
-              about: { '@type': 'SoftwareApplication', name: appName, url: `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/` },
-            },
-          ];
-          const postHtml = renderHtmlForRoute(templateHtml, {
-            siteOrigin,
-            hreflangConfig,
-            langCodes,
-            lang,
-            appId: app.id,
-            section: 'blog',
-            title: postTitle,
-            description: postDescription,
-            keywords: appKeywords,
-            canonicalUrl: postCanonical,
-            ogImage,
-            jsonLdScripts: postJsonLd,
-            isRtl: lang === 'ar',
-            appContent: buildSectionContent({
-              app,
+        for (const sectionId of ['blog', 'features']) {
+          const posts = listContentSlugs(app.id, sectionId, lang);
+          for (const post of posts) {
+            const postCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(sectionId)}/${encodeURIComponent(post.slug)}/`;
+            const postTitle = `${post.title} - ${appName}`;
+            const postDescription = post.description || `${post.title} - ${appName}`;
+            const postJsonLd = [
+              {
+                '@context': 'https://schema.org',
+                '@type': 'Article',
+                headline: post.title,
+                description: post.description,
+                url: postCanonical,
+                inLanguage: lang,
+                datePublished: post.date,
+                dateModified: post.date,
+                isPartOf: { '@type': 'WebSite', name: 'Appify', url: siteOrigin },
+                about: { '@type': 'SoftwareApplication', name: appName, url: `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/` },
+              },
+            ];
+            const postHtml = renderHtmlForRoute(templateHtml, {
+              siteOrigin,
+              hreflangConfig,
+              langCodes,
               lang,
-              section: 'blog',
-              labels,
-              article: getContent(app.id, 'blog', lang, post.slug),
-              externalUrl: undefined,
-            }),
-          });
-          const postOut = path.join(DIST_DIR, lang, app.id, 'blog', post.slug, 'index.html');
-          await fs.mkdir(path.dirname(postOut), { recursive: true });
-          await fs.writeFile(postOut, postHtml, 'utf8');
+              appId: app.id,
+              section: sectionId,
+              title: postTitle,
+              description: postDescription,
+              keywords: appKeywords,
+              canonicalUrl: postCanonical,
+              ogImage,
+              jsonLdScripts: postJsonLd,
+              isRtl: lang === 'ar',
+              appContent: buildSectionContent({
+                app,
+                lang,
+                section: sectionId,
+                labels,
+                article: getContent(app.id, sectionId, lang, post.slug),
+                externalUrl: undefined,
+              }),
+            });
+            const postOut = path.join(DIST_DIR, lang, app.id, sectionId, post.slug, 'index.html');
+            await fs.mkdir(path.dirname(postOut), { recursive: true });
+            await fs.writeFile(postOut, postHtml, 'utf8');
 
-          sectionUrls.push({
-            appId: app.id,
-            section: `blog/${post.slug}`,
-            lang,
-          });
+            sectionUrls.push({
+              appId: app.id,
+              section: `${sectionId}/${post.slug}`,
+              lang,
+            });
+          }
         }
       }
     }

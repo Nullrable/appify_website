@@ -5,6 +5,7 @@ export const paperscan: AppPageData = {
   features: [
     {
       icon: "camera",
+      slug: "scanning",
       title: {
         en: "Ultra-wide capture",
         zh: "超广角取景",
@@ -43,6 +44,7 @@ export const paperscan: AppPageData = {
     },
     {
       icon: "sparkles",
+      slug: "filters",
       title: {
         en: "Six GPU filters",
         zh: "六种 GPU 滤镜",
@@ -81,6 +83,7 @@ export const paperscan: AppPageData = {
     },
     {
       icon: "folder",
+      slug: "documents",
       title: {
         en: "Documents that stay organised",
         zh: "自动保持整齐的文档库",
@@ -119,6 +122,7 @@ export const paperscan: AppPageData = {
     },
     {
       icon: "text",
+      slug: "ocr",
       title: {
         en: "On-device OCR",
         zh: "本地 OCR",
@@ -157,6 +161,7 @@ export const paperscan: AppPageData = {
     },
     {
       icon: "document",
+      slug: "pdf-export",
       title: {
         en: "Multi-page PDF export",
         zh: "多页 PDF 导出",
@@ -195,6 +200,7 @@ export const paperscan: AppPageData = {
     },
     {
       icon: "cloud",
+      slug: "cloud-sync",
       title: {
         en: "Conflict-free cloud sync",
         zh: "无冲突云同步",
@@ -233,6 +239,7 @@ export const paperscan: AppPageData = {
     },
     {
       icon: "star",
+      slug: "pro",
       title: {
         en: "Paper Scan Pro",
         zh: "Paper Scan Pro",

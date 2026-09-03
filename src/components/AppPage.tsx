@@ -38,7 +38,7 @@ export default function AppPage({ app, pageData, lang }: AppPageProps) {
   return (
     <div className="min-h-screen bg-bg">
       <AppHero app={app} lang={lang} tagline={tagline} />
-      <AppFeatures features={pageData.features} lang={lang} />
+      <AppFeatures features={pageData.features} lang={lang} appId={app.id} />
       <AppScreenshots screenshots={pageData.screenshots} lang={lang} />
       <AppFAQ faqs={pageData.faqs} lang={lang} />
       <AppLearnMore app={app} lang={lang} />

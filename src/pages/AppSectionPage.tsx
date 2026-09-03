@@ -6,6 +6,8 @@ import ExternalLegalRedirect from "../components/ExternalLegalRedirect";
 import LegalContent from "../components/LegalContent";
 import BlogContent from "../components/BlogContent";
 import BlogList from "../components/BlogList";
+import FeatureContent from "../components/FeatureContent";
+import FeatureList from "../components/FeatureList";
 import SEO from "../components/SEO";
 import { getContent, hasMultiContent } from "../generated/content";
 
@@ -58,17 +60,17 @@ export default function AppSectionPage() {
     );
   }
 
-  // For blog section with a slug, render the individual post.
-  // For blog section without a slug and multiple posts, render the list.
-  const isBlog = section === "blog";
-  const activeSlug = isBlog ? slug : undefined;
+  // Sections that support multiple posts (features, blog) resolve slug-aware
+  // content; legal sections are slug-less (single page per language).
+  const isMulti = section === "features" || section === "blog";
+  const activeSlug = isMulti ? slug : undefined;
 
   // Terms and Privacy can be authored in English only and reused across all
   // languages - the page for /:lang/:appId/terms/ shows the English body even
   // when :lang is not "en".
   const legalSections: Array<"terms" | "privacy"> = ["terms", "privacy"];
   const isLegal = legalSections.includes(section as "terms" | "privacy");
-  const article = isLegal || isBlog
+  const article = isLegal || isMulti
     ? getContent(appId, section, lang, activeSlug ?? "index")
     : undefined;
 
@@ -93,7 +95,23 @@ export default function AppSectionPage() {
     );
   }
 
-  if (article && isBlog) {
+  if (article && section === "features") {
+    return (
+      <>
+        <SEO
+          title={`${article.title} - Appify`}
+          description={article.description}
+          lang={lang}
+          appId={appId}
+          appName={appName}
+          appStoreUrl={app.appStoreUrl}
+        />
+        <FeatureContent app={app} lang={lang} article={article} />
+      </>
+    );
+  }
+
+  if (article && section === "blog") {
     return (
       <>
         <SEO
@@ -109,19 +127,27 @@ export default function AppSectionPage() {
     );
   }
 
-  // Blog index: list all posts when individual posts exist.
-  if (isBlog && !activeSlug && hasMultiContent(appId, section, lang)) {
+  // Multi-content index: list all posts when individual posts exist.
+  if (isMulti && !activeSlug && hasMultiContent(appId, section, lang)) {
+    const seoTitle = section === "features"
+      ? `${t.features} - ${appName} - Appify`
+      : `${t.blog} - ${appName} - Appify`;
+    const seoDesc = section === "features" ? t.featuresDesc : t.blogDesc;
     return (
       <>
         <SEO
-          title={`${t.blog} - ${appName} - Appify`}
-          description={t.blogDesc}
+          title={seoTitle}
+          description={seoDesc}
           lang={lang}
           appId={appId}
           appName={appName}
           appStoreUrl={app.appStoreUrl}
         />
-        <BlogList app={app} lang={lang} />
+        {section === "features" ? (
+          <FeatureList app={app} lang={lang} />
+        ) : (
+          <BlogList app={app} lang={lang} />
+        )}
       </>
     );
   }

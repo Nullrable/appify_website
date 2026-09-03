@@ -1,4 +1,10 @@
-export const SECTION_IDS = ["about", "blog", "terms", "privacy"] as const;
+export const SECTION_IDS = [
+  "about",
+  "features",
+  "blog",
+  "terms",
+  "privacy",
+] as const;
 
 export type SectionId = (typeof SECTION_IDS)[number];
 
@@ -10,6 +16,8 @@ export interface SectionLabels {
   downloadQRDesc: string;
   about: string;
   aboutDesc: string;
+  features: string;
+  featuresDesc: string;
   blog: string;
   blogDesc: string;
   terms: string;
@@ -30,6 +38,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Scan to install on your iPhone",
     about: "Product Guide",
     aboutDesc: "Features explained in detail",
+    features: "Features",
+    featuresDesc: "What you can do with this app",
     blog: "Blog",
     blogDesc: "Tips, guides and updates",
     terms: "Terms of Service",
@@ -48,6 +58,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "扫码安装到你的 iPhone",
     about: "产品介绍",
     aboutDesc: "功能详解",
+    features: "功能",
+    featuresDesc: "这个应用能做什么",
     blog: "博客",
     blogDesc: "技巧、指南与更新",
     terms: "服务条款",
@@ -66,6 +78,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "掃碼安裝到你的 iPhone",
     about: "產品介紹",
     aboutDesc: "功能詳解",
+    features: "功能",
+    featuresDesc: "這個應用能做什麼",
     blog: "部落格",
     blogDesc: "技巧、指南與更新",
     terms: "服務條款",
@@ -84,6 +98,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "スキャンして iPhone にインストール",
     about: "製品ガイド",
     aboutDesc: "機能の詳しい解説",
+    features: "機能",
+    featuresDesc: "このアプリでできること",
     blog: "ブログ",
     blogDesc: "ヒント、ガイド、更新情報",
     terms: "利用規約",
@@ -102,6 +118,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "스캔하여 iPhone에 설치",
     about: "제품 소개",
     aboutDesc: "기능 상세 설명",
+    features: "기능",
+    featuresDesc: "이 앱으로 할 수 있는 일",
     blog: "블로그",
     blogDesc: "팁, 가이드 및 업데이트",
     terms: "서비스 약관",
@@ -120,6 +138,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Quét để cài đặt trên iPhone của bạn",
     about: "Giới thiệu sản phẩm",
     aboutDesc: "Giải thích chi tiết các tính năng",
+    features: "Tính năng",
+    featuresDesc: "Bạn có thể làm gì với ứng dụng này",
     blog: "Blog",
     blogDesc: "Mẹo, hướng dẫn và cập nhật",
     terms: "Điều khoản dịch vụ",
@@ -127,7 +147,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     privacy: "Chính sách bảo mật",
     privacyDesc: "Cách dữ liệu của bạn được xử lý",
     comingSoon: "Sắp ra mắt",
-    comingSoonDesc: "Chúng tôi đang chuẩn bị nội dung này. Vui lòng quay lại sau.",
+    comingSoonDesc:
+      "Chúng tôi đang chuẩn bị nội dung này. Vui lòng quay lại sau.",
     backToApp: "Trở lại trang ứng dụng",
   },
   id: {
@@ -138,6 +159,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Pindai untuk memasang di iPhone Anda",
     about: "Panduan Produk",
     aboutDesc: "Penjelasan fitur secara rinci",
+    features: "Fitur",
+    featuresDesc: "Apa yang dapat Anda lakukan dengan aplikasi ini",
     blog: "Blog",
     blogDesc: "Tips, panduan, dan pembaruan",
     terms: "Ketentuan Layanan",
@@ -145,7 +168,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     privacy: "Kebijakan Privasi",
     privacyDesc: "Bagaimana data Anda dikelola",
     comingSoon: "Segera hadir",
-    comingSoonDesc: "Kami sedang menyiapkan konten ini. Silakan periksa kembali nanti.",
+    comingSoonDesc:
+      "Kami sedang menyiapkan konten ini. Silakan periksa kembali nanti.",
     backToApp: "Kembali ke aplikasi",
   },
   ar: {
@@ -156,6 +180,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "امسح الرمز للتثبيت على iPhone",
     about: "دليل المنتج",
     aboutDesc: "شرح مفصل للميزات",
+    features: "الميزات",
+    featuresDesc: "ما يمكنك فعله بهذا التطبيق",
     blog: "المدونة",
     blogDesc: "نصائح وأدلة وتحديثات",
     terms: "شروط الخدمة",
@@ -174,6 +200,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Scannez pour installer sur votre iPhone",
     about: "Guide du produit",
     aboutDesc: "Fonctionnalités expliquées en détail",
+    features: "Fonctionnalités",
+    featuresDesc: "Ce que vous pouvez faire avec cette application",
     blog: "Blog",
     blogDesc: "Astuces, guides et mises à jour",
     terms: "Conditions d'utilisation",
@@ -192,6 +220,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Scannen, um auf dem iPhone zu installieren",
     about: "Produkthandbuch",
     aboutDesc: "Funktionen im Detail erklärt",
+    features: "Funktionen",
+    featuresDesc: "Was Sie mit dieser App tun können",
     blog: "Blog",
     blogDesc: "Tipps, Anleitungen und Updates",
     terms: "Nutzungsbedingungen",
@@ -199,7 +229,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     privacy: "Datenschutzerklärung",
     privacyDesc: "Wie Ihre Daten verarbeitet werden",
     comingSoon: "Demnächst verfügbar",
-    comingSoonDesc: "Wir bereiten diese Inhalte vor. Schauen Sie bald wieder vorbei.",
+    comingSoonDesc:
+      "Wir bereiten diese Inhalte vor. Schauen Sie bald wieder vorbei.",
     backToApp: "Zurück zur App",
   },
   es: {
@@ -210,6 +241,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Escanea para instalar en tu iPhone",
     about: "Guía del producto",
     aboutDesc: "Funciones explicadas en detalle",
+    features: "Funciones",
+    featuresDesc: "Lo que puedes hacer con esta aplicación",
     blog: "Blog",
     blogDesc: "Consejos, guías y novedades",
     terms: "Términos del servicio",
@@ -228,6 +261,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Escaneie para instalar no seu iPhone",
     about: "Guia do produto",
     aboutDesc: "Recursos explicados em detalhes",
+    features: "Recursos",
+    featuresDesc: "O que você pode fazer com este aplicativo",
     blog: "Blog",
     blogDesc: "Dicas, guias e novidades",
     terms: "Termos de serviço",
@@ -246,6 +281,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Scansiona per installare sul tuo iPhone",
     about: "Guida al prodotto",
     aboutDesc: "Funzionalità spiegate in dettaglio",
+    features: "Funzionalità",
+    featuresDesc: "Cosa puoi fare con questa app",
     blog: "Blog",
     blogDesc: "Consigli, guide e aggiornamenti",
     terms: "Termini di servizio",
@@ -264,6 +301,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "Отсканируйте, чтобы установить на iPhone",
     about: "Описание продукта",
     aboutDesc: "Подробное описание функций",
+    features: "Функции",
+    featuresDesc: "Что можно делать с этим приложением",
     blog: "Блог",
     blogDesc: "Советы, руководства и обновления",
     terms: "Условия использования",
@@ -282,6 +321,8 @@ export const sectionLabels: Record<string, SectionLabels> = {
     downloadQRDesc: "สแกนเพื่อติดตั้งบน iPhone ของคุณ",
     about: "แนะนำผลิตภัณฑ์",
     aboutDesc: "อธิบายฟีเจอร์อย่างละเอียด",
+    features: "ฟีเจอร์",
+    featuresDesc: "สิ่งที่คุณทำได้กับแอปนี้",
     blog: "บล็อก",
     blogDesc: "เคล็ดลับ คู่มือ และอัปเดต",
     terms: "ข้อกำหนดการให้บริการ",

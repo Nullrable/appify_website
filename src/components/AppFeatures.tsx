@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { Feature } from "../data/appPages/types";
 
 const sectionTitles: Record<string, string> = {
@@ -465,9 +466,14 @@ const iconMap: Record<string, React.ReactNode> = {
 interface AppFeaturesProps {
   features: Feature[];
   lang: string;
+  appId: string;
 }
 
-export default function AppFeatures({ features, lang }: AppFeaturesProps) {
+export default function AppFeatures({
+  features,
+  lang,
+  appId,
+}: AppFeaturesProps) {
   const getLocalizedText = (
     record: Record<string, string>,
     fallback = "en",
@@ -485,22 +491,53 @@ export default function AppFeatures({ features, lang }: AppFeaturesProps) {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-card rounded-2xl p-6 border border-white/5 hover:border-primary/30 transition-colors"
-            >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
-                {iconMap[feature.icon] || iconMap.file}
+          {features.map((feature, index) => {
+            const cardInner = (
+              <>
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                  {iconMap[feature.icon] || iconMap.file}
+                </div>
+                <h3 className="font-heading font-semibold text-xl text-white mb-2">
+                  {getLocalizedText(feature.title)}
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  {getLocalizedText(feature.description)}
+                </p>
+                {feature.slug && (
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm text-primary group-hover:gap-2 transition-all">
+                    Learn more
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      aria-hidden="true"
+                    >
+                      <polyline points="9,18 15,12 9,6" />
+                    </svg>
+                  </span>
+                )}
+              </>
+            );
+            const cardClasses = feature.slug
+              ? "group bg-card rounded-2xl p-6 border border-white/5 hover:border-primary/30 hover:bg-white/[0.02] transition-all block"
+              : "bg-card rounded-2xl p-6 border border-white/5 hover:border-primary/30 transition-colors";
+            return feature.slug ? (
+              <Link
+                key={index}
+                to={`/${lang}/${appId}/features/${feature.slug}/`}
+                className={cardClasses}
+              >
+                {cardInner}
+              </Link>
+            ) : (
+              <div key={index} className={cardClasses}>
+                {cardInner}
               </div>
-              <h3 className="font-heading font-semibold text-xl text-white mb-2">
-                {getLocalizedText(feature.title)}
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                {getLocalizedText(feature.description)}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
