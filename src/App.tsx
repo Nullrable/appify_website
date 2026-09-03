@@ -10,6 +10,10 @@ export default function App() {
         <Route path="/" element={<Navigate to="/en/" replace />} />
         <Route path="/:lang/" element={<Home />} />
         <Route path="/:lang/:appId/" element={<AppPage />} />
+        <Route
+          path="/:lang/:appId/:section/:slug/"
+          element={<AppSectionPage />}
+        />
         <Route path="/:lang/:appId/:section/" element={<AppSectionPage />} />
       </Routes>
     </BrowserRouter>

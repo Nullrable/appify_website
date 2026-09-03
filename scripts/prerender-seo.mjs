@@ -82,6 +82,7 @@ function getAppCategory(appId) {
     'image-converter': 'UtilityApplication',
     'cleanphoto': 'UtilityApplication',
     'translate-offline-translator': 'UtilityApplication',
+    'paperscan': 'UtilityApplication',
   };
   return categories[appId] || 'ProductivityApplication';
 }
@@ -146,6 +147,8 @@ async function loadSeoData() {
     sectionLabels: sectionMod.sectionLabels ?? {},
     contentEntries: contentMod.contentEntries ?? [],
     getContent: contentMod.getContent,
+    listContentSlugs: contentMod.listContentSlugs,
+    hasMultiContent: contentMod.hasMultiContent,
     appPages,
   };
 }
@@ -254,7 +257,7 @@ function renderHtmlForRoute(templateHtml, route) {
     `    <meta name="description" content="${escapeHtml(description)}" />`,
     `    <meta name="keywords" content="${escapeHtml(keywords)}" />`,
     route.noIndex
-      ? '    <meta name="robots" content="noindex,follow" />'
+      ? `    <meta name="robots" content="noindex,${route.noFollow ? 'nofollow' : 'follow'}" />`
       : '    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />',
     `    <link rel="canonical" href="${escapeHtml(canonicalUrl)}" />`,
     '',
@@ -418,7 +421,7 @@ function buildHomeContent({ apps, lang }) {
   return `<section class="app-content"><header><h1>Appify - All-in-one App Platform</h1><p>Powerful Apps to boost your productivity.</p></header><main><section class="apps"><h2>Our Apps</h2><ul>${appListItems}</ul></section></main></section>`;
 }
 
-function buildSectionContent({ app, lang, section, labels, article }) {
+function buildSectionContent({ app, lang, section, labels, article, externalUrl, posts }) {
   const appName = app.name?.[lang] ?? app.name?.en ?? app.id;
   const sectionName = labels[section] ?? section;
 
@@ -426,6 +429,28 @@ function buildSectionContent({ app, lang, section, labels, article }) {
   // pre-rendered page so search engines can index it.
   if (article) {
     return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(article.title)}</h1>${article.date ? `<p class="meta">Last updated: ${escapeHtml(article.date)}</p>` : ''}</header><main>${article.html}</main></section>`;
+  }
+
+  // Blog post-list view: emit one card per post so the index page is
+  // crawlable before client-side JS hydrates.
+  if (Array.isArray(posts) && posts.length > 0) {
+    const items = posts.map((p) => (
+      `<li><a href="/${lang}/${app.id}/blog/${encodeURIComponent(p.slug)}/"><strong>${escapeHtml(p.title)}</strong></a><p>${escapeHtml(p.description || '')}</p>${p.date ? `<p class="meta">${escapeHtml(p.date)}</p>` : ''}</li>`
+    )).join('');
+    return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)} - ${escapeHtml(appName)}</h1><p>${escapeHtml(labels.blogDesc ?? sectionName)}</p></header><main><ul class="post-list">${items}</ul></main></section>`;
+  }
+
+  // External legal page: emit a redirect card so crawlers see a clear pointer
+  // to the authoritative external URL, and the human reader gets a clickable
+  // link with the destination host visible.
+  if (externalUrl) {
+    let host = externalUrl;
+    try {
+      host = new URL(externalUrl).host;
+    } catch {
+      // keep raw string
+    }
+    return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)}</h1><p>${escapeHtml(appName)}</p></header><main><p>${escapeHtml(sectionName)} for ${escapeHtml(appName)} is published on the official ${escapeHtml(host)} site.</p><p><a href="${escapeHtml(externalUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(externalUrl)}</a></p></main></section>`;
   }
 
   return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)}</h1><p>${escapeHtml(appName)}</p></header><main><p>${escapeHtml(labels.comingSoonDesc ?? '')}</p></main></section>`;
@@ -445,6 +470,8 @@ async function main() {
     appPages,
     contentEntries,
     getContent,
+    listContentSlugs,
+    hasMultiContent,
   } = await loadSeoData();
 
   // Indexability is content-driven: for each (appId, section) we emit a real
@@ -600,14 +627,32 @@ async function main() {
       const labels = sectionLabels[lang] ?? sectionLabels.en ?? {};
       for (const sectionId of SECTIONS) {
         const sectionName = labels[sectionId] ?? sectionId;
-        const hit = lookupArticle(app.id, sectionId, lang);
         const isLegal = LEGAL_SECTIONS.has(sectionId);
-        const hasContent = hit !== null;
+        // External legal pages (terms/privacy) live on the product's own
+        // domain. The in-app route still needs a real index.html (Vercel has
+        // no SPA rewrite), but it must never rank or appear in the sitemap.
+        // Canonical points at the external URL so search engines consolidate
+        // signals there.
+        const externalUrl = isLegal ? app.externalLinks?.[sectionId] : undefined;
+        const isExternalLegal = externalUrl !== undefined;
+
+        const hit = !isExternalLegal ? lookupArticle(app.id, sectionId, lang) : null;
+        // Blog section can render a post-list view when multiple posts exist
+        // even without an `index.{lang}.md` landing file.
+        const sectionPosts = !isExternalLegal && sectionId === 'blog'
+          ? (typeof listContentSlugs === 'function' ? listContentSlugs(app.id, 'blog', lang) : [])
+          : [];
+        const hasMultiPosts = sectionPosts.length > 0;
+        const hasContent = hit !== null || hasMultiPosts;
 
         // Canonical: localized URL for multi-lang content, English URL for
-        // legal-only content (so non-/en/ langs canonicalize to /en/).
-        const canonicalLang = hasContent && isLegal ? 'en' : lang;
-        const sectionCanonical = `${siteOrigin}/${encodeURIComponent(canonicalLang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(sectionId)}/`;
+        // legal-only content (so non-/en/ langs canonicalize to /en/), and
+        // the external URL for pages hosted on another domain (so search
+        // engines consolidate signals at the authoritative source).
+        const canonicalLang = isExternalLegal ? 'en' : (hasContent && isLegal ? 'en' : lang);
+        const sectionCanonical = isExternalLegal
+          ? externalUrl
+          : `${siteOrigin}/${encodeURIComponent(canonicalLang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(sectionId)}/`;
 
         // For content pages, the localized title uses the section label in the
         // viewer's language even if the body is English - this keeps the title
@@ -622,7 +667,9 @@ async function main() {
           : `${sectionName} - ${appName}. ${labels.comingSoonDesc ?? appDesc}`;
 
         // WebPage JSON-LD for content-bearing sections. Helps Google understand
-        // the page as a long-form document rather than an app page.
+        // the page as a long-form document rather than an app page. Skipped for
+        // external legal pages because the canonical points elsewhere and we
+        // don't want this site to claim structured-data ownership of those URLs.
         const sectionJsonLd = hasContent && hit
           ? [
               {
@@ -654,13 +701,16 @@ async function main() {
           jsonLdScripts: sectionJsonLd,
           isRtl: lang === 'ar',
           noIndex: !hasContent,
-          narrowHreflangToEn: hasContent && isLegal,
+          noFollow: isExternalLegal,
+          narrowHreflangToEn: (hasContent && isLegal) || isExternalLegal,
           appContent: buildSectionContent({
             app,
             lang,
             section: sectionId,
             labels,
             article: hasContent && hit ? hit.article : null,
+            externalUrl: isExternalLegal ? externalUrl : undefined,
+            posts: sectionPosts,
           }),
         });
 
@@ -669,15 +719,76 @@ async function main() {
         await fs.writeFile(sectionOut, sectionHtml, 'utf8');
 
         // Sitemap inclusion rules:
-// - No content -> never include.
-// - Legal (terms/privacy) with English-only content -> include /en/... once.
-// - Other content -> include every lang URL where the route renders.
-        if (hasContent && isLegal) {
+        // - External legal pages -> never include (canonical lives elsewhere).
+        // - No content -> never include.
+        // - Legal (terms/privacy) with English-only content -> include /en/... once.
+        // - Other content -> include every lang URL where the route renders.
+        if (isExternalLegal) {
+          // skip
+        } else if (hasContent && isLegal) {
           if (!sectionUrls.some((s) => s.appId === app.id && s.section === sectionId)) {
             sectionUrls.push({ appId: app.id, section: sectionId, lang: null });
           }
         } else if (hasContent) {
           sectionUrls.push({ appId: app.id, section: sectionId, lang });
+        }
+      }
+
+      // Blog post routes: one index.html per (lang, slug). Only emit when the
+      // post actually exists for the requested language; the index page above
+      // already shows the list view when multiple posts exist.
+      if (typeof listContentSlugs === 'function') {
+        const posts = listContentSlugs(app.id, 'blog', lang);
+        for (const post of posts) {
+          const postCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/blog/${encodeURIComponent(post.slug)}/`;
+          const postTitle = `${post.title} - ${appName}`;
+          const postDescription = post.description || `${post.title} - ${appName}`;
+          const postJsonLd = [
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BlogPosting',
+              headline: post.title,
+              description: post.description,
+              url: postCanonical,
+              inLanguage: lang,
+              datePublished: post.date,
+              dateModified: post.date,
+              isPartOf: { '@type': 'WebSite', name: 'Appify', url: siteOrigin },
+              about: { '@type': 'SoftwareApplication', name: appName, url: `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/` },
+            },
+          ];
+          const postHtml = renderHtmlForRoute(templateHtml, {
+            siteOrigin,
+            hreflangConfig,
+            langCodes,
+            lang,
+            appId: app.id,
+            section: 'blog',
+            title: postTitle,
+            description: postDescription,
+            keywords: appKeywords,
+            canonicalUrl: postCanonical,
+            ogImage,
+            jsonLdScripts: postJsonLd,
+            isRtl: lang === 'ar',
+            appContent: buildSectionContent({
+              app,
+              lang,
+              section: 'blog',
+              labels,
+              article: getContent(app.id, 'blog', lang, post.slug),
+              externalUrl: undefined,
+            }),
+          });
+          const postOut = path.join(DIST_DIR, lang, app.id, 'blog', post.slug, 'index.html');
+          await fs.mkdir(path.dirname(postOut), { recursive: true });
+          await fs.writeFile(postOut, postHtml, 'utf8');
+
+          sectionUrls.push({
+            appId: app.id,
+            section: `blog/${post.slug}`,
+            lang,
+          });
         }
       }
     }

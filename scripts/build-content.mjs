@@ -138,9 +138,18 @@ ${entryLines}
 ];
 
 export function getContent(appId: string, section: string, lang: string, slug = 'index'): ContentArticle | undefined {
-  return contentEntries.find(
+  const direct = contentEntries.find(
     (e) => e.appId === appId && e.article.section === section && e.article.lang === lang && e.article.slug === slug,
   )?.article;
+  if (direct) return direct;
+  // Fall back to English when a translation is missing, so every locale
+  // still surfaces the full content set instead of an empty section.
+  if (lang !== 'en') {
+    return contentEntries.find(
+      (e) => e.appId === appId && e.article.section === section && e.article.lang === 'en' && e.article.slug === slug,
+    )?.article;
+  }
+  return undefined;
 }
 
 export function hasContent(appId: string, section: string, lang?: string): boolean {
@@ -157,6 +166,63 @@ export function listContentLangs(appId: string, section: string): string[] {
     if (e.appId === appId && e.article.section === section) langs.add(e.article.lang);
   }
   return Array.from(langs);
+}
+
+export interface ContentSummary {
+  slug: string;
+  lang: string;
+  title: string;
+  description: string;
+  date: string;
+}
+
+// List slugs available in a given (appId, section, lang), excluding 'index'.
+// For each slug, prefers the requested locale; falls back to English when a
+// translation is missing so every language still shows the full blog index.
+export function listContentSlugs(appId: string, section: string, lang: string): ContentSummary[] {
+  const bySlug = new Map<string, ContentSummary>();
+  const collect = (locale: string) => {
+    for (const e of contentEntries) {
+      if (
+        e.appId === appId &&
+        e.article.section === section &&
+        e.article.lang === locale &&
+        e.article.slug !== 'index'
+      ) {
+        if (!bySlug.has(e.article.slug)) {
+          bySlug.set(e.article.slug, {
+            slug: e.article.slug,
+            lang: e.article.lang,
+            title: e.article.title,
+            description: e.article.description,
+            date: e.article.date,
+          });
+        }
+      }
+    }
+  };
+  collect(lang);
+  if (lang !== 'en') collect('en');
+  const out = Array.from(bySlug.values());
+  out.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.slug.localeCompare(b.slug)));
+  return out;
+}
+
+// Return true when any non-'index' content exists for (appId, section) in lang
+// or in English when the requested locale has none.
+export function hasMultiContent(appId: string, section: string, lang: string): boolean {
+  const locales = lang === 'en' ? ['en'] : [lang, 'en'];
+  for (const locale of locales) {
+    for (const e of contentEntries) {
+      if (
+        e.appId === appId &&
+        e.article.section === section &&
+        e.article.lang === locale &&
+        e.article.slug !== 'index'
+      ) return true;
+    }
+  }
+  return false;
 }
 `;
   return header;

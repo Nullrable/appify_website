@@ -4,6 +4,12 @@ export interface App {
   description: Record<string, string>;
   appStoreUrl: string;
   iconPath: string;
+  /**
+   * Sections hosted on another domain. When a section id appears here, the
+   * in-project route redirects to the external URL instead of rendering
+   * Markdown content.
+   */
+  externalLinks?: Partial<Record<"terms" | "privacy", string>>;
 }
 
 export const apps: App[] = [
@@ -249,6 +255,50 @@ export const apps: App[] = [
     appStoreUrl:
       "https://apps.apple.com/us/app/translate-offline-translator/id6807403604",
     iconPath: "/icons/translate-offline-translator.png",
+  },
+  {
+    id: "paperscan",
+    name: {
+      en: "Paper Scan",
+      zh: "Paper Scan 文档扫描",
+      "zh-TW": "Paper Scan 文件掃描",
+      ja: "Paper Scan ドキュメントスキャナー",
+      ko: "Paper Scan 문서 스캐너",
+      vi: "Paper Scan - Quét tài liệu",
+      id: "Paper Scan - Pemindai Dokumen",
+      ar: "Paper Scan - ماسح المستندات",
+      fr: "Paper Scan - Scanner de documents",
+      de: "Paper Scan - Dokumentenscanner",
+      es: "Paper Scan - Escáner de documentos",
+      pt: "Paper Scan - Scanner de documentos",
+      it: "Paper Scan - Scanner documenti",
+      ru: "Paper Scan - Сканер документов",
+      th: "Paper Scan - เครื่องสแกนเอกสาร",
+    },
+    description: {
+      en: "Pro document scanner for iOS. Ultra-wide capture, six GPU filters, on-device OCR, multi-page PDF export, and conflict-free Google Drive / iCloud sync. Offline by default.",
+      zh: "iOS 专业文档扫描器。超广角取景、六种 GPU 滤镜、本地 OCR、多页 PDF 导出，以及无冲突的 Google Drive / iCloud 同步。默认完全离线。",
+      "zh-TW":
+        "iOS 專業文件掃描器。超廣角取景、六種 GPU 濾鏡、本地 OCR、多頁 PDF 匯出，以及無衝突的 Google Drive / iCloud 同步。預設完全離線。",
+      ja: "iOS向けプロ仕様のドキュメントスキャナー。超広角キャプチャ、6種のGPUフィルタ、オンデバイスOCR、複数ページPDF書き出し、競合しないGoogle Drive / iCloud同期。既定でオフライン動作。",
+      ko: "iOS용 전문 문서 스캐너. 초광각 촬영, 6가지 GPU 필터, 기기 내 OCR, 다중 페이지 PDF 내보내기, 충돌 없는 Google Drive / iCloud 동기화. 기본적으로 오프라인 동작.",
+      vi: "Máy quét tài liệu chuyên nghiệp cho iOS. Chụp siêu rộng, sáu bộ lọc GPU, OCR trên thiết bị, xuất PDF nhiều trang và đồng bộ Google Drive / iCloud không xung đột. Mặc định hoạt động ngoại tuyến.",
+      id: "Pemindai dokumen profesional untuk iOS. Pengambilan ultra-lebar, enam filter GPU, OCR di perangkat, ekspor PDF multi-halaman, dan sinkronisasi Google Drive / iCloud tanpa konflik. Offline secara default.",
+      ar: "ماسح مستندات احترافي لنظام iOS. تصوير فائق الاتساع، ستة مرشحات GPU، تعرف ضوئي على الحروف داخل الجهاز، تصدير PDF متعدد الصفحات، ومزامنة Google Drive / iCloud دون تعارض. يعمل بدون اتصال افتراضيًا.",
+      fr: "Scanner de documents professionnel pour iOS. Capture ultra grand-angle, six filtres GPU, OCR sur l'appareil, export PDF multipage et synchronisation Google Drive / iCloud sans conflit. Hors ligne par défaut.",
+      de: "Professioneller Dokumentenscanner für iOS. Ultraweitwinkel-Aufnahme, sechs GPU-Filter, geräteseitige OCR, mehrseitiger PDF-Export und konfliktfreie Google Drive / iCloud-Synchronisierung. Standardmäßig offline.",
+      es: "Escáner de documentos profesional para iOS. Captura ultra gran angular, seis filtros GPU, OCR en el dispositivo, exportación de PDF multipágina y sincronización con Google Drive / iCloud sin conflictos. Sin conexión por defecto.",
+      pt: "Scanner de documentos profissional para iOS. Captura ultra-angular, seis filtros GPU, OCR no dispositivo, exportação de PDF com várias páginas e sincronização com Google Drive / iCloud sem conflitos. Offline por padrão.",
+      it: "Scanner documenti professionale per iOS. Acquisizione ultra-grandangolare, sei filtri GPU, OCR sul dispositivo, esportazione PDF multipagina e sincronizzazione Google Drive / iCloud senza conflitti. Offline per impostazione predefinita.",
+      ru: "Профессиональный сканер документов для iOS. Сверхширокоугольная съёмка, шесть GPU-фильтров, OCR на устройстве, экспорт многостраничных PDF и синхронизация с Google Drive / iCloud без конфликтов. По умолчанию работает офлайн.",
+      th: "เครื่องสแกนเอกสารระดับมืออาชีพสำหรับ iOS ถ่ายภาพมุมกว้างพิเศษ ฟิลเตอร์ GPU หกแบบ OCR บนเครื่อง ส่งออก PDF หลายหน้า และซิงค์ Google Drive / iCloud โดยไม่มีข้อขัดแย้ง ทำงานออฟไลน์เป็นค่าเริ่มต้น",
+    },
+    appStoreUrl: "https://apps.apple.com/us/app/paper-scan/id6805063444",
+    iconPath: "/icons/paperscan.png",
+    externalLinks: {
+      terms: "https://paperscan.cloud/legal/terms/",
+      privacy: "https://paperscan.cloud/legal/privacy/",
+    },
   },
 ];
 

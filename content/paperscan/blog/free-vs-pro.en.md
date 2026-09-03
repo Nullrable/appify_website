@@ -1,0 +1,46 @@
+---
+title: Free vs Pro: scope, pricing and subscription mechanics
+description: Free vs Pro: scope, pricing and subscription mechanics
+date: 2026-09-02
+lang: en
+slug: free-vs-pro
+---
+
+## Free vs Pro: scope, pricing and subscription mechanics
+
+Paper Scan is fully usable on the free tier. The free version includes all core features: scanning, filters, OCR with a daily limit, folders and tags, and multi-page PDF export. Pro is a single subscription that adds three specific upgrades for users with higher-volume use cases. Basic functionality is intentionally not gated behind the paid tier.
+
+### What Pro unlocks
+
+**1. Unlimited OCR.** The free tier includes OCR for approximately 30 pages per day, sufficient for everyday receipts, business cards and occasional book chapters. Pro removes the daily limit and adds the ability to run OCR on an entire folder in a single operation. This is the most relevant upgrade for users who scan large volumes of pages for archival or work purposes.
+
+**2. No banner ads.** The free tier displays one banner ad at the top of the Documents list. Pro removes the banner. Users who open the library frequently during the workday benefit most from this change.
+
+**3. Automatic cloud sync.** The free tier does not include cloud sync. Pro adds a one-way mirror to the user's own Google Drive or iCloud: the phone remains the source of truth, and the cloud serves as a backup controlled by the user. Uploads occur in the background as scans are saved. Pro is the only tier with cloud sync capability.
+
+This list is exhaustive. No additional features are exclusive to Pro.
+
+### Who Pro is for
+
+- **Regular scanning of large document sets.** Users who scan hundreds of pages per week for work find the free-tier OCR limit becomes a daily constraint.
+- **Frequent device transitions.** Users who switch devices regularly, or who maintain devices across multiple platforms, benefit from continuous automatic cloud sync.
+- **Heavy daily library use.** Users who open the Documents list dozens of times per day may prefer to remove the banner ad.
+
+### Who Pro is not for
+
+For most users, the free tier is sufficient. Pro is unnecessary if scanning volume is limited to a few pages per week, folder browsing alone is adequate for retrieval, PDF export is occasional rather than routine, or OCR usage is limited and the daily cap does not present a practical constraint.
+
+### Subscription mechanics
+
+Pro is sold through the App Store. Paper Scan does not process payment credentials directly. Subscriptions auto-renew until cancelled. Cancellation is a single action in the device's subscription settings and requires no contact with the development team. Refunds follow the standard policies of the App Store. Regional pricing is determined by App Store tier structures.
+
+### What happens when a subscription ends
+
+- **Local library is preserved.** Existing scans remain on the device. No content is deleted, moved or modified by subscription status.
+- **Cloud copies remain where they were uploaded.** Files previously mirrored to Google Drive or iCloud remain in the user's own cloud storage. Disabling Pro does not retroactively remove files from the user's own storage.
+- **The three upgrades are disabled.** The banner ad returns (for users on the free tier), the daily OCR cap resumes and cloud sync stops. All other app functionality is unchanged.
+- **No grace period or retention policy.** Subscription end is immediate. There are no notifications beyond the standard platform-level subscription reminders.
+
+Resubscribing restores the upgrades with the local library intact.
+
+For new users evaluating Pro: use the free tier for several weeks at typical scanning volume. Note whether the OCR limit is reached, whether the banner ad is intrusive, and whether automatic sync would be useful. The answers to these three questions determine whether Pro adds value.
