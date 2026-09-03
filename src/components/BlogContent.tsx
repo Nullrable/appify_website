@@ -8,9 +8,17 @@ interface BlogContentProps {
   app: App;
   lang: string;
   article: ContentArticle;
+  // Breadcrumb section; defaults to "blog". "about" reuses this component
+  // because it renders the same long-form article layout.
+  section?: "blog" | "features" | "about";
 }
 
-export default function BlogContent({ app, lang, article }: BlogContentProps) {
+export default function BlogContent({
+  app,
+  lang,
+  article,
+  section = "blog",
+}: BlogContentProps) {
   const appName = app.name[lang] || app.name["en"];
   const t = getSectionLabels(lang);
 
@@ -44,10 +52,10 @@ export default function BlogContent({ app, lang, article }: BlogContentProps) {
             </Link>
             <span>/</span>
             <Link
-              to={`/${lang}/${app.id}/blog/`}
+              to={`/${lang}/${app.id}/${section}/`}
               className="hover:text-primary transition-colors"
             >
-              {t.blog}
+              {t[section]}
             </Link>
           </nav>
 

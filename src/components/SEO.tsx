@@ -1,6 +1,18 @@
 import { useEffect } from "react";
 import { hreflangConfig, seoKeywords } from "../data/seo";
 
+// Canonical production origin. Deriving from hreflangConfig (instead of
+// window.location.origin) keeps canonical/hreflang URLs stable on preview
+// deployments and mirrors what the prerender script emits.
+const SITE_ORIGIN = (() => {
+  const enHref = hreflangConfig.find((h) => h.lang === "en")?.href;
+  return enHref ? new URL(enHref).origin : window.location.origin;
+})();
+
+const ALL_SEO_LANGS = hreflangConfig
+  .map(({ lang }) => lang)
+  .filter((lang) => lang !== "x-default");
+
 // Map lang code to Open Graph locale
 function langToOgLocale(lang: string): string {
   const localeMap: Record<string, string> = {
@@ -75,6 +87,15 @@ interface SEOProps {
   appStoreUrl?: string;
   faqs?: Array<{ question: string; answer: string }>;
   noIndex?: boolean;
+  // Canonical override: absolute external URL, or a site path like
+  // "/en/appId/terms/". Used when the page canonicalizes elsewhere (English
+  // fallback content, external legal pages) - must stay in sync with the
+  // prerender script's canonical logic.
+  canonicalUrl?: string;
+  // Languages that natively serve this page. Restricts the hreflang cluster
+  // and og:locale:alternate so alternates never point at fallback pages.
+  // Default: every configured language. Empty array: no hreflang at all.
+  hreflangLangs?: string[];
 }
 
 export default function SEO({
@@ -86,6 +107,8 @@ export default function SEO({
   appStoreUrl,
   faqs,
   noIndex = false,
+  canonicalUrl,
+  hreflangLangs,
 }: SEOProps) {
   useEffect(() => {
     // Set document language attribute for accessibility and SEO
@@ -95,9 +118,14 @@ export default function SEO({
     );
     document.documentElement.dir = isRtl ? "rtl" : "ltr";
 
-    const origin = window.location.origin;
+    const origin = SITE_ORIGIN;
     const pathname = ensureTrailingSlash(window.location.pathname);
-    const canonicalUrl = `${origin}${pathname}`;
+    const clusterLangs = hreflangLangs ?? ALL_SEO_LANGS;
+    const canonicalHref = canonicalUrl
+      ? canonicalUrl.startsWith("http")
+        ? canonicalUrl
+        : `${origin}${ensureTrailingSlash(canonicalUrl)}`
+      : `${origin}${pathname}`;
     let canonical = document.querySelector(
       'link[rel="canonical"]',
     ) as HTMLLinkElement | null;
@@ -106,7 +134,7 @@ export default function SEO({
       canonical.rel = "canonical";
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", canonicalUrl);
+    canonical.setAttribute("href", canonicalHref);
 
     // Set meta keywords (keep short-tail only to avoid keyword stuffing)
     const keywordList = seoKeywords[lang] || seoKeywords["en"];
@@ -134,7 +162,7 @@ export default function SEO({
     setMetaByProperty("og:title", title);
     setMetaByProperty("og:description", description);
     setMetaByProperty("og:type", "website");
-    setMetaByProperty("og:url", canonicalUrl);
+    setMetaByProperty("og:url", canonicalHref);
     setMetaByProperty("og:site_name", "Appify");
     setMetaByProperty("og:image", ogImage);
     setMetaByProperty("og:image:width", "1200");
@@ -142,13 +170,12 @@ export default function SEO({
     setMetaByProperty("og:image:alt", appId ? title : "Appify");
     setMetaByProperty("og:locale", langToOgLocale(lang));
 
-    // Open Graph locale alternates
+    // Open Graph locale alternates (same availability rules as hreflang)
     document
       .querySelectorAll('meta[property="og:locale:alternate"]')
       .forEach((el) => el.remove());
-    hreflangConfig
-      .map(({ lang: l }) => l)
-      .filter((l) => l !== "x-default" && l !== lang)
+    clusterLangs
+      .filter((l) => l !== lang)
       .forEach((altLang) => {
         const meta = document.createElement("meta") as HTMLMetaElement;
         meta.setAttribute("property", "og:locale:alternate");
@@ -161,20 +188,30 @@ export default function SEO({
     setMetaByName("twitter:title", title);
     setMetaByName("twitter:description", description);
     setMetaByName("twitter:image", ogImage);
-    setMetaByName("twitter:url", canonicalUrl);
+    setMetaByName("twitter:url", canonicalHref);
 
-    // Add hreflang tags (remove old ones first)
+    // Add hreflang tags (remove old ones first). The cluster only covers
+    // languages where this page natively exists - alternates pointing at
+    // fallback or missing pages are hreflang errors in Search Console.
+    // x-default points at the English URL and is only emitted when an English
+    // version exists.
     document
       .querySelectorAll('link[rel="alternate"][hreflang]')
       .forEach((el) => el.remove());
-    hreflangConfig.forEach(({ lang: hreflang }) => {
+    clusterLangs.forEach((hreflang) => {
       const link = document.createElement("link") as HTMLLinkElement;
       link.rel = "alternate";
       link.hreflang = hreflang;
-      const targetLang = hreflang === "x-default" ? "en" : hreflang;
-      link.href = `${origin}${buildLocalizedPathname(pathname, targetLang)}`;
+      link.href = `${origin}${buildLocalizedPathname(pathname, hreflang)}`;
       document.head.appendChild(link);
     });
+    if (clusterLangs.includes("en")) {
+      const link = document.createElement("link") as HTMLLinkElement;
+      link.rel = "alternate";
+      link.hreflang = "x-default";
+      link.href = `${origin}${buildLocalizedPathname(pathname, "en")}`;
+      document.head.appendChild(link);
+    }
 
     // Remove previous JSON-LD scripts managed by this component
     document
@@ -198,11 +235,6 @@ export default function SEO({
           "@type": "Organization",
           name: "Appify",
           url: origin,
-        },
-        potentialAction: {
-          "@type": "SearchAction",
-          target: `${origin}/{search_term_string}`,
-          "query-input": "required name=search_term_string",
         },
       });
       document.head.appendChild(websiteScript);
@@ -297,7 +329,18 @@ export default function SEO({
         document.querySelectorAll(sel).forEach((el) => el.remove());
       });
     };
-  }, [title, description, lang, appId, appName, appStoreUrl, faqs, noIndex]);
+  }, [
+    title,
+    description,
+    lang,
+    appId,
+    appName,
+    appStoreUrl,
+    faqs,
+    noIndex,
+    canonicalUrl,
+    hreflangLangs,
+  ]);
 
   return null;
 }

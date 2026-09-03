@@ -153,20 +153,34 @@ async function loadSeoData() {
   };
 }
 
-function buildHreflangLinks({ siteOrigin, hreflangConfig, appId, section, narrowToEn = false }) {
-  const configs = narrowToEn
-    ? hreflangConfig.filter((c) => c.lang === 'en' || c.lang === 'x-default')
-    : hreflangConfig;
-
-  return configs.map((entry) => {
-    const hreflang = entry.lang;
-    const targetLang = hreflang === 'x-default' ? 'en' : hreflang;
+// Build the hreflang cluster for a route. `langs` is the list of language
+// codes that have a NATIVE page for this route (undefined = every configured
+// language, [] = emit nothing, e.g. external-canonical pages). Alternates must
+// point at equivalent pages - for post pages that means the slug is included -
+// and Google requires every cluster URL to actually resolve, so we never emit
+// an alternate for a language where the content does not natively exist.
+function buildHreflangLinks({ siteOrigin, hreflangConfig, appId, section, slug, langs }) {
+  const wanted = (langs ?? hreflangConfig.map((c) => c.lang)).filter(
+    (l) => l !== 'x-default',
+  );
+  const segmentsFor = (targetLang) => {
     const segments = [encodeURIComponent(targetLang)];
     if (appId) segments.push(encodeURIComponent(appId));
-    if (appId && section) segments.push(encodeURIComponent(section));
-    const href = new URL(`/${segments.join('/')}/`, siteOrigin).toString();
-    return { hreflang, href };
-  });
+    if (section) segments.push(encodeURIComponent(section));
+    if (slug) segments.push(encodeURIComponent(slug));
+    return segments.join('/');
+  };
+  const links = wanted.map((lang) => ({
+    hreflang: lang,
+    href: new URL(`/${segmentsFor(lang)}/`, siteOrigin).toString(),
+  }));
+  if (wanted.includes('en')) {
+    links.push({
+      hreflang: 'x-default',
+      href: new URL(`/${segmentsFor('en')}/`, siteOrigin).toString(),
+    });
+  }
+  return links;
 }
 
 function buildOgLocaleAlternates(hreflangConfig, currentLang) {
@@ -187,11 +201,6 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
       url: siteOrigin,
       description: 'All-in-one App Platform with Powerful Apps',
       inLanguage: lang,
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: `${siteOrigin}/{search_term_string}`,
-        'query-input': 'required name=search_term_string',
-      },
     });
   }
 
@@ -240,7 +249,8 @@ function renderHtmlForRoute(templateHtml, route) {
     jsonLdScripts,
     isRtl,
     appContent,
-    narrowHreflangToEn,
+    slug,
+    hreflangLangs,
   } = route;
 
   let html = templateHtml;
@@ -297,7 +307,8 @@ function renderHtmlForRoute(templateHtml, route) {
     hreflangConfig,
     appId: route.appId,
     section: route.section,
-    narrowToEn: narrowHreflangToEn === true,
+    slug,
+    langs: hreflangLangs,
   });
   const hreflangBlockLines = [
     `    ${MARKERS.hreflang}`,
@@ -329,9 +340,12 @@ function renderHtmlForRoute(templateHtml, route) {
   return html;
 }
 
-function toSitemapXml({ siteOrigin, languages, apps, lastmod, sectionUrls }) {
+function toSitemapXml({ siteOrigin, languages, apps, sectionUrls }) {
   const urls = [];
   for (const lang of languages) {
+    // Home and app pages have no reliable per-page date; omit lastmod rather
+    // than faking a build date for every URL on each deploy (Google learns to
+    // ignore lastmod that always changes).
     urls.push({ loc: `${siteOrigin}/${lang}/`, priority: 0.8 });
     for (const app of apps) {
       urls.push({ loc: `${siteOrigin}/${lang}/${app.id}/`, priority: 0.9 });
@@ -345,6 +359,7 @@ function toSitemapXml({ siteOrigin, languages, apps, lastmod, sectionUrls }) {
         urls.push({
           loc: `${siteOrigin}/${targetLang}/${app.id}/${entry.section}/`,
           priority: 0.6,
+          lastmod: entry.lastmod,
         });
       }
     }
@@ -353,10 +368,10 @@ function toSitemapXml({ siteOrigin, languages, apps, lastmod, sectionUrls }) {
   const lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...urls.flatMap(({ loc, priority }) => [
+    ...urls.flatMap(({ loc, priority, lastmod }) => [
       '  <url>',
       `    <loc>${escapeHtml(loc)}</loc>`,
-      `    <lastmod>${escapeHtml(lastmod)}</lastmod>`,
+      ...(lastmod ? [`    <lastmod>${escapeHtml(lastmod)}</lastmod>`] : []),
       `    <priority>${priority.toFixed(1)}</priority>`,
       '  </url>',
     ]),
@@ -507,6 +522,31 @@ async function main() {
 
   const langCodes = languages.map((l) => l.code);
 
+  // Languages where content NATIVELY exists (no English fallback) for a given
+  // (appId, section, slug). hreflang clusters and canonicals are derived from
+  // these so we never point alternates at fallback pages or 404s.
+  const nativeLangsFor = (appId, section, slug) => {
+    const present = new Set(
+      contentEntries
+        .filter(
+          (e) => e.appId === appId && e.article.section === section && e.article.slug === slug,
+        )
+        .map((e) => e.article.lang),
+    );
+    return langCodes.filter((l) => present.has(l));
+  };
+  // Languages where any non-index post natively exists for (appId, section).
+  const nativeMultiLangsFor = (appId, section) => {
+    const present = new Set(
+      contentEntries
+        .filter(
+          (e) => e.appId === appId && e.article.section === section && e.article.slug !== 'index',
+        )
+        .map((e) => e.article.lang),
+    );
+    return langCodes.filter((l) => present.has(l));
+  };
+
   // Generate static route HTML files with pre-rendered meta + schemas
   for (const lang of langCodes) {
     const homeSeo = seoMeta[lang] ?? seoMeta.en;
@@ -527,11 +567,6 @@ async function main() {
         url: siteOrigin,
         description: 'All-in-one App Platform with Powerful Apps',
         inLanguage: lang,
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: `${siteOrigin}/{search_term_string}`,
-          'query-input': 'required name=search_term_string',
-        },
       },
       {
         '@context': 'https://schema.org',
@@ -649,11 +684,26 @@ async function main() {
         const hasMultiPosts = sectionPosts.length > 0;
         const hasContent = hit !== null || hasMultiPosts;
 
-        // Canonical: localized URL for multi-lang content, English URL for
-        // legal-only content (so non-/en/ langs canonicalize to /en/), and
+        // Native language availability for this section route:
+        // - indexNativeLangs: langs with a native index article
+        // - multiNativeLangs: langs with any native non-index post
+        // Fallback-rendered pages (English body shown under a non-English URL)
+        // canonicalize to the English URL so Google sees one canonical page.
+        const indexNativeLangs = nativeLangsFor(app.id, sectionId, 'index');
+        const multiNativeLangs = isMultiSection ? nativeMultiLangsFor(app.id, sectionId) : [];
+        const sectionNativeLangs = [...new Set([...indexNativeLangs, ...multiNativeLangs])];
+        // getContent falls back to English internally, so hit.usedLang cannot
+        // tell us whether this render is a fallback - check the native index
+        // language set instead.
+        const isFallbackRender =
+          (hit !== null && !indexNativeLangs.includes(lang)) ||
+          (hasMultiPosts && !sectionNativeLangs.includes(lang));
+
+        // Canonical: localized URL for native content, English URL for
+        // fallback-rendered content (legal-only or partial translations), and
         // the external URL for pages hosted on another domain (so search
         // engines consolidate signals at the authoritative source).
-        const canonicalLang = isExternalLegal ? 'en' : (hasContent && isLegal ? 'en' : lang);
+        const canonicalLang = isFallbackRender ? 'en' : lang;
         const sectionCanonical = isExternalLegal
           ? externalUrl
           : `${siteOrigin}/${encodeURIComponent(canonicalLang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(sectionId)}/`;
@@ -704,9 +754,14 @@ async function main() {
           ogImage,
           jsonLdScripts: sectionJsonLd,
           isRtl: lang === 'ar',
-          noIndex: !hasContent,
-          noFollow: isExternalLegal,
-          narrowHreflangToEn: (hasContent && isLegal) || isExternalLegal,
+          // External legal pages are indexable with a canonical pointing at the
+          // authoritative external URL - noindex+canonical must never be mixed
+          // (Google would not consolidate signals on a noindex page).
+          noIndex: !hasContent && !isExternalLegal,
+          // hreflang cluster covers only languages where this section route
+          // natively exists; external-canonical pages emit no cluster at all
+          // because their canonical points at another domain.
+          hreflangLangs: isExternalLegal ? [] : sectionNativeLangs,
           appContent: buildSectionContent({
             app,
             lang,
@@ -727,25 +782,43 @@ async function main() {
         // - No content -> never include.
         // - Legal (terms/privacy) with English-only content -> include /en/... once.
         // - Other content -> include every lang URL where the route renders.
+        // lastmod comes from the article's front-matter date; posts are sorted
+        // date-desc so the first one is the newest.
         if (isExternalLegal) {
           // skip
         } else if (hasContent && isLegal) {
           if (!sectionUrls.some((s) => s.appId === app.id && s.section === sectionId)) {
-            sectionUrls.push({ appId: app.id, section: sectionId, lang: null });
+            const enHit = lookupArticle(app.id, sectionId, 'en');
+            sectionUrls.push({
+              appId: app.id,
+              section: sectionId,
+              lang: null,
+              lastmod: enHit?.article?.date,
+            });
           }
         } else if (hasContent) {
-          sectionUrls.push({ appId: app.id, section: sectionId, lang });
+          sectionUrls.push({
+            appId: app.id,
+            section: sectionId,
+            lang,
+            lastmod: hit?.article?.date ?? sectionPosts[0]?.date,
+          });
         }
       }
 
       // Multi-post sections (blog, features): one index.html per (lang, slug).
-      // Only emit when the post actually exists for the requested language; the
-      // index page above already shows the list view when multiple posts exist.
+      // listContentSlugs falls back to English summaries, so a post page may
+      // render for a language whose translation does not exist. Native posts
+      // canonicalize to themselves; fallback-rendered posts canonicalize to the
+      // English URL and stay out of the sitemap.
       if (typeof listContentSlugs === 'function') {
         for (const sectionId of ['blog', 'features']) {
           const posts = listContentSlugs(app.id, sectionId, lang);
           for (const post of posts) {
-            const postCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(sectionId)}/${encodeURIComponent(post.slug)}/`;
+            const postLangs = nativeLangsFor(app.id, sectionId, post.slug);
+            const isNativePost = postLangs.includes(lang);
+            const canonicalLang = isNativePost ? lang : 'en';
+            const postCanonical = `${siteOrigin}/${encodeURIComponent(canonicalLang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(sectionId)}/${encodeURIComponent(post.slug)}/`;
             const postTitle = `${post.title} - ${appName}`;
             const postDescription = post.description || `${post.title} - ${appName}`;
             const postJsonLd = [
@@ -755,11 +828,11 @@ async function main() {
                 headline: post.title,
                 description: post.description,
                 url: postCanonical,
-                inLanguage: lang,
+                inLanguage: canonicalLang,
                 datePublished: post.date,
                 dateModified: post.date,
                 isPartOf: { '@type': 'WebSite', name: 'Appify', url: siteOrigin },
-                about: { '@type': 'SoftwareApplication', name: appName, url: `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/` },
+                about: { '@type': 'SoftwareApplication', name: appName, url: `${siteOrigin}/${encodeURIComponent(canonicalLang)}/${encodeURIComponent(app.id)}/` },
               },
             ];
             const postHtml = renderHtmlForRoute(templateHtml, {
@@ -769,6 +842,10 @@ async function main() {
               lang,
               appId: app.id,
               section: sectionId,
+              // hreflang alternates must point at the same post in each
+              // language (slug included) and only where it natively exists.
+              slug: post.slug,
+              hreflangLangs: postLangs,
               title: postTitle,
               description: postDescription,
               keywords: appKeywords,
@@ -789,11 +866,14 @@ async function main() {
             await fs.mkdir(path.dirname(postOut), { recursive: true });
             await fs.writeFile(postOut, postHtml, 'utf8');
 
-            sectionUrls.push({
-              appId: app.id,
-              section: `${sectionId}/${post.slug}`,
-              lang,
-            });
+            if (isNativePost) {
+              sectionUrls.push({
+                appId: app.id,
+                section: `${sectionId}/${post.slug}`,
+                lang,
+                lastmod: post.date,
+              });
+            }
           }
         }
       }
@@ -801,17 +881,15 @@ async function main() {
   }
 
   // Generate sitemap.xml into dist (overwrites public copy)
-  const lastmod = new Date().toISOString().slice(0, 10);
   const sitemapXml = toSitemapXml({
     siteOrigin,
     languages: langCodes,
     apps,
-    lastmod,
     sectionUrls,
   });
   await fs.writeFile(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf8');
 
-  console.log(`[seo] prerendered ${langCodes.length} languages, ${apps.length} apps, wrote sitemap.xml (${lastmod})`);
+  console.log(`[seo] prerendered ${langCodes.length} languages, ${apps.length} apps, wrote sitemap.xml`);
 }
 
 main().catch((err) => {

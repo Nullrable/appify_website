@@ -1,5 +1,6 @@
 import { useParams, Navigate } from "react-router-dom";
 import { apps } from "../data/apps";
+import { hreflangConfig } from "../data/seo";
 import { getSectionLabels, isSectionId } from "../data/sectionLabels";
 import SectionPlaceholder from "../components/SectionPlaceholder";
 import ExternalLegalRedirect from "../components/ExternalLegalRedirect";
@@ -9,7 +10,36 @@ import BlogList from "../components/BlogList";
 import FeatureContent from "../components/FeatureContent";
 import FeatureList from "../components/FeatureList";
 import SEO from "../components/SEO";
-import { getContent, hasMultiContent } from "../generated/content";
+import {
+  contentEntries,
+  getContent,
+  hasMultiContent,
+} from "../generated/content";
+
+const ALL_SEO_LANGS = hreflangConfig
+  .map(({ lang }) => lang)
+  .filter((lang) => lang !== "x-default");
+
+// Languages where (appId, section, slug) content NATIVELY exists (no English
+// fallback). Must mirror scripts/prerender-seo.mjs so client-side SEO tags
+// agree with the pre-rendered ones after hydration.
+function nativeContentLangs(
+  appId: string,
+  section: string,
+  slug: string,
+): string[] {
+  const present = new Set(
+    contentEntries
+      .filter(
+        (e) =>
+          e.appId === appId &&
+          e.article.section === section &&
+          e.article.slug === slug,
+      )
+      .map((e) => e.article.lang),
+  );
+  return ALL_SEO_LANGS.filter((l) => present.has(l));
+}
 
 export default function AppSectionPage() {
   const { lang, appId, section, slug } = useParams<{
@@ -48,7 +78,11 @@ export default function AppSectionPage() {
           appId={appId}
           appName={appName}
           appStoreUrl={app.appStoreUrl}
-          noIndex
+          // Indexable with a canonical pointing at the authoritative external
+          // URL. noindex must never be mixed with a cross-domain canonical -
+          // Google would not consolidate signals on a noindex page.
+          canonicalUrl={externalUrl}
+          hreflangLangs={[]}
         />
         <ExternalLegalRedirect
           app={app}
@@ -61,20 +95,63 @@ export default function AppSectionPage() {
   }
 
   // Sections that support multiple posts (features, blog) resolve slug-aware
-  // content; legal sections are slug-less (single page per language).
+  // content; legal and about sections are slug-less (single page per
+  // language).
   const isMulti = section === "features" || section === "blog";
   const activeSlug = isMulti ? slug : undefined;
 
   // Terms and Privacy can be authored in English only and reused across all
   // languages - the page for /:lang/:appId/terms/ shows the English body even
-  // when :lang is not "en".
+  // when :lang is not "en". getContent falls back to English for every
+  // section, mirroring the prerender script.
   const legalSections: Array<"terms" | "privacy"> = ["terms", "privacy"];
   const isLegal = legalSections.includes(section as "terms" | "privacy");
-  const article = isLegal || isMulti
-    ? getContent(appId, section, lang, activeSlug ?? "index")
-    : undefined;
+  const article =
+    isLegal || isMulti || section === "about"
+      ? getContent(appId, section, lang, activeSlug ?? "index")
+      : undefined;
+
+  // Multilingual SEO rules (mirrors scripts/prerender-seo.mjs):
+  // - hreflang cluster only contains languages where this content natively
+  //   exists, so alternates never point at fallback or missing pages.
+  // - A fallback-rendered page (English body under a non-English URL)
+  //   canonicalizes to the English URL.
+  const articleSlug = activeSlug ?? "index";
+  const nativeLangs = article
+    ? nativeContentLangs(appId, section, articleSlug)
+    : [];
+  const nativeCanonicalUrl = nativeLangs.includes(lang)
+    ? undefined
+    : `/en/${appId}/${section}${activeSlug ? `/${activeSlug}` : ""}/`;
 
   if (article && isLegal) {
+    return (
+      <>
+        <SEO
+          title={
+            lang === "en"
+              ? `${article.title} - Appify`
+              : `${t[section]} - ${appName} - Appify`
+          }
+          description={article.description}
+          lang={lang}
+          appId={appId}
+          appName={appName}
+          appStoreUrl={app.appStoreUrl}
+          canonicalUrl={nativeCanonicalUrl}
+          hreflangLangs={nativeLangs}
+        />
+        <LegalContent
+          app={app}
+          lang={lang}
+          section={section as "terms" | "privacy"}
+          article={article}
+        />
+      </>
+    );
+  }
+
+  if (article && section === "about") {
     return (
       <>
         <SEO
@@ -84,13 +161,10 @@ export default function AppSectionPage() {
           appId={appId}
           appName={appName}
           appStoreUrl={app.appStoreUrl}
+          canonicalUrl={nativeCanonicalUrl}
+          hreflangLangs={nativeLangs}
         />
-        <LegalContent
-          app={app}
-          lang={lang}
-          section={section as "terms" | "privacy"}
-          article={article}
-        />
+        <BlogContent app={app} lang={lang} article={article} section="about" />
       </>
     );
   }
@@ -105,6 +179,8 @@ export default function AppSectionPage() {
           appId={appId}
           appName={appName}
           appStoreUrl={app.appStoreUrl}
+          canonicalUrl={nativeCanonicalUrl}
+          hreflangLangs={nativeLangs}
         />
         <FeatureContent app={app} lang={lang} article={article} />
       </>
@@ -121,6 +197,8 @@ export default function AppSectionPage() {
           appId={appId}
           appName={appName}
           appStoreUrl={app.appStoreUrl}
+          canonicalUrl={nativeCanonicalUrl}
+          hreflangLangs={nativeLangs}
         />
         <BlogContent app={app} lang={lang} article={article} />
       </>
@@ -129,9 +207,19 @@ export default function AppSectionPage() {
 
   // Multi-content index: list all posts when individual posts exist.
   if (isMulti && !activeSlug && hasMultiContent(appId, section, lang)) {
-    const seoTitle = section === "features"
-      ? `${t.features} - ${appName} - Appify`
-      : `${t.blog} - ${appName} - Appify`;
+    const listNativeLangs = ALL_SEO_LANGS.filter((l) =>
+      contentEntries.some(
+        (e) =>
+          e.appId === appId &&
+          e.article.section === section &&
+          e.article.lang === l &&
+          e.article.slug !== "index",
+      ),
+    );
+    const seoTitle =
+      section === "features"
+        ? `${t.features} - ${appName} - Appify`
+        : `${t.blog} - ${appName} - Appify`;
     const seoDesc = section === "features" ? t.featuresDesc : t.blogDesc;
     return (
       <>
@@ -142,6 +230,12 @@ export default function AppSectionPage() {
           appId={appId}
           appName={appName}
           appStoreUrl={app.appStoreUrl}
+          canonicalUrl={
+            listNativeLangs.includes(lang)
+              ? undefined
+              : `/en/${appId}/${section}/`
+          }
+          hreflangLangs={listNativeLangs}
         />
         {section === "features" ? (
           <FeatureList app={app} lang={lang} />
