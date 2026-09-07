@@ -74,8 +74,8 @@ export const apps: App[] = [
       th: "รูปภาพเป็น PDF",
     },
     description: {
-      en: "Free PDF processing tool. Convert images to PDF, PDF to images, encrypt, decrypt, and print PDFs. 100% private, no ads, all features included.",
-      zh: "免费PDF处理工具。图片转PDF、PDF转图片、加密、解密、打印PDF。100%私密、无广告、功能全包含。",
+      en: "Mobile PDF toolkit. Convert images to PDF, stitch photos, PDF to images, merge, encrypt and decrypt — all processed locally on your device, files never leave your phone.",
+      zh: "手机PDF工具箱。图片转PDF、图片拼接、PDF转图片、合并、加密与解密，全部在设备本地完成，文件不上传服务器。",
       "zh-TW":
         "免費PDF處理工具。圖片轉PDF、PDF轉圖片、加密、解密、列印PDF。100%私密、無廣告、功能全包含。",
       ja: "無料PDF処理ツール。画像からPDF、PDFから画像、暗号化、復号化、PDF印刷。100%プライベート、広告なし、全機能込み。",
