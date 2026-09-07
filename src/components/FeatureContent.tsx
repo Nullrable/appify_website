@@ -9,7 +9,11 @@ interface FeatureContentProps {
   article: ContentArticle;
 }
 
-export default function FeatureContent({ app, lang, article }: FeatureContentProps) {
+export default function FeatureContent({
+  app,
+  lang,
+  article,
+}: FeatureContentProps) {
   const appName = app.name[lang] || app.name["en"];
 
   const formattedDate = article.date
@@ -62,7 +66,7 @@ export default function FeatureContent({ app, lang, article }: FeatureContentPro
           </header>
 
           <article
-            className="blog-content text-gray-300 leading-relaxed space-y-4 [&_h1]:font-heading [&_h1]:font-bold [&_h1]:text-3xl [&_h1]:text-white [&_h1]:mt-12 [&_h1]:mb-6 [&_h2]:font-heading [&_h2]:font-semibold [&_h2]:text-2xl [&_h2]:text-white [&_h2]:mt-12 [&_h2]:mb-4 [&_h3]:font-heading [&_h3]:font-semibold [&_h3]:text-xl [&_h3]:text-white [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-4 [&_ul>li]:mb-2 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-4 [&_ol>li]:mb-2 [&_strong]:font-semibold [&_strong]:text-white [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary/80 [&_code]:font-mono [&_code]:text-sm [&_code]:bg-white/5 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_hr]:border-white/10 [&_hr]:my-8 [&_blockquote]:border-l-4 [&_blockquote]:border-primary/40 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-gray-300"
+            className="blog-content text-gray-300 leading-relaxed space-y-4 [&_h1]:font-heading [&_h1]:font-bold [&_h1]:text-3xl [&_h1]:text-white [&_h1]:mt-12 [&_h1]:mb-6 [&_h2]:font-heading [&_h2]:font-semibold [&_h2]:text-2xl [&_h2]:text-white [&_h2]:mt-12 [&_h2]:mb-4 [&_h3]:font-heading [&_h3]:font-semibold [&_h3]:text-xl [&_h3]:text-white [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-4 [&_ul>li]:mb-2 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-4 [&_ol>li]:mb-2 [&_strong]:font-semibold [&_strong]:text-white [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary/80 [&_code]:font-mono [&_code]:text-sm [&_code]:bg-white/5 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_hr]:border-white/10 [&_hr]:my-8 [&_blockquote]:border-l-4 [&_blockquote]:border-primary/40 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-gray-300 [&_table]:w-full [&_table]:my-6 [&_table]:border-collapse [&_th]:text-left [&_th]:text-white [&_th]:font-semibold [&_th]:py-3 [&_th]:pr-4 [&_th]:px-3 [&_th]:border-b [&_th]:border-white/20 [&_td]:py-3 [&_td]:pr-4 [&_td]:px-3 [&_td]:border-b [&_td]:border-white/10 [&_thead]:bg-white/5"
             dangerouslySetInnerHTML={{ __html: article.html }}
           />
 
@@ -71,7 +75,15 @@ export default function FeatureContent({ app, lang, article }: FeatureContentPro
               to={`/${lang}/${app.id}/`}
               className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden="true"
+              >
                 <polyline points="15,18 9,12 15,6" />
               </svg>
               Back to {appName}
