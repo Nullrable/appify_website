@@ -109,6 +109,7 @@ async function loadSeoData() {
   const appsModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/apps.ts'));
   const seoModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/seo.ts'));
   const sectionModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/sectionLabels.ts'));
+  const longDescModPath = await transpileToTempModule(tempDir, path.join(PROJECT_ROOT, 'src/data/longDescriptions.ts'));
 
   // src/generated/content.ts is emitted by `npm run content`. The build pipeline
   // guarantees it exists before prerender runs.
@@ -117,6 +118,7 @@ async function loadSeoData() {
   const appsMod = await import(pathToFileURL(appsModPath).href);
   const seoMod = await import(pathToFileURL(seoModPath).href);
   const sectionMod = await import(pathToFileURL(sectionModPath).href);
+  const longDescMod = await import(pathToFileURL(longDescModPath).href);
   const contentMod = await import(pathToFileURL(contentModPath).href);
 
   const appPagesDir = path.join(PROJECT_ROOT, 'src/data/appPages');
@@ -145,6 +147,7 @@ async function loadSeoData() {
     seoKeywords: seoMod.seoKeywords ?? {},
     hreflangConfig: seoMod.hreflangConfig ?? [],
     sectionLabels: sectionMod.sectionLabels ?? {},
+    longDescriptions: longDescMod.longDescriptions ?? {},
     contentEntries: contentMod.contentEntries ?? [],
     getContent: contentMod.getContent,
     listContentSlugs: contentMod.listContentSlugs,
@@ -407,9 +410,20 @@ function toSitemapXml({ siteOrigin, languages, apps, sectionUrls }) {
   return lines.join('\n');
 }
 
-function buildAppContent({ app, lang, pageData }) {
+function buildAppContent({ app, lang, pageData, longDescriptions }) {
   const appName = app.name?.[lang] ?? app.name?.en ?? app.id;
   const appDesc = app.description?.[lang] ?? app.description?.en ?? '';
+
+  // Long-form description: combined with the short description in <header> this
+  // pushes the landing page above the 400-word thin-content threshold so Google
+  // stops indexing these as thin. Localized per lang; falls back to English so
+  // languages we have not yet translated still ship the full body.
+  const longDesc = longDescriptions?.[app.id]?.[lang]
+    ?? longDescriptions?.[app.id]?.en
+    ?? '';
+  const longDescHtml = longDesc
+    ? `<section class="long-description"><p>${escapeHtml(longDesc)}</p></section>`
+    : '';
 
   const features = (pageData?.features ?? []).map((f) => ({
     title: f.title?.[lang] ?? f.title?.en ?? '',
@@ -472,7 +486,7 @@ function buildAppContent({ app, lang, pageData }) {
       ).join('')}</dl></section>`
     : '';
 
-  return `<section class="app-content"><header><h1>${escapeHtml(appName)}</h1><p>${escapeHtml(appDesc)}</p><a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">${escapeHtml(downloadBtnText)}</a></header><main><section class="features"><h2>Features</h2><ul>${featuresHtml}</ul></section><section class="stats"><p>Rating: ${rating}${ratingCount ? ` (${escapeHtml(ratingCount)})` : ''}</p><p>Downloads: ${escapeHtml(downloads)}</p></section>${faqHtml}</main></section>`;
+  return `<section class="app-content"><header><h1>${escapeHtml(appName)}</h1><p>${escapeHtml(appDesc)}</p><a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">${escapeHtml(downloadBtnText)}</a></header>${longDescHtml}<main><section class="features"><h2>Features</h2><ul>${featuresHtml}</ul></section><section class="stats"><p>Rating: ${rating}${ratingCount ? ` (${escapeHtml(ratingCount)})` : ''}</p><p>Downloads: ${escapeHtml(downloads)}</p></section>${faqHtml}</main></section>`;
 }
 
 function buildHomeContent({ apps, lang }) {
@@ -544,6 +558,7 @@ async function main() {
     seoKeywords,
     hreflangConfig,
     sectionLabels,
+    longDescriptions,
     appPages,
     contentEntries,
     getContent,
@@ -681,7 +696,7 @@ async function main() {
       })).filter((f) => f.question && f.answer);
 
       // Generate pre-rendered HTML content for App detail page
-      const appContent = buildAppContent({ app, lang, pageData });
+      const appContent = buildAppContent({ app, lang, pageData, longDescriptions });
 
       const appHtml = renderHtmlForRoute(templateHtml, {
         siteOrigin,
