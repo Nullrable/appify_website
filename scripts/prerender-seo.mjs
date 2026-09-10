@@ -224,7 +224,7 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
       description: app.description,
       url: canonicalUrl,
       image: app.ogImage,
-      applicationCategory: 'ProductivityApplication',
+      applicationCategory: getAppCategory(appId),
       operatingSystem: 'iOS',
       downloadUrl: app.appStoreUrl,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -236,6 +236,10 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
     // client-side useEffect path in SEO.tsx was removed to avoid duplicates.
     // Callers pass already-localized {question, answer} strings; tolerate
     // also the un-localized shape {question: {lang: str}} for safety.
+    // De-duplicate by question text — some page data lists the same Q twice
+    // (e.g. when zh and en fallbacks collide), and Google flags duplicate
+    // mainEntity entries in FAQPage.
+    const seen = new Set();
     const localizedFaqs = (pageData?.faqs ?? [])
       .map((f) => ({
         question: typeof f.question === 'string'
@@ -245,7 +249,12 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
           ? f.answer
           : (f.answer?.[lang] ?? f.answer?.en ?? ''),
       }))
-      .filter((f) => f.question && f.answer);
+      .filter((f) => {
+        if (!f.question || !f.answer) return false;
+        if (seen.has(f.question)) return false;
+        seen.add(f.question);
+        return true;
+      });
 
     if (localizedFaqs.length > 0) {
       scripts.push({
