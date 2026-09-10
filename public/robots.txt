@@ -8,6 +8,9 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /icons/
 
+User-agent: Google-adstxt
+Disallow:
+
 User-agent: Applebot
 Allow: /
 
