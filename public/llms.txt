@@ -1,14 +1,16 @@
 # Appify - All-in-one iOS App Platform
-> 4 powerful iOS productivity apps: Work Hours Tracker, Image to PDF, Image Converter, Money Tracker. Boost your productivity today.
+> 7 privacy-first iOS productivity apps: Work Hours Tracker, Image to PDF, Image Converter, Money Tracker, CleanPhoto, Translate - Offline Translator, Paper Scan. Files are processed on your device.
 
 ## Apps
-- [Work Hours Tracker](https://appify.show/en/work-hours-tracker/): Time tracking with auto hourly wage calculation, built-in labor law presets for 18 countries
-- [Image to PDF](https://appify.show/en/image-to-pdf/): Convert images to PDF, encrypt/decrypt, print. 100% private processing
-- [Image Converter](https://appify.show/en/image-converter/): Compress, crop, resize, enhance photos. Works entirely in browser
-- [Money Tracker](https://appify.show/en/money-tracker/): Privacy-first expense and income tracking app
-- [CleanPhoto](https://appify.show/en/cleanphoto/): Smart photo cleaner that removes similar photos, screenshots, and blurry images
+- [Work Hours Tracker](https://appify.show/en/work-hours-tracker/): Best work hours tracker app for iOS. Clock in/out with one tap, calculate hourly wages and overtime automatically. Built-in labor law presets for 13 countries/regions plus custom rules.
+- [Image to PDF](https://appify.show/en/image-to-pdf/): Mobile PDF toolkit. Convert images to PDF, stitch photos, PDF to images, merge, encrypt and decrypt — all processed locally on your device, files never leave your phone.
+- [Image Converter](https://appify.show/en/image-converter/): Mobile image toolkit. Convert between JPG, JPEG, PNG, WebP, BMP and TIFF; compress, crop, rotate, resize, stitch photos into long screenshots or grids. All processed locally on your device.
+- [Money Tracker](https://appify.show/en/money-tracker/): A beautiful, privacy-first expense and income tracking app
+- [CleanPhoto](https://appify.show/en/cleanphoto/): Smart Photo Cleaner for iOS. Free up space by removing similar photos, screenshots, and blurry images.
+- [Translate - Offline Translator](https://appify.show/en/translate-offline-translator/): Offline photo translator for iOS. Snap a picture, extract text with on-device OCR, and translate it instantly. Works without internet after model setup.
+- [Paper Scan](https://appify.show/en/paperscan/): Pro document scanner for iOS. Ultra-wide capture, six GPU filters, on-device OCR, multi-page PDF export, and conflict-free Google Drive / iCloud sync. Offline by default.
 
-## Languages (16 languages)
+## Languages (15 languages)
 - [English](https://appify.show/en/)
 - [简体中文](https://appify.show/zh/)
 - [繁體中文](https://appify.show/zh-TW/)
@@ -31,6 +33,8 @@
 ## Key Facts
 - All apps are free with all features included
 - No ads, no subscriptions
-- 100% privacy - all processing done on device
-- Supports 16 languages
-- Built-in labor law presets for 18 countries (Work Hours Tracker)
+- Image and PDF processing happens on device - files never leave the phone
+- Translate - Offline Translator works without internet after a one-time model download
+- Paper Scan is offline by default, with optional Google Drive / iCloud sync
+- Website available in 15 languages
+- Built-in labor law presets for 13 countries/regions (Work Hours Tracker)

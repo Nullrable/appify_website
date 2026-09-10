@@ -6,7 +6,8 @@ User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
-Allow: /icons/
+Allow: /
+Disallow: /assets/
 
 User-agent: Google-adstxt
 Disallow:
