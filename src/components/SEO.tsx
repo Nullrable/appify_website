@@ -274,24 +274,9 @@ export default function SEO({
       });
       document.head.appendChild(appSchema);
 
-      if (faqs && faqs.length > 0) {
-        const faqSchema = document.createElement("script");
-        faqSchema.type = "application/ld+json";
-        faqSchema.setAttribute("data-app-faq-schema", "true");
-        faqSchema.text = JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqs.map((f) => ({
-            "@type": "Question",
-            name: f.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: f.answer,
-            },
-          })),
-        });
-        document.head.appendChild(faqSchema);
-      }
+      // FAQPage schema is now emitted server-side from scripts/prerender-seo.mjs
+      // so crawlers without JS can read it from the first byte. Removed from
+      // this useEffect to avoid duplicate FAQPage entries.
     }
 
     return () => {

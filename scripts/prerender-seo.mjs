@@ -228,9 +228,34 @@ function buildJsonLdScripts({ siteOrigin, lang, appId, app, pageData, canonicalU
       inLanguage: lang,
     });
 
-    // Note: FAQPage schema is NOT included here because it is added dynamically
-    // by the SEO component's useEffect on the client side. Including it in the
-    // pre-rendered HTML would cause duplicate FAQPage errors in Google Search Console.
+    // FAQPage schema: rendered server-side so crawlers without JS (Bing,
+    // AI crawlers, archive.org) can read it from the first byte. The
+    // client-side useEffect path in SEO.tsx was removed to avoid duplicates.
+    // Callers pass already-localized {question, answer} strings; tolerate
+    // also the un-localized shape {question: {lang: str}} for safety.
+    const localizedFaqs = (pageData?.faqs ?? [])
+      .map((f) => ({
+        question: typeof f.question === 'string'
+          ? f.question
+          : (f.question?.[lang] ?? f.question?.en ?? ''),
+        answer: typeof f.answer === 'string'
+          ? f.answer
+          : (f.answer?.[lang] ?? f.answer?.en ?? ''),
+      }))
+      .filter((f) => f.question && f.answer);
+
+    if (localizedFaqs.length > 0) {
+      scripts.push({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        inLanguage: lang,
+        mainEntity: localizedFaqs.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer },
+        })),
+      });
+    }
   }
 
   return scripts;
@@ -413,7 +438,41 @@ function buildAppContent({ app, lang, pageData }) {
           ? 'تحميل من App Store'
           : 'Download on App Store';
 
-  return `<section class="app-content"><header><h1>${escapeHtml(appName)}</h1><p>${escapeHtml(appDesc)}</p><a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">${escapeHtml(downloadBtnText)}</a></header><main><section class="features"><h2>Features</h2><ul>${featuresHtml}</ul></section><section class="stats"><p>Rating: ${rating}${ratingCount ? ` (${escapeHtml(ratingCount)})` : ''}</p><p>Downloads: ${escapeHtml(downloads)}</p></section></main></section>`;
+  // FAQ Q&A rendered as semantic <dl>/<dt>/<dd> so crawlers that do not
+  // execute JavaScript can still index the questions and answers. Pairs with
+  // the FAQPage JSON-LD emitted from buildJsonLdScripts.
+  const faqs = (pageData?.faqs ?? [])
+    .map((f) => ({
+      question: f.question?.[lang] ?? f.question?.en ?? '',
+      answer: f.answer?.[lang] ?? f.answer?.en ?? '',
+    }))
+    .filter((f) => f.question && f.answer);
+
+  const faqLabel = {
+    en: 'Frequently Asked Questions',
+    zh: '常见问题',
+    'zh-TW': '常見問題',
+    ja: 'よくある質問',
+    ko: '자주 묻는 질문',
+    vi: 'Câu hỏi thường gặp',
+    id: 'Pertanyaan yang Sering Diajukan',
+    ar: 'الأسئلة الشائعة',
+    fr: 'Questions fréquentes',
+    de: 'Häufig gestellte Fragen',
+    es: 'Preguntas frecuentes',
+    pt: 'Perguntas frequentes',
+    it: 'Domande frequenti',
+    ru: 'Часто задаваемые вопросы',
+    th: 'คำถามที่พบบ่อย',
+  }[lang] ?? 'Frequently Asked Questions';
+
+  const faqHtml = faqs.length > 0
+    ? `<section class="faq"><h2>${escapeHtml(faqLabel)}</h2><dl>${faqs.map((f) =>
+        `<dt>${escapeHtml(f.question)}</dt><dd>${escapeHtml(f.answer)}</dd>`,
+      ).join('')}</dl></section>`
+    : '';
+
+  return `<section class="app-content"><header><h1>${escapeHtml(appName)}</h1><p>${escapeHtml(appDesc)}</p><a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">${escapeHtml(downloadBtnText)}</a></header><main><section class="features"><h2>Features</h2><ul>${featuresHtml}</ul></section><section class="stats"><p>Rating: ${rating}${ratingCount ? ` (${escapeHtml(ratingCount)})` : ''}</p><p>Downloads: ${escapeHtml(downloads)}</p></section>${faqHtml}</main></section>`;
 }
 
 function buildHomeContent({ apps, lang }) {
