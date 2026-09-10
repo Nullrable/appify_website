@@ -37,6 +37,33 @@ function escapeHtml(value) {
     .replaceAll("'", '&#39;');
 }
 
+// Read the real pixel size from a PNG's IHDR chunk so og:image:width/height
+// always match the served file. Social crawlers penalize declared sizes that
+// disagree with the actual image.
+const pngSizeCache = new Map();
+async function readPngSize(fileAbsPath) {
+  if (pngSizeCache.has(fileAbsPath)) return pngSizeCache.get(fileAbsPath);
+  const handle = await fs.open(fileAbsPath, 'r');
+  try {
+    const buf = Buffer.alloc(24);
+    await handle.read(buf, 0, 24, 0);
+    const size = { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+    pngSizeCache.set(fileAbsPath, size);
+    return size;
+  } finally {
+    await handle.close();
+  }
+}
+
+// publicPath is a site-root path like "/icons/money-tracker.png".
+async function ogDimsFor(publicPath) {
+  try {
+    return await readPngSize(path.join(PROJECT_ROOT, 'public', publicPath.replace(/^\//, '')));
+  } catch {
+    return { width: 1200, height: 630 };
+  }
+}
+
 function indent(text, spaces) {
   const pad = ' '.repeat(spaces);
   return String(text)
@@ -186,9 +213,10 @@ function buildHreflangLinks({ siteOrigin, hreflangConfig, appId, section, slug, 
   return links;
 }
 
-function buildOgLocaleAlternates(hreflangConfig, currentLang) {
-  return hreflangConfig
-    .map(({ lang }) => lang)
+// og:locale:alternate should mirror the hreflang cluster: only languages
+// where this page natively exists (mirrors SEO.tsx client behavior).
+function buildOgLocaleAlternates(langs, currentLang) {
+  return langs
     .filter((lang) => lang !== 'x-default' && lang !== currentLang)
     .map((lang) => langToOgLocale(lang));
 }
@@ -283,6 +311,8 @@ function renderHtmlForRoute(templateHtml, route) {
     keywords,
     canonicalUrl,
     ogImage,
+    ogImageWidth,
+    ogImageHeight,
     jsonLdScripts,
     isRtl,
     appContent,
@@ -312,7 +342,10 @@ function renderHtmlForRoute(templateHtml, route) {
   ].join('\n');
   html = replaceSection(html, MARKERS.defaultSeo, MARKERS.openGraph, defaultSeoBlock);
 
-  const ogAlternates = buildOgLocaleAlternates(hreflangConfig, lang);
+  // og:locale:alternate mirrors the hreflang cluster, not the full config.
+  const clusterLangs = (hreflangLangs ?? hreflangConfig.map((c) => c.lang))
+    .filter((l) => l !== 'x-default');
+  const ogAlternates = buildOgLocaleAlternates(clusterLangs, lang);
   const ogBlockLines = [
     `    ${MARKERS.openGraph}`,
     `    <meta property="og:title" content="${escapeHtml(title)}" />`,
@@ -321,8 +354,8 @@ function renderHtmlForRoute(templateHtml, route) {
     `    <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />`,
     '    <meta property="og:site_name" content="Appify" />',
     `    <meta property="og:image" content="${escapeHtml(ogImage)}" />`,
-    '    <meta property="og:image:width" content="1200" />',
-    '    <meta property="og:image:height" content="630" />',
+    `    <meta property="og:image:width" content="${ogImageWidth ?? 1200}" />`,
+    `    <meta property="og:image:height" content="${ogImageHeight ?? 630}" />`,
     `    <meta property="og:locale" content="${escapeHtml(langToOgLocale(lang))}" />`,
     ...ogAlternates.map(
       (alt) => `    <meta property="og:locale:alternate" content="${escapeHtml(alt)}" />`,
@@ -419,7 +452,7 @@ function toSitemapXml({ siteOrigin, languages, apps, sectionUrls }) {
   return lines.join('\n');
 }
 
-function buildAppContent({ app, lang, pageData, longDescriptions }) {
+function buildAppContent({ app, lang, pageData, longDescriptions, sectionLinks = [], siblingLinks = [] }) {
   const appName = app.name?.[lang] ?? app.name?.en ?? app.id;
   const appDesc = app.description?.[lang] ?? app.description?.en ?? '';
 
@@ -495,7 +528,28 @@ function buildAppContent({ app, lang, pageData, longDescriptions }) {
       ).join('')}</dl></section>`
     : '';
 
-  return `<section class="app-content"><header><h1>${escapeHtml(appName)}</h1><p>${escapeHtml(appDesc)}</p><a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">${escapeHtml(downloadBtnText)}</a></header>${longDescHtml}<main><section class="features"><h2>Features</h2><ul>${featuresHtml}</ul></section><section class="stats"><p>Rating: ${rating}${ratingCount ? ` (${escapeHtml(ratingCount)})` : ''}</p><p>Downloads: ${escapeHtml(downloads)}</p></section>${faqHtml}</main></section>`;
+  // Internal links for crawlers. This string replaces #root wholesale, so the
+  // links React renders (AppLearnMore) never reach a crawler that does not
+  // execute JS - without this nav the landing page ships exactly one <a>, and
+  // it points off-site to the App Store. That left the blog/feature pages
+  // carrying the long-tail terms with no internal PageRank at all. Anchor text
+  // is localized (app names and section labels); the headings follow the
+  // English-only convention already used for "Features" / "Our Apps" above.
+  const linkListHtml = (links) => links
+    .map((l) => `<li><a href="${escapeHtml(l.href)}">${escapeHtml(l.label)}</a></li>`)
+    .join('');
+
+  const sectionNavHtml = sectionLinks.length > 0
+    ? `<section><h2>Explore ${escapeHtml(appName)}</h2><ul>${linkListHtml(sectionLinks)}</ul></section>`
+    : '';
+  const siblingNavHtml = siblingLinks.length > 0
+    ? `<section><h2>More Apps from Appify</h2><ul>${linkListHtml(siblingLinks)}</ul></section>`
+    : '';
+  const internalNavHtml = sectionNavHtml || siblingNavHtml
+    ? `<nav class="internal-nav">${sectionNavHtml}${siblingNavHtml}</nav>`
+    : '';
+
+  return `<section class="app-content"><header><h1>${escapeHtml(appName)}</h1><p>${escapeHtml(appDesc)}</p><a href="${escapeHtml(app.appStoreUrl)}" target="_blank" rel="noopener">${escapeHtml(downloadBtnText)}</a></header>${longDescHtml}<main><section class="features"><h2>Features</h2><ul>${featuresHtml}</ul></section><section class="stats"><p>Rating: ${rating}${ratingCount ? ` (${escapeHtml(ratingCount)})` : ''}</p><p>Downloads: ${escapeHtml(downloads)}</p></section>${faqHtml}${internalNavHtml}</main></section>`;
 }
 
 function buildHomeContent({ apps, lang }) {
@@ -537,7 +591,7 @@ function buildSectionContent({ app, lang, section, labels, article, externalUrl,
     const items = posts.map((p) => (
       `<li><a href="/${lang}/${app.id}/${encodeURIComponent(section)}/${encodeURIComponent(p.slug)}/"><strong>${escapeHtml(p.title)}</strong></a><p>${escapeHtml(p.description || '')}</p>${p.date ? `<p class="meta">${escapeHtml(p.date)}</p>` : ''}</li>`
     )).join('');
-    return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(sectionName)} - ${escapeHtml(appName)}</h1><p>${escapeHtml(desc)}</p></header><main><ul class="post-list">${items}</ul></main></section>`;
+    return `<section class="app-content"><nav><a href="/${lang}/">Appify</a> / <a href="/${lang}/${app.id}/">${escapeHtml(appName)}</a> / ${escapeHtml(sectionName)}</nav><header><h1>${escapeHtml(appName)} - ${escapeHtml(sectionName)}</h1><p>${escapeHtml(desc)}</p></header><main><ul class="post-list">${items}</ul></main></section>`;
   }
 
   // External legal page: emit a redirect card so crawlers see a clear pointer
@@ -635,8 +689,12 @@ async function main() {
     const homeSeo = seoMeta[lang] ?? seoMeta.en;
     const homeTitle = homeSeo?.title ?? 'Appify';
     const homeDescription = homeSeo?.description ?? 'Appify';
-    const homeKeywords = (seoKeywords[lang] ?? seoKeywords.en ?? []).join(', ');
+    // Keep meta keywords to short-tail terms (client SEO.tsx does the same).
+    // Google ignores this tag; a 30-term long-tail dump only reads as
+    // over-optimization.
+    const homeKeywords = (seoKeywords[lang] ?? seoKeywords.en ?? []).slice(0, 12).join(', ');
     const homeCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/`;
+    const homeOgDims = await ogDimsFor('/icons/og-image.png');
 
     // Build pre-rendered content for home page
     const homeContent = buildHomeContent({ apps, lang });
@@ -682,6 +740,8 @@ async function main() {
       keywords: homeKeywords,
       canonicalUrl: homeCanonical,
       ogImage: `${siteOrigin}/icons/og-image.png`,
+      ogImageWidth: homeOgDims.width,
+      ogImageHeight: homeOgDims.height,
       jsonLdScripts: homeJsonLdScripts,
       isRtl: lang === 'ar',
       appContent: homeContent,
@@ -694,9 +754,11 @@ async function main() {
     for (const app of apps) {
       const appName = app.name?.[lang] ?? app.name?.en ?? app.id;
       const appDesc = app.description?.[lang] ?? app.description?.en ?? homeDescription;
-      const appKeywords = (seoKeywords[lang] ?? seoKeywords.en ?? []).join(', ');
+      // Mirror client SEO.tsx: app name + short-tail keywords, capped at 12.
+      const appKeywords = [appName, ...(seoKeywords[lang] ?? seoKeywords.en ?? [])].slice(0, 12).join(', ');
       const appCanonical = `${siteOrigin}/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/`;
       const ogImage = `${siteOrigin}${app.iconPath}`;
+      const appOgDims = await ogDimsFor(app.iconPath);
 
       const pageData = appPages.get(app.id);
       const localizedFaqs = (pageData?.faqs ?? []).map((f) => ({
@@ -704,8 +766,34 @@ async function main() {
         answer: f.answer?.[lang] ?? f.answer?.en ?? '',
       })).filter((f) => f.question && f.answer);
 
+      // Only link sections that actually have an article in this language -
+      // empty sections render a `noindex` placeholder, and pointing internal
+      // links at those wastes the crawl budget this nav is meant to direct.
+      const labels = sectionLabels[lang] ?? sectionLabels.en ?? {};
+      const hasSectionContent = (sectionId) =>
+        lookupArticle(app.id, sectionId, lang) !== null ||
+        (typeof listContentSlugs === 'function' &&
+          listContentSlugs(app.id, sectionId, lang).length > 0);
+
+      const sectionLinks = SECTIONS
+        .filter((sectionId) => !LEGAL_SECTIONS.has(sectionId))
+        .filter(hasSectionContent)
+        .map((sectionId) => ({
+          href: `/${encodeURIComponent(lang)}/${encodeURIComponent(app.id)}/${encodeURIComponent(sectionId)}/`,
+          label: labels[sectionId] ?? sectionId,
+        }));
+
+      // Sibling apps: the only path for authority to flow between the seven
+      // landing pages, which otherwise share no internal links at all.
+      const siblingLinks = apps
+        .filter((sibling) => sibling.id !== app.id)
+        .map((sibling) => ({
+          href: `/${encodeURIComponent(lang)}/${encodeURIComponent(sibling.id)}/`,
+          label: sibling.name?.[lang] ?? sibling.name?.en ?? sibling.id,
+        }));
+
       // Generate pre-rendered HTML content for App detail page
-      const appContent = buildAppContent({ app, lang, pageData, longDescriptions });
+      const appContent = buildAppContent({ app, lang, pageData, longDescriptions, sectionLinks, siblingLinks });
 
       const appHtml = renderHtmlForRoute(templateHtml, {
         siteOrigin,
@@ -718,6 +806,8 @@ async function main() {
         keywords: appKeywords,
         canonicalUrl: appCanonical,
         ogImage,
+        ogImageWidth: appOgDims.width,
+        ogImageHeight: appOgDims.height,
         jsonLdScripts: buildJsonLdScripts({
           siteOrigin,
           lang,
@@ -745,7 +835,6 @@ async function main() {
       // `index,follow` and join the sitemap. Legal sections (terms/privacy) are
       // authored in English only - all language URLs share the English body,
       // canonical collapses to /en/..., and hreflang narrows to en + x-default.
-      const labels = sectionLabels[lang] ?? sectionLabels.en ?? {};
       for (const sectionId of SECTIONS) {
         const sectionName = labels[sectionId] ?? sectionId;
         const isLegal = LEGAL_SECTIONS.has(sectionId);
@@ -794,14 +883,35 @@ async function main() {
         // For content pages, the localized title uses the section label in the
         // viewer's language even if the body is English - this keeps the title
         // and breadcrumb readable while the body remains authoritative.
+        // Section list pages (blog/features that have posts but no index.md)
+        // have `hit === null`, so before adding the `hasMultiPosts` branch they
+        // fell through to the "coming soon" copy even though the section ships
+        // real articles. Title/description lead with the app name because that
+        // is the keyword users search for ("image to pdf"), not the section
+        // label. Both parts come from localized data, so this stays i18n-safe.
+        const sectionListDesc = labels[`${sectionId}Desc`] ?? sectionName;
+        // Google truncates snippets around 160 chars. Cut on a word boundary so
+        // the description does not end mid-word; CJK locales have no spaces, in
+        // which case the hard slice is the correct fallback.
+        const listDescRaw = `${appName} ${sectionName}: ${sectionListDesc}. ${appDesc}`;
+        const listDescCut = listDescRaw.slice(0, 157);
+        const listDescBoundary = listDescCut.lastIndexOf(' ');
+        const listDescription = listDescRaw.length <= 157
+          ? listDescRaw
+          : `${(listDescBoundary > 100 ? listDescCut.slice(0, listDescBoundary) : listDescCut).replace(/[\s,;:.—-]+$/, '')}…`;
+
         const sectionTitle = hasContent && hit
           ? (isLegal && lang !== 'en'
               ? `${sectionName} - ${appName} - Appify`
               : `${hit.article.title} - Appify`)
-          : `${sectionName} - ${appName} - Appify`;
+          : hasMultiPosts
+            ? `${appName} ${sectionName} - Appify`
+            : `${sectionName} - ${appName} - Appify`;
         const sectionDescription = hasContent && hit
           ? (hit.article.description || `${sectionName} - ${appName}.`)
-          : `${sectionName} - ${appName}. ${labels.comingSoonDesc ?? appDesc}`;
+          : hasMultiPosts
+            ? listDescription
+            : `${sectionName} - ${appName}. ${labels.comingSoonDesc ?? appDesc}`;
 
         // WebPage JSON-LD for content-bearing sections. Helps Google understand
         // the page as a long-form document rather than an app page. Skipped for
@@ -815,7 +925,7 @@ async function main() {
                 name: hit.article.title,
                 description: hit.article.description,
                 url: sectionCanonical,
-                inLanguage: 'en',
+                inLanguage: canonicalLang,
                 isPartOf: { '@type': 'WebSite', name: 'Appify', url: siteOrigin },
                 about: { '@type': 'SoftwareApplication', name: appName, url: `${siteOrigin}/${encodeURIComponent(canonicalLang)}/${encodeURIComponent(app.id)}/` },
                 ...(hit.article.date ? { dateModified: hit.article.date } : {}),
@@ -835,6 +945,8 @@ async function main() {
           keywords: appKeywords,
           canonicalUrl: sectionCanonical,
           ogImage,
+          ogImageWidth: appOgDims.width,
+          ogImageHeight: appOgDims.height,
           jsonLdScripts: sectionJsonLd,
           isRtl: lang === 'ar',
           // External legal pages are indexable with a canonical pointing at the
@@ -910,8 +1022,13 @@ async function main() {
                 '@type': 'Article',
                 headline: post.title,
                 description: post.description,
+                image: [ogImage],
                 url: postCanonical,
                 inLanguage: canonicalLang,
+                // Google's Article rich-result guidance requires author;
+                // Appify articles are brand-authored, so Organization.
+                author: { '@type': 'Organization', name: 'Appify', url: siteOrigin },
+                publisher: { '@type': 'Organization', name: 'Appify', url: siteOrigin },
                 datePublished: post.date,
                 dateModified: post.date,
                 isPartOf: { '@type': 'WebSite', name: 'Appify', url: siteOrigin },
@@ -934,6 +1051,8 @@ async function main() {
               keywords: appKeywords,
               canonicalUrl: postCanonical,
               ogImage,
+              ogImageWidth: appOgDims.width,
+              ogImageHeight: appOgDims.height,
               jsonLdScripts: postJsonLd,
               isRtl: lang === 'ar',
               appContent: buildSectionContent({

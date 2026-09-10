@@ -157,6 +157,9 @@ export default function SEO({
     const ogImage = appId
       ? `${origin}/icons/${encodeURIComponent(appId)}.png`
       : `${origin}/icons/og-image.png`;
+    // Declared size must match the served file: app icons are 512x512
+    // (enforced in public/icons/), the home og-image is 1200x630.
+    const [ogImageWidth, ogImageHeight] = appId ? [512, 512] : [1200, 630];
 
     // Open Graph tags
     setMetaByProperty("og:title", title);
@@ -165,8 +168,8 @@ export default function SEO({
     setMetaByProperty("og:url", canonicalHref);
     setMetaByProperty("og:site_name", "Appify");
     setMetaByProperty("og:image", ogImage);
-    setMetaByProperty("og:image:width", "1200");
-    setMetaByProperty("og:image:height", "630");
+    setMetaByProperty("og:image:width", String(ogImageWidth));
+    setMetaByProperty("og:image:height", String(ogImageHeight));
     setMetaByProperty("og:image:alt", appId ? title : "Appify");
     setMetaByProperty("og:locale", langToOgLocale(lang));
 
