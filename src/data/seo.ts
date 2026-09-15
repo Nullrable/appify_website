@@ -87,6 +87,26 @@ const seoKeywords: Record<string, string[]> = {
     "時薪計算",
     "照片清理app",
     "圖片格式轉換",
+    "提取音訊",
+    "影片轉MP3",
+    "影片格式轉檔",
+
+    // 長尾關鍵詞 - 產品查找意圖
+    "有沒有從影片提取音訊的app",
+    "找一款影片轉MP3的iPhone工具",
+    "找一款能把影片轉成音樂的應用",
+
+    // 長尾關鍵詞 - 問題解決意圖
+    "我想從影片裡提取音訊",
+    "能不能把影片轉成MP3存到手機裡",
+
+    // 長尾關鍵詞 - 方法尋找意圖
+    "怎麼從iPhone影片提取音訊",
+    "什麼app可以把影片轉成MP3",
+    "怎麼把多段影片合併成一段",
+    "怎麼調整影片畫面比例",
+
+
   ],
   ja: [
     // 短尾キーワード - App専用
@@ -97,6 +117,26 @@ const seoKeywords: Record<string, string[]> = {
     "iPhoneアプリダウンロード",
     "写真整理アプリ",
     "画像形式変換",
+    "音声抽出",
+    "動画をMP3に変換",
+    "動画形式変換",
+
+    // 長尾キーワード - 製品検索意図
+    "動画から音声を抽出するアプリ",
+    "動画をMP3に変換するiPhoneアプリ",
+    "動画から音楽だけ取り出すツール",
+
+    // 長尾キーワード - 問題解決意図
+    "動画から音声だけ取り出したい",
+    "動画をMP3に変換して保存したい",
+
+    // 長尾キーワード - 方法探索意図
+    "iPhoneで動画から音声を抽出する方法",
+    "動画をMP3に変換するアプリは何",
+    "iPhoneで複数のクリップを結合する方法",
+    "動画のアスペクト比を変更する方法",
+
+
   ],
   ko: [
     // 단축 키워드 - App 전용
@@ -107,6 +147,26 @@ const seoKeywords: Record<string, string[]> = {
     "iPhone 앱 다운로드",
     "사진 정리 앱",
     "이미지 형식 변환",
+    "오디오 추출",
+    "동영상 MP3 변환",
+    "동영상 포맷 변환",
+
+    // 장문 키워드 - 제품 검색 의도
+    "영상에서 오디오 추출하는 앱",
+    "영상을 MP3로 변환하는 iPhone 앱",
+    "영상에서 음악만 꺼내는 도구",
+
+    // 장문 키워드 - 문제 해결 의도
+    "영상에서 소리만 따로 저장하고 싶어요",
+    "영상을 MP3로 바꿔서 휴대폰에 저장할 수 있나요",
+
+    // 장문 키워드 - 방법 탐색 의도
+    "iPhone에서 영상 오디오 추출하는 방법",
+    "어떤 앱이 영상을 MP3로 바꿔주나요",
+    "iPhone에서 여러 클립 합치는 방법",
+    "영상 화면 비율 조정하는 방법",
+
+
   ],
   vi: [
     // Từ khóa ngắn - App cụ thể
@@ -117,6 +177,26 @@ const seoKeywords: Record<string, string[]> = {
     "tải ứng dụng iPhone",
     "ứng dụng dọn dẹp ảnh",
     "chuyển đổi định dạng hình ảnh",
+    "trích xuất âm thanh",
+    "chuyển video sang MP3",
+    "chuyển đổi định dạng video",
+
+    // Từ khóa dài - Ý định tìm sản phẩm
+    "có ứng dụng nào trích xuất âm thanh từ video không",
+    "tìm ứng dụng iPhone chuyển video sang MP3",
+    "công cụ lấy nhạc ra khỏi video",
+
+    // Từ khóa dài - Ý định giải quyết vấn đề
+    "tôi muốn lấy âm thanh từ một video",
+    "có thể chuyển video sang MP3 lưu vào điện thoại không",
+
+    // Từ khóa dài - Ý định tìm phương pháp
+    "cách trích xuất âm thanh từ video trên iPhone",
+    "ứng dụng nào chuyển video thành MP3",
+    "cách ghép nhiều đoạn video trên iPhone",
+    "cách chỉnh tỉ lệ khung hình video",
+
+
   ],
   id: [
     // Kata kunci pendek - App spesifik
@@ -127,6 +207,26 @@ const seoKeywords: Record<string, string[]> = {
     "unduh aplikasi iPhone",
     "aplikasi bersihkan foto",
     "konversi format gambar",
+    "ekstrak audio",
+    "video ke MP3",
+    "konversi format video",
+
+    // Kata kunci panjang - Niat cari produk
+    "ada aplikasi ekstrak audio dari video",
+    "cari aplikasi iPhone konversi video ke MP3",
+    "alat ambil musik dari video",
+
+    // Kata kunci panjang - Niat pecahkan masalah
+    "saya mau ambil audio dari sebuah video",
+    "bisa ubah video jadi MP3 simpan ke ponsel",
+
+    // Kata kunci panjang - Niat cari cara
+    "cara ekstrak audio dari video di iPhone",
+    "aplikasi apa yang konversi video ke MP3",
+    "cara gabung banyak klip di iPhone",
+    "cara ubah rasio layar video",
+
+
   ],
   ar: [
     // كلمات مفتاحية قصيرة - App محدد
@@ -137,6 +237,26 @@ const seoKeywords: Record<string, string[]> = {
     "تحميل تطبيقات iPhone",
     "تطبيق تنظيف الصور",
     "تحويل صيغة الصور",
+    "استخراج الصوت",
+    "فيديو إلى MP3",
+    "تحويل صيغة الفيديو",
+
+    // كلمات مفتاحية طويلة - نية البحث عن منتج
+    "هل يوجد تطبيق لاستخراج الصوت من الفيديو",
+    "ابحث عن تطبيق iPhone يحول الفيديو إلى MP3",
+    "أداة لإخراج الموسيقى من الفيديو",
+
+    // كلمات مفتاحية طويلة - نية حل المشكلة
+    "أريد استخراج الصوت من فيديو",
+    "هل يمكن تحويل الفيديو إلى MP3 وحفظه في الجوال",
+
+    // كلمات مفتاحية طويلة - نية البحث عن طريقة
+    "كيف أستخرج الصوت من فيديو على iPhone",
+    "أي تطبيق يحول الفيديو إلى MP3",
+    "كيف أدمج مقاطع فيديو على iPhone",
+    "كيف أعدل نسبة أبعاد الفيديو",
+
+
   ],
   fr: [
     // Mots-clés courts - App spécifique
@@ -147,6 +267,26 @@ const seoKeywords: Record<string, string[]> = {
     "téléchargement applications iPhone",
     "application nettoyage photo",
     "conversion format image",
+    "extraire audio",
+    "vidéo en MP3",
+    "convertisseur format vidéo",
+
+    // Mots-clés longs - Intention recherche produit
+    "existe-t-il une appli pour extraire l'audio d'une vidéo",
+    "trouver une appli iPhone qui convertit une vidéo en MP3",
+    "outil pour extraire la musique d'une vidéo",
+
+    // Mots-clés longs - Intention résolution de problème
+    "je veux extraire l'audio d'une vidéo",
+    "peut-on convertir une vidéo en MP3 et la stocker sur le téléphone",
+
+    // Mots-clés longs - Intention recherche de méthode
+    "comment extraire l'audio d'une vidéo sur iPhone",
+    "quelle appli convertit une vidéo en MP3",
+    "comment fusionner plusieurs clips sur iPhone",
+    "comment modifier le rapport d'aspect d'une vidéo",
+
+
   ],
   de: [
     // Kurz keywords - App spezifisch
@@ -157,6 +297,26 @@ const seoKeywords: Record<string, string[]> = {
     "iPhone-App-Download",
     "Foto-Bereinigung-App",
     "Bildformatkonvertierung",
+    "Audio extrahieren",
+    "Video zu MP3",
+    "Videoformat-Konvertierung",
+
+    // Lange Keywords - Produktsuchabsicht
+    "gibt es eine App um Audio aus Video zu extrahieren",
+    "suche iPhone App die Video in MP3 umwandelt",
+    "Werkzeug um Musik aus Video herauszuholen",
+
+    // Lange Keywords - Problemlösungsabsicht
+    "ich möchte Audio aus einem Video extrahieren",
+    "kann man ein Video in MP3 umwandeln und aufs Handy speichern",
+
+    // Lange Keywords - Methodensuchabsicht
+    "wie extrahiert man Audio aus Video auf iPhone",
+    "welche App wandelt Video in MP3 um",
+    "wie fügt man mehrere Clips auf iPhone zusammen",
+    "wie ändert man das Seitenverhältnis eines Videos",
+
+
   ],
   es: [
     // Palabras clave cortas - App específico
@@ -167,6 +327,26 @@ const seoKeywords: Record<string, string[]> = {
     "descarga de aplicaciones iPhone",
     "aplicación limpiar fotos",
     "convertidor de formato de imagen",
+    "extraer audio",
+    "vídeo a MP3",
+    "convertidor de formato de vídeo",
+
+    // Palabras clave largas - Intención búsqueda producto
+    "hay alguna app para extraer audio de un vídeo",
+    "busco app iPhone que convierta vídeo a MP3",
+    "herramienta para sacar música de un vídeo",
+
+    // Palabras clave largas - Intención resolver problema
+    "quiero sacar el audio de un vídeo",
+    "se puede convertir un vídeo a MP3 y guardarlo en el móvil",
+
+    // Palabras clave largas - Intención buscar método
+    "cómo extraer audio de un vídeo en iPhone",
+    "qué app convierte vídeo a MP3",
+    "cómo unir varios clips en iPhone",
+    "cómo cambiar la relación de aspecto de un vídeo",
+
+
   ],
   pt: [
     // Palavras-chave curtas - App específico
@@ -177,6 +357,26 @@ const seoKeywords: Record<string, string[]> = {
     "download de aplicativos iPhone",
     "aplicativo limpar fotos",
     "conversor de formato de imagem",
+    "extrair áudio",
+    "vídeo para MP3",
+    "conversor de formato de vídeo",
+
+    // Palavras-chave longas - Intenção busca produto
+    "existe algum app para extrair áudio de um vídeo",
+    "procuro app iPhone que converta vídeo em MP3",
+    "ferramenta para tirar música de um vídeo",
+
+    // Palavras-chave longas - Intenção resolver problema
+    "quero tirar o áudio de um vídeo",
+    "dá para converter um vídeo em MP3 e guardar no celular",
+
+    // Palavras-chave longas - Intenção buscar método
+    "como extrair áudio de um vídeo no iPhone",
+    "qual app converte vídeo em MP3",
+    "como unir vários clipes no iPhone",
+    "como mudar a proporção de tela de um vídeo",
+
+
   ],
   it: [
     // Parole chiave brevi - App specifico
@@ -187,6 +387,26 @@ const seoKeywords: Record<string, string[]> = {
     "download app iPhone",
     "app pulizia foto",
     "convertitore formato immagine",
+    "estrai audio",
+    "video in MP3",
+    "convertitore formato video",
+
+    // Parole chiave lunghe - Intento ricerca prodotto
+    "esiste un'app per estrarre l'audio da un video",
+    "cerco un'app iPhone che converta video in MP3",
+    "strumento per estrarre la musica da un video",
+
+    // Parole chiave lunghe - Intento risoluzione problema
+    "voglio estrarre l'audio da un video",
+    "si può convertire un video in MP3 e salvarlo sul cellulare",
+
+    // Parole chiave lunghe - Intento ricerca metodo
+    "come estrarre l'audio da un video su iPhone",
+    "quale app converte un video in MP3",
+    "come unire più clip su iPhone",
+    "come modificare le proporzioni di un video",
+
+
   ],
   ru: [
     // Короткие ключевые слова - App конкретный
@@ -197,6 +417,26 @@ const seoKeywords: Record<string, string[]> = {
     "скачать приложения для iPhone",
     "приложение очистки фото",
     "конвертер формата изображения",
+    "извлечь аудио",
+    "видео в MP3",
+    "конвертер формата видео",
+
+    // Длинные ключевые слова - Намерение поиск продукта
+    "есть приложение для извлечения звука из видео",
+    "ищу приложение iPhone которое конвертирует видео в MP3",
+    "инструмент для извлечения музыки из видео",
+
+    // Длинные ключевые слова - Намерение решить проблему
+    "хочу извлечь звук из видео",
+    "можно ли конвертировать видео в MP3 и сохранить на телефоне",
+
+    // Длинные ключевые слова - Намерение поиск метода
+    "как извлечь звук из видео на iPhone",
+    "какое приложение конвертирует видео в MP3",
+    "как объединить несколько клипов на iPhone",
+    "как изменить соотношение сторон видео",
+
+
   ],
   th: [
     // คำค้นสั้น - App เฉพาะ
@@ -207,6 +447,26 @@ const seoKeywords: Record<string, string[]> = {
     "ดาวน์โหลดแอป iPhone",
     "แอปทำความสะอาดรูปภาพ",
     "ตัวแปลงรูปแบบรูปภาพ",
+    "แยกเสียง",
+    "วิดีโอเป็น MP3",
+    "ตัวแปลงรูปแบบวิดีโอ",
+
+    // คำค้นยาว - เจตนาค้นหาผลิตภัณฑ์
+    "มีแอปแยกเสียงออกจากวิดีโอไหม",
+    "หาแอป iPhone แปลงวิดีโอเป็น MP3",
+    "เครื่องมือดึงเพลงออกจากวิดีโอ",
+
+    // คำค้นยาว - เจตนาแก้ปัญหา
+    "อยากแยกเสียงออกจากวิดีโอ",
+    "แปลงวิดีโอเป็น MP3 เก็บในมือถือได้ไหม",
+
+    // คำค้นยาว - เจตนาหาวิธี
+    "วิธีแยกเสียงจากวิดีโอบน iPhone",
+    "แอปไหนแปลงวิดีโอเป็น MP3",
+    "วิธีรวมหลายคลิปบน iPhone",
+    "วิธีปรับสัดส่วนจอวิดีโอ",
+
+
   ],
 };
 

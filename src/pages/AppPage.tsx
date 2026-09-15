@@ -7,6 +7,7 @@ import { moneyTracker } from "../data/appPages/moneyTracker";
 import { cleanPhoto } from "../data/appPages/cleanPhoto";
 import { translateOfflineTranslator } from "../data/appPages/translateOfflineTranslator";
 import { paperscan } from "../data/appPages/paperscan";
+import { extractAudioNow } from "../data/appPages/extractAudioNow";
 import AppPage from "../components/AppPage";
 import SEO from "../components/SEO";
 
@@ -18,6 +19,7 @@ const appPageDataMap: Record<string, typeof workHoursTracker> = {
   cleanphoto: cleanPhoto,
   "translate-offline-translator": translateOfflineTranslator,
   paperscan: paperscan,
+  "extract-audio-now": extractAudioNow,
 };
 
 export default function AppPageRoute() {

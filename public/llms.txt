@@ -1,5 +1,5 @@
 # Appify - All-in-one iOS App Platform
-> 7 privacy-first iOS productivity apps: Work Hours Tracker, Image to PDF, Image Converter, Money Tracker, CleanPhoto, Translate - Offline Translator, Paper Scan. Files are processed on your device.
+> 8 privacy-first iOS productivity apps: Work Hours Tracker, Image to PDF, Image Converter, Money Tracker, CleanPhoto, Translate - Offline Translator, Paper Scan, Extract Audio Now. Files and videos are processed on your device.
 
 ## Apps
 - [Work Hours Tracker](https://appify.show/en/work-hours-tracker/): Best work hours tracker app for iOS. Clock in/out with one tap, calculate hourly wages and overtime automatically. Built-in labor law presets for 13 countries/regions plus custom rules.
@@ -9,6 +9,7 @@
 - [CleanPhoto](https://appify.show/en/cleanphoto/): Smart Photo Cleaner for iOS. Free up space by removing similar photos, screenshots, and blurry images.
 - [Translate - Offline Translator](https://appify.show/en/translate-offline-translator/): Offline photo translator for iOS. Snap a picture, extract text with on-device OCR, and translate it instantly. Works without internet after model setup.
 - [Paper Scan](https://appify.show/en/paperscan/): Pro document scanner for iOS. Ultra-wide capture, six GPU filters, on-device OCR, multi-page PDF export, and conflict-free Google Drive / iCloud sync. Offline by default.
+- [Extract Audio Now](https://appify.show/en/extract-audio-now/): Extract audio from any video on iPhone. Pull MP3, AAC, M4A, WAV, FLAC or OGG in seconds, plus 7 video tools (convert, compress, merge, clip, speed, adjust, GIF). Fully on-device, no upload.
 
 ## Languages (15 languages)
 - [English](https://appify.show/en/)
@@ -31,9 +32,9 @@
 - Appify
 
 ## Key Facts
-- All apps are free with all features included
-- No ads, no subscriptions
-- Image and PDF processing happens on device - files never leave the phone
+- 8 free iOS apps across work, finance, media, and productivity
+- Extract Audio Now: free with ads, Pro subscription removes ads (all features included in free)
+- Image, PDF, video, and audio processing happens on device — files never leave the phone
 - Translate - Offline Translator works without internet after a one-time model download
 - Paper Scan is offline by default, with optional Google Drive / iCloud sync
 - Website available in 15 languages
