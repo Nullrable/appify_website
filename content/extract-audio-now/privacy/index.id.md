@@ -17,7 +17,7 @@ Dengan menggunakan aplikasi, Anda setuju pada praktik yang dijelaskan di sini.
 - **Pemrosesan di perangkat.** Semua pemrosesan video (konversi, kompres, ekstrak audio, gabung, klip, kecepatan, ubah ukuran, GIF) berjalan lokal di perangkat Anda. File video, file audio, dan hasil antara **tidak pernah diunggah** ke server mana pun yang kami operasikan.
 - **Tanpa akun.** Aplikasi tidak memerlukan pendaftaran. Kami tidak mengumpulkan nama, email, nomor telepon, atau info kontak apa pun.
 - **Tanpa analisis konten.** Aplikasi tidak menganalisis konten piksel video Anda - tidak ada klasifikasi AI, deteksi objek, atau pengenalan scene.
-- **Periklanan (versi gratis).** Versi gratis menampilkan iklan banner (IAB Medium Rectangle 300x250) di layar Beranda, Riwayat, dan Pengaturan, dilayani oleh Google AdMob. AdMob dapat menerima identifier tingkat perangkat dan informasi kontekstual yang digunakan untuk memilih dan mengukur iklan, sesuai dengan pilihan persetujuan Anda.
+- **Periklanan (versi gratis, non-personal).** Versi gratis menampilkan iklan banner (IAB Medium Rectangle 300x250) di layar Beranda, Riwayat, dan Pengaturan, dilayani oleh Google AdMob. App **tidak meminta** izin App Tracking Transparency dan **tidak membaca** identifier iklan Apple (IDFA); semua iklan berbasis konteks waktu nyata.
 - **Versi berbayar.** Saat Anda berlangganan Pro, pembelian ditangani App Store, dan RevenueCat menggunakan identifier anonim dan tanda terima toko Anda untuk memverifikasi langganan.
 
 ## 2. Data yang tidak kami kumpulkan
@@ -62,17 +62,13 @@ Pihak ketiga berikut mengumpulkan data untuk memberikan layanan mereka kepada An
 
 ### 4.1 Google AdMob - hanya versi gratis
 
-Versi gratis menampilkan iklan banner (IAB Medium Rectangle 300x250) di layar Beranda, Riwayat, dan Pengaturan, dilayani oleh **Google AdMob**. Tugas dijalankan segera setelah dikonfirmasi - tidak ada iklan yang tayang sebelum tugas. AdMob dapat menerima:
+Versi gratis menampilkan iklan banner (IAB Medium Rectangle 300x250) di layar Beranda, Riwayat, dan Pengaturan, dilayani oleh **Google AdMob**. Tugas dijalankan segera setelah dikonfirmasi - tidak ada iklan yang tayang sebelum tugas.
 
-- **Identifier iklan** - di iOS ini IDFA Apple, disediakan iOS hanya setelah Anda memberi izin App Tracking Transparency
+**Iklan bersifat non-personal.** App tidak memanggil API App Tracking Transparency dan tidak membaca identifier iklan Apple (IDFA). Semua iklan ditayangkan berdasarkan konteks waktu nyata, tanpa tautan ke perilaku penggunaan perangkat Anda. AdMob dapat menerima:
+
 - **Informasi perangkat**, seperti model perangkat, versi OS, ukuran layar, bahasa, dan wilayah
 - **Metadata penayangan iklan**, seperti ID unit iklan, jenis iklan, dan apakah Anda melihat atau mengklik iklan
 - **Alamat IP**, digunakan untuk memperkirakan lokasi kasar (biasanya negara atau kota) dan mencegah penipuan
-
-Anda bisa:
-
-- Memilih "Minta Aplikasi Tidak Melacak" di prompt pelacakan iOS untuk menolak personalisasi iklan - fungsi aplikasi tidak berubah; iklan hanya berhenti dipersonalisasi
-- Mereset atau membatasi IDFA di **Pengaturan -> Privasi & Keamanan -> Pelacakan** perangkat iOS Anda
 
 Setelah berlangganan Pro, iklan dihapus dan AdMob tidak lagi menerima data dari app ini.
 
@@ -99,9 +95,8 @@ Pembelian ditangani oleh Apple App Store. Penanganan data pembeliannya diatur ol
 |---|---|---|
 | **Akses pustaka foto** | Membaca video yang akan diproses, menulis video atau audio yang diproses | Ya - wajib untuk pemrosesan |
 | **Akses file (app Files)** | Membaca atau menyimpan file di app iOS Files | Tidak - hanya digunakan saat Anda aktif memilih Files sebagai sumber |
-| **Pelacakan (ATT, hanya iOS)** | Diperlukan agar jaringan iklan menampilkan iklan personalisasi di versi gratis | Tidak - Anda bisa menolak; app tetap jalan, hanya menampilkan iklan non-personal |
 
-App **tidak** meminta izin kamera, mikrofon, kontak, atau lokasi.
+App **tidak** meminta izin kamera, mikrofon, kontak, lokasi, atau pelacakan (ATT).
 
 ## 6. Privasi anak-anak
 
@@ -124,12 +119,12 @@ Jika Anda di EEA atau Inggris, Anda punya hak untuk mengakses, memperbaiki, meng
 Karena app tidak memelihara profil pengguna sisi server, kebanyakan hak di atas sudah terpenuhi secara otomatis oleh desain app:
 
 - Video dan audio Anda tidak pernah meninggalkan perangkat; menghapus instalasi app menghilangkan semuanya
-- Untuk menghentikan personalisasi iklan, gunakan kontrol pelacakan yang dijelaskan di Bagian 4.1
+- Iklan selalu non-personal (lihat Bagian 4.1); tidak perlu kontrol tambahan
 - Untuk menghapus asosiasi pembelian Anda, hubungi kami dan minta penghapusan catatan RevenueCat yang terkait dengan tanda terima Anda
 
 ### 8.2 CCPA / CPRA (California)
 
-Penduduk California punya hak untuk tahu informasi pribadi apa yang dikumpulkan, untuk menghapus informasi itu, untuk keluar dari penjualan atau pembagiannya, dan hak untuk tidak didiskriminasi karena menjalankan hak-hak ini. App **tidak** menjual informasi pribadi. "Pembagian" untuk iklan perilaku lintas-konteks ditentukan oleh pilihan Anda di prompt pelacakan.
+Penduduk California punya hak untuk tahu informasi pribadi apa yang dikumpulkan, untuk menghapus informasi itu, untuk keluar dari penjualan atau pembagiannya, dan hak untuk tidak didiskriminasi karena menjalankan hak-hak ini. App **tidak** menjual informasi pribadi, dan **tidak** membagikan informasi pribadi untuk iklan perilaku lintas-konteks — semua iklan bersifat non-personal.
 
 ### 8.3 Yurisdiksi lain
 

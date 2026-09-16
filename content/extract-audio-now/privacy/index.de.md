@@ -17,7 +17,7 @@ Mit der Nutzung der App akzeptieren Sie die hier beschriebenen Praktiken.
 - **Verarbeitung auf dem Gerät.** Jegliche Videobearbeitung (Konvertieren, Komprimieren, Audio extrahieren, Zusammenfügen, Trimmen, Geschwindigkeit, Anpassen, GIF) läuft lokal auf Ihrem Gerät. Videodateien, Audiodateien und Zwischenergebnisse werden **nie auf einen unserer Server hochgeladen**.
 - **Kein Konto nötig.** Die App verlangt keine Registrierung. Wir erheben weder Ihren Namen noch Ihre E-Mail, Telefonnummer oder andere Kontaktdaten.
 - **Keine Inhaltsanalyse.** Die App analysiert die Pixelinhalte Ihrer Videos nicht, sie führt keine KI-Klassifikation, Objekterkennung oder Szenenerkennung durch.
-- **Werbung (Gratisversion).** Die Gratisversion zeigt auf drei Bildschirmen Bannerwerbung von Google AdMob (IAB Medium Rectangle 300×250): Startseite, Verlauf, Einstellungen. AdMob kann gerätebezogene Kennungen und Kontextinformationen zur Auswahl und Messung von Werbung erhalten, im Rahmen Ihrer Einwilligungsentscheidungen.
+- **Werbung (Gratisversion, nicht personalisiert).** Die Gratisversion zeigt auf drei Bildschirmen Bannerwerbung von Google AdMob (IAB Medium Rectangle 300×250): Startseite, Verlauf, Einstellungen. Die App **fordert keine** App-Tracking-Transparenz-Erlaubnis an und **liest keine** Apple-Werbe-Kennung (IDFA); alle Werbung basiert auf Echtzeit-Kontext.
 - **Bezahlversion.** Wenn Sie Pro abonnieren, läuft der Kauf über den App Store. RevenueCat nutzt eine anonyme Kennung und Ihre Kassenbons, um das Abo zu verifizieren.
 
 ## 2. Daten, die wir nicht erheben
@@ -62,17 +62,13 @@ Die folgenden Dritten erheben Daten, während sie Ihnen ihre Dienste erbringen. 
 
 ### 4.1 Google AdMob — nur in der Gratisversion
 
-Die Gratisversion zeigt Bannerwerbung von **Google AdMob** (IAB Medium Rectangle 300×250) auf drei Bildschirmen: Startseite, Verlauf, Einstellungen. Aufgaben werden sofort nach Bestätigung ausgeführt, es wird keine Werbung davor eingeblendet. AdMob kann folgende Daten erhalten:
+Die Gratisversion zeigt Bannerwerbung von **Google AdMob** (IAB Medium Rectangle 300×250) auf drei Bildschirmen: Startseite, Verlauf, Einstellungen. Aufgaben werden sofort nach Bestätigung ausgeführt, es wird keine Werbung davor eingeblendet.
 
-- **Werbe-Kennung** — unter iOS die Apple-Werbe-Kennung (IDFA), die iOS nur liefert, wenn Sie die App-Tracking-Transparenz-Erlaubnis erteilt haben
+**Werbung ist nicht personalisiert.** Die App ruft die App-Tracking-Transparenz-API nicht auf und liest die Apple-Werbe-Kennung (IDFA) nicht. Alle Werbung wird auf Basis von Echtzeit-Kontext ausgeliefert, ohne Verknüpfung mit Ihrem Nutzungsverhalten. AdMob kann folgende Daten erhalten:
+
 - **Geräteinformationen** wie Gerätemodell, Systemversion, Bildschirmgröße, Sprache und Region
 - **Werbe-Auslieferungsmetadaten** wie Anzeigenblock-ID, Anzeigentyp und ob Sie die Anzeige gesehen oder angeklickt haben
 - **IP-Adresse**, zur ungefähren Standortschätzung (in der Regel Land oder Stadt) und zur Betrugsprävention
-
-Sie können:
-
-- Im iOS-Tracking-Dialog „App nicht nachverfolgen" wählen, um personalisierte Werbung abzulehnen — die App-Funktionen bleiben vollständig, nur die Werbung ist nicht mehr personalisiert
-- Die IDFA unter **Einstellungen → Datenschutz & Sicherheit → Tracking** zurücksetzen oder beschränken
 
 Mit einem Pro-Abo verschwindet die Werbung, AdMob erhält dann keine Daten mehr von der App.
 
@@ -99,9 +95,8 @@ Käufe laufen über den Apple App Store. Dessen Umgang mit den Kaufdaten richtet
 |---|---|---|
 | **Album-Zugriff** | Lesen der zu verarbeitenden Videos, Schreiben der erzeugten Video- oder Audiodateien | Ja, für die Verarbeitung erforderlich |
 | **Dateizugriff (Files-App)** | Lesen oder Speichern in der Files-App | Nein — nur wenn Sie Files als Quelle wählen |
-| **Tracking (ATT, nur iOS)** | Für Werbenetzwerke zur Anzeige personalisierter Werbung in der Gratisversion | Nein — Sie können ablehnen, die App-Funktionen bleiben gleich, nur die Werbung ist dann nicht personalisiert |
 
-Die App fordert **keine** Berechtigung für Kamera, Mikrofon, Kontakte oder Standort an.
+Die App fordert **keine** Berechtigung für Kamera, Mikrofon, Kontakte, Standort oder Tracking (ATT) an.
 
 ## 6. Kinderdatenschutz
 
@@ -124,12 +119,12 @@ Wenn Sie sich im Europäischen Wirtschaftsraum oder im Vereinigten Königreich b
 Da die App keine serverseitigen Nutzerprofile speichert, sind die meisten dieser Rechte bereits durch das Design erfüllt:
 
 - Ihre Videos und Audios verlassen Ihr Gerät nicht; mit der Deinstallation ist alles entfernt
-- Um personalisierte Werbung zu stoppen, nutzen Sie die Tracking-Steuerung in Abschnitt 4.1
+- Werbung ist stets nicht personalisiert (siehe Abschnitt 4.1); keine zusätzlichen Einstellungen nötig
 - Um die Verknüpfung mit Ihren Käufen zu löschen, kontaktieren Sie uns und verlangen Sie die Löschung der mit Ihrem Beleg verknüpften RevenueCat-Datensätze
 
 ### 8.2 CCPA / CPRA (Kalifornien)
 
-Kalifornische Bewohner haben das Recht zu erfahren, welche personenbezogenen Informationen erhoben wurden, sie zu löschen, dem Verkauf oder der Weitergabe zu widersprechen und wegen der Ausübung dieser Rechte nicht benachteiligt zu werden. Die App **verkauft keine** personenbezogenen Informationen. Das „Teilen" für kontextübergreifende verhaltensbasierte Werbung richtet sich nach Ihrer Auswahl im Tracking-Dialog.
+Kalifornische Bewohner haben das Recht zu erfahren, welche personenbezogenen Informationen erhoben wurden, sie zu löschen, dem Verkauf oder der Weitergabe zu widersprechen und wegen der Ausübung dieser Rechte nicht benachteiligt zu werden. Die App **verkauft keine** personenbezogenen Informationen und **teilt keine** personenbezogenen Informationen für kontextübergreifende verhaltensbasierte Werbung — alle Werbung ist nicht personalisiert.
 
 ### 8.3 Andere Rechtsordnungen
 

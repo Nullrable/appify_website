@@ -15,7 +15,7 @@ By using the App, you agree to the practices described in this Policy.
 - **On-device OCR and translation.** Image text recognition and translation run locally using Apple Vision and Google ML Kit's on-device models. Your photos and translated text are **not uploaded** to any server we operate.
 - **No account.** The App does not require sign-up. We do not collect your name, email, phone number, or any contact information.
 - **Local history only.** Your translation history is stored on your device and can be cleared at any time.
-- **Ads (free tier).** The free tier displays ads served by Google AdMob. AdMob may receive device-level identifiers and contextual information used to select and measure ads, subject to your consent choices in iOS.
+- **Ads (free tier, non-personalized).** The free tier displays ads served by Google AdMob. The App **does not request** App Tracking Transparency permission and **does not read** Apple's Identifier for Advertisers (IDFA); all ads are contextual.
 - **Paid tier.** When you subscribe or buy the one-time upgrade, your purchase is validated by RevenueCat using an anonymous identifier and your Apple App Store receipt.
 
 ## 2. Data We Do Not Collect
@@ -61,18 +61,13 @@ The following third parties collect data when you use their features in the App.
 
 ### 4.1 Google Mobile Ads (AdMob) - Free Tier Only
 
-The free tier shows ads served by **Google Mobile Ads (AdMob)**. AdMob may receive:
+The free tier shows ads served by **Google Mobile Ads (AdMob)**.
 
-- **Advertising identifiers**, including Apple's Identifier for Advertisers (IDFA), which iOS only provides after you grant the App Tracking Transparency permission
+**Ads are non-personalized.** The App does not call the App Tracking Transparency API and does not read Apple's Identifier for Advertisers (IDFA). All ads are served based on real-time context, with no link to your device usage behavior. AdMob may receive:
+
 - **Device information** such as device model, OS version, screen size, language, and locale
 - **Ad-serving metadata** such as the ad unit ID, ad type, and whether you viewed or tapped an ad
 - **IP address** used to estimate coarse location (typically country or city) and to prevent fraud
-
-You can:
-
-- Decline ad personalization by choosing "Ask App Not to Track" on the iOS tracking prompt
-- Reset or limit the IDFA through **Settings -> Privacy & Security -> Tracking** on your device
-- Enable **Limit Ad Tracking** in iOS Settings
 
 If you purchase a subscription or the one-time upgrade, the `removeAds` entitlement suppresses ads from AdMob.
 
@@ -94,7 +89,7 @@ Purchases are processed by Apple. Apple's handling of purchase data is governed 
 | **Photo Library (limited)** | To import an existing photo from your library through the system picker | Only when you tap "Choose Photo" |
 | **Network** | To download translation models and to serve ads on the free tier | Yes, for first-time model setup and ads |
 
-The App does **not** request microphone, contacts, location, or background-tracking permissions.
+The App does **not** request microphone, contacts, location, tracking (ATT), or background-tracking permissions.
 
 ## 6. Children's Privacy
 
@@ -127,7 +122,7 @@ If you are in the EEA or UK, you have the right to:
 Because the App does not maintain a server-side user profile, most of these rights are satisfied automatically by the design of the App:
 
 - To erase translation history, clear it from in-app settings
-- To stop ad personalization, use the iOS tracking controls described in Section 4.1
+- Ads are always non-personalized (see Section 4.1); no additional controls needed
 - To delete your purchase association, use "Restore Purchases" with a new anonymous ID or contact us to request server-side deletion of any RevenueCat records linked to your receipt
 
 ### 8.2 CCPA / CPRA (California)
@@ -140,7 +135,7 @@ California residents have the right to:
 - **Limit** the use of sensitive personal information
 - **Non-discrimination** for exercising these rights
 
-The App does **not** sell personal information. "Sharing" for cross-context behavioral advertising is governed by your choices on the iOS tracking prompt.
+The App does **not** sell personal information, and does **not** share personal information for cross-context behavioral advertising - all ads are non-personalized.
 
 ### 8.3 Other Jurisdictions
 

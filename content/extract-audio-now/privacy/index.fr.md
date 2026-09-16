@@ -17,7 +17,7 @@ En utilisant l'application, vous acceptez les pratiques décrites dans cette pol
 - **Traitement local.** Tous les traitements vidéo (conversion, compression, extraction audio, fusion, découpage, vitesse, ajustement, GIF) s'exécutent localement sur votre appareil. Les fichiers vidéo, audio et résultats intermédiaires **ne sont jamais téléversés** sur aucun de nos serveurs.
 - **Pas de compte requis.** L'application ne demande aucune inscription. Nous ne collectons ni votre nom, ni e-mail, ni numéro de téléphone, ni aucune coordonnée.
 - **Pas d'analyse de contenu.** L'application n'analyse pas les pixels de la vidéo, ne fait pas de classification par IA, ni de détection d'objet ou de scène.
-- **Publicités (version gratuite).** La version gratuite affiche une bannière publicitaire Google AdMob (IAB Medium Rectangle 300×250) sur trois écrans : Accueil, Historique, Réglages. AdMob peut recevoir des identifiants au niveau de l'appareil et des informations contextuelles pour sélectionner et mesurer les publicités, dans le cadre de vos choix d'autorisation.
+- **Publicités (version gratuite, non personnalisées).** La version gratuite affiche une bannière publicitaire Google AdMob (IAB Medium Rectangle 300×250) sur trois écrans : Accueil, Historique, Réglages. L'application **ne demande pas** l'autorisation App Tracking Transparency et **ne lit pas** l'identifiant publicitaire d'Apple (IDFA); toutes les publicités sont contextuelles en temps réel.
 - **Version payante.** Quand vous souscrivez à Pro, l'achat passe par l'App Store ; RevenueCat utilise un identifiant anonyme et vos reçus pour vérifier l'abonnement.
 
 ## 2. Données que nous ne collectons pas
@@ -62,17 +62,13 @@ Les tiers suivants collectent des données lorsqu'ils vous rendent service. Leur
 
 ### 4.1 Google AdMob — version gratuite uniquement
 
-La version gratuite affiche des bannières de **Google AdMob** (IAB Medium Rectangle 300×250) sur trois écrans : Accueil, Historique, Réglages. Les tâches s'exécutent dès la confirmation, aucune publicité n'est insérée avant. AdMob peut recevoir :
+La version gratuite affiche des bannières de **Google AdMob** (IAB Medium Rectangle 300×250) sur trois écrans : Accueil, Historique, Réglages. Les tâches s'exécutent dès la confirmation, aucune publicité n'est insérée avant.
 
-- **Identifiant publicitaire** — sur iOS, l'identifiant publicitaire d'Apple (IDFA), fourni par iOS uniquement si vous avez accordé l'autorisation App Tracking Transparency
+**Publicités non personnalisées.** L'application n'appelle pas l'API App Tracking Transparency et ne lit pas l'identifiant publicitaire d'Apple (IDFA). Toutes les publicités sont servies selon le contexte en temps réel, sans lien avec votre comportement d'usage de l'appareil. AdMob peut recevoir :
+
 - **Informations sur l'appareil** comme modèle, version système, taille d'écran, langue et région
 - **Métadonnées de diffusion publicitaire** comme l'identifiant d'unité, le type de publicité, et le fait que vous ayez vu ou cliqué la publicité
 - **Adresse IP**, pour estimer une localisation approximative (en général pays ou ville) et prévenir la fraude
-
-Vous pouvez :
-
-- Choisir « Demander à l'app de ne pas me suivre » dans l'invite de suivi iOS pour refuser la personnalisation publicitaire — les fonctions restent intactes, seules les publicités ne sont plus personnalisées
-- Réinitialiser ou restreindre l'IDFA dans **Réglages → Confidentialité et sécurité → Suivi** sur votre appareil iOS
 
 Sous Pro, les publicités disparaissent et AdMob ne reçoit plus rien de l'app.
 
@@ -99,9 +95,8 @@ Les achats sont traités par l'App Store d'Apple. Leur traitement des données d
 |---|---|---|
 | **Accès à l'album** | Lire les vidéos à traiter, écrire les vidéos ou audios produits | Oui, indispensable pour le traitement |
 | **Accès aux fichiers (app Files)** | Lire ou enregistrer dans les fichiers de l'app Files | Non — utilisé seulement si vous choisissez Files comme source |
-| **Suivi (ATT, iOS uniquement)** | Requis par les réseaux publicitaires pour la pub personnalisée en version gratuite | Non — vous pouvez refuser, les fonctions restent intactes, seules les publicités ne sont plus personnalisées |
 
-L'app **ne demande pas** l'accès à la caméra, au micro, aux contacts ou à la localisation.
+L'app **ne demande pas** l'accès à la caméra, au micro, aux contacts, à la localisation ni au suivi (ATT).
 
 ## 6. Vie privée des enfants
 
@@ -124,12 +119,12 @@ Si vous êtes dans l'Espace économique européen ou au Royaume-Uni, vous dispos
 L'application ne conservant aucun profil utilisateur côté serveur, la plupart des droits ci-dessus sont satisfaits par construction :
 
 - Vos vidéos et audios ne quittent jamais votre appareil ; désinstaller l'application efface tout
-- Pour cesser la personnalisation publicitaire, utilisez les réglages de suivi décrits en 4.1
+- Les publicités sont toujours non personnalisées (voir section 4.1) ; aucun réglage supplémentaire n'est nécessaire
 - Pour supprimer le lien avec vos achats, contactez-nous afin de demander la suppression des enregistrements RevenueCat associés à votre reçu
 
 ### 8.2 CCPA / CPRA (Californie)
 
-Les résidents californiens ont le droit de savoir quelles informations personnelles sont collectées, de les supprimer, de refuser leur vente ou leur partage, et de ne pas subir de discrimination pour avoir exercé ces droits. L'application **ne vend pas** d'informations personnelles. Le « partage » pour la publicité comportementale contextuelle dépend de votre choix dans l'invite de suivi.
+Les résidents californiens ont le droit de savoir quelles informations personnelles sont collectées, de les supprimer, de refuser leur vente ou leur partage, et de ne pas subir de discrimination pour avoir exercé ces droits. L'application **ne vend pas** d'informations personnelles, et **ne partage pas** d'informations personnelles pour la publicité comportementale contextuelle — toutes les publicités sont non personnalisées.
 
 ### 8.3 Autres juridictions
 

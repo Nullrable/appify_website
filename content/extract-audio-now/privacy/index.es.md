@@ -17,7 +17,7 @@ Al usar la app, aceptas las prácticas descritas en esta política.
 - **Procesado en el dispositivo.** Todo el procesado de vídeo (conversión, compresión, extracción de audio, unión, recorte, velocidad, ajuste y GIF) se ejecuta en local. Los archivos de vídeo, audio y los resultados intermedios **nunca se suben** a ningún servidor nuestro.
 - **Sin cuenta.** La app no requiere registro. No recogemos tu nombre, correo electrónico, número de teléfono ni ningún dato de contacto.
 - **Sin análisis de contenido.** La app no analiza el contenido en píxeles del vídeo, no hace clasificación con IA ni detección de objetos o escenas.
-- **Publicidad (versión gratuita).** La versión gratuita muestra un banner publicitario de Google AdMob (IAB Medium Rectangle 300×250) en tres pantallas: Inicio, Historial y Ajustes. AdMob puede recibir identificadores a nivel de dispositivo e información contextual para seleccionar y medir anuncios, siempre sujetos a tus decisiones de consentimiento.
+- **Publicidad (versión gratuita, no personalizada).** La versión gratuita muestra un banner publicitario de Google AdMob (IAB Medium Rectangle 300×250) en tres pantallas: Inicio, Historial y Ajustes. La app **no solicita** el permiso de App Tracking Transparency y **no lee** el identificador publicitario de Apple (IDFA); todos los anuncios son contextuales en tiempo real.
 - **Versión de pago.** Cuando te suscribes a Pro, la compra se gestiona desde el App Store; RevenueCat usa un identificador anónimo y tus recibos para verificar la suscripción.
 
 ## 2. Datos que no recogemos
@@ -62,17 +62,13 @@ Los siguientes terceros recogen datos cuando te prestan sus servicios. El uso qu
 
 ### 4.1 Google AdMob — solo versión gratuita
 
-La versión gratuita muestra banners de **Google AdMob** (IAB Medium Rectangle 300×250) en tres pantallas: Inicio, Historial y Ajustes. Las tareas se ejecutan en cuanto se confirman; no se intercala publicidad antes. AdMob puede recibir:
+La versión gratuita muestra banners de **Google AdMob** (IAB Medium Rectangle 300×250) en tres pantallas: Inicio, Historial y Ajustes. Las tareas se ejecutan en cuanto se confirman; no se intercala publicidad antes.
 
-- **Identificador publicitario** — en iOS, el identificador publicitario de Apple (IDFA), que iOS solo facilita si has concedido el permiso de App Tracking Transparency.
+**La publicidad no está personalizada.** La app no llama a la API de App Tracking Transparency y no lee el identificador publicitario de Apple (IDFA). Todos los anuncios se sirven según el contexto en tiempo real, sin vincularlos a tu comportamiento de uso del dispositivo. AdMob puede recibir:
+
 - **Información del dispositivo**, como modelo, versión del sistema, tamaño de pantalla, idioma y región.
 - **Metadatos de la impresión publicitaria**, como identificador del bloque, tipo de anuncio, y si has visto o has hecho clic en el anuncio.
 - **Dirección IP**, para estimar una ubicación aproximada (normalmente a nivel de país o ciudad) y prevenir fraude.
-
-Puedes:
-
-- Elegir «Pedir a la app que no rastree» en el aviso de rastreo de iOS para rechazar la personalización publicitaria — la app sigue funcionando igual, solo la publicidad deja de estar personalizada.
-- Restablecer o limitar el IDFA en **Ajustes → Privacidad y seguridad → Rastreo** de tu dispositivo iOS.
 
 Con la suscripción Pro la publicidad desaparece y AdMob deja de recibir datos desde la app.
 
@@ -99,9 +95,8 @@ Las compras se gestionan en el App Store de Apple. El tratamiento de los datos d
 |---|---|---|
 | **Acceso al álbum** | Leer los vídeos a procesar y escribir los vídeos o audios resultantes. | Sí, imprescindible para procesar. |
 | **Acceso a archivos (app Files)** | Leer o guardar archivos en la app Files. | No — solo se usa si eliges Files como fuente. |
-| **Rastreo (ATT, solo iOS)** | Lo requieren las redes publicitarias para mostrar anuncios personalizados en la versión gratuita. | No — puedes rechazarlo, la app sigue funcionando igual, solo se muestran anuncios no personalizados. |
 
-La app **no solicita** permiso de cámara, micrófono, contactos ni ubicación.
+La app **no solicita** permiso de cámara, micrófono, contactos, ubicación ni rastreo (ATT).
 
 ## 6. Privacidad infantil
 
@@ -124,12 +119,12 @@ Si te encuentras en el Espacio Económico Europeo o en el Reino Unido, tienes de
 Como la app no mantiene perfiles de usuario en el servidor, la mayoría de estos derechos se cumplen ya por el propio diseño:
 
 - Tus vídeos y audios nunca salen del dispositivo; al desinstalar la app, todo desaparece.
-- Para detener la personalización publicitaria, usa los controles de rastreo descritos en la sección 4.1.
+- La publicidad siempre es no personalizada (consulta la sección 4.1); no hacen falta controles adicionales.
 - Para eliminar la asociación con tus compras, contacta con nosotros y solicita la eliminación de cualquier registro de RevenueCat vinculado a tu recibo.
 
 ### 8.2 CCPA / CPRA (California)
 
-Los residentes en California tienen derecho a saber qué información personal se ha recogido, a eliminarla, a excluirse de su venta o compartición, y a no sufrir discriminación por ejercer estos derechos. La app **no vende** información personal. La «compartición» para publicidad conductual entre contextos depende de tu elección en el aviso de rastreo.
+Los residentes en California tienen derecho a saber qué información personal se ha recogido, a eliminarla, a excluirse de su venta o compartición, y a no sufrir discriminación por ejercer estos derechos. La app **no vende** información personal y **no comparte** información personal para publicidad conductual entre contextos: todos los anuncios son no personalizados.
 
 ### 8.3 Otras jurisdicciones
 

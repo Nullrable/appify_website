@@ -17,7 +17,7 @@ By using the app, you agree to the practices described here.
 - **On-device processing.** All video processing (convert, compress, extract audio, merge, clip, speed, resize, GIF) runs locally on your device. Video files, audio files, and intermediate results are **never uploaded** to any server we operate.
 - **No account required.** The app doesn't require sign-up. We don't collect your name, email, phone number, or any contact info.
 - **No content analysis.** The app doesn't analyze pixel content of your video - no AI classification, object detection, or scene recognition.
-- **Advertising (free version).** The free version shows banner ads (IAB Medium Rectangle 300x250) on the Home, History, and Settings screens, served by Google AdMob. AdMob may receive device-level identifiers and contextual information used to select and measure ads, subject to your consent choices.
+- **Advertising (free version, non-personalized).** The free version shows banner ads (IAB Medium Rectangle 300x250) on the Home, History, and Settings screens, served by Google AdMob. The app **does not request** App Tracking Transparency permission and **does not read** Apple's Identifier for Advertisers (IDFA); all ads are contextual.
 - **Paid version.** When you subscribe to Pro, purchase is handled by the App Store, and RevenueCat uses an anonymous identifier and your store receipt to verify the subscription.
 
 ## 2. Data we do not collect
@@ -62,17 +62,13 @@ The following third parties collect data in order to provide their services to y
 
 ### 4.1 Google AdMob - free version only
 
-The free version shows banner ads (IAB Medium Rectangle 300x250) on the Home, History, and Settings screens, served by **Google AdMob**. Tasks execute as soon as they're confirmed - no ad plays before the task. AdMob may receive:
+The free version shows banner ads (IAB Medium Rectangle 300x250) on the Home, History, and Settings screens, served by **Google AdMob**. Tasks execute as soon as they're confirmed - no ad plays before the task.
 
-- **Advertising identifier** - on iOS, this is Apple's IDFA, provided by iOS only after you grant App Tracking Transparency permission
+**Ads are non-personalized.** The app does not call the App Tracking Transparency API and does not read Apple's Identifier for Advertisers (IDFA). All ads are served based on real-time context, with no link to your device usage behavior. AdMob may receive:
+
 - **Device information**, such as device model, OS version, screen size, language, and region
 - **Ad-serving metadata**, such as ad unit ID, ad type, and whether you viewed or clicked an ad
 - **IP address**, used to estimate coarse location (usually country or city) and to prevent fraud
-
-You can:
-
-- Choose "Ask App Not to Track" in the iOS tracking prompt to decline ad personalization - app functionality is unchanged; ads just stop being personalized
-- Reset or restrict IDFA in your iOS device's **Settings -> Privacy & Security -> Tracking**
 
 After subscribing to Pro, ads are removed and AdMob no longer receives data from this app.
 
@@ -99,9 +95,8 @@ Purchases are handled by the Apple App Store. Its handling of purchase data is g
 |---|---|---|
 | **Photo library access** | Read videos to process, write processed video or audio | Yes - required for processing |
 | **File access (Files app)** | Read or save files in the iOS Files app | No - only used when you actively choose Files as a source |
-| **Tracking (ATT, iOS only)** | Required for the ad network to show personalized ads in the free version | No - you can decline; the app still works, just showing non-personalized ads |
 
-The app does **not** request camera, microphone, contacts, or location permission.
+The app does **not** request camera, microphone, contacts, location, or tracking (ATT) permission.
 
 ## 6. Children's privacy
 
@@ -124,12 +119,12 @@ If you're in the EEA or UK, you have the right to access, correct, delete, restr
 Because the app does not maintain any server-side user profile, most of the rights above are already satisfied by the app's design:
 
 - Your videos and audio never leave your device; uninstalling the app removes them all
-- To stop ad personalization, use the tracking controls described in Section 4.1
+- Ads are always non-personalized (see Section 4.1); no additional controls needed
 - To delete your purchase association, contact us and request deletion of any RevenueCat records tied to your receipt
 
 ### 8.2 CCPA / CPRA (California)
 
-California residents have the right to know what personal information is collected, to delete that information, to opt out of its sale or sharing, and the right not to be discriminated against for exercising these rights. The app does **not** sell personal information. "Sharing" for cross-context behavioral advertising is governed by your choice in the tracking prompt.
+California residents have the right to know what personal information is collected, to delete that information, to opt out of its sale or sharing, and the right not to be discriminated against for exercising these rights. The app does **not** sell personal information, and does not share personal information for cross-context behavioral advertising - all ads are non-personalized.
 
 ### 8.3 Other jurisdictions
 

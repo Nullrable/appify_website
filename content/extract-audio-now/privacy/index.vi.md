@@ -17,7 +17,7 @@ Bằng việc sử dụng ứng dụng, bạn đồng ý với các thực hành
 - **Xử lý trên thiết bị.** Mọi xử lý video (chuyển đổi, nén, trích xuất âm thanh, ghép, cắt, đổi tốc độ, điều chỉnh, GIF) chạy cục bộ trên thiết bị của bạn. Tệp video, tệp âm thanh và kết quả trung gian **không bao giờ được tải lên** bất kỳ máy chủ nào chúng tôi vận hành.
 - **Không yêu cầu tài khoản.** Ứng dụng không yêu cầu đăng ký. Chúng tôi không thu thập tên, email, số điện thoại hay bất kỳ thông tin liên hệ nào của bạn.
 - **Không phân tích nội dung.** Ứng dụng không phân tích nội dung pixel của video - không phân loại AI, không phát hiện vật thể, không nhận diện cảnh.
-- **Quảng cáo (bản miễn phí).** Bản miễn phí hiển thị quảng cáo banner (IAB Medium Rectangle 300×250) trên Trang chủ, Lịch sử và Cài đặt, do Google AdMob phục vụ. AdMob có thể nhận mã định danh cấp thiết bị và thông tin ngữ cảnh dùng để chọn và đo lường quảng cáo, theo lựa chọn đồng ý của bạn.
+- **Quảng cáo (bản miễn phí, không cá nhân hoá).** Bản miễn phí hiển thị quảng cáo banner (IAB Medium Rectangle 300×250) trên Trang chủ, Lịch sử và Cài đặt, do Google AdMob phục vụ. Ứng dụng **không yêu cầu** quyền App Tracking Transparency và **không đọc** mã định danh quảng cáo (IDFA) của Apple; mọi quảng cáo đều dựa trên ngữ cảnh thời gian thực.
 - **Bản trả phí.** Khi bạn đăng ký Pro, giao dịch mua do App Store xử lý, và RevenueCat dùng một mã định danh ẩn danh cùng biên lai cửa hàng của bạn để xác minh thuê bao.
 
 ## 2. Dữ liệu chúng tôi không thu thập
@@ -62,17 +62,13 @@ Các bên thứ ba sau thu thập dữ liệu để cung cấp dịch vụ của
 
 ### 4.1 Google AdMob - chỉ ở bản miễn phí
 
-Bản miễn phí hiển thị quảng cáo banner (IAB Medium Rectangle 300×250) trên Trang chủ, Lịch sử và Cài đặt, do **Google AdMob** phục vụ. Tác vụ thực thi ngay khi được xác nhận - không có quảng cáo nào chạy trước tác vụ. AdMob có thể nhận:
+Bản miễn phí hiển thị quảng cáo banner (IAB Medium Rectangle 300×250) trên Trang chủ, Lịch sử và Cài đặt, do **Google AdMob** phục vụ. Tác vụ thực thi ngay khi được xác nhận - không có quảng cáo nào chạy trước tác vụ.
 
-- **Mã định danh quảng cáo** - trên iOS là IDFA của Apple, do iOS cung cấp chỉ sau khi bạn cấp quyền App Tracking Transparency
+**Quảng cáo không được cá nhân hoá.** Ứng dụng không gọi App Tracking Transparency API và không đọc mã định danh quảng cáo (IDFA) của Apple. Mọi quảng cáo được phục vụ theo ngữ cảnh thời gian thực, không liên kết với hành vi dùng thiết bị của bạn. AdMob có thể nhận:
+
 - **Thông tin thiết bị**, như model thiết bị, phiên bản hệ điều hành, kích thước màn hình, ngôn ngữ và khu vực
 - **Siêu dữ liệu phục vụ quảng cáo**, như ID đơn vị quảng cáo, loại quảng cáo, và việc bạn đã xem hay bấm vào quảng cáo hay không
 - **Địa chỉ IP**, dùng để ước lượng vị trí gần đúng (thường là quốc gia hoặc thành phố) và ngăn chặn gian lận
-
-Bạn có thể:
-
-- Chọn "Yêu cầu ứng dụng không theo dõi" trong hộp thoại theo dõi iOS để từ chối cá nhân hoá quảng cáo - chức năng ứng dụng không đổi; quảng cáo chỉ không còn được cá nhân hoá
-- Đặt lại hoặc hạn chế IDFA trong **Cài đặt -> Quyền riêng tư & Bảo mật -> Theo dõi** của thiết bị iOS
 
 Sau khi đăng ký Pro, quảng cáo được gỡ bỏ và AdMob không còn nhận dữ liệu từ ứng dụng này.
 
@@ -99,9 +95,8 @@ Giao dịch mua do Apple App Store xử lý. Việc xử lý dữ liệu mua hà
 |---|---|---|
 | **Truy cập thư viện ảnh** | Đọc video cần xử lý, ghi video hoặc âm thanh đã xử lý | Có - bắt buộc để xử lý |
 | **Truy cập tệp (ứng dụng Files)** | Đọc hoặc lưu tệp trong ứng dụng iOS Files | Không - chỉ dùng khi bạn chủ động chọn Files làm nguồn |
-| **Theo dõi (ATT, chỉ iOS)** | Cần thiết để mạng quảng cáo hiển thị quảng cáo cá nhân hoá trong bản miễn phí | Không - bạn có thể từ chối; ứng dụng vẫn chạy, chỉ hiển thị quảng cáo không cá nhân hoá |
 
-Ứng dụng **không** yêu cầu quyền camera, microphone, danh bạ hoặc vị trí.
+Ứng dụng **không** yêu cầu quyền camera, microphone, danh bạ, vị trí hoặc theo dõi (ATT).
 
 ## 6. Quyền riêng tư của trẻ em
 
@@ -124,12 +119,12 @@ Nếu bạn ở EEA hoặc Vương quốc Anh, bạn có quyền truy cập, s�
 Vì ứng dụng không duy trì hồ sơ người dùng phía máy chủ, phần lớn các quyền trên đã được thiết kế của ứng dụng đáp ứng tự động:
 
 - Video và âm thanh của bạn không bao giờ rời thiết bị; gỡ cài đặt ứng dụng là xóa hết
-- Để dừng cá nhân hoá quảng cáo, dùng các điều khiển theo dõi mô tả trong Mục 4.1
+- Quảng cáo luôn không được cá nhân hoá (xem Mục 4.1); không cần thêm điều khiển nào
 - Để xóa liên kết mua hàng của bạn, hãy liên hệ chúng tôi và yêu cầu xóa mọi bản ghi RevenueCat gắn với biên lai của bạn
 
 ### 8.2 CCPA / CPRA (California)
 
-Cư dân California có quyền biết thông tin cá nhân nào được thu thập, xóa thông tin đó, chọn không tham gia vào việc bán hoặc chia sẻ thông tin đó, và quyền không bị phân biệt đối xử vì thực hiện các quyền này. Ứng dụng **không** bán thông tin cá nhân. "Chia sẻ" cho quảng cáo hành vi xuyên ngữ cảnh được quyết định bởi lựa chọn của bạn trong hộp thoại theo dõi.
+Cư dân California có quyền biết thông tin cá nhân nào được thu thập, xóa thông tin đó, chọn không tham gia vào việc bán hoặc chia sẻ thông tin đó, và quyền không bị phân biệt đối xử vì thực hiện các quyền này. Ứng dụng **không** bán thông tin cá nhân, cũng **không** chia sẻ thông tin cá nhân cho quảng cáo hành vi xuyên ngữ cảnh — mọi quảng cáo đều không được cá nhân hoá.
 
 ### 8.3 Khu vực tài phán khác
 
