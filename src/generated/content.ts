@@ -18,6 +18,126 @@ export interface ContentEntry {
 
 export const contentEntries: ContentEntry[] = [
   {
+    appId: "audio-editor",
+    article: {
+      section: "about",
+      slug: "index",
+      lang: "zh",
+      title: "关于音频编辑器 - 离线编辑、增强与转换",
+      description: "音频编辑器是一款 iPhone 上的离线音频工具。覆盖编辑、增强、转换三大类,音频输入 10 种、导出 4 种,视频 8 种。",
+      date: "2026-10-17",
+      html: "<p>音频编辑器是一款 iPhone 上的离线音频处理工具,围绕编辑、增强、转换三大类。视频文件可以喂进来拆音轨,但编辑器本身只接受音频片段 — 所有处理都在设备本地完成,文件不上传。</p>\n<h2>三大功能分类</h2>\n<p><strong>编辑</strong> — 多段音频放进时间线,逐轨裁剪、分段、重排、变速、倒放。每段可以单独保存为新片段,导出前原文件全程不动。</p>\n<p><strong>增强</strong> — 声道拆分、声道合并、降噪、人声增强、音量归一、立体声扩展。这些效果可以在同一段音频上叠加,顺序由你定。</p>\n<p><strong>转换</strong> — 读取 10 种音频输入格式,导出为 MP3、WAV、FLAC、OGG 四种之一;也可以从 MP4、MOV、M4V、AVI、MKV、WebM、FLV、WMV 视频里拆出音轨。视频不会被编辑器直接打开,只作为&quot;音轨来源&quot;使用。</p>\n<h2>支持的格式</h2>\n<p>音频输入 10 种:MP3、WAV、M4A、AAC、FLAC、OGG、Opus、AIFF、AMR、CAF;音频导出 4 种:MP3、WAV、FLAC、OGG。</p>\n<p>视频 8 种,仅作为&quot;音轨来源&quot;被读取:MP4、MOV、M4V、AVI、MKV、WebM、FLV、WMV。编辑器本身不接受视频片段。</p>\n<h2>完全在本地</h2>\n<p>编辑、增强、转换、提取、压缩、合并 — 所有处理都在 iPhone 上跑。视频、音频文件,以及中间结果都不会上传到任何服务器。唯一的网络调用只有免费版在主页、历史、设置三处显示的横幅广告,以及通过 RevenueCat 的订阅校验。</p>\n<h2>免费版与 Pro</h2>\n<p>所有功能免费使用。免费版在主页、历史、设置三处显示横幅广告;Pro 订阅去掉横幅广告。订阅通过 App Store 自动续费管理。</p>\n<h2>历史与草稿</h2>\n<p>每次任务都记入历史,可以重看参数或重新执行。多轨编辑器的草稿在拖动过程中自动保存 — 切换页面再回来,设置还在。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "blog",
+      slug: "audio-editor-vs-online-tools",
+      lang: "zh",
+      title: "音频编辑器 vs 在线工具 - 为什么离线更适合音频处理",
+      description: "在线音频工具看似方便,实际上传文件后隐私、速度、大小都有代价。这一篇讲清离线与在线的取舍。",
+      date: "2026-10-17",
+      html: "<h2>音频编辑器 vs 在线工具</h2>\n<p>手机里有一堆音频素材要处理,你大概会先想到两种办法:装一个本地 App,或者打开浏览器搜一个网页工具。这一篇把两种方案放在一起比较,看看各自的取舍。</p>\n<h2>在线工具的卖点</h2>\n<ul>\n<li><strong>不用装 App</strong> — 浏览器打开就能用,占内存为零</li>\n<li><strong>工具丰富</strong> — 一些聚合站点把多个工具拼在一起,转换、剪辑、降噪都有</li>\n<li><strong>跨平台</strong> — 桌面、手机、平板通用</li>\n</ul>\n<h2>在线工具的代价</h2>\n<p>这些代价不是隐藏的,只是很多人用之前没意识到:</p>\n<ul>\n<li><strong>文件上传</strong> — 你的音频文件先跑到他们的服务器,处理完再下回来。传输时间不短,流量也不小</li>\n<li><strong>隐私风险</strong> — 音频里可能含有未公开的内容、采访素材、合同朗读、客户通话。这些一旦上传,服务器侧发生了什么你无从知晓</li>\n<li><strong>大小限制</strong> — 大部分在线工具限制文件尺寸,几十分钟的录音常常塞不进去</li>\n<li><strong>依赖网络</strong> — 没信号或信号弱的地铁、飞机、地下车库,基本不能用</li>\n<li><strong>订阅与广告</strong> — 真正好用的在线工具大多收费;免费的多半强制注册、强制看广告、强制分享</li>\n</ul>\n<h2>离线工具的优势</h2>\n<p>音频编辑器这类本地 App 的优势,跟在线工具的代价一一对应:</p>\n<ul>\n<li><strong>不上传</strong> — 文件全程留在你的 iPhone 上,处理完也不会有任何服务器侧副本</li>\n<li><strong>不限大小</strong> — 只受设备内存限制,几个小时的高码率录音也能跑</li>\n<li><strong>完全离线</strong> — 地铁、飞机、地下车库里照常工作</li>\n<li><strong>一次下载,永久使用</strong> — 不用每次重新打开网页,不用每次重新上传</li>\n</ul>\n<h2>离线工具的取舍</h2>\n<p>本地 App 也有代价 — 占存储空间、需要下载、对系统版本有要求。</p>\n<p>音频编辑器选择用本地 App 的方式做音频处理,核心原因是:<strong>音频是一种&quot;内容敏感度极高&quot;的素材</strong>。它可能包含未公开的访谈、未发布的产品演示、未签字的口头协议。把这些文件传到一个不知名的小服务器上,风险远大于便利本身。</p>\n<h2>谁适合哪种</h2>\n<ul>\n<li><strong>偶尔用</strong> — 把一段自己唱的歌转个格式,在线工具能用</li>\n<li><strong>处理敏感素材</strong> — 采访、客户通话、未公开的播客,选本地 App</li>\n<li><strong>处理大文件</strong> — 几小时的会议录音、本地课程素材,本地 App 才能跑得动</li>\n<li><strong>经常处理</strong> — 每天几段素材,本地 App 排队、自动续上,比反复上传下载省事得多</li>\n</ul>\n<h2>一个简单的判断</h2>\n<p>如果你处理的素材里<strong>有任何一句你不想被第三方服务器看到的话</strong>,选本地 App。这不是技术问题,是边界问题。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "blog",
+      slug: "getting-started",
+      lang: "zh",
+      title: "快速上手 - 5 分钟搞定一段音频",
+      description: "从打开 App 到导出新音频,跟着走一遍就会用。这一篇给你一个标准的第一次使用流程。",
+      date: "2026-10-17",
+      html: "<h2>快速上手</h2>\n<p>第一次打开音频编辑器,面对多轨编辑器、增强、转换、提取音轨,不知道从哪开始。这一篇带你走一遍最常见的路径 — 从一段现有素材,导出成你想要的新版本。</p>\n<h2>第一步:打开素材</h2>\n<p>启动 App 后,你会看到工具区(编辑 / 增强 / 转换 / 提取音轨)和素材入口。从相册或 Files 里挑一段音频(MP3、WAV、M4A、AAC、FLAC、OGG、Opus、AIFF、AMR、CAF 任选其一)。</p>\n<p>如果是从视频里来的,先到&quot;提取音轨&quot; — 把视频(MOV、MP4、M4V、AVI、MKV、WebM、FLV、WMV)的音轨单独拆出来,导成音频文件,再回到编辑流程。</p>\n<h2>第二步:放进时间线</h2>\n<p>进入多轨编辑器。挑出来的素材会自动落到时间线上 — 如果是多段,每段占一个独立轨道。如果只有一段,就一个轨道,你也可以再添加更多素材拼成一段。</p>\n<h2>第三步:裁剪与重排</h2>\n<p>时间线上,每段两端各一个把手。拖起点、拖终点,把不要的部分扔掉。也可以在某个时间点把一段切成两段,各自编辑。拖动片段可以重排顺序。</p>\n<h2>第四步:加效果</h2>\n<p>每段音频可以单独叠加增强效果:</p>\n<ul>\n<li><strong>降噪</strong> — 户外录音先降一次</li>\n<li><strong>人声增强</strong> — 播客、采访常用</li>\n<li><strong>音量归一</strong> — 多段响度不一致时统一一下</li>\n<li><strong>声道拆分 / 合并 / 立体声扩展</strong> — 看需要选</li>\n</ul>\n<p>每个效果调整时都能实时预览 — 听到满意再继续。</p>\n<h2>第五步:变速 / 倒放(可选)</h2>\n<p>需要变速或倒放,直接在轨道上操作。0.25× 到 4× 连续滑杆;倒放一键反序。</p>\n<h2>第六步:预览与导出</h2>\n<p>导出前,先在 App 内完整听一遍 — 跟最终导出的听感应该一致。确认没问题后点导出。</p>\n<h2>第七步:保存</h2>\n<p>导出后,新文件先写到 app 沙盒目录,弹窗让你选 &quot;Save to Files&quot;。在 iOS Files App 里挑目录,新文件就落盘了。</p>\n<p>原素材全程没有被改动 — 你想留原片就留。</p>\n<h2>完全在本地</h2>\n<p>所有步骤都在 iPhone 上跑,文件不上传,网络断了也能照常用。免费版在主页、历史、设置三处显示横幅广告;Pro 订阅去掉广告。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "blog",
+      slug: "offline-vs-cloud-audio-editor",
+      lang: "zh",
+      title: "离线 vs 云端音频编辑器 - 你需要让音频上云吗",
+      description: "云端音频编辑器提供协作与跨设备,但代价是文件外发。这一篇讲清离线与云端各自的适用场景。",
+      date: "2026-10-17",
+      html: "<h2>离线 vs 云端音频编辑器</h2>\n<p>音频编辑器大致分两类:一类全程在本地处理,文件不上传;另一类依赖云端服务器,文件传到云上处理完再传回来。这一篇讲清两者的边界。</p>\n<h2>云端编辑器做了什么</h2>\n<p>云端编辑器把音频文件传到他们的服务器,在服务器上跑处理逻辑,处理完把新文件下回你的设备。云端有几个常见的卖点:</p>\n<ul>\n<li><strong>跨设备同步</strong> — 在手机上录的音频,可以在平板或电脑上继续编辑</li>\n<li><strong>多人协作</strong> — 同一段素材,多人可以同时编辑、评论、批准</li>\n<li><strong>算力强</strong> — 服务器可以跑很重的模型,做高质量降噪、人声分离、自动字幕</li>\n</ul>\n<h2>云端的代价</h2>\n<p>代价同样不是隐藏的:</p>\n<ul>\n<li><strong>文件外发</strong> — 你的音频内容会短暂或长期留在第三方服务器上</li>\n<li><strong>依赖网络</strong> — 没信号就用不了</li>\n<li><strong>上传时间</strong> — 大文件上传几十分钟是常见的</li>\n<li><strong>隐私合规</strong> — 涉及客户、未成年、合同、医疗、企业内部内容的音频,上传前需要过法务流程</li>\n<li><strong>订阅费</strong> — 真正好用的云端工具每月几十到几百不等</li>\n</ul>\n<h2>离线编辑器做了什么</h2>\n<p>离线编辑器(音频编辑器这一类)的处理逻辑都在你设备本地跑:</p>\n<ul>\n<li>文件读取在你的 iPhone 上</li>\n<li>解码、编辑、增强、编码在你的 iPhone 上</li>\n<li>结果文件写到你的 iPhone 上的 app 沙盒目录</li>\n<li>你点 &quot;Save to Files&quot; 后,文件落到 iOS Files App</li>\n</ul>\n<h2>离线的取舍</h2>\n<ul>\n<li><strong>不跨设备</strong> — 在 iPhone 上编辑的工程,不会自动出现在 Mac 上</li>\n<li><strong>不算力强</strong> — 设备算力有限,某些极端复杂的处理(几小时的多轨混音)会比云端慢</li>\n<li><strong>占存储</strong> — app 加上草稿、历史会占一些 iPhone 空间</li>\n</ul>\n<p>但同时:</p>\n<ul>\n<li><strong>完全不上传</strong> — 任何第三方服务器都不会接触到你的音频</li>\n<li><strong>完全离线可用</strong> — 没信号、地铁、飞机、地下车库照常工作</li>\n<li><strong>无订阅压力</strong> — 免费版能用所有功能,Pro 只是去广告</li>\n</ul>\n<h2>谁适合云端</h2>\n<ul>\n<li>处理非敏感素材(自己的歌、自己录的播客)</li>\n<li>多人协作是刚需(制作团队、远程协作)</li>\n<li>跨设备同步是刚需(手机录完电脑继续编辑)</li>\n<li>用得起每月几十到几百的订阅费</li>\n</ul>\n<h2>谁适合离线</h2>\n<ul>\n<li>音频里包含未公开内容、采访、客户通话、未签字的口头协议</li>\n<li>没有稳定网络,或者明确不想让音频外发</li>\n<li>处理大文件、长素材(几小时的会议、课程、播客)</li>\n<li>不想为这类工具每月付费</li>\n</ul>\n<h2>一个简单的判断</h2>\n<p>如果你的音频里<strong>有任何人不想被第三方看到的话</strong>,选离线。音频编辑器的整个设计都围绕这一条:<strong>你的音频留在你的设备上</strong>。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "features",
+      slug: "audio-extract",
+      lang: "zh",
+      title: "从视频里拆出音频 - MP4、MOV、M4V、AVI、MKV、WebM、FLV、WMV",
+      description: "把任何视频的音轨单独拆出来,导出成 MP3、WAV、FLAC、OGG 四种格式之一。",
+      date: "2026-10-17",
+      html: "<h2>从视频里拆出音频</h2>\n<p>视频里有一段话、一首歌、一段录音,只想留下声音。把画面扔掉,留下音轨,放进耳机、播客、剪辑里,都比带着视频轻便。</p>\n<h2>支持的视频来源</h2>\n<p>视频来源覆盖 8 种容器:<strong>MP4、MOV、M4V、AVI、MKV、WebM、FLV、WMV</strong>。编辑器本身不会打开视频,只把视频当作&quot;音轨来源&quot;。</p>\n<h2>导出的音频格式</h2>\n<p>音轨出来后,可以选 4 种格式之一作为容器:<strong>MP3、WAV、FLAC、OGG</strong>。</p>\n<table>\n<thead>\n<tr>\n<th>格式</th>\n<th>适合场景</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>MP3</strong></td>\n<td>最通用,几乎所有设备和播放器都支持</td>\n</tr>\n<tr>\n<td><strong>WAV</strong></td>\n<td>无损母带,适合二次剪辑或存档</td>\n</tr>\n<tr>\n<td><strong>FLAC</strong></td>\n<td>压缩后的无损,体积约为 WAV 一半</td>\n</tr>\n<tr>\n<td><strong>OGG</strong></td>\n<td>开源容器,部分专业设备偏好</td>\n</tr>\n</tbody></table>\n<h2>怎么用</h2>\n<p>从相册或 Files 里挑出一段或多段视频,挑好之后顶部出现格式芯片。选 MP3 通用、选 WAV 留作母带、选 FLAC 要无损但又嫌 WAV 太大,看场景定。</p>\n<h2>处理方式</h2>\n<p>一次挑出一段或多段视频,逐段拆音轨。原视频不会被改动 — 拆出来的是新文件,你想留哪个由你决定。</p>\n<h2>输出位置</h2>\n<p>完成后,音频文件先写到 app 内的沙盒目录(命名沿用原视频名,只换后缀),然后弹窗让你选 &quot;Save to Files&quot; — iOS Files App 让你挑目录保存。提取出的 MP3/WAV/FLAC/OGG 都不直接进相册。原视频不动。</p>\n<h2>完全在本地</h2>\n<p>视频和音频文件全程留在你的 iPhone 上,不上传,也不经过任何服务器。哪怕你在地铁里没信号,也能照常导出。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "features",
+      slug: "enhance",
+      lang: "zh",
+      title: "音频增强 - 声道拆分、降噪、人声增强、音量归一、立体声扩展",
+      description: "六个常用增强动作,可以单独使用,也可以在同一段音频上叠加,顺序由你定。",
+      date: "2026-10-17",
+      html: "<h2>音频增强</h2>\n<p>录音、播客、采访素材、户外收音,原始素材经常带着各种问题:底噪、混响、响度忽大忽小、声场拥挤。增强类工具就是用来在不动内容的前提下,把这些问题一个个收掉。</p>\n<h2>六个动作</h2>\n<ul>\n<li><strong>声道拆分</strong> — 把立体声拆成两路单声道,各自编辑</li>\n<li><strong>声道合并</strong> — 两路单声道合成一路立体声,或双单声道</li>\n<li><strong>降噪</strong> — 压低持续性的底噪(空调声、风声、电流声),保留瞬态</li>\n<li><strong>人声增强</strong> — 突出人声频段,弱化伴奏或环境声</li>\n<li><strong>音量归一</strong> — 把响度不一致的几段拉到同一水平,避免忽大忽小</li>\n<li><strong>立体声扩展</strong> — 拉宽声场,让原本偏窄的录音听起来更立体</li>\n</ul>\n<h2>叠加使用</h2>\n<p>这些动作不是开关,是模块。你可以在同一段音频上叠加多个效果,顺序由你定。常见的组合:</p>\n<ul>\n<li>户外采访:降噪 → 人声增强 → 音量归一</li>\n<li>翻录老磁带:降噪 → 立体声扩展 → 音量归一</li>\n<li>播客剪辑:声道拆分(嘉宾单独一轨) → 降噪 → 音量归一 → 合并</li>\n</ul>\n<p>效果顺序会影响最终听感,自己拖一拖听听就知道哪种顺序最适合你这段素材。</p>\n<h2>与编辑的关系</h2>\n<p>增强不是&quot;修完了再编辑&quot;,也不是&quot;编辑完了再修&quot;。两者都在多轨编辑器里完成:你可以一边裁剪、一边降噪、一边调整人声频段,最终一起导出。</p>\n<h2>实时预览</h2>\n<p>调整任何一个参数都能立刻听到变化,不用等导出。导出前的预览听感就是导出后的听感 — 该是什么样就是什么样。</p>\n<h2>完全在本地</h2>\n<p>降噪、人声增强、立体声扩展,这些处理都在 iPhone 上跑,音频不外发。导出后再决定分发到哪。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "features",
+      slug: "multi-track-editor",
+      lang: "zh",
+      title: "多轨音频编辑器 - 裁剪、变速、倒放,逐轨操作",
+      description: "把多段音频放进时间线,逐轨裁剪、分段、重排、变速、倒放。原文件全程不动,导出前先听一遍。",
+      date: "2026-10-17",
+      html: "<h2>多轨音频编辑器</h2>\n<p>一段录音、一首曲子、一段播客,经常不是从零开始,而是把已有的几段素材拼起来再加工。多轨编辑器做的事就是把这些素材放进同一条时间线,然后逐轨调整。</p>\n<h2>时间线怎么用</h2>\n<p>你可以同时放上多段音频,每段占据一个独立的轨道。轨道上下排开,左右就是时间。</p>\n<ul>\n<li><strong>裁剪</strong> — 一段两端各一个把手,拖起点、拖终点,把不要的部分扔掉</li>\n<li><strong>分段</strong> — 在某个时间点把一段切成两段,各自编辑</li>\n<li><strong>重排</strong> — 拖动片段在轨道内或跨轨道移动位置</li>\n<li><strong>变速</strong> — 0.25× 到 4× 连续滑杆,放慢或加快</li>\n<li><strong>倒放</strong> — 一键反序播放,适合做过渡音效</li>\n</ul>\n<h2>增强效果</h2>\n<p>每段音频可以单独叠加效果,顺序由你定:</p>\n<ul>\n<li><strong>声道拆分 / 合并</strong> — 把立体声拆成两路单声道,或者反过来</li>\n<li><strong>降噪</strong> — 压低底噪和环境声</li>\n<li><strong>人声增强</strong> — 突出人声频段,弱化伴奏</li>\n<li><strong>音量归一</strong> — 把响度不一致的几段拉到同一水平</li>\n<li><strong>立体声扩展</strong> — 拉宽声场</li>\n</ul>\n<p>这些效果可以叠加,顺序会影响最终听感 — 自己拖一拖听听就明白。</p>\n<h2>草稿自动保存</h2>\n<p>剪辑、变速、倒放、增强的参数在拖动过程中自动写入本地草稿。切换页面再回来,设置还在。草稿完全留在你的 iPhone 上,卸载应用即全部删除。</p>\n<h2>原文件不动</h2>\n<p>时间线上的所有操作都只发生在 app 的沙盒目录里。<strong>原音频全程不被改动</strong> — 你想留原片就留,想用新版本就用新版本。</p>\n<h2>导出</h2>\n<p>确认前可以先在 app 内完整预览一遍。导出后,新文件以新名字写入 app 沙盒目录,再弹窗让你选 &quot;Save to Files&quot; 落盘。导出的格式可以是 MP3、WAV、FLAC、OGG 四种之一。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "features",
+      slug: "supported-formats",
+      lang: "zh",
+      title: "完整格式清单 - 输入 10 种音频 + 导出 4 种 + 8 种视频",
+      description: "音频编辑器支持的所有格式都在这里。音频输入 10 种:MP3、WAV、M4A、AAC、FLAC、OGG、Opus、AIFF、AMR、CAF;音频导出 4 种:MP3、WAV、FLAC、OGG;视频 8 种:MP4、MOV、M4V、AVI、MKV、WebM、FLV、WMV。",
+      date: "2026-10-17",
+      html: "<h2>完整格式清单</h2>\n<p>这篇文章是一份速查表 — 音频编辑器支持的音频和视频格式都列在这里,以及什么场景该选哪个。</p>\n<p>输入和导出是两套不同的格式集合:app 能读 10 种音频,但只能写 4 种。视频只读、不被编辑器直接打开。</p>\n<h2>音频输入格式(10 种)</h2>\n<p>编辑器可以打开这 10 种音频文件 — 多轨编辑、增强、转换(compress / merge)都接受它们作为输入:</p>\n<table>\n<thead>\n<tr>\n<th>格式</th>\n<th>适合场景</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>MP3</strong></td>\n<td>通用播放器、车载系统、邮件附件。默认首选。</td>\n</tr>\n<tr>\n<td><strong>WAV</strong></td>\n<td>无损母带,适合混音、存档、二次剪辑。</td>\n</tr>\n<tr>\n<td><strong>M4A</strong></td>\n<td>AAC 的容器版本,Apple 生态常用。</td>\n</tr>\n<tr>\n<td><strong>AAC</strong></td>\n<td>Apple 生态首选,细节好、体积小。</td>\n</tr>\n<tr>\n<td><strong>FLAC</strong></td>\n<td>压缩后的无损,体积约为 WAV 的一半。</td>\n</tr>\n<tr>\n<td><strong>OGG</strong></td>\n<td>开源容器,部分专业播放器偏好。</td>\n</tr>\n<tr>\n<td><strong>Opus</strong></td>\n<td>现代低延迟编码,语音会议、播客、流媒体常见。</td>\n</tr>\n<tr>\n<td><strong>AIFF</strong></td>\n<td>macOS / Logic 生态首选,无损。</td>\n</tr>\n<tr>\n<td><strong>AMR</strong></td>\n<td>早期手机通话录音格式,3GPP 标准。</td>\n</tr>\n<tr>\n<td><strong>CAF</strong></td>\n<td>Apple Core Audio 容器,适合 iOS 二次处理。</td>\n</tr>\n</tbody></table>\n<h2>音频导出格式(4 种)</h2>\n<p>编辑器、多轨增强、转换最终落盘时只能写这 4 种之一:</p>\n<table>\n<thead>\n<tr>\n<th>格式</th>\n<th>适合场景</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>MP3</strong></td>\n<td>通用首选,几乎所有设备和播放器都认。</td>\n</tr>\n<tr>\n<td><strong>WAV</strong></td>\n<td>无损母带,适合二次剪辑或存档。</td>\n</tr>\n<tr>\n<td><strong>FLAC</strong></td>\n<td>压缩后的无损,体积约为 WAV 一半。</td>\n</tr>\n<tr>\n<td><strong>OGG</strong></td>\n<td>开源容器,部分专业设备偏好。</td>\n</tr>\n</tbody></table>\n<h2>视频格式(8 种)</h2>\n<p>视频文件<strong>不会</strong>被编辑器直接打开,只作为&quot;音轨来源&quot;使用:</p>\n<table>\n<thead>\n<tr>\n<th>格式</th>\n<th>适合场景</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>MP4</strong></td>\n<td>通用,几乎所有设备和播放器都认。</td>\n</tr>\n<tr>\n<td><strong>MOV</strong></td>\n<td>Apple 生态首选,iMovie、Final Cut、Logic 都吃。</td>\n</tr>\n<tr>\n<td><strong>M4V</strong></td>\n<td>iTunes 时代的视频容器,Apple 设备上跟 MP4 类似。</td>\n</tr>\n<tr>\n<td><strong>AVI</strong></td>\n<td>老牌容器,Windows 老应用兼容性最好。</td>\n</tr>\n<tr>\n<td><strong>MKV</strong></td>\n<td>开源容器,能装多音轨、多字幕,适合高清收藏。</td>\n</tr>\n<tr>\n<td><strong>WebM</strong></td>\n<td>网页视频常用,开源。</td>\n</tr>\n<tr>\n<td><strong>FLV</strong></td>\n<td>老 Flash 时代的流媒体格式,转给老素材用。</td>\n</tr>\n<tr>\n<td><strong>WMV</strong></td>\n<td>Windows Media Video,Windows 生态。</td>\n</tr>\n</tbody></table>\n<h2>怎么选</h2>\n<ul>\n<li><strong>通用分享</strong> → MP3 音频、MP4 视频</li>\n<li><strong>Apple 生态二次处理</strong> → MOV 视频</li>\n<li><strong>无损存档</strong> → WAV 或 FLAC 音频</li>\n<li><strong>网页或开源工作流</strong> → OGG 音频、WebM 视频</li>\n</ul>\n<h2>视频不会被编辑</h2>\n<p>编辑器时间线只接受音频片段。视频文件只能作为&quot;提供音轨&quot;的来源,不能被编辑器剪辑。</p>\n<h2>完全在本地</h2>\n<p>无论是音频还是视频,所有解码、编码、重写都在 iPhone 上完成,文件不离开设备。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "privacy",
+      slug: "index",
+      lang: "zh",
+      title: "隐私政策 - 音频编辑器",
+      description: "音频编辑器如何处理你的数据。涵盖设备端音频与视频处理、本地编辑与增强、免费版中的广告 SDK、RevenueCat 订阅管理,以及你的 GDPR 与 CCPA 权利。",
+      date: "2026-10-17",
+      html: "<p><strong>音频编辑器</strong>(&quot;<strong>我们</strong>&quot;)是一款 iPhone 上的音频与视频处理应用,其设计原则是:你的音频和视频留在你的设备上。本隐私政策说明本应用处理哪些数据、为什么处理,以及你拥有的选择。</p>\n<p>使用本应用,即表示你同意本政策所述的做法。</p>\n<p><strong>最后更新:2026 年 10 月 17 日</strong></p>\n<h2>1. 概要</h2>\n<ul>\n<li><strong>设备端处理。</strong> 所有音频与视频处理(编辑、增强、转换、提取音频、压缩、合并)均在你的设备上本地运行。音频文件、视频文件和中间结果<strong>绝不会上传</strong>到我们运营的任何服务器。</li>\n<li><strong>无需账号。</strong> 本应用不需要注册。我们不收集你的姓名、电子邮件、电话号码或任何联系信息。</li>\n<li><strong>无内容分析。</strong> 本应用不分析音频或视频的内容,不做 AI 分类、语音识别或说话人识别。</li>\n<li><strong>广告(免费版,非个性化)。</strong> 免费版在主页、历史、设置三个页面展示横幅广告。本应用<strong>不请求</strong> App Tracking Transparency 权限、不读取 Apple 的广告标识符,所有广告均基于实时上下文投放。</li>\n<li><strong>付费版。</strong> 当你订阅 Pro 时,购买由 App Store 处理,RevenueCat 使用匿名标识符和你的商店收据验证订阅。</li>\n</ul>\n<h2>2. 我们不收集的数据</h2>\n<p>我们<strong>不</strong>收集、传输或出售:</p>\n<ul>\n<li>你的音频或视频文件,或其任何缩略图</li>\n<li>音频或视频元数据(录制时间、时长、位置)或处理过程中的任何中间结果</li>\n<li>你的姓名、电子邮件、电话号码、邮寄地址或其他联系方式</li>\n<li>与你的音频、视频相关的精确或粗略位置</li>\n<li>你的联系人、日历、照片库索引或其他个人内容</li>\n</ul>\n<h2>3. 在你的设备上处理的数据</h2>\n<h3>3.1 多轨编辑器</h3>\n<p>音频片段放进时间线,按用户指定的入点、出点、顺序、倍率、比例、效果链(降噪、人声增强、音量归一、立体声扩展、声道拆分 / 合并)产出新音频。原文件全程不动,处理结果以新文件形式写入 app 沙盒目录。</p>\n<h3>3.2 音频格式转换</h3>\n<p>读取 MP3、WAV、M4A、AAC、FLAC、OGG、Opus、AIFF、AMR、CAF 任一输入格式,导出为 MP3、WAV、FLAC、OGG 之一。音频流本身按目标格式要求重编码,容器外壳更换。</p>\n<h3>3.3 视频提取音频</h3>\n<p>从 MP4、MOV、M4V、AVI、MKV、WebM、FLV、WMV 视频文件中剥离音轨,按用户选择的格式(MP3、WAV、FLAC、OGG 四种之一)重新编码。视频文件本身不被保留 — 仅作为音轨来源使用。</p>\n<h3>3.4 历史记录与草稿</h3>\n<p>每次任务的参数(工具类型、时间、文件路径、参数配置)写入本地数据库;多轨编辑器的草稿在用户拖动过程中自动保存。这些数据完全存储在你的设备上,卸载应用即全部删除。</p>\n<h2>4. 第三方服务收集的数据</h2>\n<p>以下第三方在为你提供服务时收集数据。它们对数据的使用受各自隐私政策管辖。</p>\n<h3>4.1 广告 SDK — 仅免费版</h3>\n<p>免费版在主页、历史、设置三个页面展示横幅广告。广告为非个性化投放:</p>\n<p><strong>广告为非个性化。</strong> 本应用不调用 App Tracking Transparency API,也不读取 Apple 的广告标识符。所有广告按实时上下文投放,与你的设备使用行为无关。广告 SDK 可能收到:</p>\n<ul>\n<li><strong>设备信息</strong>,如设备型号、系统版本、屏幕尺寸、语言和区域</li>\n<li><strong>广告投放元数据</strong>,如广告单元 ID、广告类型,以及你是否查看或点击了广告</li>\n<li><strong>IP 地址</strong>,用于估算粗略位置(通常为国家或城市)和防止欺诈</li>\n</ul>\n<p>订阅 Pro 后,广告将被移除,广告 SDK 不再从本应用收到数据。</p>\n<h3>4.2 RevenueCat(订阅管理)</h3>\n<p>当你订阅 Pro 时,应用使用 <strong>RevenueCat</strong> 验证订阅并管理你的权益。RevenueCat 会收到:</p>\n<ul>\n<li>一个<strong>随机生成的匿名标识符</strong>(RevenueCat &quot;App User ID&quot;)</li>\n<li>你的 App Store 收据,用于购买验证</li>\n<li>产品标识符、价格、币种和购买日期</li>\n<li>你的设备区域设置和应用版本</li>\n</ul>\n<p>见 <a href=\"https://revenuecat.com/privacy\">RevenueCat 隐私政策</a>。</p>\n<h3>4.3 Apple App Store</h3>\n<p>购买由 Apple App Store 处理。其对购买数据的处理受 <a href=\"https://www.apple.com/legal/privacy/\">Apple 隐私政策</a> 管辖。</p>\n<h2>5. 应用请求的权限</h2>\n<table>\n<thead>\n<tr>\n<th>权限</th>\n<th>请求原因</th>\n<th>是否必需</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>相册访问</strong></td>\n<td>读取待处理的音频或视频,写入处理后的音频</td>\n<td>是,处理必需</td>\n</tr>\n<tr>\n<td><strong>文件访问(Files App)</strong></td>\n<td>读取或保存到 Files App 中的文件</td>\n<td>否 — 仅在你主动选择 Files 作为来源时使用</td>\n</tr>\n</tbody></table>\n<p>本应用<strong>不</strong>请求相机、麦克风(除非你显式开启录音)、通讯录、位置或跟踪(ATT)权限。</p>\n<h2>6. 儿童隐私</h2>\n<p>本应用面向普通用户,不面向 13 岁以下(或你所在司法辖区最低数字同意年龄以下)的儿童。我们不会有意收集儿童的个人数据。由于本应用不收集任何用户的个人数据,这一承诺适用于所有年龄段。</p>\n<h2>7. 国际数据传输</h2>\n<ul>\n<li><strong>广告 SDK</strong> 可能在你的国家以外的地区处理数据。具体供应商及其数据传输政策以其官方文档为准。</li>\n<li><strong>RevenueCat</strong> 将购买验证数据存储在其位于美国和欧盟的基础设施上。见 <a href=\"https://revenuecat.com/privacy\">RevenueCat 隐私政策</a>。</li>\n<li><strong>Apple</strong> 通过其标准全球基础设施处理 App Store 购买。</li>\n</ul>\n<p>第 3 节所述的设备端处理<strong>不</strong>离开你的设备,因此不受国际数据传输规则约束。</p>\n<h2>8. 你的权利</h2>\n<h3>8.1 GDPR(欧洲经济区和英国)</h3>\n<p>如果你位于欧洲经济区或英国,你有权访问、更正、删除、限制或反对处理你的个人数据,有权数据可携、随时撤回同意,并向当地数据保护机构投诉。</p>\n<p>由于本应用不维护服务器端用户画像,上述大部分权利已由应用的设计自动满足:</p>\n<ul>\n<li>你的音频和视频永不离开你的设备;卸载应用即全部移除</li>\n<li>广告始终为非个性化(见第 4.1 节),无需额外控制</li>\n<li>要删除你的购买关联,请联系我们,请求删除与你的收据关联的任何 RevenueCat 记录</li>\n</ul>\n<h3>8.2 CCPA / CPRA(加利福尼亚州)</h3>\n<p>加州居民有权知悉收集了哪些个人信息、删除这些信息、选择退出其出售或共享,并有权不因行使这些权利而受歧视。本应用<strong>不</strong>出售个人信息,也不为跨上下文行为广告共享个人信息 — 所有广告为非个性化。</p>\n<h3>8.3 其他司法辖区</h3>\n<p>其他司法辖区的居民(例如巴西 LGPD、韩国 PIPA、加拿大 PIPEDA 之下)可能享有类似权利。在适用法律允许的范围内,我们将上述保护扩展至所有用户,无论其身在何处。</p>\n<h2>9. 数据保留</h2>\n<ul>\n<li><strong>音频和视频文件:</strong> 仅保留在你的设备上。因为没有任何内容传输给我们,我们不做任何保留。</li>\n<li><strong>历史记录与草稿:</strong> 存储在你的设备本地数据库,卸载应用即全部删除。</li>\n<li><strong>购买:</strong> 由 RevenueCat 和 App Store 按各自的数据保留政策保留。</li>\n<li><strong>广告数据:</strong> 受广告 SDK 提供商的保留政策管辖。</li>\n</ul>\n<h2>10. 安全性</h2>\n<p>本应用依赖设备内置的文件保护。所有处理均通过系统相册和本地文件系统的受保护接口在本地完成。与第三方的网络通信使用 HTTPS。但任何传输或存储方法都无法保证 100% 安全,我们不能保证绝对安全。</p>\n<h2>11. 政策变更</h2>\n<p>我们可能不时更新本政策。上方&quot;<strong>最后更新</strong>&quot;日期反映最新变更的生效时间。如有重大变更,我们将在应用内或通过 App Store 页面提供合理通知。</p>\n<h2>12. 联系方式</h2>\n<p>如对本政策有任何疑问,请通过 <strong><a href=\"mailto:nhsoft.lsd@gmail.com\">nhsoft.lsd@gmail.com</a></strong> 与我们联系。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "terms",
+      slug: "index",
+      lang: "zh",
+      title: "服务条款 - 音频编辑器",
+      description: "使用音频编辑器的规则。涵盖订阅、自动续费、音频与视频处理责任、可接受使用与免责声明。",
+      date: "2026-10-17",
+      html: "<p>本服务条款(&quot;<strong>本条款</strong>&quot;)约束你对 <strong>音频编辑器</strong>(&quot;<strong>本应用</strong>&quot;)的访问和使用,本应用由开发者(&quot;<strong>我们</strong>&quot;)运营。下载、安装或使用本应用,即表示你同意本条款。</p>\n<p>如不同意,请勿安装或使用本应用。</p>\n<h2>1. 使用资格</h2>\n<p>你必须达到所在国家法律规定的可订立具有约束力合同的最低年龄(美国依据 COPPA 为 13 岁,欧盟依据 GDPR 为 16 岁,或当地法律另有规定的年龄)方可使用本应用。如你代表组织使用本应用,你声明有权使该组织受本条款约束。</p>\n<h2>2. 许可</h2>\n<p>在遵守本条款的前提下,我们授予你一项有限的、非独占的、不可转让的、可撤销的许可,允许你在你拥有或控制的 iOS 设备上安装和使用本应用,仅限个人非商业用途。</p>\n<p>你不得:</p>\n<ul>\n<li>重新分发、转售、再许可或以其他方式商业性利用本应用</li>\n<li>对本应用进行逆向工程、反编译或反汇编(适用法律明确允许的除外)</li>\n<li>使用本应用违反任何法律或第三方权利</li>\n<li>干扰或破坏本应用的安全或运行</li>\n</ul>\n<h2>3. 订阅与自动续费</h2>\n<p>本应用提供自动续费的 Pro 订阅(&quot;<strong>Pro</strong>&quot;),包含周订阅和年订阅两种计划,通过 Apple App Store 处理。</p>\n<ul>\n<li><strong>自动续费。</strong> 订阅会在当前周期结束时按当时价格自动续费同一周期,除非你在当前周期结束前至少 24 小时取消。你的 App Store 账户会在当前周期结束前 24 小时内被扣费。</li>\n<li><strong>管理与取消。</strong> 你可以随时在 App Store 的订阅设置中管理或取消订阅(<strong>设置 → Apple ID → 订阅</strong>)。取消在当前计费周期结束时生效。</li>\n<li><strong>价格。</strong> 价格在 App Store 中显示,可能因地区和适用税费而异。货币换算和当地税费由 Apple 处理。</li>\n<li><strong>不按比例退款。</strong> 除 App Store 或适用法律要求外,我们不提供部分订阅周期的退款。</li>\n</ul>\n<h2>4. Pro 改变什么</h2>\n<p>Pro 通过 <strong>RevenueCat</strong> 管理,解锁一件事:去掉免费版在主页、历史、设置三处显示的横幅广告。所有工具与所有格式在免费版中均可使用。</p>\n<p>该权益:</p>\n<ul>\n<li>在有效订阅期内适用</li>\n<li>与你的 App Store 账户关联,并在新设备上恢复购买后随之恢复</li>\n<li><strong>不可</strong>在账户或平台之间转移</li>\n</ul>\n<h2>5. 恢复购买</h2>\n<p>如果你重新安装本应用或更换新设备,请使用原 App Store 账户登录后,通过应用内的&quot;<strong>恢复购买</strong>&quot;选项恢复。因 App Store 账户问题导致无法恢复购买的,我们不承担责任。</p>\n<h2>6. 音频与视频处理的责任</h2>\n<p>本应用是一个帮助你<strong>处理</strong>本地音频与视频的工具。它不会改变你设备上的任何原始文件,也不会静默写入任何内容:</p>\n<ul>\n<li>每次处理都需要你在应用内<strong>明确确认</strong></li>\n<li>处理结果以<strong>新文件</strong>形式写入 app 内的沙盒目录,完成后由用户在弹窗里选 &quot;Save to Files&quot;(任意格式)导出 — 原音频、原视频全程不动</li>\n<li>删除原文件(如有需要)由你自行操作</li>\n</ul>\n<p>本应用<strong>不</strong>对所处理的音频、视频文件做内容识别、版权判断或合法性审查。你对选择处理的文件负全部责任。处理后的文件由你决定如何分发、分享或存档。本应用不托管任何用户内容。</p>\n<h2>7. 可接受使用</h2>\n<p>你同意不利用本应用:</p>\n<ul>\n<li>违反任何法律或任何第三方的权利</li>\n<li>处理你无权处理的内容,包括未经授权的他人作品</li>\n<li>试图规避本应用或系统相册的技术限制</li>\n<li>以任何可能损害、禁用、过度加载或削弱本应用或第三方基础设施的方式使用本应用</li>\n</ul>\n<p>如你违反本条,我们可能暂停或终止你对本应用的访问。</p>\n<h2>8. 知识产权</h2>\n<p>本应用(包括其设计、代码和图形)归我们或我们的许可方所有,受版权、商标及其他法律保护。本条款不向你转让任何所有权。</p>\n<h2>9. 第三方服务</h2>\n<p>本应用集成了受其自身条款约束的第三方服务:</p>\n<ul>\n<li><strong>广告 SDK</strong>(免费版已确认在主页、历史、设置三处显示横幅广告;具体供应商以应用内为准) — 受其各自条款与隐私政策约束</li>\n<li><strong>RevenueCat</strong> — 验证订阅并管理 Pro 权益;受 <a href=\"https://revenuecat.com/terms\">RevenueCat 服务条款</a>约束</li>\n<li><strong>Apple App Store</strong> — 处理购买;受 App Store 条款约束</li>\n</ul>\n<h2>10. 终止</h2>\n<p>如果我们合理地认为你违反了本条款,可以随时通知或不通知地暂停或终止你对本应用的访问。你可以随时停止使用本应用并将其从设备上删除。终止后,依其性质应继续有效的条款(包括免责声明、责任限制和争议解决)将继续有效。</p>\n<h2>11. 免责声明</h2>\n<p>本应用按&quot;<strong>原样</strong>&quot;和&quot;<strong>可用性</strong>&quot;基础提供,不提供任何明示或默示的保证,包括但不限于适销性、特定用途适用性和不侵权的默示保证。我们不保证本应用不中断、无错误,也不保证缺陷会被修正。音频编辑、增强、转换与提取音轨的结果可能因源文件编码、设备性能或系统版本不同而有所差异;你在确认处理前对参数的设置是最终把关。</p>\n<h2>12. 责任限制</h2>\n<p>在法律允许的最大范围内,无论是我们、我们的关联方还是许可方,均不对因使用或无法使用本应用而产生的任何间接、附带、特殊、后果性或惩罚性损害承担责任,包括数据丢失、处理结果不符合预期、利润损失或商誉损失,即使我们已被告知此类损害的可能性。</p>\n<p>我们对你因本条款或本应用引起的全部索赔的总责任,不超过索赔前 12 个月内你为我们支付的金额(如有),或 <strong>30 美元</strong>,以两者中较高者为准。</p>\n<p>本条款不排除或限制适用法律下不可排除或限制的责任(如死亡、人身伤害或欺诈)。</p>\n<h2>13. 赔偿</h2>\n<p>你同意就你违反本条款或使用本应用引起的任何索赔、损害或费用(包括合理的律师费)为我们辩护并使我们免受损害。</p>\n<h2>14. 管辖法律与争议</h2>\n<p>本条款受开发者所在司法辖区的法律管辖,不考虑法律冲突原则。因本条款引起的或与之相关的任何争议,将在该司法辖区有管辖权的法院解决。</p>\n<p><strong>欧盟用户。</strong> 你还可以依据你居住国的强制性消费者保护法律。欧盟在线争议解决平台见 <a href=\"https://ec.europa.eu/consumers/odr\">ec.europa.eu/consumers/odr</a>。</p>\n<h2>15. 条款变更</h2>\n<p>我们可能不时更新本条款。更新生效后继续使用本应用,即构成对更新后条款的接受。如有重大变更,我们将在应用内或通过 App Store 页面提供合理通知。</p>\n<h2>16. 联系方式</h2>\n<p>如对本条款有任何疑问,请通过 <strong><a href=\"mailto:nhsoft.lsd@gmail.com\">nhsoft.lsd@gmail.com</a></strong> 与我们联系。</p>\n",
+    },
+  },
+  {
     appId: "cleanphoto",
     article: {
       section: "about",

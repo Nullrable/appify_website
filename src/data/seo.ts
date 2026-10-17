@@ -76,6 +76,25 @@ const seoKeywords: Record<string, string[]> = {
     "怎么压缩iPhone照片大小",
     "怎么删除iPhone重复照片",
     "怎么转换iPhone图片格式",
+    // audio-editor 关键词（短尾）
+    "音频编辑器",
+    "音频格式转换",
+    "视频提取音频",
+    "离线音频处理",
+    "视频拆音轨",
+    // audio-editor 关键词（长尾 - 产品查找意图）
+    "有没有iPhone音频编辑器",
+    "找一款能从视频里提取音频的应用",
+    "找一款iPhone上能转音频格式的工具",
+    // audio-editor 关键词（长尾 - 问题解决意图）
+    "能不能在iPhone上把视频转成MP3",
+    "怎么把视频里的音频提取出来",
+    "怎么把多段音频合并成一个文件",
+    "怎么把一段录音里的人声和背景音乐分开",
+    // audio-editor 关键词（长尾 - 方法寻找意图）
+    "怎么在iPhone上编辑音频",
+    "什么app可以离线剪辑音频",
+    "怎么去掉录音里的底噪",
   ],
   "zh-TW": [
     // 短尾关键词 - App专属
@@ -105,8 +124,6 @@ const seoKeywords: Record<string, string[]> = {
     "什麼app可以把影片轉成MP3",
     "怎麼把多段影片合併成一段",
     "怎麼調整影片畫面比例",
-
-
   ],
   ja: [
     // 短尾キーワード - App専用
@@ -135,8 +152,6 @@ const seoKeywords: Record<string, string[]> = {
     "動画をMP3に変換するアプリは何",
     "iPhoneで複数のクリップを結合する方法",
     "動画のアスペクト比を変更する方法",
-
-
   ],
   ko: [
     // 단축 키워드 - App 전용
@@ -165,8 +180,6 @@ const seoKeywords: Record<string, string[]> = {
     "어떤 앱이 영상을 MP3로 바꿔주나요",
     "iPhone에서 여러 클립 합치는 방법",
     "영상 화면 비율 조정하는 방법",
-
-
   ],
   vi: [
     // Từ khóa ngắn - App cụ thể
@@ -195,8 +208,6 @@ const seoKeywords: Record<string, string[]> = {
     "ứng dụng nào chuyển video thành MP3",
     "cách ghép nhiều đoạn video trên iPhone",
     "cách chỉnh tỉ lệ khung hình video",
-
-
   ],
   id: [
     // Kata kunci pendek - App spesifik
@@ -225,8 +236,6 @@ const seoKeywords: Record<string, string[]> = {
     "aplikasi apa yang konversi video ke MP3",
     "cara gabung banyak klip di iPhone",
     "cara ubah rasio layar video",
-
-
   ],
   ar: [
     // كلمات مفتاحية قصيرة - App محدد
@@ -255,8 +264,6 @@ const seoKeywords: Record<string, string[]> = {
     "أي تطبيق يحول الفيديو إلى MP3",
     "كيف أدمج مقاطع فيديو على iPhone",
     "كيف أعدل نسبة أبعاد الفيديو",
-
-
   ],
   fr: [
     // Mots-clés courts - App spécifique
@@ -285,8 +292,6 @@ const seoKeywords: Record<string, string[]> = {
     "quelle appli convertit une vidéo en MP3",
     "comment fusionner plusieurs clips sur iPhone",
     "comment modifier le rapport d'aspect d'une vidéo",
-
-
   ],
   de: [
     // Kurz keywords - App spezifisch
@@ -315,8 +320,6 @@ const seoKeywords: Record<string, string[]> = {
     "welche App wandelt Video in MP3 um",
     "wie fügt man mehrere Clips auf iPhone zusammen",
     "wie ändert man das Seitenverhältnis eines Videos",
-
-
   ],
   es: [
     // Palabras clave cortas - App específico
@@ -345,8 +348,6 @@ const seoKeywords: Record<string, string[]> = {
     "qué app convierte vídeo a MP3",
     "cómo unir varios clips en iPhone",
     "cómo cambiar la relación de aspecto de un vídeo",
-
-
   ],
   pt: [
     // Palavras-chave curtas - App específico
@@ -375,8 +376,6 @@ const seoKeywords: Record<string, string[]> = {
     "qual app converte vídeo em MP3",
     "como unir vários clipes no iPhone",
     "como mudar a proporção de tela de um vídeo",
-
-
   ],
   it: [
     // Parole chiave brevi - App specifico
@@ -405,8 +404,6 @@ const seoKeywords: Record<string, string[]> = {
     "quale app converte un video in MP3",
     "come unire più clip su iPhone",
     "come modificare le proporzioni di un video",
-
-
   ],
   ru: [
     // Короткие ключевые слова - App конкретный
@@ -435,8 +432,6 @@ const seoKeywords: Record<string, string[]> = {
     "какое приложение конвертирует видео в MP3",
     "как объединить несколько клипов на iPhone",
     "как изменить соотношение сторон видео",
-
-
   ],
   th: [
     // คำค้นสั้น - App เฉพาะ
@@ -465,8 +460,6 @@ const seoKeywords: Record<string, string[]> = {
     "แอปไหนแปลงวิดีโอเป็น MP3",
     "วิธีรวมหลายคลิปบน iPhone",
     "วิธีปรับสัดส่วนจอวิดีโอ",
-
-
   ],
 };
 
