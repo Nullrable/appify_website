@@ -105,6 +105,18 @@ export const contentEntries: ContentEntry[] = [
     appId: "audio-editor",
     article: {
       section: "features",
+      slug: "ringtone-maker",
+      lang: "zh",
+      title: "铃声制作 - 截取 40 秒以内,导出 M4R 设为 iPhone 铃声",
+      description: "把任何一段音频截成 40 秒以内的铃声音频,可选淡入淡出和音量归一,导出 M4R 铃声文件,同步到 iTunes 或 Finder 即可设为 iPhone 铃声。",
+      date: "2026-10-18",
+      html: "<h2>铃声制作</h2>\n<p>iPhone 铃声限制在 40 秒以内,文件格式是 M4R,内容来源是 iTunes 或 Finder 同步过去的本地文件。把一段喜欢的歌、播客金句、孩子的一段录音,做成 iPhone 铃声,流程其实不长。</p>\n<h2>怎么选起点和终点</h2>\n<p>打开素材后,时间线上拖动两个把手,确定入点和出点:</p>\n<ul>\n<li><strong>入点</strong> — 铃声从哪一秒开始,通常会跳过前奏、副歌前的过渡段</li>\n<li><strong>出点</strong> — 铃声在哪一秒结束,40 秒是 iOS 的硬上限,超过会被自动截断</li>\n<li><strong>预览</strong> — 选完之后在 app 内完整听一遍,确认听感对</li>\n</ul>\n<p>整段音频在 app 沙盒里被裁剪,原文件全程不动。</p>\n<h2>淡入淡出</h2>\n<p>铃声的开头和结尾不想要硬切,可以加淡入淡出:</p>\n<ul>\n<li><strong>淡入</strong> — 开头从静音渐入,几秒到十几秒可调</li>\n<li><strong>淡出</strong> — 结尾自然消失,而不是&quot;啪&quot;地切断</li>\n</ul>\n<p>淡入淡出不是必选项,有些素材(鼓点明显、副歌直入)反而不适合淡入。</p>\n<h2>音量归一</h2>\n<p>响度不够的话来电可能听不清。归一把响度拉到统一水平,这样不管原素材多轻,做出来的铃声都不会偏小。</p>\n<h2>输出 M4R</h2>\n<p>确认后导出 M4R 格式的铃声文件。M4R 是 iOS 专用的铃声容器,本质上是带铃声标识的 AAC 音频,体积小、兼容性好。</p>\n<p>导出后:</p>\n<ol>\n<li><strong>Mac 用户</strong> — 把 .m4r 文件拖到 Finder 里 iPhone 的&quot;铃声&quot;标签页,或拖进 Music 应用的铃声库</li>\n<li><strong>Windows 用户</strong> — 把 .m4r 文件拖到 iTunes 的&quot;铃声&quot;库</li>\n<li>同步完成后,iPhone 的&quot;设置 → 声音与触感 → 铃声&quot;里就能选到这条新铃声</li>\n</ol>\n<h2>适合的素材</h2>\n<ul>\n<li>流行歌曲的高潮或副歌段</li>\n<li>播客金句</li>\n<li>自己录的口头禅</li>\n<li>孩子的一段话</li>\n<li>老电影台词</li>\n<li>喜欢的游戏音效</li>\n</ul>\n<h2>与增强配合</h2>\n<p>如果原始素材响度偏小、有底噪、或者立体声过宽,在做铃声之前先用增强工具收拾一遍:</p>\n<ul>\n<li>户外录音先降噪</li>\n<li>响度不一致先归一</li>\n<li>太挤的声场拉宽一点</li>\n</ul>\n<p>增强不是铃声制作的必经步骤,多数时候一段干净的素材直接截取就够用。</p>\n<h2>完全在本地</h2>\n<p>截取、淡入淡出、归一、M4R 编码,全部在 iPhone 上完成。素材不上传,中间结果不留服务器。</p>\n",
+    },
+  },
+  {
+    appId: "audio-editor",
+    article: {
+      section: "features",
       slug: "supported-formats",
       lang: "zh",
       title: "完整格式清单 - 输入 10 种音频 + 导出 4 种 + 8 种视频",
