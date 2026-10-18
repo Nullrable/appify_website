@@ -161,7 +161,7 @@ export const paperscan: AppPageData = {
     },
     {
       icon: "document",
-      slug: "pdf-export",
+      slug: "pdf",
       title: {
         en: "Multi-page PDF export",
         zh: "多页 PDF 导出",
@@ -200,7 +200,7 @@ export const paperscan: AppPageData = {
     },
     {
       icon: "cloud",
-      slug: "cloud-sync",
+      slug: "cloud",
       title: {
         en: "Conflict-free cloud sync",
         zh: "无冲突云同步",
