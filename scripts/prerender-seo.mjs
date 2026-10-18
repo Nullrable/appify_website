@@ -28,6 +28,14 @@ const MARKERS = {
 const SECTIONS = ['about', 'features', 'blog', 'terms', 'privacy'];
 const LEGAL_SECTIONS = new Set(['terms', 'privacy']);
 
+// Per-app fallback language for legal pages (terms/privacy). When the
+// requested language has no native article for an app, the pre-renderer
+// falls back to this language instead of the global English default. This
+// lets a Chinese-only legal set still resolve cleanly for audio-editor
+// without changing the behavior for any other app.
+const LEGAL_FALLBACK_LANG_BY_APP = { 'audio-editor': 'zh' };
+const legalFallbackLangFor = (appId) => LEGAL_FALLBACK_LANG_BY_APP[appId] ?? 'en';
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll('&', '&amp;')
@@ -204,10 +212,14 @@ function buildHreflangLinks({ siteOrigin, hreflangConfig, appId, section, slug, 
     hreflang: lang,
     href: new URL(`/${segmentsFor(lang)}/`, siteOrigin).toString(),
   }));
-  if (wanted.includes('en')) {
+  // x-default always points at a language that actually resolves. Prefer 'en'
+  // when present (matches Google convention), otherwise fall back to the first
+  // native language so single-language apps still declare a default cluster.
+  const defaultLang = wanted.includes('en') ? 'en' : (wanted[0] ?? null);
+  if (defaultLang) {
     links.push({
       hreflang: 'x-default',
-      href: new URL(`/${segmentsFor('en')}/`, siteOrigin).toString(),
+      href: new URL(`/${segmentsFor(defaultLang)}/`, siteOrigin).toString(),
     });
   }
   return links;
@@ -640,8 +652,9 @@ async function main() {
     const article = tryLang(lang);
     if (article) return { article, usedLang: lang };
     if (LEGAL_SECTIONS.has(section)) {
-      const en = tryLang('en');
-      if (en) return { article: en, usedLang: 'en' };
+      const fallbackLang = legalFallbackLangFor(appId);
+      const fallback = tryLang(fallbackLang);
+      if (fallback) return { article: fallback, usedLang: fallbackLang };
     }
     return null;
   };
