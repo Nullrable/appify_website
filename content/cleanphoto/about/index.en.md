@@ -1,12 +1,12 @@
 ---
-title: About CleanPhoto - Find and Remove Duplicate and Similar Photos on iPhone
-description: CleanPhoto groups exact duplicates, similar shots, screenshots, and videos by month on your iPhone. Keeps the best by file size, compresses the rest, and deduplicates contacts. All on your device, nothing uploaded.
+title: About Photo Cleaner Kit - Find and Remove Duplicate and Similar Photos on iPhone
+description: Photo Cleaner Kit groups exact duplicates, similar shots, screenshots, and videos by month on your iPhone. Keeps the best by file size, compresses the rest, and deduplicates contacts. All on your device, nothing uploaded.
 date: 2026-09-10
 lang: en
 slug: index
 ---
 
-CleanPhoto is an iPhone app for clearing photo clutter without browsing thousands of pictures. It groups duplicates and similar shots, sorts old screenshots and videos by month, and keeps the highest-quality version of every burst so the rest can go in one tap.
+Photo Cleaner Kit is an iPhone app for clearing photo clutter without browsing thousands of pictures. It groups duplicates and similar shots, sorts old screenshots and videos by month, and keeps the highest-quality version of every burst so the rest can go in one tap.
 
 ## Exact duplicates and similar shots
 
@@ -22,7 +22,7 @@ A separate view lists your largest photos and videos ranked by size. Most librar
 
 ## Compression that keeps the picture
 
-For photos you want to keep but not at full size, CleanPhoto shrinks the file to a fraction of the original while preserving dimensions and visible detail. The compressed copy lives next to the original, and the original is only removed after you confirm.
+For photos you want to keep but not at full size, Photo Cleaner Kit shrinks the file to a fraction of the original while preserving dimensions and visible detail. The compressed copy lives next to the original, and the original is only removed after you confirm.
 
 ## Contact deduplication
 

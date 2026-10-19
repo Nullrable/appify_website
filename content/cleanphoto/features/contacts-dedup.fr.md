@@ -1,6 +1,6 @@
 ---
 title: "Nettoyage des contacts en double"
-description: "CleanPhoto repère les contacts qui partagent le même nom ou le même numéro, les regroupe pour que vous puissiez les vérifier, puis les fusionne en une seule fiche sans perdre aucun champ."
+description: "Photo Cleaner Kit repère les contacts qui partagent le même nom ou le même numéro, les regroupe pour que vous puissiez les vérifier, puis les fusionne en une seule fiche sans perdre aucun champ."
 date: 2026-09-10
 lang: fr
 slug: contacts-dedup

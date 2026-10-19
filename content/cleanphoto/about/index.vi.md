@@ -1,12 +1,12 @@
 ---
-title: Giới thiệu CleanPhoto - Tìm và dọn ảnh trùng lặp, tương tự trên iPhone
-description: CleanPhoto nhóm ảnh trùng lặp chính xác, ảnh chụp liên tiếp, ảnh chụp màn hình và video trên iPhone theo tháng. Giữ ảnh đẹp nhất theo dung lượng file, nén phần còn lại, hợp nhất danh bạ trùng. Mọi thứ trên thiết bị, không tải lên.
+title: Giới thiệu Photo Cleaner Kit - Tìm và dọn ảnh trùng lặp, tương tự trên iPhone
+description: Photo Cleaner Kit nhóm ảnh trùng lặp chính xác, ảnh chụp liên tiếp, ảnh chụp màn hình và video trên iPhone theo tháng. Giữ ảnh đẹp nhất theo dung lượng file, nén phần còn lại, hợp nhất danh bạ trùng. Mọi thứ trên thiết bị, không tải lên.
 date: 2026-09-10
 lang: vi
 slug: index
 ---
 
-CleanPhoto là ứng dụng iPhone giúp dọn dẹp ảnh chụp mà không cần lướt qua hàng nghìn tấm. Nó nhóm các ảnh trùng lặp và tương tự, sắp xếp ảnh chụp màn hình và video cũ theo tháng, giữ lại bản chất lượng cao nhất của mỗi chuỗi chụp liên tiếp để bạn xóa phần còn lại bằng một chạm.
+Photo Cleaner Kit là ứng dụng iPhone giúp dọn dẹp ảnh chụp mà không cần lướt qua hàng nghìn tấm. Nó nhóm các ảnh trùng lặp và tương tự, sắp xếp ảnh chụp màn hình và video cũ theo tháng, giữ lại bản chất lượng cao nhất của mỗi chuỗi chụp liên tiếp để bạn xóa phần còn lại bằng một chạm.
 
 ## Ảnh trùng lặp chính xác và ảnh chụp liên tiếp
 
@@ -22,7 +22,7 @@ Một chế độ xem riêng liệt kê ảnh và video lớn nhất theo dung l
 
 ## Nén nhưng vẫn giữ hình ảnh
 
-Với những ảnh muốn giữ nhưng không cần ở kích thước đầy đủ, CleanPhoto thu nhỏ file xuống còn một phần nhỏ kích thước gốc nhưng vẫn giữ nguyên kích thước hiển thị và chi tiết. Bản nén nằm cạnh bản gốc, bản gốc chỉ bị xóa khi bạn xác nhận.
+Với những ảnh muốn giữ nhưng không cần ở kích thước đầy đủ, Photo Cleaner Kit thu nhỏ file xuống còn một phần nhỏ kích thước gốc nhưng vẫn giữ nguyên kích thước hiển thị và chi tiết. Bản nén nằm cạnh bản gốc, bản gốc chỉ bị xóa khi bạn xác nhận.
 
 ## Hợp nhất danh bạ trùng lặp
 

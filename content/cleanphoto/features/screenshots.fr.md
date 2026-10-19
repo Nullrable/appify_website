@@ -1,6 +1,6 @@
 ---
 title: "Nettoyage des captures d'écran"
-description: "Comment CleanPhoto collecte les captures d'écran sur iPhone et Android, les regroupe par jour et vous aide à vider l'arriéré sans toucher aux photos qui comptent."
+description: "Comment Photo Cleaner Kit collecte les captures d'écran sur iPhone et Android, les regroupe par jour et vous aide à vider l'arriéré sans toucher aux photos qui comptent."
 date: 2026-09-06
 lang: fr
 slug: screenshots
@@ -8,11 +8,11 @@ slug: screenshots
 
 ## Nettoyage des captures d'écran
 
-Les captures d'écran sont censées être temporaires — une carte d'embarquement, un reçu, un code à saisir — pourtant elles restent dans votre photothèque pour toujours. CleanPhoto les sort de la foule et les dispose par jour, pour que l'arriéré devienne enfin visible.
+Les captures d'écran sont censées être temporaires — une carte d'embarquement, un reçu, un code à saisir — pourtant elles restent dans votre photothèque pour toujours. Photo Cleaner Kit les sort de la foule et les dispose par jour, pour que l'arriéré devienne enfin visible.
 
 ### Comment les captures sont trouvées
 
-Sur iOS, le système maintient un album Captures d'écran dédié. CleanPhoto lit cet album directement, la détection est donc exacte. Sur Android, l'emplacement des captures varie selon le fabricant : le scan vérifie d'abord les noms d'albums, et sans album de captures, il inspecte le titre et le chemin de fichier de chaque image pour repérer les motifs de nommage utilisés par les appareils.
+Sur iOS, le système maintient un album Captures d'écran dédié. Photo Cleaner Kit lit cet album directement, la détection est donc exacte. Sur Android, l'emplacement des captures varie selon le fabricant : le scan vérifie d'abord les noms d'albums, et sans album de captures, il inspecte le titre et le chemin de fichier de chaque image pour repérer les motifs de nommage utilisés par les appareils.
 
 ### Regroupées par jour
 

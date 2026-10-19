@@ -18,9 +18,9 @@ Gli screenshot sono il foglio di brutta del telefono. Ne scatti uno per ricordar
 
 Ecco perché gli screenshot sono il bersaglio di pulizia più facile: a quasi nessuno importa dopo una settimana. Una foto duplicata può essere ancora un ricordo; un vecchio screenshot quasi mai. Svuotarli è di solito il recupero di spazio più rapido di tutta la libreria, e dato che il valore di ogni elemento è vicino allo zero, la revisione va veloce.
 
-### Come CleanPhoto li trova
+### Come Photo Cleaner Kit li trova
 
-Su iOS, il sistema tiene un album Screenshot dedicato, e CleanPhoto lo legge direttamente — il rilevamento è esatto. Su Android, dove lo storage varia per produttore, la scansione controlla prima i nomi degli album e, senza un album di screenshot, ispeziona titolo e percorso file di ogni immagine alla ricerca dei pattern di nomi dei dispositivi. Tutto ciò che viene trovato è raggruppato per giorno di scatto, il più recente prima, con la dimensione del file di ogni elemento mostrata.
+Su iOS, il sistema tiene un album Screenshot dedicato, e Photo Cleaner Kit lo legge direttamente — il rilevamento è esatto. Su Android, dove lo storage varia per produttore, la scansione controlla prima i nomi degli album e, senza un album di screenshot, ispeziona titolo e percorso file di ogni immagine alla ricerca dei pattern di nomi dei dispositivi. Tutto ciò che viene trovato è raggruppato per giorno di scatto, il più recente prima, con la dimensione del file di ogni elemento mostrata.
 
 ### Un flusso che funziona
 

@@ -1,12 +1,12 @@
 ---
-title: À propos de CleanPhoto - Trouver et supprimer les photos en double et similaires sur iPhone
-description: CleanPhoto regroupe les doublons exacts, les prises en rafale, les captures d'écran et les vidéos par mois sur votre iPhone. Il conserve la meilleure photo selon la taille du fichier, compresse le reste et déduplique les contacts. Tout sur votre appareil, rien n'est téléversé.
+title: À propos de Photo Cleaner Kit - Trouver et supprimer les photos en double et similaires sur iPhone
+description: Photo Cleaner Kit regroupe les doublons exacts, les prises en rafale, les captures d'écran et les vidéos par mois sur votre iPhone. Il conserve la meilleure photo selon la taille du fichier, compresse le reste et déduplique les contacts. Tout sur votre appareil, rien n'est téléversé.
 date: 2026-09-10
 lang: fr
 slug: index
 ---
 
-CleanPhoto est une application iPhone conçue pour faire du tri dans une photothèque sans avoir à parcourir des milliers de clichés. Elle regroupe les doublons et les photos similaires, classe les captures d'écran et vidéos anciennes par mois, et garde la version la plus qualitative de chaque rafale pour que vous puissiez supprimer le reste d'un geste.
+Photo Cleaner Kit est une application iPhone conçue pour faire du tri dans une photothèque sans avoir à parcourir des milliers de clichés. Elle regroupe les doublons et les photos similaires, classe les captures d'écran et vidéos anciennes par mois, et garde la version la plus qualitative de chaque rafale pour que vous puissiez supprimer le reste d'un geste.
 
 ## Doublons exacts et prises en rafale
 
@@ -22,7 +22,7 @@ Une vue dédiée liste vos plus grandes photos et vidéos classées par taille. 
 
 ## Compression qui préserve l'image
 
-Pour les photos que vous voulez garder mais pas en pleine taille, CleanPhoto réduit le fichier à une fraction de sa taille d'origine tout en conservant les dimensions et les détails visibles. La copie compressée reste à côté de l'original, et l'original n'est supprimé qu'après votre confirmation.
+Pour les photos que vous voulez garder mais pas en pleine taille, Photo Cleaner Kit réduit le fichier à une fraction de sa taille d'origine tout en conservant les dimensions et les détails visibles. La copie compressée reste à côté de l'original, et l'original n'est supprimé qu'après votre confirmation.
 
 ## Fusion des contacts en doublon
 

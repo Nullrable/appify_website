@@ -1,6 +1,6 @@
 ---
 title: "Nettoyage photo et vie privée : ce qui reste sur votre appareil"
-description: "Une photothèque est l'ensemble de données le plus personnel de votre téléphone. Décomposition honnête de ce que CleanPhoto lit, ne lit jamais, ce qui quitte votre appareil — et ce qui ne le quitte pas."
+description: "Une photothèque est l'ensemble de données le plus personnel de votre téléphone. Décomposition honnête de ce que Photo Cleaner Kit lit, ne lit jamais, ce qui quitte votre appareil — et ce qui ne le quitte pas."
 date: 2026-09-06
 lang: fr
 slug: photo-privacy
@@ -8,7 +8,7 @@ slug: photo-privacy
 
 ## Nettoyage photo et vie privée : ce qui reste sur votre appareil
 
-Donner à une application l'accès à vos photos, c'est lui remettre l'ensemble de données le plus personnel de votre téléphone : votre famille, votre maison, vos documents, vos dix dernières années. Cet accès est nécessaire au fonctionnement de tout nettoyeur de photos — c'est exactement pourquoi la question « qu'en fait l'application ? » mérite une réponse concrète, pas un slogan. Voici celle de CleanPhoto.
+Donner à une application l'accès à vos photos, c'est lui remettre l'ensemble de données le plus personnel de votre téléphone : votre famille, votre maison, vos documents, vos dix dernières années. Cet accès est nécessaire au fonctionnement de tout nettoyeur de photos — c'est exactement pourquoi la question « qu'en fait l'application ? » mérite une réponse concrète, pas un slogan. Voici celle de Photo Cleaner Kit.
 
 ### Ce que l'application lit
 
@@ -32,4 +32,4 @@ Accès à la photothèque : nécessaire pour scanner et afficher les groupes. Su
 
 ### L'essentiel
 
-Le nettoyage photo n'exige ni cloud, ni compte, ni analyse de contenu. Il exige des métadonnées, des règles transparentes et votre confirmation. C'est tout ce qu'utilise CleanPhoto — et si un nettoyeur demande davantage, il vaut la peine de lui demander pourquoi.
+Le nettoyage photo n'exige ni cloud, ni compte, ni analyse de contenu. Il exige des métadonnées, des règles transparentes et votre confirmation. C'est tout ce qu'utilise Photo Cleaner Kit — et si un nettoyeur demande davantage, il vaut la peine de lui demander pourquoi.

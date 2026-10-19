@@ -1,6 +1,6 @@
 ---
 title: "Video Cleanup"
-description: "CleanPhoto groups every video in your library by the month it was captured, so you can browse month-sized sessions and delete the ones you no longer need."
+description: "Photo Cleaner Kit groups every video in your library by the month it was captured, so you can browse month-sized sessions and delete the ones you no longer need."
 date: 2026-09-10
 lang: en
 slug: videos
@@ -8,7 +8,7 @@ slug: videos
 
 ## Video Cleanup
 
-Videos are the heaviest items in any library by a wide margin — a single clip can outweigh thousands of photos, and the ones you keep watching are rarely the ones taking up the most space. CleanPhoto surfaces every video, grouped by capture month, so you can decide what stays at a human scale.
+Videos are the heaviest items in any library by a wide margin — a single clip can outweigh thousands of photos, and the ones you keep watching are rarely the ones taking up the most space. Photo Cleaner Kit surfaces every video, grouped by capture month, so you can decide what stays at a human scale.
 
 ### Videos sorted by month
 

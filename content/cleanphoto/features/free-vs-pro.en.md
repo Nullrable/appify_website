@@ -8,7 +8,7 @@ slug: free-vs-pro
 
 ## Free and Pro
 
-CleanPhoto's core is free: every scanner, every view, no limits on how much you scan or review. The difference between Free and Pro comes down to one moment — the delete confirmation.
+Photo Cleaner Kit's core is free: every scanner, every view, no limits on how much you scan or review. The difference between Free and Pro comes down to one moment — the delete confirmation.
 
 ### What is always free
 

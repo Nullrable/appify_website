@@ -1,6 +1,6 @@
 ---
 title: "Pembersihan Video"
-description: "CleanPhoto mengelompokkan setiap video di pustaka Anda menurut bulan perekaman, sehingga Anda bisa menelusuri sesi per bulan dan menghapus video yang sudah tidak Anda butuhkan."
+description: "Photo Cleaner Kit mengelompokkan setiap video di pustaka Anda menurut bulan perekaman, sehingga Anda bisa menelusuri sesi per bulan dan menghapus video yang sudah tidak Anda butuhkan."
 date: 2026-09-10
 lang: id
 slug: videos
@@ -8,7 +8,7 @@ slug: videos
 
 ## Pembersihan Video
 
-Video adalah item terberat di pustaka mana pun dengan selisih yang sangat besar — satu klip saja bisa lebih berat dari ribuan foto, dan video yang masih sering Anda tonton jarang yang paling banyak makan ruang. CleanPhoto memunculkan semua video, dikelompokkan menurut bulan perekaman, sehingga Anda bisa memutuskan apa yang dipertahankan dalam skala yang manusiawi.
+Video adalah item terberat di pustaka mana pun dengan selisih yang sangat besar — satu klip saja bisa lebih berat dari ribuan foto, dan video yang masih sering Anda tonton jarang yang paling banyak makan ruang. Photo Cleaner Kit memunculkan semua video, dikelompokkan menurut bulan perekaman, sehingga Anda bisa memutuskan apa yang dipertahankan dalam skala yang manusiawi.
 
 ### Video diurutkan per bulan
 

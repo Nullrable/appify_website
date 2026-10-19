@@ -18,9 +18,9 @@ Mở thư viện ảnh và đếm các ảnh chụp màn hình. Không phải �
 
 Đây là lý do ảnh chụp màn hình trở thành mục tiêu dọn dẹp dễ nhất: sau một tuần, hầu như không tấm nào còn ý nghĩa. Ảnh trùng lặp có thể vẫn là một kỷ niệm; ảnh chụp màn hình cũ thì gần như không bao giờ. Dọn chúng thường là cách thu hồi dung lượng nhanh nhất trong cả thư viện, và vì giá trị mỗi mục gần bằng không, việc xem lại cũng nhanh.
 
-### CleanPhoto tìm chúng như thế nào
+### Photo Cleaner Kit tìm chúng như thế nào
 
-Trên iOS, hệ thống có album Screenshots riêng và CleanPhoto đọc trực tiếp — việc phát hiện chính xác. Trên Android, nơi lưu trữ khác nhau tùy nhà sản xuất, bản quét kiểm tra tên album trước; nếu không có album ảnh chụp màn hình, nó xem tiêu đề và đường dẫn file của từng ảnh để tìm mẫu đặt tên của thiết bị. Mọi thứ tìm được nhóm theo ngày chụp, mới nhất trước, kèm dung lượng file của từng mục.
+Trên iOS, hệ thống có album Screenshots riêng và Photo Cleaner Kit đọc trực tiếp — việc phát hiện chính xác. Trên Android, nơi lưu trữ khác nhau tùy nhà sản xuất, bản quét kiểm tra tên album trước; nếu không có album ảnh chụp màn hình, nó xem tiêu đề và đường dẫn file của từng ảnh để tìm mẫu đặt tên của thiết bị. Mọi thứ tìm được nhóm theo ngày chụp, mới nhất trước, kèm dung lượng file của từng mục.
 
 ### Quy trình hiệu quả
 

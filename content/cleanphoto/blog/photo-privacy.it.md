@@ -1,6 +1,6 @@
 ---
 title: "Pulizia foto e privacy: cosa resta sul tuo dispositivo"
-description: "Una libreria foto è il dataset più personale del tuo telefono. Una scomposizione onesta di ciò che CleanPhoto legge, cosa non legge mai, cosa lascia il tuo dispositivo — e cosa no."
+description: "Una libreria foto è il dataset più personale del tuo telefono. Una scomposizione onesta di ciò che Photo Cleaner Kit legge, cosa non legge mai, cosa lascia il tuo dispositivo — e cosa no."
 date: 2026-09-06
 lang: it
 slug: photo-privacy
@@ -8,7 +8,7 @@ slug: photo-privacy
 
 ## Pulizia foto e privacy: cosa resta sul tuo dispositivo
 
-Dare a un'app l'accesso alle tue foto significa consegnarle il dataset più personale del telefono: la famiglia, la casa, i documenti, gli ultimi dieci anni. Questo accesso è necessario perché qualsiasi pulitore funzioni — ed è esattamente per questo che la domanda "che cosa ci fa l'app?" merita una risposta concreta, non uno slogan. Questa è quella di CleanPhoto.
+Dare a un'app l'accesso alle tue foto significa consegnarle il dataset più personale del telefono: la famiglia, la casa, i documenti, gli ultimi dieci anni. Questo accesso è necessario perché qualsiasi pulitore funzioni — ed è esattamente per questo che la domanda "che cosa ci fa l'app?" merita una risposta concreta, non uno slogan. Questa è quella di Photo Cleaner Kit.
 
 ### Cosa legge l'app
 
@@ -32,4 +32,4 @@ Accesso alla libreria foto: necessario per scansionare e mostrare i gruppi. Su i
 
 ### Il punto
 
-La pulizia delle foto non richiede cloud, account o analisi dei contenuti. Richiede metadati, regole trasparenti e la tua conferma. È tutto ciò che CleanPhoto usa — e se un pulitore chiedesse più di così, varrebbe la pena chiedergli a cosa gli serve.
+La pulizia delle foto non richiede cloud, account o analisi dei contenuti. Richiede metadati, regole trasparenti e la tua conferma. È tutto ciò che Photo Cleaner Kit usa — e se un pulitore chiedesse più di così, varrebbe la pena chiedergli a cosa gli serve.

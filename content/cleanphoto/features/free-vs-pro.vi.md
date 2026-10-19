@@ -8,7 +8,7 @@ slug: free-vs-pro
 
 ## Bản miễn phí và Pro
 
-Phần lõi của CleanPhoto là miễn phí: mọi trình quét, mọi chế độ xem, không giới hạn quét hay xem lại. Khác biệt giữa bản miễn phí và Pro chỉ gói trong một khoảnh khắc — lúc xác nhận xóa.
+Phần lõi của Photo Cleaner Kit là miễn phí: mọi trình quét, mọi chế độ xem, không giới hạn quét hay xem lại. Khác biệt giữa bản miễn phí và Pro chỉ gói trong một khoảnh khắc — lúc xác nhận xóa.
 
 ### Những gì luôn miễn phí
 

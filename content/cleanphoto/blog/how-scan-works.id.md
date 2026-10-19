@@ -1,18 +1,18 @@
 ---
-title: "Bagaimana CleanPhoto Memindai Pustaka Anda Tanpa Mengunggah Satu Foto Pun"
+title: "Bagaimana Photo Cleaner Kit Memindai Pustaka Anda Tanpa Mengunggah Satu Foto Pun"
 description: "Melihat di dalam tiga detektor on-device — duplikat persis, foto serupa, dan tangkapan layar — beserta aturan sederhana yang mereka pakai, agar Anda tahu persis apa yang terjadi saat menekan Pindai."
 date: 2026-09-06
 lang: id
 slug: how-scan-works
 ---
 
-## Bagaimana CleanPhoto Memindai Pustaka Anda Tanpa Mengunggah Satu Foto Pun
+## Bagaimana Photo Cleaner Kit Memindai Pustaka Anda Tanpa Mengunggah Satu Foto Pun
 
-Kebanyakan pembersih foto meminta kepercayaan. CleanPhoto berusaha mendapatkannya lewat transparansi: setiap pemindaian berjalan di perangkat Anda, bekerja dari metadata pustaka, dan mengikuti aturan yang cukup sederhana untuk dijelaskan dalam beberapa paragraf. Inilah yang persisnya terjadi saat Anda menekan Pindai.
+Kebanyakan pembersih foto meminta kepercayaan. Photo Cleaner Kit berusaha mendapatkannya lewat transparansi: setiap pemindaian berjalan di perangkat Anda, bekerja dari metadata pustaka, dan mengikuti aturan yang cukup sederhana untuk dijelaskan dalam beberapa paragraf. Inilah yang persisnya terjadi saat Anda menekan Pindai.
 
 ### Tiga detektor, tiga pertanyaan
 
-CleanPhoto menjalankan tiga pemindaian, masing-masing menjawab pertanyaan berbeda. Duplikat persis bertanya "apakah foto ini tersimpan dua kali?" Foto serupa bertanya "apakah ini burst atau pengambilan ulang cepat?" Tangkapan layar bertanya "apakah gambar ini hanya sementara?" Anda bisa menjalankannya dalam urutan apa pun, dan masing-masing menyajikan hasilnya sebagai grup untuk ditinjau.
+Photo Cleaner Kit menjalankan tiga pemindaian, masing-masing menjawab pertanyaan berbeda. Duplikat persis bertanya "apakah foto ini tersimpan dua kali?" Foto serupa bertanya "apakah ini burst atau pengambilan ulang cepat?" Tangkapan layar bertanya "apakah gambar ini hanya sementara?" Anda bisa menjalankannya dalam urutan apa pun, dan masing-masing menyajikan hasilnya sebagai grup untuk ditinjau.
 
 ### Aturan satu: ukuran sama, detik sama
 
@@ -28,7 +28,7 @@ Detektor tangkapan layar bekerja berbeda per platform. Di iOS ia membaca album S
 
 ### Ukuran file, dimuat sebelum Anda meninjau
 
-Sebelum layar tinjauan apa pun terbuka, CleanPhoto memuat lebih dulu ukuran file setiap foto. Dalam satu grup, file terbesar hampir selalu salinan yang mempertahankan detail terbanyak, jadi item diurutkan berdasarkan ukuran dan kandidat terbaik berada di atas. Sinyal tunggal itu mengubah "mana yang terbaik dari delapan ini?" menjadi "apakah yang ini bagus?"
+Sebelum layar tinjauan apa pun terbuka, Photo Cleaner Kit memuat lebih dulu ukuran file setiap foto. Dalam satu grup, file terbesar hampir selalu salinan yang mempertahankan detail terbanyak, jadi item diurutkan berdasarkan ukuran dan kandidat terbaik berada di atas. Sinyal tunggal itu mengubah "mana yang terbaik dari delapan ini?" menjadi "apakah yang ini bagus?"
 
 ### Yang tidak pernah terjadi
 

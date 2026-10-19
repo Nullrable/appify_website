@@ -1,12 +1,12 @@
 ---
-title: Sobre o CleanPhoto - Encontre e remova fotos duplicadas e semelhantes no iPhone
-description: CleanPhoto agrupa duplicatas exatas, fotos em sequência, capturas de tela e vídeos no seu iPhone por mês. Mantém a melhor foto pelo tamanho do arquivo, comprime o restante e une contatos duplicados. Tudo no seu dispositivo, nada é enviado.
+title: Sobre o Photo Cleaner Kit - Encontre e remova fotos duplicadas e semelhantes no iPhone
+description: Photo Cleaner Kit agrupa duplicatas exatas, fotos em sequência, capturas de tela e vídeos no seu iPhone por mês. Mantém a melhor foto pelo tamanho do arquivo, comprime o restante e une contatos duplicados. Tudo no seu dispositivo, nada é enviado.
 date: 2026-09-10
 lang: pt
 slug: index
 ---
 
-CleanPhoto é um app para iPhone feito para organizar a fototeca sem precisar percorrer milhares de imagens. Ele agrupa duplicatas e fotos semelhantes, separa capturas de tela e vídeos antigos por mês e mantém a versão de maior qualidade de cada sequência para que o resto possa ser excluído com um toque.
+Photo Cleaner Kit é um app para iPhone feito para organizar a fototeca sem precisar percorrer milhares de imagens. Ele agrupa duplicatas e fotos semelhantes, separa capturas de tela e vídeos antigos por mês e mantém a versão de maior qualidade de cada sequência para que o resto possa ser excluído com um toque.
 
 ## Duplicatas exatas e fotos em sequência
 
@@ -22,7 +22,7 @@ Uma vista separada lista suas maiores fotos e vídeos por tamanho. A maior parte
 
 ## Compressão que preserva a imagem
 
-Para fotos que você quer guardar, mas não no tamanho original, CleanPhoto reduz o arquivo a uma fração do tamanho original mantendo as dimensões e o detalhe visível. A cópia compactada fica ao lado do original, e o original só é apagado depois da sua confirmação.
+Para fotos que você quer guardar, mas não no tamanho original, Photo Cleaner Kit reduz o arquivo a uma fração do tamanho original mantendo as dimensões e o detalhe visível. A cópia compactada fica ao lado do original, e o original só é apagado depois da sua confirmação.
 
 ## Fusão de contatos duplicados
 

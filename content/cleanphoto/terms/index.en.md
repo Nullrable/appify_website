@@ -1,12 +1,12 @@
 ---
-title: "Terms of Service - CleanPhoto"
-description: "The rules that govern your use of CleanPhoto. Covers subscriptions, auto-renewal, photo deletion, acceptable use and disclaimers."
+title: "Terms of Service - Photo Cleaner Kit"
+description: "The rules that govern your use of Photo Cleaner Kit. Covers subscriptions, auto-renewal, photo deletion, acceptable use and disclaimers."
 date: 2026-01-26
 lang: en
 slug: index
 ---
 
-These Terms of Service ("**Terms**") govern your access to and use of **CleanPhoto** (the "**App**"), operated by the developer ("**we**", "**us**", or "**our**"). By downloading, installing, or using the App, you agree to these Terms.
+These Terms of Service ("**Terms**") govern your access to and use of **Photo Cleaner Kit** (the "**App**"), operated by the developer ("**we**", "**us**", or "**our**"). By downloading, installing, or using the App, you agree to these Terms.
 
 If you do not agree, do not install or use the App.
 

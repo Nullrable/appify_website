@@ -1,14 +1,14 @@
 ---
-title: "CleanPhoto Free vs Pro: Which One Fits the Way You Clean?"
+title: "Photo Cleaner Kit Free vs Pro: Which One Fits the Way You Clean?"
 description: "Scanning and reviewing are free with no limits — the only difference is the moment you confirm a deletion. A practical comparison to help you decide, with no marketing fine print."
 date: 2026-09-06
 lang: en
 slug: free-vs-pro
 ---
 
-## CleanPhoto Free vs Pro: Which One Fits the Way You Clean?
+## Photo Cleaner Kit Free vs Pro: Which One Fits the Way You Clean?
 
-Subscription fatigue is real, so here is the honest version of the comparison. CleanPhoto's Free and Pro differ in exactly one moment of the workflow — everything else is the same product. This post lays out what that means in practice, so you can pick the version that matches how often you clean.
+Subscription fatigue is real, so here is the honest version of the comparison. Photo Cleaner Kit's Free and Pro differ in exactly one moment of the workflow — everything else is the same product. This post lays out what that means in practice, so you can pick the version that matches how often you clean.
 
 ### What you get either way
 

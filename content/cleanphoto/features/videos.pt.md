@@ -1,6 +1,6 @@
 ---
 title: "Limpeza de vídeos"
-description: "O CleanPhoto agrupa cada vídeo da sua biblioteca pelo mês em que foi capturado, para você navegar por sessões do tamanho de um mês e apagar as que não precisa mais."
+description: "O Photo Cleaner Kit agrupa cada vídeo da sua biblioteca pelo mês em que foi capturado, para você navegar por sessões do tamanho de um mês e apagar as que não precisa mais."
 date: 2026-09-10
 lang: pt
 slug: videos
@@ -8,7 +8,7 @@ slug: videos
 
 ## Limpeza de vídeos
 
-Os vídeos são, de longe, os itens mais pesados de qualquer biblioteca: um único clipe pode pesar mais que milhares de fotos, e os que você continua assistindo raramente são os que ocupam mais espaço. O CleanPhoto mostra todos os vídeos, agrupados por mês de captura, para você decidir o que fica numa escala humana.
+Os vídeos são, de longe, os itens mais pesados de qualquer biblioteca: um único clipe pode pesar mais que milhares de fotos, e os que você continua assistindo raramente são os que ocupam mais espaço. O Photo Cleaner Kit mostra todos os vídeos, agrupados por mês de captura, para você decidir o que fica numa escala humana.
 
 ### Vídeos ordenados por mês
 

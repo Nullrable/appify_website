@@ -1,6 +1,6 @@
 ---
 title: "Limpieza de capturas de pantalla"
-description: "Cómo CleanPhoto recopila capturas de pantalla en iPhone y Android, las agrupa por día y te ayuda a limpiar el acumulado sin tocar las fotos que te importan."
+description: "Cómo Photo Cleaner Kit recopila capturas de pantalla en iPhone y Android, las agrupa por día y te ayuda a limpiar el acumulado sin tocar las fotos que te importan."
 date: 2026-09-06
 lang: es
 slug: screenshots
@@ -8,11 +8,11 @@ slug: screenshots
 
 ## Limpieza de capturas de pantalla
 
-Las capturas de pantalla están pensadas para ser temporales —una tarjeta de embarque, un recibo, un código para teclear— y sin embargo viven en tu biblioteca para siempre. CleanPhoto las saca de la multitud y las ordena por día, para que el acumulado por fin se vea.
+Las capturas de pantalla están pensadas para ser temporales —una tarjeta de embarque, un recibo, un código para teclear— y sin embargo viven en tu biblioteca para siempre. Photo Cleaner Kit las saca de la multitud y las ordena por día, para que el acumulado por fin se vea.
 
 ### Cómo se encuentran las capturas
 
-En iOS, el sistema mantiene un álbum de Capturas de pantalla dedicado. CleanPhoto lee ese álbum directamente, así que la detección es exacta. En Android, el lugar donde se guardan varía según el fabricante: el escaneo revisa primero los nombres de álbumes y, si no hay álbum de capturas, inspecciona el título y la ruta de archivo de cada imagen en busca de los patrones de nombres que usan los dispositivos para las capturas.
+En iOS, el sistema mantiene un álbum de Capturas de pantalla dedicado. Photo Cleaner Kit lee ese álbum directamente, así que la detección es exacta. En Android, el lugar donde se guardan varía según el fabricante: el escaneo revisa primero los nombres de álbumes y, si no hay álbum de capturas, inspecciona el título y la ruta de archivo de cada imagen en busca de los patrones de nombres que usan los dispositivos para las capturas.
 
 ### Agrupadas por día
 

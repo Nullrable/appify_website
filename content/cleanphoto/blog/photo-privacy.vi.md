@@ -1,6 +1,6 @@
 ---
 title: "Dọn dẹp ảnh và quyền riêng tư: Những gì ở lại trên thiết bị của bạn"
-description: "Thư viện ảnh là bộ dữ liệu riêng tư nhất trên điện thoại của bạn. Bài viết trung thực liệt kê CleanPhoto đọc gì, không bao giờ đọc gì, cái gì rời khỏi thiết bị, cái nào không."
+description: "Thư viện ảnh là bộ dữ liệu riêng tư nhất trên điện thoại của bạn. Bài viết trung thực liệt kê Photo Cleaner Kit đọc gì, không bao giờ đọc gì, cái gì rời khỏi thiết bị, cái nào không."
 date: 2026-09-06
 lang: vi
 slug: photo-privacy
@@ -8,7 +8,7 @@ slug: photo-privacy
 
 ## Dọn dẹp ảnh và quyền riêng tư: Những gì ở lại trên thiết bị của bạn
 
-Cấp cho một ứng dụng quyền truy cập ảnh, bạn đã trao cho nó bộ dữ liệu riêng tư nhất trên điện thoại: gia đình, ngôi nhà, giấy tờ, và mười năm qua của bạn. Bất kỳ công cụ dọn ảnh nào cũng cần quyền này để hoạt động — chính vì thế câu hỏi "ứng dụng làm gì với nó?" xứng đáng nhận một câu trả lời cụ thể, không phải một khẩu hiệu. Đây là câu trả lời của CleanPhoto.
+Cấp cho một ứng dụng quyền truy cập ảnh, bạn đã trao cho nó bộ dữ liệu riêng tư nhất trên điện thoại: gia đình, ngôi nhà, giấy tờ, và mười năm qua của bạn. Bất kỳ công cụ dọn ảnh nào cũng cần quyền này để hoạt động — chính vì thế câu hỏi "ứng dụng làm gì với nó?" xứng đáng nhận một câu trả lời cụ thể, không phải một khẩu hiệu. Đây là câu trả lời của Photo Cleaner Kit.
 
 ### Ứng dụng đọc gì
 
@@ -32,4 +32,4 @@ Truy cập thư viện ảnh: cần để quét và hiển thị nhóm. Trên iO
 
 ### Điểm mấu chốt
 
-Dọn dẹp ảnh không cần đám mây, không cần tài khoản, không cần phân tích nội dung. Nó cần metadata, quy tắc minh bạch và sự xác nhận của bạn. CleanPhoto dùng đúng những thứ đó — và nếu một công cụ dọn nào đó đòi nhiều hơn thế, đáng để hỏi nó lấy để làm gì.
+Dọn dẹp ảnh không cần đám mây, không cần tài khoản, không cần phân tích nội dung. Nó cần metadata, quy tắc minh bạch và sự xác nhận của bạn. Photo Cleaner Kit dùng đúng những thứ đó — và nếu một công cụ dọn nào đó đòi nhiều hơn thế, đáng để hỏi nó lấy để làm gì.

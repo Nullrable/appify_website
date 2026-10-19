@@ -1,6 +1,6 @@
 ---
 title: "Doppelte Kontakte bereinigen"
-description: "CleanPhoto findet Kontakte mit demselben Namen oder derselben Nummer, gruppiert sie zur Durchsicht und führt sie zu einer Karte zusammen, ohne Felder zu verlieren."
+description: "Photo Cleaner Kit findet Kontakte mit demselben Namen oder derselben Nummer, gruppiert sie zur Durchsicht und führt sie zu einer Karte zusammen, ohne Felder zu verlieren."
 date: 2026-09-10
 lang: de
 slug: contacts-dedup

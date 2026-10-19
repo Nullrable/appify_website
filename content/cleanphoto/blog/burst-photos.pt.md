@@ -16,7 +16,7 @@ Sequências são racionais. Os assuntos se movem, o foco caça, as expressões m
 
 ### A regra dos 10 segundos
 
-É aqui que a digitalização de fotos semelhantes do CleanPhoto ajuda. Ela ordena sua biblioteca por hora de captura e encadeia as fotos: enquanto cada foto for tirada dentro de 10 segundos da anterior, ela entra no mesmo grupo. Assim que o intervalo passa de 10 segundos, a corrente se fecha. Isso bate com o modo como sequências e retomadas acontecem — uma série rápida em segundos, uma pausa, depois outra cena. Grupos de uma foto só são descartados, então o que sobra para revisar é exatamente o material que merece uma decisão.
+É aqui que a digitalização de fotos semelhantes do Photo Cleaner Kit ajuda. Ela ordena sua biblioteca por hora de captura e encadeia as fotos: enquanto cada foto for tirada dentro de 10 segundos da anterior, ela entra no mesmo grupo. Assim que o intervalo passa de 10 segundos, a corrente se fecha. Isso bate com o modo como sequências e retomadas acontecem — uma série rápida em segundos, uma pausa, depois outra cena. Grupos de uma foto só são descartados, então o que sobra para revisar é exatamente o material que merece uma decisão.
 
 ### Revisar uma série, não uma guerra de pixels
 

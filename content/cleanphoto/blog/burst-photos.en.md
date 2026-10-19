@@ -16,7 +16,7 @@ Bursts are rational. Subjects move, focus hunts, expressions change in a fractio
 
 ### The 10-second rule
 
-This is where CleanPhoto's similar-photo scan helps. It sorts your library by capture time and chains photos together: as long as each photo was taken within 10 seconds of the previous one, it joins the same group. When the gap exceeds 10 seconds, the chain closes. That matches how bursts and rapid retakes actually happen — a quick series within seconds, then a pause, then a different scene. Groups containing a single photo are dropped, so what is left for review is exactly the material worth a decision.
+This is where Photo Cleaner Kit's similar-photo scan helps. It sorts your library by capture time and chains photos together: as long as each photo was taken within 10 seconds of the previous one, it joins the same group. When the gap exceeds 10 seconds, the chain closes. That matches how bursts and rapid retakes actually happen — a quick series within seconds, then a pause, then a different scene. Groups containing a single photo are dropped, so what is left for review is exactly the material worth a decision.
 
 ### Reviewing a set, not a pixel war
 

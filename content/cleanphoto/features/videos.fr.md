@@ -1,6 +1,6 @@
 ---
 title: "Nettoyage des vidéos"
-description: "CleanPhoto regroupe toutes les vidéos de votre photothèque par mois de prise de vue, pour parcourir des sessions à taille humaine et supprimer celles dont vous n'avez plus besoin."
+description: "Photo Cleaner Kit regroupe toutes les vidéos de votre photothèque par mois de prise de vue, pour parcourir des sessions à taille humaine et supprimer celles dont vous n'avez plus besoin."
 date: 2026-09-10
 lang: fr
 slug: videos
@@ -8,7 +8,7 @@ slug: videos
 
 ## Nettoyage des vidéos
 
-Les vidéos sont de loin les éléments les plus lourds d'une photothèque — un seul clip peut peser plus que des milliers de photos, et celles que vous regardez encore sont rarement celles qui occupent le plus d'espace. CleanPhoto fait remonter toutes vos vidéos, regroupées par mois de capture, pour décider à une échelle humaine de ce qui reste.
+Les vidéos sont de loin les éléments les plus lourds d'une photothèque — un seul clip peut peser plus que des milliers de photos, et celles que vous regardez encore sont rarement celles qui occupent le plus d'espace. Photo Cleaner Kit fait remonter toutes vos vidéos, regroupées par mois de capture, pour décider à une échelle humaine de ce qui reste.
 
 ### Des vidéos triées par mois
 

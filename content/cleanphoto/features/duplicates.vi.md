@@ -1,6 +1,6 @@
 ---
 title: "Phát hiện trùng lặp chính xác"
-description: "CleanPhoto nhóm các ảnh cùng kích thước chụp trong cùng một giây như thế nào, và vì sao quy tắc cục bộ này tìm ra bản sao thật mà không nhầm lẫn."
+description: "Photo Cleaner Kit nhóm các ảnh cùng kích thước chụp trong cùng một giây như thế nào, và vì sao quy tắc cục bộ này tìm ra bản sao thật mà không nhầm lẫn."
 date: 2026-09-06
 lang: vi
 slug: duplicates
@@ -8,11 +8,11 @@ slug: duplicates
 
 ## Phát hiện trùng lặp chính xác
 
-Ảnh trùng lặp hoàn toàn là loại ảnh dễ xóa nhất nhưng cũng dễ bị bỏ sót nhất. CleanPhoto tìm ra chúng bằng một quy tắc đơn giản và minh bạch, chạy hoàn toàn trên thiết bị của bạn: các ảnh có kích thước pixel giống hệt nhau và được chụp trong đúng cùng một giây sẽ thuộc cùng một nhóm.
+Ảnh trùng lặp hoàn toàn là loại ảnh dễ xóa nhất nhưng cũng dễ bị bỏ sót nhất. Photo Cleaner Kit tìm ra chúng bằng một quy tắc đơn giản và minh bạch, chạy hoàn toàn trên thiết bị của bạn: các ảnh có kích thước pixel giống hệt nhau và được chụp trong đúng cùng một giây sẽ thuộc cùng một nhóm.
 
 ### Cách nhóm ảnh
 
-Khi quét, CleanPhoto duyệt qua thư viện ảnh của bạn và tạo một khóa cho mỗi ảnh dựa trên chiều rộng, chiều cao và giây chụp. Các ảnh có cùng khóa được đặt vào một nhóm. Ảnh bị lưu hai lần — do lưu lại, nhập từ thiết bị khác hoặc xung đột đồng bộ đám mây — mang cùng kích thước và dấu thời gian với bản gốc, nên cả hai bản sao đều rơi vào cùng một nhóm và không có ảnh nào khác lẫn vào.
+Khi quét, Photo Cleaner Kit duyệt qua thư viện ảnh của bạn và tạo một khóa cho mỗi ảnh dựa trên chiều rộng, chiều cao và giây chụp. Các ảnh có cùng khóa được đặt vào một nhóm. Ảnh bị lưu hai lần — do lưu lại, nhập từ thiết bị khác hoặc xung đột đồng bộ đám mây — mang cùng kích thước và dấu thời gian với bản gốc, nên cả hai bản sao đều rơi vào cùng một nhóm và không có ảnh nào khác lẫn vào.
 
 ### Xem lại nhóm
 

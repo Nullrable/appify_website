@@ -1,6 +1,6 @@
 ---
 title: "Deteksi Duplikat Persis"
-description: "Bagaimana CleanPhoto mengelompokkan foto berdimensi identik yang diambil pada detik yang sama, dan mengapa aturan lokal ini menemukan salinan sejati tanpa positif palsu."
+description: "Bagaimana Photo Cleaner Kit mengelompokkan foto berdimensi identik yang diambil pada detik yang sama, dan mengapa aturan lokal ini menemukan salinan sejati tanpa positif palsu."
 date: 2026-09-06
 lang: id
 slug: duplicates
@@ -8,11 +8,11 @@ slug: duplicates
 
 ## Deteksi Duplikat Persis
 
-Foto yang duplikat persis adalah foto yang paling mudah dihapus namun juga paling mudah terlewat. CleanPhoto menemukannya dengan aturan sederhana dan transparan yang berjalan sepenuhnya di perangkat Anda: foto dengan dimensi piksel yang identik dan diambil pada detik yang sama persis dikelompokkan bersama.
+Foto yang duplikat persis adalah foto yang paling mudah dihapus namun juga paling mudah terlewat. Photo Cleaner Kit menemukannya dengan aturan sederhana dan transparan yang berjalan sepenuhnya di perangkat Anda: foto dengan dimensi piksel yang identik dan diambil pada detik yang sama persis dikelompokkan bersama.
 
 ### Cara pengelompokan bekerja
 
-Saat pemindaian, CleanPhoto menelusuri pustaka foto Anda dan membangun kunci untuk setiap foto dari lebarnya, tingginya, dan detik pengambilannya. Foto dengan kunci sama ditempatkan dalam satu grup. Foto yang tersimpan dua kali — karena disimpan ulang, diimpor dari perangkat lain, atau konflik sinkronisasi cloud — membawa dimensi dan stempel waktu yang sama dengan aslinya, sehingga kedua salinan masuk ke grup yang sama tanpa foto lain yang ikut tercampur.
+Saat pemindaian, Photo Cleaner Kit menelusuri pustaka foto Anda dan membangun kunci untuk setiap foto dari lebarnya, tingginya, dan detik pengambilannya. Foto dengan kunci sama ditempatkan dalam satu grup. Foto yang tersimpan dua kali — karena disimpan ulang, diimpor dari perangkat lain, atau konflik sinkronisasi cloud — membawa dimensi dan stempel waktu yang sama dengan aslinya, sehingga kedua salinan masuk ke grup yang sama tanpa foto lain yang ikut tercampur.
 
 ### Meninjau grup
 

@@ -16,7 +16,7 @@ Serien sind rational. Motive bewegen sich, der Autofokus sucht, Mimik wechselt i
 
 ### Die 10-Sekunden-Regel
 
-Hier hilft der Scan für ähnliche Fotos von CleanPhoto. Er sortiert Ihre Bibliothek nach Aufnahmezeit und verkettet die Fotos: Solange jedes Foto innerhalb von 10 Sekunden nach dem vorherigen aufgenommen wurde, gehört es zur selben Gruppe. Sobald der Abstand 10 Sekunden übersteigt, schließt sich die Kette. Das entspricht dem realen Ablauf von Serien und Nachnahmen — eine schnelle Folge über Sekunden, eine Pause, dann eine andere Szene. Gruppen mit nur einem Foto werden verworfen; zur Durchsicht bleibt also genau das Material, das eine Entscheidung verdient.
+Hier hilft der Scan für ähnliche Fotos von Photo Cleaner Kit. Er sortiert Ihre Bibliothek nach Aufnahmezeit und verkettet die Fotos: Solange jedes Foto innerhalb von 10 Sekunden nach dem vorherigen aufgenommen wurde, gehört es zur selben Gruppe. Sobald der Abstand 10 Sekunden übersteigt, schließt sich die Kette. Das entspricht dem realen Ablauf von Serien und Nachnahmen — eine schnelle Folge über Sekunden, eine Pause, dann eine andere Szene. Gruppen mit nur einem Foto werden verworfen; zur Durchsicht bleibt also genau das Material, das eine Entscheidung verdient.
 
 ### Einen Satz prüfen, kein Pixelkrieg
 

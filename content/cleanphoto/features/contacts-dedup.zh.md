@@ -1,6 +1,6 @@
 ---
 title: "重复联系人清理"
-description: "CleanPhoto 找出共享相同姓名或电话号码的联系人,分组展示供你审阅,然后在保留所有字段的前提下合并成一张联系人卡片。"
+description: "Photo Cleaner Kit 找出共享相同姓名或电话号码的联系人,分组展示供你审阅,然后在保留所有字段的前提下合并成一张联系人卡片。"
 date: 2026-09-10
 lang: zh
 slug: contacts-dedup

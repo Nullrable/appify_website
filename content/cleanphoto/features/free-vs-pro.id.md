@@ -8,7 +8,7 @@ slug: free-vs-pro
 
 ## Versi Gratis dan Pro
 
-Inti CleanPhoto gratis: setiap pemindai, setiap tampilan, tanpa batas pemindaian atau peninjauan. Perbedaan Gratis dan Pro bermuara pada satu momen — konfirmasi penghapusan.
+Inti Photo Cleaner Kit gratis: setiap pemindai, setiap tampilan, tanpa batas pemindaian atau peninjauan. Perbedaan Gratis dan Pro bermuara pada satu momen — konfirmasi penghapusan.
 
 ### Yang selalu gratis
 

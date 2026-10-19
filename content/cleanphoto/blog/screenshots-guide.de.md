@@ -18,9 +18,9 @@ Screenshots sind der Schmierzettel des Handys. Sie machen einen, um sich fünf M
 
 Genau deshalb sind Screenshots das leichteste Reinigungsziel: Fast keiner zählt nach einer Woche noch. Ein Duplikat mag eine Erinnerung sein; ein alter Screenshot so gut wie nie. Sie zu leeren ist meist die schnellste Speicherrückgewinnung der ganzen Bibliothek, und da der Wert jedes Elements nahe null liegt, geht die Durchsicht flott.
 
-### Wie CleanPhoto sie findet
+### Wie Photo Cleaner Kit sie findet
 
-Auf iOS hält das System ein eigenes Screenshots-Album, das CleanPhoto direkt liest — die Erkennung ist exakt. Auf Android, wo der Speicherort je nach Hersteller variiert, prüft der Scan zunächst Albennamen und untersucht ohne Screenshot-Album Titel und Dateipfad jedes Bildes auf die Namensmuster der Geräte. Alles Gefundene wird nach Aufnahmetag gruppiert, der jüngste zuerst, mit angezeigter Dateigröße je Element.
+Auf iOS hält das System ein eigenes Screenshots-Album, das Photo Cleaner Kit direkt liest — die Erkennung ist exakt. Auf Android, wo der Speicherort je nach Hersteller variiert, prüft der Scan zunächst Albennamen und untersucht ohne Screenshot-Album Titel und Dateipfad jedes Bildes auf die Namensmuster der Geräte. Alles Gefundene wird nach Aufnahmetag gruppiert, der jüngste zuerst, mit angezeigter Dateigröße je Element.
 
 ### Ein Ablauf, der funktioniert
 

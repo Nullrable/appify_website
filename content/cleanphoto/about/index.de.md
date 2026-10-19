@@ -1,12 +1,12 @@
 ---
-title: Über CleanPhoto - Doppelte und ähnliche Fotos auf dem iPhone finden und entfernen
-description: CleanPhoto gruppiert exakte Duplikate, ähnliche Serienaufnahmen, Screenshots und Videos auf Ihrem iPhone nach Monat. Behält das beste Bild nach Dateigröße, komprimiert den Rest und führt doppelte Kontakte zusammen. Alles auf Ihrem Gerät, nichts wird hochgeladen.
+title: Über Photo Cleaner Kit - Doppelte und ähnliche Fotos auf dem iPhone finden und entfernen
+description: Photo Cleaner Kit gruppiert exakte Duplikate, ähnliche Serienaufnahmen, Screenshots und Videos auf Ihrem iPhone nach Monat. Behält das beste Bild nach Dateigröße, komprimiert den Rest und führt doppelte Kontakte zusammen. Alles auf Ihrem Gerät, nichts wird hochgeladen.
 date: 2026-09-10
 lang: de
 slug: index
 ---
 
-CleanPhoto ist eine iPhone-App, die Fotochaos aufräumt, ohne dass man tausende Bilder durchscrollen muss. Sie gruppiert Duplikate und ähnliche Aufnahmen, sortiert Screenshots und ältere Videos nach Monat und behält von jeder Aufnahmeserie die qualitativ beste Version, damit der Rest mit einem Tipp verschwindet.
+Photo Cleaner Kit ist eine iPhone-App, die Fotochaos aufräumt, ohne dass man tausende Bilder durchscrollen muss. Sie gruppiert Duplikate und ähnliche Aufnahmen, sortiert Screenshots und ältere Videos nach Monat und behält von jeder Aufnahmeserie die qualitativ beste Version, damit der Rest mit einem Tipp verschwindet.
 
 ## Exakte Duplikate und Serienaufnahmen
 
@@ -22,7 +22,7 @@ Eine eigene Ansicht listet Ihre größten Fotos und Videos nach Größe sortiert
 
 ## Komprimierung, die das Bild bewahrt
 
-Für Fotos, die Sie behalten wollen, aber nicht in voller Größe, schrumpft CleanPhoto die Datei auf einen Bruchteil der Originalgröße und erhält dabei Abmessungen und sichtbare Details. Die komprimierte Version liegt neben dem Original, und das Original wird erst nach Ihrer Bestätigung gelöscht.
+Für Fotos, die Sie behalten wollen, aber nicht in voller Größe, schrumpft Photo Cleaner Kit die Datei auf einen Bruchteil der Originalgröße und erhält dabei Abmessungen und sichtbare Details. Die komprimierte Version liegt neben dem Original, und das Original wird erst nach Ihrer Bestätigung gelöscht.
 
 ## Kontaktduplikate zusammenführen
 

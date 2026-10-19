@@ -1,6 +1,6 @@
 ---
 title: "Big Files"
-description: "CleanPhoto surfaces your largest photos and videos so the few heavyweight items in your library can be cleared in a couple of confirmations — no combing through thousands of small ones."
+description: "Photo Cleaner Kit surfaces your largest photos and videos so the few heavyweight items in your library can be cleared in a couple of confirmations — no combing through thousands of small ones."
 date: 2026-09-10
 lang: en
 slug: big-files

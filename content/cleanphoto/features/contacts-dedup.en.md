@@ -1,6 +1,6 @@
 ---
 title: "Duplicate Contacts Cleanup"
-description: "CleanPhoto finds contacts that share the same name or phone number, groups them so you can review, and merges them into one card with all the fields preserved."
+description: "Photo Cleaner Kit finds contacts that share the same name or phone number, groups them so you can review, and merges them into one card with all the fields preserved."
 date: 2026-09-10
 lang: en
 slug: contacts-dedup

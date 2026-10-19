@@ -1,6 +1,6 @@
 ---
 title: "Bereinigung ähnlicher Fotos und Serienaufnahmen"
-description: "CleanPhoto verkettet Fotos, die innerhalb von 10 Sekunden nacheinander aufgenommen wurden, zu einer prüfbaren Gruppe – so lassen sich Serien und schnelle Nachnahmen Satz für Satz aufräumen."
+description: "Photo Cleaner Kit verkettet Fotos, die innerhalb von 10 Sekunden nacheinander aufgenommen wurden, zu einer prüfbaren Gruppe – so lassen sich Serien und schnelle Nachnahmen Satz für Satz aufräumen."
 date: 2026-09-06
 lang: de
 slug: similars
@@ -8,11 +8,11 @@ slug: similars
 
 ## Bereinigung ähnlicher Fotos und Serienaufnahmen
 
-Serienaufnahmen und schnelle Nachnahmen sind der Weg zu guten Fotos – Sie drücken mehrmals auf den Auslöser, behalten einen Schuss, und der Rest stapelt sich leise. CleanPhoto bündelt diese nahezu identischen Aufnahmen zu Gruppen, die Sie Satz für Satz durchsehen können – vollständig auf Ihrem Gerät.
+Serienaufnahmen und schnelle Nachnahmen sind der Weg zu guten Fotos – Sie drücken mehrmals auf den Auslöser, behalten einen Schuss, und der Rest stapelt sich leise. Photo Cleaner Kit bündelt diese nahezu identischen Aufnahmen zu Gruppen, die Sie Satz für Satz durchsehen können – vollständig auf Ihrem Gerät.
 
 ### Die 10-Sekunden-Regel
 
-Beim Start eines Scans werden Ihre Fotos nach Aufnahmezeit sortiert. CleanPhoto geht dann die Chronik entlang und verkettet Fotos: Solange jedes Foto innerhalb von 10 Sekunden nach dem vorherigen aufgenommen wurde, gehört es zur selben Gruppe. Sobald der Abstand 10 Sekunden übersteigt, schließt sich die Kette, und das nächste Foto beginnt eine neue Gruppe. Nur Gruppen mit mehr als einem Foto bleiben zur Durchsicht übrig.
+Beim Start eines Scans werden Ihre Fotos nach Aufnahmezeit sortiert. Photo Cleaner Kit geht dann die Chronik entlang und verkettet Fotos: Solange jedes Foto innerhalb von 10 Sekunden nach dem vorherigen aufgenommen wurde, gehört es zur selben Gruppe. Sobald der Abstand 10 Sekunden übersteigt, schließt sich die Kette, und das nächste Foto beginnt eine neue Gruppe. Nur Gruppen mit mehr als einem Foto bleiben zur Durchsicht übrig.
 
 Das entspricht genau dem realen Ablauf von Serien und Nachnahmen: eine schnelle Bildfolge über wenige Sekunden, dann eine Pause, dann etwas anderes.
 

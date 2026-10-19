@@ -1,6 +1,6 @@
 ---
 title: "Dọn danh bạ trùng lặp"
-description: "CleanPhoto tìm các liên hệ trùng tên hoặc số điện thoại, gom chúng lại để bạn rà soát, rồi gộp thành một thẻ duy nhất giữ nguyên mọi trường thông tin."
+description: "Photo Cleaner Kit tìm các liên hệ trùng tên hoặc số điện thoại, gom chúng lại để bạn rà soát, rồi gộp thành một thẻ duy nhất giữ nguyên mọi trường thông tin."
 date: 2026-09-10
 lang: vi
 slug: contacts-dedup

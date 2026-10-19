@@ -18,9 +18,9 @@ Las capturas son el borrador del teléfono. Tomas una para recordar algo cinco m
 
 He aquí por qué las capturas son el objetivo de limpieza más fácil: a casi ninguna le importa alguien después de una semana. Una foto duplicada quizá siga siendo un recuerdo; una captura vieja, casi nunca. Vaciarlas suele ser la recuperación de espacio más rápida de toda la biblioteca, y como el valor de cada elemento ronda el cero, la revisión va rápido.
 
-### Cómo las encuentra CleanPhoto
+### Cómo las encuentra Photo Cleaner Kit
 
-En iOS, el sistema mantiene un álbum de Capturas de pantalla dedicado, y CleanPhoto lo lee directamente — la detección es exacta. En Android, donde el almacenamiento varía por fabricante, el escaneo revisa primero los nombres de álbumes y, sin álbum de capturas, inspecciona el título y la ruta de archivo de cada imagen buscando los patrones de nombres de los dispositivos. Todo lo encontrado se agrupa por día de captura, lo más reciente primero, con el tamaño de archivo de cada elemento visible.
+En iOS, el sistema mantiene un álbum de Capturas de pantalla dedicado, y Photo Cleaner Kit lo lee directamente — la detección es exacta. En Android, donde el almacenamiento varía por fabricante, el escaneo revisa primero los nombres de álbumes y, sin álbum de capturas, inspecciona el título y la ruta de archivo de cada imagen buscando los patrones de nombres de los dispositivos. Todo lo encontrado se agrupa por día de captura, lo más reciente primero, con el tamaño de archivo de cada elemento visible.
 
 ### Un flujo que funciona
 

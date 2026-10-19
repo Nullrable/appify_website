@@ -1,18 +1,18 @@
 ---
-title: "CleanPhoto quét thư viện của bạn mà không tải lên một tấm ảnh nào như thế nào"
+title: "Photo Cleaner Kit quét thư viện của bạn mà không tải lên một tấm ảnh nào như thế nào"
 description: "Nhìn vào bên trong ba bộ phát hiện chạy trên thiết bị — trùng lặp chính xác, ảnh tương tự và ảnh chụp màn hình — cùng các quy tắc đơn giản của chúng, để bạn biết chính xác điều gì xảy ra khi nhấn Quét."
 date: 2026-09-06
 lang: vi
 slug: how-scan-works
 ---
 
-## CleanPhoto quét thư viện của bạn mà không tải lên một tấm ảnh nào như thế nào
+## Photo Cleaner Kit quét thư viện của bạn mà không tải lên một tấm ảnh nào như thế nào
 
-Hầu hết các ứng dụng dọn ảnh đều yêu cầu bạn tin tưởng. CleanPhoto chọn cách tạo niềm tin bằng sự minh bạch: mọi lượt quét đều chạy trên thiết bị của bạn, chỉ dùng metadata của thư viện, và tuân theo các quy tắc đơn giản đến mức vài đoạn văn là giải thích xong. Đây là chính xác những gì xảy ra khi bạn nhấn Quét.
+Hầu hết các ứng dụng dọn ảnh đều yêu cầu bạn tin tưởng. Photo Cleaner Kit chọn cách tạo niềm tin bằng sự minh bạch: mọi lượt quét đều chạy trên thiết bị của bạn, chỉ dùng metadata của thư viện, và tuân theo các quy tắc đơn giản đến mức vài đoạn văn là giải thích xong. Đây là chính xác những gì xảy ra khi bạn nhấn Quét.
 
 ### Ba bộ phát hiện, ba câu hỏi
 
-CleanPhoto có ba lượt quét, mỗi cái trả lời một câu hỏi khác nhau. Trùng lặp chính xác hỏi "ảnh này có bị lưu hai lần không?" Ảnh tương tự hỏi "đây có phải là chụp liên tiếp hay chụp lại nhanh không?" Ảnh chụp màn hình hỏi "ảnh này có chỉ là tạm thời không?" Bạn có thể chạy theo bất kỳ thứ tự nào, và mỗi kết quả đều hiển thị thành các nhóm để bạn xem lại.
+Photo Cleaner Kit có ba lượt quét, mỗi cái trả lời một câu hỏi khác nhau. Trùng lặp chính xác hỏi "ảnh này có bị lưu hai lần không?" Ảnh tương tự hỏi "đây có phải là chụp liên tiếp hay chụp lại nhanh không?" Ảnh chụp màn hình hỏi "ảnh này có chỉ là tạm thời không?" Bạn có thể chạy theo bất kỳ thứ tự nào, và mỗi kết quả đều hiển thị thành các nhóm để bạn xem lại.
 
 ### Quy tắc một: cùng kích thước, cùng giây
 
@@ -28,7 +28,7 @@ Bộ phát hiện ảnh chụp màn hình hoạt động khác nhau trên từng
 
 ### Dung lượng file, tải sẵn trước khi bạn xem lại
 
-Trước khi bất kỳ màn hình xem nào mở ra, CleanPhoto đã tải sẵn dung lượng file của mỗi ảnh. Trong một nhóm, file lớn nhất gần như luôn là bản giữ nhiều chi tiết nhất, nên các mục được xếp theo dung lượng và ứng viên tốt nhất nằm trên cùng. Một tín hiệu duy nhất đó biến "trong tám tấm này tấm nào tốt nhất?" thành "tấm này có được không?"
+Trước khi bất kỳ màn hình xem nào mở ra, Photo Cleaner Kit đã tải sẵn dung lượng file của mỗi ảnh. Trong một nhóm, file lớn nhất gần như luôn là bản giữ nhiều chi tiết nhất, nên các mục được xếp theo dung lượng và ứng viên tốt nhất nằm trên cùng. Một tín hiệu duy nhất đó biến "trong tám tấm này tấm nào tốt nhất?" thành "tấm này có được không?"
 
 ### Những điều không bao giờ xảy ra
 

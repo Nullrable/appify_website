@@ -1,6 +1,6 @@
 ---
 title: "Pulizia di foto simili e raffiche"
-description: "CleanPhoto concatena in un gruppo le foto scattate a meno di 10 secondi di distanza, per ripulire raffiche e scatti ripetuti serie per serie."
+description: "Photo Cleaner Kit concatena in un gruppo le foto scattate a meno di 10 secondi di distanza, per ripulire raffiche e scatti ripetuti serie per serie."
 date: 2026-09-06
 lang: it
 slug: similars
@@ -8,11 +8,11 @@ slug: similars
 
 ## Pulizia di foto simili e raffiche
 
-La modalità raffica e le riprese rapide sono il modo in cui nascono le buone foto — premi l'otturatore più volte, ne tieni una, e il resto si accumula in silenzio. CleanPhoto raccoglie queste inquadrature quasi identiche in gruppi che puoi rivedere serie per serie, interamente sul tuo dispositivo.
+La modalità raffica e le riprese rapide sono il modo in cui nascono le buone foto — premi l'otturatore più volte, ne tieni una, e il resto si accumula in silenzio. Photo Cleaner Kit raccoglie queste inquadrature quasi identiche in gruppi che puoi rivedere serie per serie, interamente sul tuo dispositivo.
 
 ### La regola dei 10 secondi
 
-All'avvio di una scansione, le foto vengono ordinate per orario di scatto. CleanPhoto percorre poi la timeline e concatena le foto: finché ogni foto è scattata entro 10 secondi dalla precedente, entra nello stesso gruppo. Non appena l'intervallo supera i 10 secondi, la catena si chiude e la foto successiva apre un gruppo nuovo. Solo i gruppi con più di una foto passano alla revisione.
+All'avvio di una scansione, le foto vengono ordinate per orario di scatto. Photo Cleaner Kit percorre poi la timeline e concatena le foto: finché ogni foto è scattata entro 10 secondi dalla precedente, entra nello stesso gruppo. Non appena l'intervallo supera i 10 secondi, la catena si chiude e la foto successiva apre un gruppo nuovo. Solo i gruppi con più di una foto passano alla revisione.
 
 Corrisponde a come avvengono davvero raffiche e ritenti: una serie rapida in pochi secondi, una pausa, poi qualcos'altro.
 

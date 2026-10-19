@@ -16,7 +16,7 @@ La rafale est rationnelle. Les sujets bougent, la mise au point chasse, les expr
 
 ### La règle des 10 secondes
 
-C'est là que le scan de photos similaires de CleanPhoto aide. Il trie votre photothèque par date de prise de vue puis enchaîne les photos : tant que chaque photo est prise dans les 10 secondes suivant la précédente, elle rejoint le même groupe. Dès que l'écart dépasse 10 secondes, la chaîne se referme. Cela correspond à la réalité des rafales et reprises — une série rapide en quelques secondes, une pause, puis une autre scène. Les groupes d'une seule photo sont écartés : ce qui reste à examiner est précisément ce qui mérite une décision.
+C'est là que le scan de photos similaires de Photo Cleaner Kit aide. Il trie votre photothèque par date de prise de vue puis enchaîne les photos : tant que chaque photo est prise dans les 10 secondes suivant la précédente, elle rejoint le même groupe. Dès que l'écart dépasse 10 secondes, la chaîne se referme. Cela correspond à la réalité des rafales et reprises — une série rapide en quelques secondes, une pause, puis une autre scène. Les groupes d'une seule photo sont écartés : ce qui reste à examiner est précisément ce qui mérite une décision.
 
 ### Passer une série en revue, pas une guerre de pixels
 

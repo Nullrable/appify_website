@@ -1,6 +1,6 @@
 ---
 title: "Detección de duplicados exactos"
-description: "Cómo CleanPhoto agrupa fotos con dimensiones idénticas capturadas en el mismo segundo, y por qué esta regla local encuentra copias reales sin falsos positivos."
+description: "Cómo Photo Cleaner Kit agrupa fotos con dimensiones idénticas capturadas en el mismo segundo, y por qué esta regla local encuentra copias reales sin falsos positivos."
 date: 2026-09-06
 lang: es
 slug: duplicates
@@ -8,11 +8,11 @@ slug: duplicates
 
 ## Detección de duplicados exactos
 
-Los duplicados exactos son las fotos más fáciles de eliminar y las más fáciles de pasar por alto. CleanPhoto los encuentra con una regla simple y transparente que se ejecuta por completo en tu dispositivo: las fotos con dimensiones de píxel idénticas capturadas en el mismo segundo exacto pertenecen al mismo grupo.
+Los duplicados exactos son las fotos más fáciles de eliminar y las más fáciles de pasar por alto. Photo Cleaner Kit los encuentra con una regla simple y transparente que se ejecuta por completo en tu dispositivo: las fotos con dimensiones de píxel idénticas capturadas en el mismo segundo exacto pertenecen al mismo grupo.
 
 ### Cómo funciona la agrupación
 
-Durante un escaneo, CleanPhoto recorre tu biblioteca de fotos y construye una clave para cada foto a partir de su ancho, su alto y su segundo de captura. Las fotos con la misma clave se colocan en un grupo. Una foto guardada dos veces —por un re-guardado, una importación de otro dispositivo o un conflicto de sincronización en la nube— tiene las mismas dimensiones y marca de tiempo que la original, así que ambas copias caen en el mismo grupo sin nada más en él.
+Durante un escaneo, Photo Cleaner Kit recorre tu biblioteca de fotos y construye una clave para cada foto a partir de su ancho, su alto y su segundo de captura. Las fotos con la misma clave se colocan en un grupo. Una foto guardada dos veces —por un re-guardado, una importación de otro dispositivo o un conflicto de sincronización en la nube— tiene las mismas dimensiones y marca de tiempo que la original, así que ambas copias caen en el mismo grupo sin nada más en él.
 
 ### Revisar un grupo
 

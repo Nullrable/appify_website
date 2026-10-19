@@ -18,9 +18,9 @@ Tangkapan layar adalah kertas coretan ponsel. Anda mengambilnya untuk mengingat 
 
 Inilah alasan tangkapan layar menjadi target pembersihan termudah: hampir tak ada yang berarti setelah seminggu. Foto duplikat mungkin masih kenangan; tangkapan layar lama hampir tidak pernah. Membersihkannya biasanya pemulihan penyimpanan tercepat di seluruh pustaka, dan karena nilai tiap item mendekati nol, peninjauannya pun cepat.
 
-### Bagaimana CleanPhoto menemukannya
+### Bagaimana Photo Cleaner Kit menemukannya
 
-Di iOS, sistem menyimpan album Screenshots khusus, dan CleanPhoto membacanya langsung — deteksinya tepat. Di Android, yang penyimpanannya bervariasi per pabrikan, pemindaian memeriksa nama album lebih dulu dan, bila tak ada album tangkapan layar, memeriksa judul serta jalur file setiap gambar untuk pola penamaan perangkat. Semua yang ditemukan dikelompokkan per hari pengambilan, terbaru dulu, dengan ukuran file tiap item ditampilkan.
+Di iOS, sistem menyimpan album Screenshots khusus, dan Photo Cleaner Kit membacanya langsung — deteksinya tepat. Di Android, yang penyimpanannya bervariasi per pabrikan, pemindaian memeriksa nama album lebih dulu dan, bila tak ada album tangkapan layar, memeriksa judul serta jalur file setiap gambar untuk pola penamaan perangkat. Semua yang ditemukan dikelompokkan per hari pengambilan, terbaru dulu, dengan ukuran file tiap item ditampilkan.
 
 ### Alur kerja yang berhasil
 

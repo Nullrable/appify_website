@@ -8,7 +8,7 @@ slug: free-vs-pro
 
 ## Versão grátis e Pro
 
-O núcleo do CleanPhoto é gratuito: todos os escaneadores, todas as visões, sem limites de digitalização ou revisão. A diferença entre Grátis e Pro se resume a um momento — a confirmação de exclusão.
+O núcleo do Photo Cleaner Kit é gratuito: todos os escaneadores, todas as visões, sem limites de digitalização ou revisão. A diferença entre Grátis e Pro se resume a um momento — a confirmação de exclusão.
 
 ### O que é sempre grátis
 

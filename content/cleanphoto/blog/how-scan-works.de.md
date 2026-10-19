@@ -1,18 +1,18 @@
 ---
-title: "Wie CleanPhoto Ihre Bibliothek scannt, ohne ein einziges Foto hochzuladen"
+title: "Wie Photo Cleaner Kit Ihre Bibliothek scannt, ohne ein einziges Foto hochzuladen"
 description: "Ein Blick in die drei On-Device-Detektoren — exakte Duplikate, ähnliche Fotos und Screenshots — und die einfachen Regeln, die sie verwenden, damit Sie genau wissen, was beim Drücken von Scannen passiert."
 date: 2026-09-06
 lang: de
 slug: how-scan-works
 ---
 
-## Wie CleanPhoto Ihre Bibliothek scannt, ohne ein einziges Foto hochzuladen
+## Wie Photo Cleaner Kit Ihre Bibliothek scannt, ohne ein einziges Foto hochzuladen
 
-Die meisten Foto-Reiniger verlangen Vertrauen. CleanPhoto versucht, es durch Transparenz zu verdienen: Jeder Scan läuft auf Ihrem Gerät, arbeitet mit den Metadaten der Bibliothek und folgt Regeln, die so einfach sind, dass sie sich in wenigen Absätzen erklären lassen. Das passiert genau, wenn Sie auf Scannen drücken.
+Die meisten Foto-Reiniger verlangen Vertrauen. Photo Cleaner Kit versucht, es durch Transparenz zu verdienen: Jeder Scan läuft auf Ihrem Gerät, arbeitet mit den Metadaten der Bibliothek und folgt Regeln, die so einfach sind, dass sie sich in wenigen Absätzen erklären lassen. Das passiert genau, wenn Sie auf Scannen drücken.
 
 ### Drei Detektoren, drei Fragen
 
-CleanPhoto führt drei Scans aus, die jeweils eine andere Frage beantworten. Exakte Duplikate fragen: „Wurde dieses Foto zweimal gespeichert?" Ähnliche Fotos fragen: „War das eine Serie oder eine schnelle Nachnahme?" Screenshots fragen: „Ist dieses Bild nur temporär?" Sie können sie in beliebiger Reihenfolge starten, und jeder stellt seine Ergebnisse als Gruppen zur Durchsicht bereit.
+Photo Cleaner Kit führt drei Scans aus, die jeweils eine andere Frage beantworten. Exakte Duplikate fragen: „Wurde dieses Foto zweimal gespeichert?" Ähnliche Fotos fragen: „War das eine Serie oder eine schnelle Nachnahme?" Screenshots fragen: „Ist dieses Bild nur temporär?" Sie können sie in beliebiger Reihenfolge starten, und jeder stellt seine Ergebnisse als Gruppen zur Durchsicht bereit.
 
 ### Regel eins: gleiche Größe, gleiche Sekunde
 
@@ -28,7 +28,7 @@ Der Screenshot-Detektor arbeitet plattformabhängig. Auf iOS liest er das System
 
 ### Dateigrößen, geladen bevor Sie durchsehen
 
-Bevor irgendein Durchsichtsbildschirm geöffnet wird, lädt CleanPhoto die Dateigröße jedes Fotos vorab. In einer Gruppe ist die größte Datei fast immer die Kopie mit den meisten erhaltenen Details — die Einträge werden also nach Größe sortiert, und der beste Kandidat steht oben. Dieses eine Signal verwandelt „Welche dieser acht ist die beste?" in „Ist diese gut?"
+Bevor irgendein Durchsichtsbildschirm geöffnet wird, lädt Photo Cleaner Kit die Dateigröße jedes Fotos vorab. In einer Gruppe ist die größte Datei fast immer die Kopie mit den meisten erhaltenen Details — die Einträge werden also nach Größe sortiert, und der beste Kandidat steht oben. Dieses eine Signal verwandelt „Welche dieser acht ist die beste?" in „Ist diese gut?"
 
 ### Was nie passiert
 

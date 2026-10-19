@@ -1,6 +1,6 @@
 ---
 title: "Screenshot-Bereinigung"
-description: "Wie CleanPhoto Screenshots auf iPhone und Android sammelt, sie nach Tag gruppiert und Ihnen hilft, den Stau zu beseitigen, ohne die Fotos anzufassen, die Ihnen wichtig sind."
+description: "Wie Photo Cleaner Kit Screenshots auf iPhone und Android sammelt, sie nach Tag gruppiert und Ihnen hilft, den Stau zu beseitigen, ohne die Fotos anzufassen, die Ihnen wichtig sind."
 date: 2026-09-06
 lang: de
 slug: screenshots
@@ -8,11 +8,11 @@ slug: screenshots
 
 ## Screenshot-Bereinigung
 
-Screenshots sind als kurzlebig gedacht — eine Bordkarte, ein Kassenbon, ein einzutippender Code — doch sie bleiben für immer in Ihrer Bibliothek. CleanPhoto zieht sie aus der Menge und ordnet sie nach Tag, damit der Stau endlich sichtbar wird.
+Screenshots sind als kurzlebig gedacht — eine Bordkarte, ein Kassenbon, ein einzutippender Code — doch sie bleiben für immer in Ihrer Bibliothek. Photo Cleaner Kit zieht sie aus der Menge und ordnet sie nach Tag, damit der Stau endlich sichtbar wird.
 
 ### Wie Screenshots gefunden werden
 
-Auf iOS pflegt das System ein eigenes Screenshots-Album. CleanPhoto liest dieses Album direkt, die Erkennung ist also exakt. Auf Android variiert der Speicherort je nach Hersteller: Der Scan prüft zunächst Albennamen, und ohne Screenshot-Album untersucht er Titel und Dateipfad jedes Bildes auf die Benennungsmuster, die Geräte für Screenshots verwenden.
+Auf iOS pflegt das System ein eigenes Screenshots-Album. Photo Cleaner Kit liest dieses Album direkt, die Erkennung ist also exakt. Auf Android variiert der Speicherort je nach Hersteller: Der Scan prüft zunächst Albennamen, und ohne Screenshot-Album untersucht er Titel und Dateipfad jedes Bildes auf die Benennungsmuster, die Geräte für Screenshots verwenden.
 
 ### Nach Tag gruppiert
 

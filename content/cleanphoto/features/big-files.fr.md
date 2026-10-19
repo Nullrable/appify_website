@@ -1,6 +1,6 @@
 ---
 title: "Fichiers volumineux"
-description: "CleanPhoto fait remonter vos photos et vidéos les plus lourdes : les quelques éléments qui pèsent vraiment dans votre photothèque se libèrent en deux confirmations, sans éplucher des milliers de petits fichiers."
+description: "Photo Cleaner Kit fait remonter vos photos et vidéos les plus lourdes : les quelques éléments qui pèsent vraiment dans votre photothèque se libèrent en deux confirmations, sans éplucher des milliers de petits fichiers."
 date: 2026-09-10
 lang: fr
 slug: big-files

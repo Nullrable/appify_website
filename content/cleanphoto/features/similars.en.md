@@ -1,6 +1,6 @@
 ---
 title: "Similar and Burst Photo Cleanup"
-description: "CleanPhoto chains photos taken within 10 seconds of each other into one reviewable group, so burst shots and rapid retakes can be cleaned set by set."
+description: "Photo Cleaner Kit chains photos taken within 10 seconds of each other into one reviewable group, so burst shots and rapid retakes can be cleaned set by set."
 date: 2026-09-06
 lang: en
 slug: similars
@@ -8,11 +8,11 @@ slug: similars
 
 ## Similar and Burst Photo Cleanup
 
-Bursts and rapid retakes are how good photos happen — you press the shutter several times, keep one shot, and the rest quietly pile up. CleanPhoto gathers these near-identical takes into groups you can review set by set, entirely on your device.
+Bursts and rapid retakes are how good photos happen — you press the shutter several times, keep one shot, and the rest quietly pile up. Photo Cleaner Kit gathers these near-identical takes into groups you can review set by set, entirely on your device.
 
 ### The 10-second rule
 
-When a scan starts, your photos are sorted by capture time. CleanPhoto then walks the timeline and chains photos together: as long as each photo was taken within 10 seconds of the previous one, it joins the same group. The moment the gap exceeds 10 seconds, the chain closes, and the next photo starts a new group. Only groups with more than one photo are kept for review.
+When a scan starts, your photos are sorted by capture time. Photo Cleaner Kit then walks the timeline and chains photos together: as long as each photo was taken within 10 seconds of the previous one, it joins the same group. The moment the gap exceeds 10 seconds, the chain closes, and the next photo starts a new group. Only groups with more than one photo are kept for review.
 
 This matches how bursts and retakes actually happen: a quick series of shots within a few seconds, then a pause, then something else.
 

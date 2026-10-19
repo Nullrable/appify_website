@@ -1,18 +1,18 @@
 ---
-title: "Cómo CleanPhoto escanea tu biblioteca sin subir una sola foto"
+title: "Cómo Photo Cleaner Kit escanea tu biblioteca sin subir una sola foto"
 description: "Una mirada dentro de los tres detectores en el dispositivo — duplicados exactos, fotos similares y capturas — y las reglas simples que usan, para que sepas exactamente qué pasa al pulsar Escanear."
 date: 2026-09-06
 lang: es
 slug: how-scan-works
 ---
 
-## Cómo CleanPhoto escanea tu biblioteca sin subir una sola foto
+## Cómo Photo Cleaner Kit escanea tu biblioteca sin subir una sola foto
 
-La mayoría de limpiadores de fotos piden confianza. CleanPhoto intenta ganarla con transparencia: cada escaneo corre en tu dispositivo, trabaja con los metadatos de la biblioteca y sigue reglas lo bastante simples para explicar en pocos párrafos. Esto es exactamente lo que pasa cuando pulsas Escanear.
+La mayoría de limpiadores de fotos piden confianza. Photo Cleaner Kit intenta ganarla con transparencia: cada escaneo corre en tu dispositivo, trabaja con los metadatos de la biblioteca y sigue reglas lo bastante simples para explicar en pocos párrafos. Esto es exactamente lo que pasa cuando pulsas Escanear.
 
 ### Tres detectores, tres preguntas
 
-CleanPhoto ejecuta tres escaneos, cada uno respondiendo una pregunta distinta. Los duplicados exactos preguntan "¿esta foto se guardó dos veces?" Las fotos similares preguntan "¿fue una ráfaga o una repetición rápida?" Las capturas preguntan "¿esta imagen es solo temporal?" Puedes ejecutarlos en cualquier orden, y cada uno presenta sus resultados como grupos para revisar.
+Photo Cleaner Kit ejecuta tres escaneos, cada uno respondiendo una pregunta distinta. Los duplicados exactos preguntan "¿esta foto se guardó dos veces?" Las fotos similares preguntan "¿fue una ráfaga o una repetición rápida?" Las capturas preguntan "¿esta imagen es solo temporal?" Puedes ejecutarlos en cualquier orden, y cada uno presenta sus resultados como grupos para revisar.
 
 ### Regla uno: mismo tamaño, mismo segundo
 
@@ -28,7 +28,7 @@ El detector de capturas funciona distinto según la plataforma. En iOS lee direc
 
 ### Tamaños de archivo, cargados antes de revisar
 
-Antes de que se abra cualquier pantalla de revisión, CleanPhoto precarga el tamaño de archivo de cada foto. En un grupo, el archivo más grande casi siempre es la copia que conservó más detalle, así que los elementos se ordenan por tamaño y el mejor candidato queda arriba. Esa única señal convierte "¿cuál de estas ocho es la mejor?" en "¿está bien esta?".
+Antes de que se abra cualquier pantalla de revisión, Photo Cleaner Kit precarga el tamaño de archivo de cada foto. En un grupo, el archivo más grande casi siempre es la copia que conservó más detalle, así que los elementos se ordenan por tamaño y el mejor candidato queda arriba. Esa única señal convierte "¿cuál de estas ocho es la mejor?" en "¿está bien esta?".
 
 ### Lo que nunca pasa
 

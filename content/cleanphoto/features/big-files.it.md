@@ -1,6 +1,6 @@
 ---
 title: "File grandi"
-description: "CleanPhoto porta in primo piano le tue foto e i tuoi video più grandi, così i pochi elementi pesanti della tua libreria si eliminano con un paio di conferme — senza setacciare migliaia di file piccoli."
+description: "Photo Cleaner Kit porta in primo piano le tue foto e i tuoi video più grandi, così i pochi elementi pesanti della tua libreria si eliminano con un paio di conferme — senza setacciare migliaia di file piccoli."
 date: 2026-09-10
 lang: it
 slug: big-files

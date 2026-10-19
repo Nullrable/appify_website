@@ -1,6 +1,6 @@
 ---
 title: "Detecção de duplicatas exatas"
-description: "Como o CleanPhoto agrupa fotos com dimensões idênticas capturadas no mesmo segundo, e por que essa regra local encontra cópias reais sem falsos positivos."
+description: "Como o Photo Cleaner Kit agrupa fotos com dimensões idênticas capturadas no mesmo segundo, e por que essa regra local encontra cópias reais sem falsos positivos."
 date: 2026-09-06
 lang: pt
 slug: duplicates
@@ -8,11 +8,11 @@ slug: duplicates
 
 ## Detecção de duplicatas exatas
 
-Duplicatas exatas são as fotos mais fáceis de apagar e as mais fáceis de deixar passar. O CleanPhoto as encontra com uma regra simples e transparente que roda inteiramente no seu dispositivo: fotos com dimensões de pixel idênticas e capturadas exatamente no mesmo segundo pertencem ao mesmo grupo.
+Duplicatas exatas são as fotos mais fáceis de apagar e as mais fáceis de deixar passar. O Photo Cleaner Kit as encontra com uma regra simples e transparente que roda inteiramente no seu dispositivo: fotos com dimensões de pixel idênticas e capturadas exatamente no mesmo segundo pertencem ao mesmo grupo.
 
 ### Como o agrupamento funciona
 
-Durante uma digitalização, o CleanPhoto percorre sua biblioteca de fotos e constrói uma chave para cada foto a partir da largura, da altura e do segundo de captura. Fotos com a mesma chave são colocadas em um grupo. Uma foto salva duas vezes — por um novo salvamento, uma importação de outro dispositivo ou um conflito de sincronização na nuvem — carrega as mesmas dimensões e timestamp da original, então ambas as cópias caem no mesmo grupo, sem mais nada.
+Durante uma digitalização, o Photo Cleaner Kit percorre sua biblioteca de fotos e constrói uma chave para cada foto a partir da largura, da altura e do segundo de captura. Fotos com a mesma chave são colocadas em um grupo. Uma foto salva duas vezes — por um novo salvamento, uma importação de outro dispositivo ou um conflito de sincronização na nuvem — carrega as mesmas dimensões e timestamp da original, então ambas as cópias caem no mesmo grupo, sem mais nada.
 
 ### Revisando um grupo
 

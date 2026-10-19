@@ -1,6 +1,6 @@
 ---
 title: "Dọn dẹp video"
-description: "CleanPhoto gom mọi video trong thư viện theo tháng chụp, để bạn duyệt theo từng đợt theo tháng và xóa những video không còn cần."
+description: "Photo Cleaner Kit gom mọi video trong thư viện theo tháng chụp, để bạn duyệt theo từng đợt theo tháng và xóa những video không còn cần."
 date: 2026-09-10
 lang: vi
 slug: videos
@@ -8,7 +8,7 @@ slug: videos
 
 ## Dọn dẹp video
 
-Video là những mục nặng nhất trong bất kỳ thư viện nào, và cách biệt là rất lớn — một clip đơn lẻ có thể nặng hơn cả nghìn bức ảnh, và những video bạn vẫn hay mở xem hiếm khi là những video chiếm nhiều dung lượng nhất. CleanPhoto đưa tất cả video lên đầu, được gom theo tháng chụp, để bạn quyết định cái nào giữ lại theo một quy mô thật sự dễ chịu.
+Video là những mục nặng nhất trong bất kỳ thư viện nào, và cách biệt là rất lớn — một clip đơn lẻ có thể nặng hơn cả nghìn bức ảnh, và những video bạn vẫn hay mở xem hiếm khi là những video chiếm nhiều dung lượng nhất. Photo Cleaner Kit đưa tất cả video lên đầu, được gom theo tháng chụp, để bạn quyết định cái nào giữ lại theo một quy mô thật sự dễ chịu.
 
 ### Video được sắp xếp theo tháng
 

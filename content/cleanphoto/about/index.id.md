@@ -1,12 +1,12 @@
 ---
-title: Tentang CleanPhoto - Temukan dan Bersihkan Foto Duplikat dan Serupa di iPhone
-description: CleanPhoto mengelompokkan duplikat persis, foto beruntun, tangkapan layar, dan video di iPhone Anda berdasarkan bulan. Menyimpan foto terbaik berdasarkan ukuran file, mengompresi sisanya, dan menggabungkan kontak duplikat. Semua di perangkat Anda, tanpa unggahan.
+title: Tentang Photo Cleaner Kit - Temukan dan Bersihkan Foto Duplikat dan Serupa di iPhone
+description: Photo Cleaner Kit mengelompokkan duplikat persis, foto beruntun, tangkapan layar, dan video di iPhone Anda berdasarkan bulan. Menyimpan foto terbaik berdasarkan ukuran file, mengompresi sisanya, dan menggabungkan kontak duplikat. Semua di perangkat Anda, tanpa unggahan.
 date: 2026-09-10
 lang: id
 slug: index
 ---
 
-CleanPhoto adalah aplikasi iPhone untuk membersihkan tumpukan foto tanpa harus melihat ribuan gambar. Aplikasi ini mengelompokkan foto duplikat dan serupa, mengurutkan tangkapan layar dan video lama per bulan, serta menyimpan versi dengan kualitas tertinggi dari setiap rangkaian bidikan agar sisanya bisa dihapus dalam satu ketukan.
+Photo Cleaner Kit adalah aplikasi iPhone untuk membersihkan tumpukan foto tanpa harus melihat ribuan gambar. Aplikasi ini mengelompokkan foto duplikat dan serupa, mengurutkan tangkapan layar dan video lama per bulan, serta menyimpan versi dengan kualitas tertinggi dari setiap rangkaian bidikan agar sisanya bisa dihapus dalam satu ketukan.
 
 ## Duplikat persis dan foto beruntun
 
@@ -22,7 +22,7 @@ Tampilan terpisah menyusun foto dan video terbesar Anda berdasarkan ukuran. Seba
 
 ## Kompresi yang menjaga gambar
 
-Untuk foto yang ingin Anda simpan tapi tidak dalam ukuran penuh, CleanPhoto mengecilkan file menjadi sebagian kecil dari ukuran asli sambil mempertahankan dimensi dan detail yang terlihat. Salinan terkompresi berdampingan dengan yang asli, dan yang asli hanya dihapus setelah Anda mengonfirmasi.
+Untuk foto yang ingin Anda simpan tapi tidak dalam ukuran penuh, Photo Cleaner Kit mengecilkan file menjadi sebagian kecil dari ukuran asli sambil mempertahankan dimensi dan detail yang terlihat. Salinan terkompresi berdampingan dengan yang asli, dan yang asli hanya dihapus setelah Anda mengonfirmasi.
 
 ## Penggabungan kontak duplikat
 

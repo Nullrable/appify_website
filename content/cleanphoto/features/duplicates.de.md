@@ -1,6 +1,6 @@
 ---
 title: "Exakte Duplikaterkennung"
-description: "Wie CleanPhoto Fotos mit identischen Abmessungen aus derselben Sekunde gruppiert und warum diese lokale Regel echte Kopien ohne Fehltreffer findet."
+description: "Wie Photo Cleaner Kit Fotos mit identischen Abmessungen aus derselben Sekunde gruppiert und warum diese lokale Regel echte Kopien ohne Fehltreffer findet."
 date: 2026-09-06
 lang: de
 slug: duplicates
@@ -8,11 +8,11 @@ slug: duplicates
 
 ## Exakte Duplikaterkennung
 
-Exakte Duplikate sind die einfachsten Fotos zum Löschen – und die einfachsten zum Übersehen. CleanPhoto findet sie mit einer einfachen, transparenten Regel, die vollständig auf Ihrem Gerät läuft: Fotos mit identischen Pixelabmessungen, die in exakt derselben Sekunde aufgenommen wurden, gehören zusammen.
+Exakte Duplikate sind die einfachsten Fotos zum Löschen – und die einfachsten zum Übersehen. Photo Cleaner Kit findet sie mit einer einfachen, transparenten Regel, die vollständig auf Ihrem Gerät läuft: Fotos mit identischen Pixelabmessungen, die in exakt derselben Sekunde aufgenommen wurden, gehören zusammen.
 
 ### Wie die Gruppierung funktioniert
 
-Beim Scan durchläuft CleanPhoto Ihre Fotobibliothek und bildet für jedes Foto einen Schlüssel aus Breite, Höhe und Aufnahmesekunde. Fotos mit demselben Schlüssel landen in einer Gruppe. Ein zweimal gespeichertes Foto – durch erneutes Speichern, einen Import von einem anderen Gerät oder einen Cloud-Sync-Konflikt – trägt dieselben Abmessungen und denselben Zeitstempel wie das Original, sodass beide Kopien in derselben Gruppe landen, ohne dass etwas anderes hineingerät.
+Beim Scan durchläuft Photo Cleaner Kit Ihre Fotobibliothek und bildet für jedes Foto einen Schlüssel aus Breite, Höhe und Aufnahmesekunde. Fotos mit demselben Schlüssel landen in einer Gruppe. Ein zweimal gespeichertes Foto – durch erneutes Speichern, einen Import von einem anderen Gerät oder einen Cloud-Sync-Konflikt – trägt dieselben Abmessungen und denselben Zeitstempel wie das Original, sodass beide Kopien in derselben Gruppe landen, ohne dass etwas anderes hineingerät.
 
 ### Eine Gruppe prüfen
 

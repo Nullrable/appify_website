@@ -1,6 +1,6 @@
 ---
 title: "Limpieza de fotos y privacidad: lo que se queda en tu dispositivo"
-description: "Una biblioteca de fotos es el conjunto de datos más personal de tu teléfono. Un desglose honesto de qué lee CleanPhoto, qué no lee nunca, qué sale de tu dispositivo y qué no."
+description: "Una biblioteca de fotos es el conjunto de datos más personal de tu teléfono. Un desglose honesto de qué lee Photo Cleaner Kit, qué no lee nunca, qué sale de tu dispositivo y qué no."
 date: 2026-09-06
 lang: es
 slug: photo-privacy
@@ -8,7 +8,7 @@ slug: photo-privacy
 
 ## Limpieza de fotos y privacidad: lo que se queda en tu dispositivo
 
-Darle a una app acceso a tus fotos es entregarle el conjunto de datos más personal de tu teléfono: tu familia, tu casa, tus documentos, tus últimos diez años. Ese acceso es necesario para que cualquier limpiador de fotos funcione — y exactamente por eso la pregunta "¿qué hace la app con ello?" merece una respuesta concreta, no un eslogan. Esta es la de CleanPhoto.
+Darle a una app acceso a tus fotos es entregarle el conjunto de datos más personal de tu teléfono: tu familia, tu casa, tus documentos, tus últimos diez años. Ese acceso es necesario para que cualquier limpiador de fotos funcione — y exactamente por eso la pregunta "¿qué hace la app con ello?" merece una respuesta concreta, no un eslogan. Esta es la de Photo Cleaner Kit.
 
 ### Lo que la app lee
 
@@ -32,4 +32,4 @@ Acceso a la biblioteca de fotos: necesario para escanear y mostrar grupos. En iO
 
 ### El punto
 
-La limpieza de fotos no requiere nube, ni cuenta, ni análisis de contenido. Requiere metadatos, reglas transparentes y tu confirmación. Eso es todo lo que usa CleanPhoto — y si un limpiador pide más, vale la pena preguntar para qué.
+La limpieza de fotos no requiere nube, ni cuenta, ni análisis de contenido. Requiere metadatos, reglas transparentes y tu confirmación. Eso es todo lo que usa Photo Cleaner Kit — y si un limpiador pide más, vale la pena preguntar para qué.

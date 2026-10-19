@@ -1,6 +1,6 @@
 ---
 title: "Foto-Aufräumen und Datenschutz: Was auf Ihrem Gerät bleibt"
-description: "Eine Fotobibliothek ist der persönlichste Datensatz auf Ihrem Telefon. Eine ehrliche Aufschlüsselung, was CleanPhoto liest, nie liest, was Ihr Gerät verlässt — und was nicht."
+description: "Eine Fotobibliothek ist der persönlichste Datensatz auf Ihrem Telefon. Eine ehrliche Aufschlüsselung, was Photo Cleaner Kit liest, nie liest, was Ihr Gerät verlässt — und was nicht."
 date: 2026-09-06
 lang: de
 slug: photo-privacy
@@ -8,7 +8,7 @@ slug: photo-privacy
 
 ## Foto-Aufräumen und Datenschutz: Was auf Ihrem Gerät bleibt
 
-Gibt man einer App Zugriff auf die Fotos, übergibt man ihr den persönlichsten Datensatz des Telefons: die Familie, das Zuhause, die Dokumente, die letzten zehn Jahre. Dieser Zugang ist nötig, damit jeder Foto-Reiniger arbeiten kann — und genau deshalb verdient die Frage „Was macht die App damit?" eine konkrete Antwort, keinen Slogan. Hier ist die von CleanPhoto.
+Gibt man einer App Zugriff auf die Fotos, übergibt man ihr den persönlichsten Datensatz des Telefons: die Familie, das Zuhause, die Dokumente, die letzten zehn Jahre. Dieser Zugang ist nötig, damit jeder Foto-Reiniger arbeiten kann — und genau deshalb verdient die Frage „Was macht die App damit?" eine konkrete Antwort, keinen Slogan. Hier ist die von Photo Cleaner Kit.
 
 ### Was die App liest
 
@@ -32,4 +32,4 @@ Zugriff auf die Fotobibliothek: nötig zum Scannen und Anzeigen der Gruppen. Auf
 
 ### Der Punkt
 
-Foto-Aufräumen braucht keine Cloud, kein Konto und keine Inhaltsanalyse. Es braucht Metadaten, transparente Regeln und Ihre Bestätigung. Mehr verwendet CleanPhoto nicht — und verlangt ein Reiniger je mehr daraus, lohnt die Frage, wofür.
+Foto-Aufräumen braucht keine Cloud, kein Konto und keine Inhaltsanalyse. Es braucht Metadaten, transparente Regeln und Ihre Bestätigung. Mehr verwendet Photo Cleaner Kit nicht — und verlangt ein Reiniger je mehr daraus, lohnt die Frage, wofür.

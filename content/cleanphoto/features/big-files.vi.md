@@ -1,6 +1,6 @@
 ---
 title: "File lớn"
-description: "CleanPhoto đưa những ảnh và video nặng nhất của bạn lên đầu, để vài mục nặng ký trong thư viện có thể được dọn chỉ bằng vài lần xác nhận — không cần lướt qua hàng nghìn ảnh nhỏ."
+description: "Photo Cleaner Kit đưa những ảnh và video nặng nhất của bạn lên đầu, để vài mục nặng ký trong thư viện có thể được dọn chỉ bằng vài lần xác nhận — không cần lướt qua hàng nghìn ảnh nhỏ."
 date: 2026-09-10
 lang: vi
 slug: big-files

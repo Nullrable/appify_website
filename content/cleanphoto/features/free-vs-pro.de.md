@@ -8,7 +8,7 @@ slug: free-vs-pro
 
 ## Kostenlos und Pro
 
-Der Kern von CleanPhoto ist kostenlos: jeder Scanner, jede Ansicht, ohne Limit beim Scannen oder Durchsehen. Der Unterschied zwischen Kostenlos und Pro lässt sich auf einen Moment verdichten — die Löschbestätigung.
+Der Kern von Photo Cleaner Kit ist kostenlos: jeder Scanner, jede Ansicht, ohne Limit beim Scannen oder Durchsehen. Der Unterschied zwischen Kostenlos und Pro lässt sich auf einen Moment verdichten — die Löschbestätigung.
 
 ### Was immer kostenlos bleibt
 

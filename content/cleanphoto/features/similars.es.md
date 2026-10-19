@@ -1,6 +1,6 @@
 ---
 title: "Limpieza de fotos similares y ráfagas"
-description: "CleanPhoto encadena en un grupo las fotos tomadas con menos de 10 segundos de diferencia, para limpiar ráfagas y repeticiones rápidas serie por serie."
+description: "Photo Cleaner Kit encadena en un grupo las fotos tomadas con menos de 10 segundos de diferencia, para limpiar ráfagas y repeticiones rápidas serie por serie."
 date: 2026-09-06
 lang: es
 slug: similars
@@ -8,11 +8,11 @@ slug: similars
 
 ## Limpieza de fotos similares y ráfagas
 
-El modo ráfaga y las repeticiones rápidas son como nacen las buenas fotos — aprietas el disparador varias veces, conservas una toma, y el resto se acumula en silencio. CleanPhoto reúne esas tomas casi idénticas en grupos que puedes revisar serie por serie, por completo en tu dispositivo.
+El modo ráfaga y las repeticiones rápidas son como nacen las buenas fotos — aprietas el disparador varias veces, conservas una toma, y el resto se acumula en silencio. Photo Cleaner Kit reúne esas tomas casi idénticas en grupos que puedes revisar serie por serie, por completo en tu dispositivo.
 
 ### La regla de los 10 segundos
 
-Al iniciar un escaneo, tus fotos se ordenan por hora de captura. CleanPhoto recorre luego la línea de tiempo y encadena fotos: mientras cada foto se tome dentro de los 10 segundos siguientes a la anterior, se une al mismo grupo. En cuanto el intervalo supera los 10 segundos, la cadena se cierra y la foto siguiente inicia un grupo nuevo. Solo los grupos con más de una foto pasan a revisión.
+Al iniciar un escaneo, tus fotos se ordenan por hora de captura. Photo Cleaner Kit recorre luego la línea de tiempo y encadena fotos: mientras cada foto se tome dentro de los 10 segundos siguientes a la anterior, se une al mismo grupo. En cuanto el intervalo supera los 10 segundos, la cadena se cierra y la foto siguiente inicia un grupo nuevo. Solo los grupos con más de una foto pasan a revisión.
 
 Esto coincide con cómo ocurren realmente las ráfagas y las repeticiones: una serie rápida en segundos, una pausa, y luego otra cosa.
 

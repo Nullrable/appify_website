@@ -1,12 +1,12 @@
 ---
-title: "Privacy Policy - CleanPhoto"
-description: "How CleanPhoto handles your data. Covers on-device metadata scanning, photo deletion through the system library, AdMob ads in the free tier, RevenueCat subscription management, and your GDPR and CCPA rights."
+title: "Privacy Policy - Photo Cleaner Kit"
+description: "How Photo Cleaner Kit handles your data. Covers on-device metadata scanning, photo deletion through the system library, AdMob ads in the free tier, RevenueCat subscription management, and your GDPR and CCPA rights."
 date: 2026-01-26
 lang: en
 slug: index
 ---
 
-**CleanPhoto** ("**we**", "**us**", or "**our**") is a photo cleanup app designed so that your photos stay on your device. This Privacy Policy explains what data the App processes, why, and the choices you have.
+**Photo Cleaner Kit** ("**we**", "**us**", or "**our**") is a photo cleanup app designed so that your photos stay on your device. This Privacy Policy explains what data the App processes, why, and the choices you have.
 
 By using the App, you agree to the practices described in this Policy.
 

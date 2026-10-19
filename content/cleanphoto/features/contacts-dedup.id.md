@@ -1,6 +1,6 @@
 ---
 title: "Pembersihan Kontak Duplikat"
-description: "CleanPhoto menemukan kontak yang memiliki nama atau nomor telepon sama, mengelompokkannya agar Anda bisa meninjau, lalu menggabungkannya menjadi satu kartu dengan semua field dipertahankan."
+description: "Photo Cleaner Kit menemukan kontak yang memiliki nama atau nomor telepon sama, mengelompokkannya agar Anda bisa meninjau, lalu menggabungkannya menjadi satu kartu dengan semua field dipertahankan."
 date: 2026-09-10
 lang: id
 slug: contacts-dedup

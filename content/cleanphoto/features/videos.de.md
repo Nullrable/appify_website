@@ -1,6 +1,6 @@
 ---
 title: "Videos aufräumen"
-description: "CleanPhoto gruppiert jedes Video Ihrer Bibliothek nach Aufnahmemonat, sodass Sie überschaubare Sitzungen durchgehen und löschen können, was Sie nicht mehr brauchen."
+description: "Photo Cleaner Kit gruppiert jedes Video Ihrer Bibliothek nach Aufnahmemonat, sodass Sie überschaubare Sitzungen durchgehen und löschen können, was Sie nicht mehr brauchen."
 date: 2026-09-10
 lang: de
 slug: videos
@@ -8,7 +8,7 @@ slug: videos
 
 ## Videos aufräumen
 
-Videos sind mit Abstand die schwersten Einträge jeder Bibliothek — ein einzelner Clip kann mehr wiegen als tausende Fotos, und ausgerechnet die, die Sie immer wieder ansehen, belegen selten den meisten Platz. CleanPhoto holt jedes Video hervor, gruppiert nach Aufnahmemonat, damit Sie in menschlichem Maßstab entscheiden können, was bleibt.
+Videos sind mit Abstand die schwersten Einträge jeder Bibliothek — ein einzelner Clip kann mehr wiegen als tausende Fotos, und ausgerechnet die, die Sie immer wieder ansehen, belegen selten den meisten Platz. Photo Cleaner Kit holt jedes Video hervor, gruppiert nach Aufnahmemonat, damit Sie in menschlichem Maßstab entscheiden können, was bleibt.
 
 ### Videos nach Monat sortiert
 

@@ -16,7 +16,7 @@ Le raffiche sono razionali. I soggetti si muovono, la messa a fuoco cerca, le es
 
 ### La regola dei 10 secondi
 
-È qui che aiuta la scansione di foto simili di CleanPhoto. Ordina la libreria per orario di scatto e concatena le foto: finché ogni foto è scattata entro 10 secondi dalla precedente, entra nello stesso gruppo. Appena l'intervallo supera i 10 secondi, la catena si chiude. Corrisponde a come avvengono davvero raffiche e ritenti — una serie rapida in pochi secondi, una pausa, poi un'altra scena. I gruppi da una foto sola vengono scartati, quindi ciò che resta da rivedere è esattamente il materiale che merita una decisione.
+È qui che aiuta la scansione di foto simili di Photo Cleaner Kit. Ordina la libreria per orario di scatto e concatena le foto: finché ogni foto è scattata entro 10 secondi dalla precedente, entra nello stesso gruppo. Appena l'intervallo supera i 10 secondi, la catena si chiude. Corrisponde a come avvengono davvero raffiche e ritenti — una serie rapida in pochi secondi, una pausa, poi un'altra scena. I gruppi da una foto sola vengono scartati, quindi ciò che resta da rivedere è esattamente il materiale che merita una decisione.
 
 ### Rivedere una serie, non una guerra di pixel
 

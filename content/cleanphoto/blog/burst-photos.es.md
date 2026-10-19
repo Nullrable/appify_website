@@ -16,7 +16,7 @@ Las ráfagas son racionales. Los sujetos se mueven, el enfoque busca, las expres
 
 ### La regla de los 10 segundos
 
-Aquí es donde ayuda el escaneo de fotos similares de CleanPhoto. Ordena tu biblioteca por hora de captura y encadena fotos: mientras cada foto se tome dentro de los 10 segundos siguientes a la anterior, se une al mismo grupo. En cuanto el intervalo supera los 10 segundos, la cadena se cierra. Eso coincide con cómo ocurren realmente ráfagas y repeticiones — una serie rápida en segundos, una pausa, luego otra escena. Los grupos de una sola foto se descartan, así que lo que queda para revisar es exactamente el material que merece una decisión.
+Aquí es donde ayuda el escaneo de fotos similares de Photo Cleaner Kit. Ordena tu biblioteca por hora de captura y encadena fotos: mientras cada foto se tome dentro de los 10 segundos siguientes a la anterior, se une al mismo grupo. En cuanto el intervalo supera los 10 segundos, la cadena se cierra. Eso coincide con cómo ocurren realmente ráfagas y repeticiones — una serie rápida en segundos, una pausa, luego otra escena. Los grupos de una sola foto se descartan, así que lo que queda para revisar es exactamente el material que merece una decisión.
 
 ### Revisar una serie, no una guerra de píxeles
 

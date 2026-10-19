@@ -8,7 +8,7 @@ slug: free-vs-pro
 
 ## Version gratuite et Pro
 
-Le cœur de CleanPhoto est gratuit : tous les scanners, toutes les vues, sans limite de scan ni de revue. La différence entre Gratuit et Pro tient en un instant — la confirmation de suppression.
+Le cœur de Photo Cleaner Kit est gratuit : tous les scanners, toutes les vues, sans limite de scan ni de revue. La différence entre Gratuit et Pro tient en un instant — la confirmation de suppression.
 
 ### Ce qui est toujours gratuit
 

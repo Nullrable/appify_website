@@ -1,6 +1,6 @@
 ---
 title: "Dọn dẹp ảnh chụp màn hình"
-description: "CleanPhoto thu thập ảnh chụp màn hình trên iPhone và Android như thế nào, nhóm theo ngày và giúp bạn xóa phần tích tụ mà không ảnh hưởng các ảnh quan trọng."
+description: "Photo Cleaner Kit thu thập ảnh chụp màn hình trên iPhone và Android như thế nào, nhóm theo ngày và giúp bạn xóa phần tích tụ mà không ảnh hưởng các ảnh quan trọng."
 date: 2026-09-06
 lang: vi
 slug: screenshots
@@ -8,11 +8,11 @@ slug: screenshots
 
 ## Dọn dẹp ảnh chụp màn hình
 
-Ảnh chụp màn hình vốn chỉ tạm dùng — thẻ lên máy, hóa đơn, mã cần nhập — nhưng chúng ở lại thư viện mãi mãi. CleanPhoto tách chúng ra khỏi đám đông và xếp theo từng ngày, khiến lượng tích tụ trở nên nhìn thấy được.
+Ảnh chụp màn hình vốn chỉ tạm dùng — thẻ lên máy, hóa đơn, mã cần nhập — nhưng chúng ở lại thư viện mãi mãi. Photo Cleaner Kit tách chúng ra khỏi đám đông và xếp theo từng ngày, khiến lượng tích tụ trở nên nhìn thấy được.
 
 ### Cách tìm ảnh chụp màn hình
 
-Trên iOS, hệ thống có một album Screenshots riêng. CleanPhoto đọc trực tiếp album đó nên việc phát hiện rất chính xác. Trên Android, nơi lưu ảnh chụp màn hình khác nhau tùy nhà sản xuất, nên bản quét sẽ kiểm tra tên album trước; nếu không có album ảnh chụp màn hình nào, nó kiểm tra tiêu đề và đường dẫn file của từng ảnh để tìm các mẫu đặt tên mà thiết bị dùng cho ảnh chụp màn hình.
+Trên iOS, hệ thống có một album Screenshots riêng. Photo Cleaner Kit đọc trực tiếp album đó nên việc phát hiện rất chính xác. Trên Android, nơi lưu ảnh chụp màn hình khác nhau tùy nhà sản xuất, nên bản quét sẽ kiểm tra tên album trước; nếu không có album ảnh chụp màn hình nào, nó kiểm tra tiêu đề và đường dẫn file của từng ảnh để tìm các mẫu đặt tên mà thiết bị dùng cho ảnh chụp màn hình.
 
 ### Nhóm theo ngày
 

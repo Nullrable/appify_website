@@ -16,7 +16,7 @@ Chụp liên tiếp là hợp lý. Chủ thể di chuyển, độ lấy nét dao
 
 ### Quy tắc 10 giây
 
-Đây là lúc bản quét ảnh tương tự của CleanPhoto phát tác dụng. Nó xếp thư viện theo thời gian chụp rồi nối các ảnh lại: chừng nào mỗi ảnh được chụp trong vòng 10 giây sau ảnh trước, nó thuộc cùng nhóm; một khi khoảng cách vượt 10 giây, chuỗi đóng lại. Điều này khớp với cách chụp liên tiếp và chụp lại nhanh diễn ra — một loạt nhanh trong vài giây, tạm dừng, rồi một cảnh khác. Nhóm chỉ một ảnh bị bỏ, nên thứ còn lại để xem lại chính xác là thứ đáng ra quyết định.
+Đây là lúc bản quét ảnh tương tự của Photo Cleaner Kit phát tác dụng. Nó xếp thư viện theo thời gian chụp rồi nối các ảnh lại: chừng nào mỗi ảnh được chụp trong vòng 10 giây sau ảnh trước, nó thuộc cùng nhóm; một khi khoảng cách vượt 10 giây, chuỗi đóng lại. Điều này khớp với cách chụp liên tiếp và chụp lại nhanh diễn ra — một loạt nhanh trong vài giây, tạm dừng, rồi một cảnh khác. Nhóm chỉ một ảnh bị bỏ, nên thứ còn lại để xem lại chính xác là thứ đáng ra quyết định.
 
 ### Xem lại một bộ, không phải chiến pixel
 

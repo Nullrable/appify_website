@@ -1,6 +1,6 @@
 ---
 title: "Limpeza de fotos semelhantes e sequências"
-description: "O CleanPhoto encadeia em um grupo as fotos tiradas com menos de 10 segundos de intervalo, para limar sequências e retomadas rápidas série por série."
+description: "O Photo Cleaner Kit encadeia em um grupo as fotos tiradas com menos de 10 segundos de intervalo, para limar sequências e retomadas rápidas série por série."
 date: 2026-09-06
 lang: pt
 slug: similars
@@ -8,11 +8,11 @@ slug: similars
 
 ## Limpeza de fotos semelhantes e sequências
 
-O modo sequência e as retomadas rápidas são como nascem as boas fotos — você aperta o botão várias vezes, guarda uma, e o resto se acumula em silêncio. O CleanPhoto reúne essas tomadas quase idênticas em grupos que você pode rever série por série, inteiramente no seu dispositivo.
+O modo sequência e as retomadas rápidas são como nascem as boas fotos — você aperta o botão várias vezes, guarda uma, e o resto se acumula em silêncio. O Photo Cleaner Kit reúne essas tomadas quase idênticas em grupos que você pode rever série por série, inteiramente no seu dispositivo.
 
 ### A regra dos 10 segundos
 
-Ao iniciar uma digitalização, suas fotos são ordenadas por hora de captura. O CleanPhoto então percorre a linha do tempo e encadeia fotos: enquanto cada foto for tirada dentro de 10 segundos da anterior, ela entra no mesmo grupo. Assim que o intervalo passa de 10 segundos, a corrente se fecha e a foto seguinte abre um grupo novo. Só grupos com mais de uma foto vão para revisão.
+Ao iniciar uma digitalização, suas fotos são ordenadas por hora de captura. O Photo Cleaner Kit então percorre a linha do tempo e encadeia fotos: enquanto cada foto for tirada dentro de 10 segundos da anterior, ela entra no mesmo grupo. Assim que o intervalo passa de 10 segundos, a corrente se fecha e a foto seguinte abre um grupo novo. Só grupos com mais de uma foto vão para revisão.
 
 Isso bate com o modo como sequências e retomadas realmente acontecem: uma série rápida em poucos segundos, uma pausa, e depois outra coisa.
 

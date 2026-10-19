@@ -18,9 +18,9 @@ Screenshots are the scratch paper of the phone. You take one to remember somethi
 
 This is what makes screenshots the easiest cleanup target: almost none of them matter after a week. A duplicate photo might still be a memory; an old screenshot is almost never one. Clearing them is usually the fastest storage recovery in the whole library, and because the value of each item is close to zero, the review goes quickly.
 
-### How CleanPhoto finds them
+### How Photo Cleaner Kit finds them
 
-On iOS, the system keeps a dedicated Screenshots album, and CleanPhoto reads it directly — detection is exact. On Android, where storage varies by manufacturer, the scan checks album names first and, when no screenshot album exists, inspects each image's title and file path for the naming patterns devices use. Everything found is grouped by the day it was captured, newest first, with each item's file size shown.
+On iOS, the system keeps a dedicated Screenshots album, and Photo Cleaner Kit reads it directly — detection is exact. On Android, where storage varies by manufacturer, the scan checks album names first and, when no screenshot album exists, inspects each image's title and file path for the naming patterns devices use. Everything found is grouped by the day it was captured, newest first, with each item's file size shown.
 
 ### A workflow that works
 

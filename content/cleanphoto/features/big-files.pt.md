@@ -1,6 +1,6 @@
 ---
 title: "Arquivos grandes"
-description: "O CleanPhoto mostra suas maiores fotos e vídeos para que os poucos itens pesados da sua biblioteca possam ser liberados com algumas confirmações — sem peneirar milhares de pequenos."
+description: "O Photo Cleaner Kit mostra suas maiores fotos e vídeos para que os poucos itens pesados da sua biblioteca possam ser liberados com algumas confirmações — sem peneirar milhares de pequenos."
 date: 2026-09-10
 lang: pt
 slug: big-files

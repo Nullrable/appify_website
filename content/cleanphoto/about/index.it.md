@@ -1,12 +1,12 @@
 ---
-title: Informazioni su CleanPhoto - Trova e rimuovi foto duplicate e simili su iPhone
-description: CleanPhoto raggruppa duplicati esatti, scatti simili, screenshot e video sul tuo iPhone per mese. Conserva la foto migliore in base alla dimensione del file, comprime il resto e unisce i contatti duplicati. Tutto sul tuo dispositivo, nulla viene caricato.
+title: Informazioni su Photo Cleaner Kit - Trova e rimuovi foto duplicate e simili su iPhone
+description: Photo Cleaner Kit raggruppa duplicati esatti, scatti simili, screenshot e video sul tuo iPhone per mese. Conserva la foto migliore in base alla dimensione del file, comprime il resto e unisce i contatti duplicati. Tutto sul tuo dispositivo, nulla viene caricato.
 date: 2026-09-10
 lang: it
 slug: index
 ---
 
-CleanPhoto è un'app per iPhone pensata per riordinare la libreria foto senza dover scorrere migliaia di immagini. Raggruppa duplicati e foto simili, organizza screenshot e video vecchi per mese e mantiene la versione migliore di ogni raffica, così il resto si cancella con un tocco.
+Photo Cleaner Kit è un'app per iPhone pensata per riordinare la libreria foto senza dover scorrere migliaia di immagini. Raggruppa duplicati e foto simili, organizza screenshot e video vecchi per mese e mantiene la versione migliore di ogni raffica, così il resto si cancella con un tocco.
 
 ## Duplicati esatti e scatti simili
 
@@ -22,7 +22,7 @@ Una vista separata elenca le tue foto e i tuoi video più grandi in ordine di di
 
 ## Compressione che preserva l'immagine
 
-Per le foto che vuoi conservare ma non a grandezza piena, CleanPhoto riduce il file a una frazione delle dimensioni originali mantenendo le dimensioni e i dettagli visibili. La copia compressa sta accanto all'originale, e l'originale viene eliminato solo dopo la tua conferma.
+Per le foto che vuoi conservare ma non a grandezza piena, Photo Cleaner Kit riduce il file a una frazione delle dimensioni originali mantenendo le dimensioni e i dettagli visibili. La copia compressa sta accanto all'originale, e l'originale viene eliminato solo dopo la tua conferma.
 
 ## Unione dei contatti duplicati
 

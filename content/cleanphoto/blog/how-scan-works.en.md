@@ -1,18 +1,18 @@
 ---
-title: "How CleanPhoto Scans Your Library Without Uploading a Single Photo"
+title: "How Photo Cleaner Kit Scans Your Library Without Uploading a Single Photo"
 description: "A look inside the three on-device detectors — exact duplicates, similar photos and screenshots — and the simple rules they use, so you know exactly what happens when you press Scan."
 date: 2026-09-06
 lang: en
 slug: how-scan-works
 ---
 
-## How CleanPhoto Scans Your Library Without Uploading a Single Photo
+## How Photo Cleaner Kit Scans Your Library Without Uploading a Single Photo
 
-Most photo cleaners ask for trust. CleanPhoto tries to earn it with transparency: every scan runs on your device, works from library metadata, and follows rules simple enough to explain in a few paragraphs. Here is exactly what happens when you press Scan.
+Most photo cleaners ask for trust. Photo Cleaner Kit tries to earn it with transparency: every scan runs on your device, works from library metadata, and follows rules simple enough to explain in a few paragraphs. Here is exactly what happens when you press Scan.
 
 ### Three detectors, three questions
 
-CleanPhoto runs three scans, each answering a different question. Exact duplicates ask "was this photo saved twice?" Similar photos ask "was this a burst or a rapid retake?" Screenshots ask "is this image only temporary?" You can run them in any order, and each one presents its results as groups for you to review.
+Photo Cleaner Kit runs three scans, each answering a different question. Exact duplicates ask "was this photo saved twice?" Similar photos ask "was this a burst or a rapid retake?" Screenshots ask "is this image only temporary?" You can run them in any order, and each one presents its results as groups for you to review.
 
 ### Rule one: same size, same second
 
@@ -28,7 +28,7 @@ The screenshot detector works differently per platform. On iOS it reads the syst
 
 ### File sizes, loaded before you review
 
-Before any review screen opens, CleanPhoto preloads each photo's file size. Within a group, the largest file is almost always the copy that kept the most detail, so items are sorted by size and the best candidate sits at the top. That single signal turns "which of these eight is best?" into "is this one good?"
+Before any review screen opens, Photo Cleaner Kit preloads each photo's file size. Within a group, the largest file is almost always the copy that kept the most detail, so items are sorted by size and the best candidate sits at the top. That single signal turns "which of these eight is best?" into "is this one good?"
 
 ### What never happens
 

@@ -16,7 +16,7 @@ Burst itu rasional. Subjek bergerak, fokus menyusuri, ekspresi berubah dalam sep
 
 ### Aturan 10 detik
 
-Di sinilah pemindaian foto serupa CleanPhoto membantu. Ia mengurutkan pustaka berdasarkan waktu pengambilan lalu merangkai foto bersama: selama setiap foto diambil dalam 10 detik dari sebelumnya, ia bergabung ke grup yang sama. Begitu jaraknya melebihi 10 detik, rangkaian ditutup. Itu cocok dengan cara burst dan pengambilan ulang terjadi — rangkaian cepat beberapa detik, jeda, lalu adegan berbeda. Grup berisi satu foto dibuang, sehingga yang tersisa untuk ditinjau persis materi yang layak diputuskan.
+Di sinilah pemindaian foto serupa Photo Cleaner Kit membantu. Ia mengurutkan pustaka berdasarkan waktu pengambilan lalu merangkai foto bersama: selama setiap foto diambil dalam 10 detik dari sebelumnya, ia bergabung ke grup yang sama. Begitu jaraknya melebihi 10 detik, rangkaian ditutup. Itu cocok dengan cara burst dan pengambilan ulang terjadi — rangkaian cepat beberapa detik, jeda, lalu adegan berbeda. Grup berisi satu foto dibuang, sehingga yang tersisa untuk ditinjau persis materi yang layak diputuskan.
 
 ### Meninjau satu rangkaian, bukan perang piksel
 

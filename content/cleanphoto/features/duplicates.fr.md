@@ -1,6 +1,6 @@
 ---
 title: "Détection des doublons exacts"
-description: "Comment CleanPhoto regroupe les photos de dimensions identiques prises dans la même seconde, et pourquoi cette règle locale trouve les vraies copies sans faux positifs."
+description: "Comment Photo Cleaner Kit regroupe les photos de dimensions identiques prises dans la même seconde, et pourquoi cette règle locale trouve les vraies copies sans faux positifs."
 date: 2026-09-06
 lang: fr
 slug: duplicates
@@ -8,11 +8,11 @@ slug: duplicates
 
 ## Détection des doublons exacts
 
-Les doublons exacts sont les photos les plus faciles à supprimer et les plus faciles à rater. CleanPhoto les repère avec une règle simple et transparente qui s'exécute entièrement sur votre appareil : les photos de dimensions en pixels identiques, prises dans la même seconde exactement, appartiennent au même groupe.
+Les doublons exacts sont les photos les plus faciles à supprimer et les plus faciles à rater. Photo Cleaner Kit les repère avec une règle simple et transparente qui s'exécute entièrement sur votre appareil : les photos de dimensions en pixels identiques, prises dans la même seconde exactement, appartiennent au même groupe.
 
 ### Comment fonctionne le regroupement
 
-Lors d'un scan, CleanPhoto parcourt votre photothèque et construit une clé pour chaque photo à partir de sa largeur, sa hauteur et sa seconde de prise de vue. Les photos partageant la même clé sont placées dans un groupe. Une photo enregistrée deux fois — par un ré-enregistrement, un import depuis un autre appareil ou un conflit de synchronisation cloud — porte les mêmes dimensions et le même horodatage que l'originale, donc les deux copies atterrissent dans le même groupe, sans rien d'autre.
+Lors d'un scan, Photo Cleaner Kit parcourt votre photothèque et construit une clé pour chaque photo à partir de sa largeur, sa hauteur et sa seconde de prise de vue. Les photos partageant la même clé sont placées dans un groupe. Une photo enregistrée deux fois — par un ré-enregistrement, un import depuis un autre appareil ou un conflit de synchronisation cloud — porte les mêmes dimensions et le même horodatage que l'originale, donc les deux copies atterrissent dans le même groupe, sans rien d'autre.
 
 ### Passer un groupe en revue
 

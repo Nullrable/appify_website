@@ -1,18 +1,18 @@
 ---
-title: "Come CleanPhoto scansiona la tua libreria senza caricare nemmeno una foto"
+title: "Come Photo Cleaner Kit scansiona la tua libreria senza caricare nemmeno una foto"
 description: "Uno sguardo dentro i tre rilevatori su dispositivo — duplicati esatti, foto simili e screenshot — e le regole semplici che usano, per sapere esattamente cosa succede quando premi Scansiona."
 date: 2026-09-06
 lang: it
 slug: how-scan-works
 ---
 
-## Come CleanPhoto scansiona la tua libreria senza caricare nemmeno una foto
+## Come Photo Cleaner Kit scansiona la tua libreria senza caricare nemmeno una foto
 
-La maggior parte dei pulitori di foto chiede fiducia. CleanPhoto prova a guadagnarsela con la trasparenza: ogni scansione gira sul tuo dispositivo, lavora dai metadati della libreria e segue regole abbastanza semplici da spiegare in pochi paragrafi. Ecco esattamente cosa succede quando premi Scansiona.
+La maggior parte dei pulitori di foto chiede fiducia. Photo Cleaner Kit prova a guadagnarsela con la trasparenza: ogni scansione gira sul tuo dispositivo, lavora dai metadati della libreria e segue regole abbastanza semplici da spiegare in pochi paragrafi. Ecco esattamente cosa succede quando premi Scansiona.
 
 ### Tre rilevatori, tre domande
 
-CleanPhoto esegue tre scansioni, ognuna risponde a una domanda diversa. I duplicati esatti chiedono "questa foto è stata salvata due volte?" Le foto simili chiedono "era una raffica o un rapido ritento?" Gli screenshot chiedono "questa immagine è solo temporanea?" Puoi lanciarle in qualsiasi ordine, e ognuna presenta i risultati come gruppi da rivedere.
+Photo Cleaner Kit esegue tre scansioni, ognuna risponde a una domanda diversa. I duplicati esatti chiedono "questa foto è stata salvata due volte?" Le foto simili chiedono "era una raffica o un rapido ritento?" Gli screenshot chiedono "questa immagine è solo temporanea?" Puoi lanciarle in qualsiasi ordine, e ognuna presenta i risultati come gruppi da rivedere.
 
 ### Regola uno: stessa dimensione, stesso secondo
 
@@ -28,7 +28,7 @@ Il rilevatore di screenshot funziona in modo diverso per piattaforma. Su iOS leg
 
 ### Dimensioni dei file, caricate prima della revisione
 
-Prima che si apra qualsiasi schermata di revisione, CleanPhoto precarica la dimensione del file di ogni foto. In un gruppo, il file più grande è quasi sempre la copia che ha conservato più dettagli, quindi gli elementi sono ordinati per dimensione e il candidato migliore sta in cima. Questo unico segnale trasforma "quale di queste otto è la migliore?" in "questa va bene?".
+Prima che si apra qualsiasi schermata di revisione, Photo Cleaner Kit precarica la dimensione del file di ogni foto. In un gruppo, il file più grande è quasi sempre la copia che ha conservato più dettagli, quindi gli elementi sono ordinati per dimensione e il candidato migliore sta in cima. Questo unico segnale trasforma "quale di queste otto è la migliore?" in "questa va bene?".
 
 ### Cosa non succede mai
 

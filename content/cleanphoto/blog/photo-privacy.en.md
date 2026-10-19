@@ -1,6 +1,6 @@
 ---
 title: "Photo Cleanup and Privacy: What Stays on Your Device"
-description: "A photo library is the most personal dataset on your phone. An honest breakdown of what CleanPhoto reads, what it never reads, what leaves your device, and what does not."
+description: "A photo library is the most personal dataset on your phone. An honest breakdown of what Photo Cleaner Kit reads, what it never reads, what leaves your device, and what does not."
 date: 2026-09-06
 lang: en
 slug: photo-privacy
@@ -8,7 +8,7 @@ slug: photo-privacy
 
 ## Photo Cleanup and Privacy: What Stays on Your Device
 
-Give an app access to your photos, and you have handed it the most personal dataset on your phone: your family, your home, your documents, your last ten years. That access is necessary for any photo cleaner to work — which is exactly why the question "what does the app do with it?" deserves a concrete answer, not a slogan. Here is CleanPhoto's, in specifics.
+Give an app access to your photos, and you have handed it the most personal dataset on your phone: your family, your home, your documents, your last ten years. That access is necessary for any photo cleaner to work — which is exactly why the question "what does the app do with it?" deserves a concrete answer, not a slogan. Here is Photo Cleaner Kit's, in specifics.
 
 ### What the app reads
 
@@ -32,4 +32,4 @@ Photo library access: needed to scan and to display groups. On iOS you will also
 
 ### The point
 
-Photo cleanup does not require a cloud, an account, or content analysis. It requires metadata, transparent rules, and your confirmation. That is all CleanPhoto uses — and if a cleaner ever asks for more than that, it is worth asking what it wants it for.
+Photo cleanup does not require a cloud, an account, or content analysis. It requires metadata, transparent rules, and your confirmation. That is all Photo Cleaner Kit uses — and if a cleaner ever asks for more than that, it is worth asking what it wants it for.

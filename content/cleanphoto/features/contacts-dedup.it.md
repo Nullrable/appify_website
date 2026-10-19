@@ -1,6 +1,6 @@
 ---
 title: "Pulizia dei contatti duplicati"
-description: "CleanPhoto trova i contatti che condividono lo stesso nome o numero di telefono, li raggruppa per la revisione e li unisce in una sola scheda con tutti i campi preservati."
+description: "Photo Cleaner Kit trova i contatti che condividono lo stesso nome o numero di telefono, li raggruppa per la revisione e li unisce in una sola scheda con tutti i campi preservati."
 date: 2026-09-10
 lang: it
 slug: contacts-dedup

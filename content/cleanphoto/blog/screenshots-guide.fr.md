@@ -18,9 +18,9 @@ Les captures sont le brouillon du téléphone. Vous en prenez une pour vous souv
 
 Voilà pourquoi les captures sont la cible de nettoyage la plus facile : presque aucune n'importe après une semaine. Une photo en double peut encore être un souvenir ; une vieille capture, presque jamais. Les vider est généralement la récupération d'espace la plus rapide de toute la photothèque, et comme la valeur de chaque élément est proche de zéro, la revue va vite.
 
-### Comment CleanPhoto les trouve
+### Comment Photo Cleaner Kit les trouve
 
-Sur iOS, le système tient un album Captures d'écran dédié, que CleanPhoto lit directement — la détection est exacte. Sur Android, où le stockage varie selon le fabricant, le scan vérifie d'abord les noms d'albums et, sans album de captures, inspecte le titre et le chemin de fichier de chaque image pour repérer les motifs de nommage des appareils. Tout ce qui est trouvé est regroupé par jour de prise de vue, le plus récent d'abord, avec la taille de fichier de chaque élément affichée.
+Sur iOS, le système tient un album Captures d'écran dédié, que Photo Cleaner Kit lit directement — la détection est exacte. Sur Android, où le stockage varie selon le fabricant, le scan vérifie d'abord les noms d'albums et, sans album de captures, inspecte le titre et le chemin de fichier de chaque image pour repérer les motifs de nommage des appareils. Tout ce qui est trouvé est regroupé par jour de prise de vue, le plus récent d'abord, avec la taille de fichier de chaque élément affichée.
 
 ### Un flux qui fonctionne
 

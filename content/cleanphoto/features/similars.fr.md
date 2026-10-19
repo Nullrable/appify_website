@@ -1,6 +1,6 @@
 ---
 title: "Nettoyage des photos similaires et en rafale"
-description: "CleanPhoto enchaîne en un même groupe les photos prises à moins de 10 secondes d'intervalle, pour nettoyer rafales et reprises rapides série par série."
+description: "Photo Cleaner Kit enchaîne en un même groupe les photos prises à moins de 10 secondes d'intervalle, pour nettoyer rafales et reprises rapides série par série."
 date: 2026-09-06
 lang: fr
 slug: similars
@@ -8,11 +8,11 @@ slug: similars
 
 ## Nettoyage des photos similaires et en rafale
 
-Le mode rafale et les reprises rapides, c'est ainsi que naissent les bonnes photos — vous appuyez plusieurs fois sur le déclencheur, vous en gardez une, et le reste s'accumule discrètement. CleanPhoto rassemble ces prises quasi identiques en groupes que vous pouvez passer en revue série par série, entièrement sur votre appareil.
+Le mode rafale et les reprises rapides, c'est ainsi que naissent les bonnes photos — vous appuyez plusieurs fois sur le déclencheur, vous en gardez une, et le reste s'accumule discrètement. Photo Cleaner Kit rassemble ces prises quasi identiques en groupes que vous pouvez passer en revue série par série, entièrement sur votre appareil.
 
 ### La règle des 10 secondes
 
-Au lancement d'un scan, vos photos sont triées par date de prise de vue. CleanPhoto parcourt ensuite la chronologie et enchaîne les photos : tant que chaque photo est prise dans les 10 secondes suivant la précédente, elle rejoint le même groupe. Dès que l'écart dépasse 10 secondes, la chaîne se referme et la photo suivante ouvre un nouveau groupe. Seuls les groupes de plusieurs photos sont conservés pour la revue.
+Au lancement d'un scan, vos photos sont triées par date de prise de vue. Photo Cleaner Kit parcourt ensuite la chronologie et enchaîne les photos : tant que chaque photo est prise dans les 10 secondes suivant la précédente, elle rejoint le même groupe. Dès que l'écart dépasse 10 secondes, la chaîne se referme et la photo suivante ouvre un nouveau groupe. Seuls les groupes de plusieurs photos sont conservés pour la revue.
 
 Cela correspond à la réalité des rafales et des reprises : une série rapide en quelques secondes, une pause, puis autre chose.
 

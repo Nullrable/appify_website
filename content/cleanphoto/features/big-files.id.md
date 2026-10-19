@@ -1,6 +1,6 @@
 ---
 title: "File Besar"
-description: "CleanPhoto memunculkan foto dan video terbesar Anda, sehingga beberapa item berat di pustaka bisa dihapus hanya dengan beberapa konfirmasi — tanpa harus menyisir ribuan foto kecil."
+description: "Photo Cleaner Kit memunculkan foto dan video terbesar Anda, sehingga beberapa item berat di pustaka bisa dihapus hanya dengan beberapa konfirmasi — tanpa harus menyisir ribuan foto kecil."
 date: 2026-09-10
 lang: id
 slug: big-files

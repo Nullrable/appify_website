@@ -1,6 +1,6 @@
 ---
 title: "중복 연락처 정리"
-description: "CleanPhoto가 같은 이름이나 전화번호를 공유하는 연락처를 찾아 그룹화하여 검토할 수 있게 하고, 모든 필드를 보존한 채 하나의 카드로 병합합니다."
+description: "Photo Cleaner Kit가 같은 이름이나 전화번호를 공유하는 연락처를 찾아 그룹화하여 검토할 수 있게 하고, 모든 필드를 보존한 채 하나의 카드로 병합합니다."
 date: 2026-09-10
 lang: ko
 slug: contacts-dedup

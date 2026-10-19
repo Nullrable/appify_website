@@ -1,6 +1,6 @@
 ---
 title: "大檔案"
-description: "CleanPhoto 把最大的照片和影片排在前面,讓你用幾次確認就能清掉那幾個重量級檔案——不必翻遍成千上萬的小檔案。"
+description: "Photo Cleaner Kit 把最大的照片和影片排在前面,讓你用幾次確認就能清掉那幾個重量級檔案——不必翻遍成千上萬的小檔案。"
 date: 2026-09-10
 lang: zh-TW
 slug: big-files

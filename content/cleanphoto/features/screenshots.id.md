@@ -1,6 +1,6 @@
 ---
 title: "Pembersihan Tangkapan Layar"
-description: "Bagaimana CleanPhoto mengumpulkan tangkapan layar di iPhone dan Android, mengelompokkannya per hari, dan membantu membersihkan tumpukan tanpa menyentuh foto yang Anda pedulikan."
+description: "Bagaimana Photo Cleaner Kit mengumpulkan tangkapan layar di iPhone dan Android, mengelompokkannya per hari, dan membantu membersihkan tumpukan tanpa menyentuh foto yang Anda pedulikan."
 date: 2026-09-06
 lang: id
 slug: screenshots
@@ -8,11 +8,11 @@ slug: screenshots
 
 ## Pembersihan Tangkapan Layar
 
-Tangkapan layar memang dimaksudkan sementara — kartu boarding, struk, kode yang harus diketik — namun ia menetap di pustaka Anda selamanya. CleanPhoto menariknya keluar dari kerumunan dan menyusunnya per hari, sehingga tumpukannya akhirnya terlihat.
+Tangkapan layar memang dimaksudkan sementara — kartu boarding, struk, kode yang harus diketik — namun ia menetap di pustaka Anda selamanya. Photo Cleaner Kit menariknya keluar dari kerumunan dan menyusunnya per hari, sehingga tumpukannya akhirnya terlihat.
 
 ### Bagaimana tangkapan layar ditemukan
 
-Di iOS, sistem menyimpan album Screenshots khusus. CleanPhoto membaca album itu secara langsung, sehingga deteksinya tepat. Di Android, lokasi penyimpanan tangkapan layar berbeda-beda menurut pabrikan, jadi pemindaian memeriksa nama album terlebih dahulu, dan bila tidak ada album tangkapan layar, ia memeriksa judul serta jalur file setiap gambar untuk pola penamaan yang dipakai perangkat untuk tangkapan layar.
+Di iOS, sistem menyimpan album Screenshots khusus. Photo Cleaner Kit membaca album itu secara langsung, sehingga deteksinya tepat. Di Android, lokasi penyimpanan tangkapan layar berbeda-beda menurut pabrikan, jadi pemindaian memeriksa nama album terlebih dahulu, dan bila tidak ada album tangkapan layar, ia memeriksa judul serta jalur file setiap gambar untuk pola penamaan yang dipakai perangkat untuk tangkapan layar.
 
 ### Dikelompokkan per hari
 

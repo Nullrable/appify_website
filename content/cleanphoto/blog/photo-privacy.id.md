@@ -1,6 +1,6 @@
 ---
 title: "Pembersihan Foto dan Privasi: Apa yang Tetap di Perangkat Anda"
-description: "Pustaka foto adalah dataset paling pribadi di ponsel Anda. Rincian jujur tentang apa yang dibaca CleanPhoto, apa yang tak pernah dibacanya, apa yang meninggalkan perangkat, dan apa yang tidak."
+description: "Pustaka foto adalah dataset paling pribadi di ponsel Anda. Rincian jujur tentang apa yang dibaca Photo Cleaner Kit, apa yang tak pernah dibacanya, apa yang meninggalkan perangkat, dan apa yang tidak."
 date: 2026-09-06
 lang: id
 slug: photo-privacy
@@ -8,7 +8,7 @@ slug: photo-privacy
 
 ## Pembersihan Foto dan Privasi: Apa yang Tetap di Perangkat Anda
 
-Memberi akses foto kepada aplikasi berarti menyerahkan dataset paling pribadi di ponsel Anda: keluarga, rumah, dokumen, dan sepuluh tahun terakhir Anda. Akses itu diperlukan agar pembersih foto bisa bekerja — justru karena itu pertanyaan "apa yang dilakukan aplikasi dengannya?" layak dijawab konkret, bukan dengan slogan. Ini jawaban CleanPhoto.
+Memberi akses foto kepada aplikasi berarti menyerahkan dataset paling pribadi di ponsel Anda: keluarga, rumah, dokumen, dan sepuluh tahun terakhir Anda. Akses itu diperlukan agar pembersih foto bisa bekerja — justru karena itu pertanyaan "apa yang dilakukan aplikasi dengannya?" layak dijawab konkret, bukan dengan slogan. Ini jawaban Photo Cleaner Kit.
 
 ### Apa yang dibaca aplikasi
 
@@ -32,4 +32,4 @@ Akses pustaka foto: diperlukan untuk memindai dan menampilkan grup. Di iOS Anda 
 
 ### Intinya
 
-Pembersihan foto tidak butuh cloud, akun, atau analisis konten. Yang dibutuhkan adalah metadata, aturan transparan, dan konfirmasi Anda. Itu saja yang dipakai CleanPhoto — dan bila suatu pembersih meminta lebih dari itu, patut ditanya untuk apa.
+Pembersihan foto tidak butuh cloud, akun, atau analisis konten. Yang dibutuhkan adalah metadata, aturan transparan, dan konfirmasi Anda. Itu saja yang dipakai Photo Cleaner Kit — dan bila suatu pembersih meminta lebih dari itu, patut ditanya untuk apa.

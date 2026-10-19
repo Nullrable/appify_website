@@ -1,6 +1,6 @@
 ---
 title: "Pulizia screenshot"
-description: "Come CleanPhoto raccoglie gli screenshot su iPhone e Android, li raggruppa per giorno e ti aiuta a smaltire il backlog senza toccare le foto che ti interessano."
+description: "Come Photo Cleaner Kit raccoglie gli screenshot su iPhone e Android, li raggruppa per giorno e ti aiuta a smaltire il backlog senza toccare le foto che ti interessano."
 date: 2026-09-06
 lang: it
 slug: screenshots
@@ -8,11 +8,11 @@ slug: screenshots
 
 ## Pulizia screenshot
 
-Gli screenshot sono pensati per essere temporanei — una carta d'imbarco, una ricevuta, un codice da digitare — eppure restano nella tua libreria per sempre. CleanPhoto li tira fuori dalla folla e li dispone per giorno, così il backlog finalmente si vede.
+Gli screenshot sono pensati per essere temporanei — una carta d'imbarco, una ricevuta, un codice da digitare — eppure restano nella tua libreria per sempre. Photo Cleaner Kit li tira fuori dalla folla e li dispone per giorno, così il backlog finalmente si vede.
 
 ### Come vengono trovati gli screenshot
 
-Su iOS, il sistema mantiene un album Screenshot dedicato. CleanPhoto legge quell'album direttamente, quindi il rilevamento è esatto. Su Android, la posizione degli screenshot varia produttore per produttore: la scansione controlla prima i nomi degli album e, se non c'è un album di screenshot, ispeziona titolo e percorso file di ogni immagine alla ricerca dei pattern di nomi che i dispositivi usano per gli screenshot.
+Su iOS, il sistema mantiene un album Screenshot dedicato. Photo Cleaner Kit legge quell'album direttamente, quindi il rilevamento è esatto. Su Android, la posizione degli screenshot varia produttore per produttore: la scansione controlla prima i nomi degli album e, se non c'è un album di screenshot, ispeziona titolo e percorso file di ogni immagine alla ricerca dei pattern di nomi che i dispositivi usano per gli screenshot.
 
 ### Raggruppati per giorno
 

@@ -1,12 +1,12 @@
 ---
-title: "隐私政策 - CleanPhoto"
-description: "CleanPhoto 如何处理您的数据。涵盖设备端元数据扫描、通过系统相册删除照片、免费版中的 AdMob 广告、RevenueCat 订阅管理，以及您的 GDPR 与 CCPA 权利。"
+title: "隐私政策 - Photo Cleaner Kit"
+description: "Photo Cleaner Kit 如何处理您的数据。涵盖设备端元数据扫描、通过系统相册删除照片、免费版中的 AdMob 广告、RevenueCat 订阅管理，以及您的 GDPR 与 CCPA 权利。"
 date: 2026-01-26
 lang: zh
 slug: index
 ---
 
-**CleanPhoto**（"**我们**"）是一款照片清理应用，其设计原则是：您的照片留在您的设备上。本隐私政策说明本应用处理哪些数据、为什么处理，以及您拥有的选择。
+**Photo Cleaner Kit**（"**我们**"）是一款照片清理应用，其设计原则是：您的照片留在您的设备上。本隐私政策说明本应用处理哪些数据、为什么处理，以及您拥有的选择。
 
 使用本应用，即表示您同意本政策所述的做法。
 

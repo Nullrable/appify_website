@@ -1,14 +1,14 @@
 ---
-title: "CleanPhoto Gratuit ou Pro : quelle version correspond à votre façon de nettoyer ?"
+title: "Photo Cleaner Kit Gratuit ou Pro : quelle version correspond à votre façon de nettoyer ?"
 description: "Le scan et la revue sont gratuits et sans limite — la seule différence tient au moment où vous confirmez une suppression. Une comparaison pratique, sans langue de bois marketing."
 date: 2026-09-06
 lang: fr
 slug: free-vs-pro
 ---
 
-## CleanPhoto Gratuit ou Pro : quelle version correspond à votre façon de nettoyer ?
+## Photo Cleaner Kit Gratuit ou Pro : quelle version correspond à votre façon de nettoyer ?
 
-La fatigue des abonnements existe, alors voici la version honnête de la comparaison. Le Gratuit et le Pro de CleanPhoto diffèrent en exactement un moment du flux de travail — tout le reste est le même produit. Ce billet détaille ce que cela signifie en pratique, pour choisir la version qui colle à votre fréquence de nettoyage.
+La fatigue des abonnements existe, alors voici la version honnête de la comparaison. Le Gratuit et le Pro de Photo Cleaner Kit diffèrent en exactement un moment du flux de travail — tout le reste est le même produit. Ce billet détaille ce que cela signifie en pratique, pour choisir la version qui colle à votre fréquence de nettoyage.
 
 ### Ce que vous avez dans les deux cas
 

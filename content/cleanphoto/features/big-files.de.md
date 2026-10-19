@@ -1,6 +1,6 @@
 ---
 title: "Große Dateien"
-description: "CleanPhoto holt Ihre größten Fotos und Videos nach vorn, sodass die wenigen Schwergewichte Ihrer Bibliothek mit ein paar Bestätigungen verschwinden — ohne tausende kleine Dateien durchzugehen."
+description: "Photo Cleaner Kit holt Ihre größten Fotos und Videos nach vorn, sodass die wenigen Schwergewichte Ihrer Bibliothek mit ein paar Bestätigungen verschwinden — ohne tausende kleine Dateien durchzugehen."
 date: 2026-09-10
 lang: de
 slug: big-files
