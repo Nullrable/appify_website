@@ -920,11 +920,13 @@ async function main() {
           : hasMultiPosts
             ? `${appName} ${sectionName} - Appify`
             : `${sectionName} - ${appName} - Appify`;
-        const sectionDescription = hasContent && hit
-          ? (hit.article.description || `${sectionName} - ${appName}.`)
-          : hasMultiPosts
-            ? listDescription
-            : `${sectionName} - ${appName}. ${labels.comingSoonDesc ?? appDesc}`;
+        const sectionDescription = isExternalLegal
+          ? `${sectionName} - ${appName}. ${sectionName} is published on the official ${appName} site.`
+          : hasContent && hit
+            ? (hit.article.description || `${sectionName} - ${appName}.`)
+            : hasMultiPosts
+              ? listDescription
+              : `${sectionName} - ${appName}. ${labels.comingSoonDesc ?? appDesc}`;
 
         // WebPage JSON-LD for content-bearing sections. Helps Google understand
         // the page as a long-form document rather than an app page. Skipped for
@@ -1005,12 +1007,19 @@ async function main() {
             });
           }
         } else if (hasContent) {
-          sectionUrls.push({
-            appId: app.id,
-            section: sectionId,
-            lang,
-            lastmod: hit?.article?.date ?? sectionPosts[0]?.date,
-          });
+          // Only list URLs whose content exists natively in this language. A
+          // page rendered from the English fallback canonicalizes to the
+          // English URL, so listing it under 15 locales would submit
+          // duplicate URLs for the same content.
+          const isNative = indexNativeLangs.includes(lang) || multiNativeLangs.includes(lang);
+          if (isNative) {
+            sectionUrls.push({
+              appId: app.id,
+              section: sectionId,
+              lang,
+              lastmod: hit?.article?.date ?? sectionPosts[0]?.date,
+            });
+          }
         }
       }
 
