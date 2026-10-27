@@ -1,12 +1,12 @@
 ---
-title: "Chính sách riêng tư - Work Hours Tracker"
-description: "Chính sách riêng tư của Work Hours Tracker: toàn bộ dữ liệu giờ làm lưu trên thiết bị, không tài khoản, không tải lên máy chủ; đồng bộ ngày lễ không chứa dữ liệu cá nhân; sinh trắc học do hệ thống xử lý."
+title: "Chính sách riêng tư - Time Tracker Now"
+description: "Chính sách riêng tư của Time Tracker Now: toàn bộ dữ liệu giờ làm lưu trên thiết bị, không tài khoản, không tải lên máy chủ; đồng bộ ngày lễ không chứa dữ liệu cá nhân; sinh trắc học do hệ thống xử lý."
 date: 2026-09-07
 lang: vi
 slug: index
 ---
 
-Chính sách riêng tư này giải thích cách **Work Hours Tracker** (“**Ứng dụng**”) xử lý thông tin liên quan đến bạn. Nói ngắn gọn: dữ liệu giờ làm của bạn chỉ nằm trên thiết bị của bạn — chúng tôi không bán, không thu thập, không xem được.
+Chính sách riêng tư này giải thích cách **Time Tracker Now** (“**Ứng dụng**”) xử lý thông tin liên quan đến bạn. Nói ngắn gọn: dữ liệu giờ làm của bạn chỉ nằm trên thiết bị của bạn — chúng tôi không bán, không thu thập, không xem được.
 
 Chúng tôi coi trọng quyền riêng tư của bạn và dùng thiết kế “ưu tiên cục bộ” để thực hiện cam kết đó.
 

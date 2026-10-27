@@ -1,6 +1,6 @@
 ---
 title: "Xuất và sao lưu dữ liệu giờ làm"
-description: "Work Hours Tracker hỗ trợ xuất bản ghi dạng CSV, PDF, Excel (kèm chi tiết tăng ca) cùng chức năng sao lưu, khôi phục và chia sẻ đầy đủ. Xuất dữ liệu là tính năng Pro."
+description: "Time Tracker Now hỗ trợ xuất bản ghi dạng CSV, PDF, Excel (kèm chi tiết tăng ca) cùng chức năng sao lưu, khôi phục và chia sẻ đầy đủ. Xuất dữ liệu là tính năng Pro."
 date: 2026-09-07
 lang: vi
 slug: export-backup

@@ -1,12 +1,12 @@
 ---
-title: Tentang Work Hours Tracker - Absen, Lembur, dan Gaji
-description: Pelajari bagaimana Work Hours Tracker mengubah absen satu ketukan menjadi timesheet akurat, lembur otomatis dan upah shift malam, pembukuan banyak pekerjaan, serta laporan yang bisa diekspor — semuanya disimpan di perangkat Anda, dalam 14 bahasa.
+title: Tentang Time Tracker Now - Absen, Lembur, dan Gaji
+description: Pelajari bagaimana Time Tracker Now mengubah absen satu ketukan menjadi timesheet akurat, lembur otomatis dan upah shift malam, pembukuan banyak pekerjaan, serta laporan yang bisa diekspor — semuanya disimpan di perangkat Anda, dalam 14 bahasa.
 date: 2026-09-10
 lang: id
 slug: index
 ---
 
-Work Hours Tracker adalah aplikasi absensi iOS yang dirancang untuk pekerja lepas, pekerja shift, freelancer, dan siapa pun yang membutuhkan catatan akurat tentang jam kerja yang sudah diselesaikan serta gaji yang sudah diperoleh. Aplikasi ini menggantikan buku catatan kertas di dasar laci: ketuk sekali saat tiba, ketuk sekali saat pulang, dan sisanya berjalan otomatis — menit dihitung, istirahat dikurangi, lembur diterapkan, dan total berjalan dari apa yang seharusnya Anda terima selalu diperbarui.
+Time Tracker Now adalah aplikasi absensi iOS yang dirancang untuk pekerja lepas, pekerja shift, freelancer, dan siapa pun yang membutuhkan catatan akurat tentang jam kerja yang sudah diselesaikan serta gaji yang sudah diperoleh. Aplikasi ini menggantikan buku catatan kertas di dasar laci: ketuk sekali saat tiba, ketuk sekali saat pulang, dan sisanya berjalan otomatis — menit dihitung, istirahat dikurangi, lembur diterapkan, dan total berjalan dari apa yang seharusnya Anda terima selalu diperbarui.
 
 ## Absen masuk dan keluar dengan satu ketukan
 
@@ -16,7 +16,7 @@ Anda dapat menjalankan beberapa timer secara paralel. Seorang barista dengan shi
 
 ## 13 preset hukum ketenagakerjaan dan aturan kustom penuh
 
-Lembur, upah shift malam, dan batas mingguan tidak sama di setiap negara. Work Hours Tracker menyediakan preset untuk Tiongkok, Amerika Serikat (federal dan California), Jepang, Korea Selatan, Jerman, Prancis, Inggris, Australia, Brasil, India, Meksiko, dan Singapura. Pilih wilayah tempat Anda bekerja, dan ambang harian, penggali bertingkat, serta jendela malam akan diterapkan otomatis.
+Lembur, upah shift malam, dan batas mingguan tidak sama di setiap negara. Time Tracker Now menyediakan preset untuk Tiongkok, Amerika Serikat (federal dan California), Jepang, Korea Selatan, Jerman, Prancis, Inggris, Australia, Brasil, India, Meksiko, dan Singapura. Pilih wilayah tempat Anda bekerja, dan ambang harian, penggali bertingkat, serta jendela malam akan diterapkan otomatis.
 
 Jika kontrak kerja atau perjanjian kerja bersama Anda memiliki aturan sendiri, alihkan ke mode Kustom: tentukan secara persis kapan lembur dimulai, berapa jumlah tingkatannya, penggali untuk tiap tingkat, kapan upah malam aktif, dan batas mingguan di mana tarif yang lebih tinggi berlaku. Mesin perhitungan yang sama menggerakkan preset maupun aturan kustom, sehingga perhitungannya tetap konsisten di mode mana pun.
 
@@ -46,6 +46,6 @@ Semua data Anda tetap di perangkat. Absen, perhitungan, ekspor, cadangan — tid
 
 Jika Anda mencopot pemasangan aplikasi, data lokal — termasuk catatan yang belum disinkronkan — akan terhapus bersamanya.
 
-## Versi gratis dan Work Hours Tracker Pro
+## Versi gratis dan Time Tracker Now Pro
 
 Absen masuk/keluar, melihat catatan, grafik statistik, sinkronisasi hari libur, dan ekspor CSV/PDF tetap gratis selamanya, tanpa tanda air dan tanpa batas harian. Pro menambahkan jumlah pekerjaan tak terbatas, entri manual, ekspor Excel dengan rincian lembur, dan kustomisasi lembur tingkat lanjut. Pro dijual sebagai pembelian satu kali atau langganan tahunan melalui App Store, dan setelah dimiliki, Pro tetap menjadi milik Anda di semua perangkat dan pembaruan mendatang.

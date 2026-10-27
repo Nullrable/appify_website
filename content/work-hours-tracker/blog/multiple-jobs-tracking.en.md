@@ -1,6 +1,6 @@
 ---
 title: "How to Track Hours for Multiple Jobs Separately"
-description: "Key points for tracking part-time, side-gig, and rotating-shift work: record per job, separate rates and rules, review time allocation regularly. An introduction to multi-job recording and the job distribution chart in Work Hours Tracker."
+description: "Key points for tracking part-time, side-gig, and rotating-shift work: record per job, separate rates and rules, review time allocation regularly. An introduction to multi-job recording and the job distribution chart in Time Tracker Now."
 date: 2026-09-07
 lang: en
 slug: multiple-jobs-tracking
@@ -18,6 +18,6 @@ Plenty of people work several jobs at once: full-time during the day, part-time 
 
 ## Managing Multiple Jobs with the App
 
-Work Hours Tracker supports adding multiple jobs. When clocking in, choose the job; each job's records and hourly rate stay independent. The job distribution chart in the statistics shows each job's share of hours and income — which job takes the most time and which pays best per hour is visible at a glance.
+Time Tracker Now supports adding multiple jobs. When clocking in, choose the job; each job's records and hourly rate stay independent. The job distribution chart in the statistics shows each job's share of hours and income — which job takes the most time and which pays best per hour is visible at a glance.
 
 For anyone looking to reallocate time toward better-paying work, that share chart beats gut feeling every time.

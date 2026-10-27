@@ -1,6 +1,6 @@
 ---
 title: "工资与加班费自动计算"
-description: "设置时薪后，Work Hours Tracker 自动计算每条记录的收入：支持分层加班倍率、夜班工资、周累计加班，并可选多种货币显示。"
+description: "设置时薪后，Time Tracker Now 自动计算每条记录的收入：支持分层加班倍率、夜班工资、周累计加班，并可选多种货币显示。"
 date: 2026-09-07
 lang: zh
 slug: earnings

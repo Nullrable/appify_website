@@ -1,6 +1,6 @@
 ---
 title: "导出与备份你的工时数据"
-description: "Work Hours Tracker 支持将工时记录导出为 CSV、PDF、Excel（含加班明细），并提供完整的备份、恢复与分享功能。导出为 Pro 功能。"
+description: "Time Tracker Now 支持将工时记录导出为 CSV、PDF、Excel（含加班明细），并提供完整的备份、恢复与分享功能。导出为 Pro 功能。"
 date: 2026-09-07
 lang: zh
 slug: export-backup

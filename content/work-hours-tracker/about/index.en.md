@@ -1,12 +1,12 @@
 ---
-title: About Work Hours Tracker - Timesheet, Overtime & Pay
-description: Learn how Work Hours Tracker turns one-tap clocking into accurate timesheets, automatic overtime and night-shift pay, multi-job ledgers, and exportable reports - all stored on your device, in 14 languages.
+title: About Time Tracker Now - Timesheet, Overtime & Pay
+description: Learn how Time Tracker Now turns one-tap clocking into accurate timesheets, automatic overtime and night-shift pay, multi-job ledgers, and exportable reports - all stored on your device, in 14 languages.
 date: 2026-09-10
 lang: en
 slug: index
 ---
 
-Work Hours Tracker is an iOS timesheet built for hourly workers, freelancers, shift schedulers, and anyone who needs a precise record of the hours they have worked and the pay they have earned. It replaces the paper notebook at the bottom of the drawer: one tap when you arrive, one tap when you leave, and the rest happens automatically - minutes are summed, breaks are subtracted, overtime is applied, and the running total of what you are owed stays up to date.
+Time Tracker Now is an iOS timesheet built for hourly workers, freelancers, shift schedulers, and anyone who needs a precise record of the hours they have worked and the pay they have earned. It replaces the paper notebook at the bottom of the drawer: one tap when you arrive, one tap when you leave, and the rest happens automatically - minutes are summed, breaks are subtracted, overtime is applied, and the running total of what you are owed stays up to date.
 
 ## One-tap clock in and out
 
@@ -16,7 +16,7 @@ You can run multiple timers in parallel. A barista with a weekday cafe shift and
 
 ## 13 labor law presets - and full custom rules
 
-Overtime, night-shift pay and weekly caps are not the same in every country. Work Hours Tracker ships with presets for China, the United States (federal and California), Japan, South Korea, Germany, France, the United Kingdom, Australia, Brazil, India, Mexico and Singapore. Pick the region you work in and the daily threshold, the tiered multipliers and the night window are applied automatically.
+Overtime, night-shift pay and weekly caps are not the same in every country. Time Tracker Now ships with presets for China, the United States (federal and California), Japan, South Korea, Germany, France, the United Kingdom, Australia, Brazil, India, Mexico and Singapore. Pick the region you work in and the daily threshold, the tiered multipliers and the night window are applied automatically.
 
 If your contract or collective agreement has its own rules, switch to Custom and define exactly what you need: when overtime starts, how many tiers there are, the multiplier for each tier, when night pay kicks in, and the weekly cap above which a higher rate applies. The same engine that runs the presets runs your rules, so the math stays consistent whichever mode you choose.
 
@@ -46,6 +46,6 @@ All your data stays on your device. Clocking in, the calculations, the exports, 
 
 If you ever uninstall the app, its local data - including any unsynced records - is removed with it.
 
-## Free vs. Work Hours Tracker Pro
+## Free vs. Time Tracker Now Pro
 
 Clocking in and out, browsing records, statistics charts, holiday sync and CSV / PDF export stay free forever, with no watermark and no daily limit. Pro adds unlimited jobs, manual entries, Excel export with overtime breakdown, and advanced overtime customization. Pro is sold as a one-time or annual subscription through the App Store, and once you own it you keep it across devices and across future updates.

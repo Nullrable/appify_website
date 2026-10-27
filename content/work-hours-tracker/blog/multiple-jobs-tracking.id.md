@@ -1,6 +1,6 @@
 ---
 title: "Cara Mencatat Jam Kerja untuk Beberapa Pekerjaan Secara Terpisah"
-description: "Poin-poin penting mencatat jam kerja paruh waktu, pekerjaan sampingan, dan shift bergilir: catat per pekerjaan, pisahkan tarif dan aturan, tinjau alokasi waktu secara rutin. Pengenalan pencatatan multi-pekerjaan dan grafik distribusi di Work Hours Tracker."
+description: "Poin-poin penting mencatat jam kerja paruh waktu, pekerjaan sampingan, dan shift bergilir: catat per pekerjaan, pisahkan tarif dan aturan, tinjau alokasi waktu secara rutin. Pengenalan pencatatan multi-pekerjaan dan grafik distribusi di Time Tracker Now."
 date: 2026-09-07
 lang: id
 slug: multiple-jobs-tracking
@@ -18,6 +18,6 @@ Banyak orang bekerja di beberapa tempat sekaligus: penuh waktu di siang hari, pa
 
 ## Mengelola Beberapa Pekerjaan dengan Aplikasi
 
-Work Hours Tracker mendukung penambahan beberapa pekerjaan. Saat absen, pilih pekerjaannya; catatan dan tarif tiap pekerjaan tetap independen tanpa saling mengganggu. Grafik distribusi pekerjaan di statistik menampilkan porsi jam dan penghasilan tiap pekerjaan — mana yang paling menyita waktu dan mana yang tarif per jamnya paling baik terlihat sekilas.
+Time Tracker Now mendukung penambahan beberapa pekerjaan. Saat absen, pilih pekerjaannya; catatan dan tarif tiap pekerjaan tetap independen tanpa saling mengganggu. Grafik distribusi pekerjaan di statistik menampilkan porsi jam dan penghasilan tiap pekerjaan — mana yang paling menyita waktu dan mana yang tarif per jamnya paling baik terlihat sekilas.
 
 Bagi siapa pun yang ingin mengalokasikan ulang waktu ke pekerjaan yang lebih menguntungkan, grafik porsi ini jauh lebih bisa diandalkan daripada perasaan.

@@ -1,6 +1,6 @@
 ---
 title: "Graphiques statistiques : voyez où passe votre temps"
-description: "Work Hours Tracker propose trois types de graphiques — tendances des heures, tendances des revenus et répartition entre emplois — pour passer en revue vos heures de travail et la composition de vos revenus."
+description: "Time Tracker Now propose trois types de graphiques — tendances des heures, tendances des revenus et répartition entre emplois — pour passer en revue vos heures de travail et la composition de vos revenus."
 date: 2026-09-07
 lang: fr
 slug: statistics
@@ -8,7 +8,7 @@ slug: statistics
 
 ## Graphiques statistiques : voyez où passe votre temps
 
-Un enregistrement isolé ne reflète qu'une journée. Pour répondre à des questions comme « combien d'heures ce mois-ci », « mon revenu augmente-t-il » ou « quel emploi prend le plus de temps », il faut des graphiques. Work Hours Tracker en propose trois :
+Un enregistrement isolé ne reflète qu'une journée. Pour répondre à des questions comme « combien d'heures ce mois-ci », « mon revenu augmente-t-il » ou « quel emploi prend le plus de temps », il faut des graphiques. Time Tracker Now en propose trois :
 
 ## Tendance des heures
 

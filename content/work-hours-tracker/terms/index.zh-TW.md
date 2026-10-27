@@ -1,12 +1,12 @@
 ---
-title: "服務條款 - Work Hours Tracker"
-description: "使用 Work Hours Tracker 的規則。涵蓋 Pro 訂閱與自動續費、資料備份責任、計算結果免責聲明、可接受使用與第三方服務。"
+title: "服務條款 - Time Tracker Now"
+description: "使用 Time Tracker Now 的規則。涵蓋 Pro 訂閱與自動續費、資料備份責任、計算結果免責聲明、可接受使用與第三方服務。"
 date: 2026-09-07
 lang: zh-TW
 slug: index
 ---
 
-本服務條款（「**本條款**」）約束您對 **Work Hours Tracker**（「**本應用**」）的存取和使用，本應用由開發者（「**我們**」）營運。下載、安裝或使用本應用，即表示您同意本條款。
+本服務條款（「**本條款**」）約束您對 **Time Tracker Now**（「**本應用**」）的存取和使用，本應用由開發者（「**我們**」）營運。下載、安裝或使用本應用，即表示您同意本條款。
 
 如不同意，請勿安裝或使用本應用。
 

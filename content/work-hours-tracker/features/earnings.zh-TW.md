@@ -1,6 +1,6 @@
 ---
 title: "工資與加班費自動計算"
-description: "設定時薪後，Work Hours Tracker 自動計算每條記錄的收入：支援分層加班倍率、夜班工資、週累計加班，並可選多種貨幣顯示。"
+description: "設定時薪後，Time Tracker Now 自動計算每條記錄的收入：支援分層加班倍率、夜班工資、週累計加班，並可選多種貨幣顯示。"
 date: 2026-09-07
 lang: zh-TW
 slug: earnings

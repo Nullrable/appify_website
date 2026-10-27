@@ -1,6 +1,6 @@
 ---
 title: "Sincronizzazione delle festività pubbliche"
-description: "Work Hours Tracker sincronizza automaticamente le festività pubbliche di 15 paesi/regioni, ben visibili nel calendario per pianificare il lavoro e controllare gli straordinari."
+description: "Time Tracker Now sincronizza automaticamente le festività pubbliche di 15 paesi/regioni, ben visibili nel calendario per pianificare il lavoro e controllare gli straordinari."
 date: 2026-09-07
 lang: it
 slug: holidays
@@ -8,7 +8,7 @@ slug: holidays
 
 ## Sincronizzazione delle festività pubbliche
 
-Il calendario delle festività condiziona direttamente la pianificazione del lavoro e il calcolo degli straordinari: come organizzare i recuperi e se lavorare in un giorno festivo conta come straordinario di giorno di riposo — tutto dipende dal fatto che quel giorno sia festività ufficiale. Work Hours Tracker sincronizza automaticamente le festività di questi 15 paesi/regioni:
+Il calendario delle festività condiziona direttamente la pianificazione del lavoro e il calcolo degli straordinari: come organizzare i recuperi e se lavorare in un giorno festivo conta come straordinario di giorno di riposo — tutto dipende dal fatto che quel giorno sia festività ufficiale. Time Tracker Now sincronizza automaticamente le festività di questi 15 paesi/regioni:
 
 Cina, Hong Kong (Cina), Taiwan (Cina), Giappone, Corea del Sud, Singapore, Stati Uniti, California (USA), Regno Unito, Germania, Francia, Australia, Brasile, India, Messico.
 

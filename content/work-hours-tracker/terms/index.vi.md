@@ -1,12 +1,12 @@
 ---
-title: "Điều khoản dịch vụ - Work Hours Tracker"
-description: "Quy tắc sử dụng Work Hours Tracker. Bao gồm đăng ký Pro và tự động gia hạn, trách nhiệm sao lưu, tính chất tham khảo của kết quả tính toán, sử dụng chấp nhận được và dịch vụ bên thứ ba."
+title: "Điều khoản dịch vụ - Time Tracker Now"
+description: "Quy tắc sử dụng Time Tracker Now. Bao gồm đăng ký Pro và tự động gia hạn, trách nhiệm sao lưu, tính chất tham khảo của kết quả tính toán, sử dụng chấp nhận được và dịch vụ bên thứ ba."
 date: 2026-09-07
 lang: vi
 slug: index
 ---
 
-Các Điều khoản Dịch vụ này (“**Điều khoản**”) chi phối việc bạn truy cập và sử dụng **Work Hours Tracker** (“**Ứng dụng**”), do nhà phát triển (“**chúng tôi**”) vận hành. Khi tải xuống, cài đặt hoặc sử dụng Ứng dụng, bạn đồng ý với các Điều khoản này.
+Các Điều khoản Dịch vụ này (“**Điều khoản**”) chi phối việc bạn truy cập và sử dụng **Time Tracker Now** (“**Ứng dụng**”), do nhà phát triển (“**chúng tôi**”) vận hành. Khi tải xuống, cài đặt hoặc sử dụng Ứng dụng, bạn đồng ý với các Điều khoản này.
 
 Nếu không đồng ý, vui lòng không cài đặt hoặc sử dụng Ứng dụng.
 

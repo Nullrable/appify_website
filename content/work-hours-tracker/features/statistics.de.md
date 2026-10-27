@@ -1,6 +1,6 @@
 ---
 title: "Statistikdiagramme: Sehen Sie, wo Ihre Zeit bleibt"
-description: "Work Hours Tracker bietet drei Diagrammtypen — Arbeitsstunden-Trends, Einkommenstrends und Job-Verteilung —, um Arbeitszeit und Einkommenszusammensetzung auf einen Blick zu überblicken."
+description: "Time Tracker Now bietet drei Diagrammtypen — Arbeitsstunden-Trends, Einkommenstrends und Job-Verteilung —, um Arbeitszeit und Einkommenszusammensetzung auf einen Blick zu überblicken."
 date: 2026-09-07
 lang: de
 slug: statistics
@@ -8,7 +8,7 @@ slug: statistics
 
 ## Statistikdiagramme: Sehen Sie, wo Ihre Zeit bleibt
 
-Ein einzelner Eintrag zeigt nur einen Tag. Um Fragen zu beantworten wie „wie viele Stunden habe ich diesen Monat gearbeitet", „wächst mein Einkommen" oder „welcher Job kostet die meiste Zeit", brauchen Sie Statistikdiagramme. Work Hours Tracker bietet drei Arten:
+Ein einzelner Eintrag zeigt nur einen Tag. Um Fragen zu beantworten wie „wie viele Stunden habe ich diesen Monat gearbeitet", „wächst mein Einkommen" oder „welcher Job kostet die meiste Zeit", brauchen Sie Statistikdiagramme. Time Tracker Now bietet drei Arten:
 
 ## Arbeitsstunden-Trend
 

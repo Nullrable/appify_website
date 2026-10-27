@@ -1,6 +1,6 @@
 ---
 title: "Calcolo automatico di paga e straordinari"
-description: "Dopo aver impostato la paga oraria, Work Hours Tracker calcola automaticamente i guadagni di ogni registrazione: maggiorazioni a scaglioni, retribuzione notturna e ore cumulate settimanalmente — nella valuta che preferisci."
+description: "Dopo aver impostato la paga oraria, Time Tracker Now calcola automaticamente i guadagni di ogni registrazione: maggiorazioni a scaglioni, retribuzione notturna e ore cumulate settimanalmente — nella valuta che preferisci."
 date: 2026-09-07
 lang: it
 slug: earnings

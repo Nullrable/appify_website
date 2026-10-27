@@ -1,6 +1,6 @@
 ---
 title: "Mit einem Tipp ein- und austempeln"
-description: "So funktioniert das Stempeln in Work Hours Tracker: Timer mit einem Tipp starten und stoppen, heutige Stunden und geschätztes Einkommen in Echtzeit sehen und beim Start von Überstunden erinnert werden — ganz ohne manuelle Eingabe."
+description: "So funktioniert das Stempeln in Time Tracker Now: Timer mit einem Tipp starten und stoppen, heutige Stunden und geschätztes Einkommen in Echtzeit sehen und beim Start von Überstunden erinnert werden — ganz ohne manuelle Eingabe."
 date: 2026-09-07
 lang: de
 slug: clock-in

@@ -1,6 +1,6 @@
 ---
 title: "Tiền tăng ca tính thế nào? Từ tính tay đến tự động"
-description: "Phương pháp chung để tính tiền tăng ca: xác nhận lương giờ, tìm ngưỡng bắt đầu tăng ca, áp dụng hệ số theo tầng. Giới thiệu cách Work Hours Tracker tự động hóa mọi thứ bằng cài đặt luật lao động và quy tắc tùy chỉnh."
+description: "Phương pháp chung để tính tiền tăng ca: xác nhận lương giờ, tìm ngưỡng bắt đầu tăng ca, áp dụng hệ số theo tầng. Giới thiệu cách Time Tracker Now tự động hóa mọi thứ bằng cài đặt luật lao động và quy tắc tùy chỉnh."
 date: 2026-09-07
 lang: vi
 slug: overtime-pay-guide
@@ -24,7 +24,7 @@ Mức lương tăng ca thường phân tầng: vừa vượt ngưỡng là một
 
 ## Để ứng dụng làm cả ba bước
 
-Work Hours Tracker tự động hóa tất cả:
+Time Tracker Now tự động hóa tất cả:
 
 - Chấm công tự động ghi lại từng phiên làm việc chính xác đến từng phút;
 - Tích hợp sẵn cài đặt luật lao động 13 quốc gia/vùng lãnh thổ — chọn nơi của bạn là ngưỡng và hệ số từng tầng tự động áp dụng;

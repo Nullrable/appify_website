@@ -1,6 +1,6 @@
 ---
 title: "一鍵打卡上下班"
-description: "Work Hours Tracker 一鍵打卡使用說明：一鍵開始與結束計時、今日工時與預計收入即時可見、進入加班時自動提醒，無需手動記錄。"
+description: "Time Tracker Now 一鍵打卡使用說明：一鍵開始與結束計時、今日工時與預計收入即時可見、進入加班時自動提醒，無需手動記錄。"
 date: 2026-09-07
 lang: zh-TW
 slug: clock-in

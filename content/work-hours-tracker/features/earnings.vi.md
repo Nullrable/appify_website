@@ -1,6 +1,6 @@
 ---
 title: "Tự động tính lương và tiền tăng ca"
-description: "Sau khi đặt lương theo giờ, Work Hours Tracker tự động tính thu nhập cho từng bản ghi: hệ số tăng ca theo tầng, lương ca đêm, giờ tích lũy theo tuần — với nhiều loại tiền tệ tùy chọn."
+description: "Sau khi đặt lương theo giờ, Time Tracker Now tự động tính thu nhập cho từng bản ghi: hệ số tăng ca theo tầng, lương ca đêm, giờ tích lũy theo tuần — với nhiều loại tiền tệ tùy chọn."
 date: 2026-09-07
 lang: vi
 slug: earnings

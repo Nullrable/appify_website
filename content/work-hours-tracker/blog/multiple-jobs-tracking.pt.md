@@ -1,6 +1,6 @@
 ---
 title: "Como registrar separadamente as horas de vários trabalhos"
-description: "Pontos-chave para registrar horas de bicos, trabalhos paralelos e turnos rotativos: registrar por trabalho, separar tarifas e regras, revisar a alocação de tempo. Apresentação do registro multi-trabalho e do gráfico de distribuição do Work Hours Tracker."
+description: "Pontos-chave para registrar horas de bicos, trabalhos paralelos e turnos rotativos: registrar por trabalho, separar tarifas e regras, revisar a alocação de tempo. Apresentação do registro multi-trabalho e do gráfico de distribuição do Time Tracker Now."
 date: 2026-09-07
 lang: pt
 slug: multiple-jobs-tracking
@@ -18,6 +18,6 @@ São muitos os que acumulam empregos: período integral de dia, meio período à
 
 ## Gerenciar vários trabalhos com o app
 
-O Work Hours Tracker permite adicionar vários trabalhos. Ao bater ponto, você escolhe o trabalho; registros e tarifa de cada um ficam independentes. O gráfico de distribuição nas estatísticas mostra a fatia de horas e ganhos de cada trabalho — qual consome mais tempo e qual paga melhor salta aos olhos.
+O Time Tracker Now permite adicionar vários trabalhos. Ao bater ponto, você escolhe o trabalho; registros e tarifa de cada um ficam independentes. O gráfico de distribuição nas estatísticas mostra a fatia de horas e ganhos de cada trabalho — qual consome mais tempo e qual paga melhor salta aos olhos.
 
 Para quem quer redirecionar o tempo ao que paga melhor, esse gráfico de proporções é bem mais confiável do que o feeling.

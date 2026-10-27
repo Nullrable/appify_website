@@ -1,6 +1,6 @@
 ---
 title: "Timbrare con un tocco"
-description: "Guida alla timbratura in Work Hours Tracker: avvia e ferma il timer con un tocco, controlla in tempo reale le ore e i guadagni stimati della giornata e ricevi un avviso all'inizio dello straordinario — senza inserimenti manuali."
+description: "Guida alla timbratura in Time Tracker Now: avvia e ferma il timer con un tocco, controlla in tempo reale le ore e i guadagni stimati della giornata e ricevi un avviso all'inizio dello straordinario — senza inserimenti manuali."
 date: 2026-09-07
 lang: it
 slug: clock-in

@@ -1,6 +1,6 @@
 ---
 title: "Sinkronisasi Hari Libur Resmi"
-description: "Work Hours Tracker menyinkronkan otomatis hari libur resmi untuk 15 negara/wilayah, ditampilkan jelas di kalender untuk merencanakan kerja dan memeriksa lembur hari libur."
+description: "Time Tracker Now menyinkronkan otomatis hari libur resmi untuk 15 negara/wilayah, ditampilkan jelas di kalender untuk merencanakan kerja dan memeriksa lembur hari libur."
 date: 2026-09-07
 lang: id
 slug: holidays
@@ -8,7 +8,7 @@ slug: holidays
 
 ## Sinkronisasi Hari Libur Resmi
 
-Susunan hari libur langsung memengaruhi perencanaan kerja dan perhitungan lembur: bagaimana menjadwalkan hari kerja ganti, dan apakah bekerja di hari libur dihitung sebagai lembur hari istirahat — semuanya bergantung pada apakah hari itu hari libur resmi. Work Hours Tracker dapat menyinkronkan otomatis hari libur resmi untuk 15 negara/wilayah berikut:
+Susunan hari libur langsung memengaruhi perencanaan kerja dan perhitungan lembur: bagaimana menjadwalkan hari kerja ganti, dan apakah bekerja di hari libur dihitung sebagai lembur hari istirahat — semuanya bergantung pada apakah hari itu hari libur resmi. Time Tracker Now dapat menyinkronkan otomatis hari libur resmi untuk 15 negara/wilayah berikut:
 
 Tiongkok, Hong Kong (Tiongkok), Taiwan (Tiongkok), Jepang, Korea Selatan, Singapura, Amerika Serikat, California (AS), Inggris, Jerman, Prancis, Australia, Brasil, India, Meksiko.
 

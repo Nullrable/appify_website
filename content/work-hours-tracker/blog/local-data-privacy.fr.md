@@ -1,6 +1,6 @@
 ---
 title: "Où stocker ses données d'heures de travail ? Stockage local et vie privée"
-description: "Les pointages contiennent des informations sensibles : habitudes de lieu de travail, niveau de revenu. Pourquoi le stockage local convient au suivi des heures, et l'approche de Work Hours Tracker : stockage local, verrou biométrique, usage hors ligne."
+description: "Les pointages contiennent des informations sensibles : habitudes de lieu de travail, niveau de revenu. Pourquoi le stockage local convient au suivi des heures, et l'approche de Time Tracker Now : stockage local, verrou biométrique, usage hors ligne."
 date: 2026-09-07
 lang: fr
 slug: local-data-privacy
@@ -18,9 +18,9 @@ Un pointage complet reconstitue bien plus que « à quelle heure vous pointez »
 
 Les outils qui exigent un compte et synchronisent les données vers des serveurs signifient que vos enregistrements existent au moins en un lieu hors de votre contrôle : serveur piraté, politique de confidentialité modifiée, service fermé — chacun peut affecter vos données. Avec un outil local, les données ne vivent que sur votre appareil, et tout fonctionne intégralement hors ligne.
 
-## L'approche de Work Hours Tracker
+## L'approche de Time Tracker Now
 
-Work Hours Tracker adopte une solution entièrement locale :
+Time Tracker Now adopte une solution entièrement locale :
 
 - **Toutes les données sont stockées localement sur l'appareil** — pas de compte, rien d'envoyé vers des serveurs ;
 - **Usage hors ligne complet** : pointer, consulter l'historique et les statistiques marche sans aucun réseau ;

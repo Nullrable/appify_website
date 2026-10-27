@@ -1,6 +1,6 @@
 ---
 title: "Biểu đồ thống kê: Xem thời gian đi đâu"
-description: "Work Hours Tracker cung cấp ba loại biểu đồ — xu hướng giờ làm, xu hướng thu nhập và phân bố công việc — giúp bạn tổng quan về giờ làm và cơ cấu thu nhập."
+description: "Time Tracker Now cung cấp ba loại biểu đồ — xu hướng giờ làm, xu hướng thu nhập và phân bố công việc — giúp bạn tổng quan về giờ làm và cơ cấu thu nhập."
 date: 2026-09-07
 lang: vi
 slug: statistics
@@ -8,7 +8,7 @@ slug: statistics
 
 ## Biểu đồ thống kê: Xem thời gian đi đâu
 
-Một bản ghi chỉ phản ánh một ngày. Để trả lời "tháng này mình làm bao nhiêu giờ", "thu nhập có đang tăng không", "công việc nào chiếm nhiều thời gian nhất", bạn cần biểu đồ thống kê. Work Hours Tracker cung cấp ba loại:
+Một bản ghi chỉ phản ánh một ngày. Để trả lời "tháng này mình làm bao nhiêu giờ", "thu nhập có đang tăng không", "công việc nào chiếm nhiều thời gian nhất", bạn cần biểu đồ thống kê. Time Tracker Now cung cấp ba loại:
 
 ## Xu hướng giờ làm
 

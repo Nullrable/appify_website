@@ -1,12 +1,12 @@
 ---
-title: "Termini di servizio - Work Hours Tracker"
-description: "Le regole per usare Work Hours Tracker. Riguardano l'abbonamento Pro e il rinnovo automatico, la tua responsabilità dei backup, la natura indicativa dei calcoli, l'uso accettabile e i servizi di terze parti."
+title: "Termini di servizio - Time Tracker Now"
+description: "Le regole per usare Time Tracker Now. Riguardano l'abbonamento Pro e il rinnovo automatico, la tua responsabilità dei backup, la natura indicativa dei calcoli, l'uso accettabile e i servizi di terze parti."
 date: 2026-09-07
 lang: it
 slug: index
 ---
 
-I presenti Termini di servizio (i "**Termini**") disciplinano l'accesso e l'uso di **Work Hours Tracker** (l'**App**), gestita dallo sviluppatore ("**noi**"). Scaricando, installando o usando l'App accetti questi Termini.
+I presenti Termini di servizio (i "**Termini**") disciplinano l'accesso e l'uso di **Time Tracker Now** (l'**App**), gestita dallo sviluppatore ("**noi**"). Scaricando, installando o usando l'App accetti questi Termini.
 
 Se non accetti, non installare né usare l'App.
 

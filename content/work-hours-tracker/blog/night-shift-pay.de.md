@@ -1,6 +1,6 @@
 ---
 title: "Wie wird Nachtschichtvergütung berechnet? Erfassung und Prüfung"
-description: "Die üblichen Bestandteile der Nachtschichtvergütung: Festlegung des Nachtzeitraums, Nachtzuschlag oder -faktor und das Zusammenspiel mit Überstunden. Und wie Work Hours Tracker Nachtstunden erfasst und Nachtetragen separat ausweist."
+description: "Die üblichen Bestandteile der Nachtschichtvergütung: Festlegung des Nachtzeitraums, Nachtzuschlag oder -faktor und das Zusammenspiel mit Überstunden. Und wie Time Tracker Now Nachtstunden erfasst und Nachtetragen separat ausweist."
 date: 2026-09-07
 lang: de
 slug: night-shift-pay
@@ -26,4 +26,4 @@ Manuelle Nachtaufzeichnungen gehen leicht schief: Schichten über Mitternacht, k
 
 ## Nachtschichten mit der App erfassen
 
-Work Hours Tracker unterstützt die Nachterfassung: Das Stempeln hält exakte Dauern automatisch fest, ohne Tages- und Nachtstunden von Hand zu trennen; die App summiert Nachtstunden und Nachtverdienst separat und zerlegt in Kombination mit gestaffelten Überstundenfaktoren komplexe, mitternachtsüberschreitende oder überlange Schichten automatisch. In den Statistikdiagrammen verfolgen Sie Nachtstunden und Nachtverdienst getrennt — direkt abgleichbar bei der Lohnprüfung.
+Time Tracker Now unterstützt die Nachterfassung: Das Stempeln hält exakte Dauern automatisch fest, ohne Tages- und Nachtstunden von Hand zu trennen; die App summiert Nachtstunden und Nachtverdienst separat und zerlegt in Kombination mit gestaffelten Überstundenfaktoren komplexe, mitternachtsüberschreitende oder überlange Schichten automatisch. In den Statistikdiagrammen verfolgen Sie Nachtstunden und Nachtverdienst getrennt — direkt abgleichbar bei der Lohnprüfung.

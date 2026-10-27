@@ -1,6 +1,6 @@
 ---
 title: "13 Arbeitsgesetz-Voreinstellungen und eigene Überstundenregeln"
-description: "Work Hours Tracker liefert Überstunden-Voreinstellungen für China, USA (Bundesrecht und Kalifornien), Japan, Südkorea, Deutschland, Frankreich, Großbritannien, Australien, Brasilien, Indien, Mexiko und Singapur — plus vollständig eigene Regeln."
+description: "Time Tracker Now liefert Überstunden-Voreinstellungen für China, USA (Bundesrecht und Kalifornien), Japan, Südkorea, Deutschland, Frankreich, Großbritannien, Australien, Brasilien, Indien, Mexiko und Singapur — plus vollständig eigene Regeln."
 date: 2026-09-07
 lang: de
 slug: overtime-rules
@@ -8,7 +8,7 @@ slug: overtime-rules
 
 ## 13 Arbeitsgesetz-Voreinstellungen
 
-Überstundenregeln unterscheiden sich je nach Land und Region erheblich: die tägliche Schwelle, ab der Überstunden zählen, die Faktoren und die Behandlung von Ruhe- und Feiertagen variieren überall. Work Hours Tracker liefert Voreinstellungen für diese 13 Länder/Regionen:
+Überstundenregeln unterscheiden sich je nach Land und Region erheblich: die tägliche Schwelle, ab der Überstunden zählen, die Faktoren und die Behandlung von Ruhe- und Feiertagen variieren überall. Time Tracker Now liefert Voreinstellungen für diese 13 Länder/Regionen:
 
 - China
 - USA (Bundesrecht)

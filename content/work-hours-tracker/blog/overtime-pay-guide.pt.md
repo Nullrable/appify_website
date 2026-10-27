@@ -1,6 +1,6 @@
 ---
 title: "Como calcular horas extras? Do cálculo manual ao automático"
-description: "O método geral para calcular horas extras: confirmar seu valor por hora, achar o limite de início e aplicar multiplicadores por faixa. Veja como o Work Hours Tracker automatiza tudo com predefinições de lei trabalhista e regras personalizadas."
+description: "O método geral para calcular horas extras: confirmar seu valor por hora, achar o limite de início e aplicar multiplicadores por faixa. Veja como o Time Tracker Now automatiza tudo com predefinições de lei trabalhista e regras personalizadas."
 date: 2026-09-07
 lang: pt
 slug: overtime-pay-guide
@@ -24,7 +24,7 @@ As tarifas costumam ser em degraus: logo acima do limite, um multiplicador; com 
 
 ## O app dá conta dos três passos
 
-O Work Hours Tracker automatiza tudo:
+O Time Tracker Now automatiza tudo:
 
 - O registro de ponto anota cada jornada com precisão de minutos;
 - Predefinições de lei trabalhista para 13 países/regiões — escolha a sua e limites e faixas aplicam-se sozinhos;

@@ -1,6 +1,6 @@
 ---
 title: "Export and Back Up Your Work Hours Data"
-description: "Work Hours Tracker exports records as CSV, PDF, or Excel (with overtime breakdown), and provides full backup, restore, and sharing. Exporting is a Pro feature."
+description: "Time Tracker Now exports records as CSV, PDF, or Excel (with overtime breakdown), and provides full backup, restore, and sharing. Exporting is a Pro feature."
 date: 2026-09-07
 lang: en
 slug: export-backup

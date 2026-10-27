@@ -1,6 +1,6 @@
 ---
 title: "Di Mana Data Jam Kerja Sebaiknya Disimpan? Penyimpanan Lokal dan Privasi"
-description: "Catatan absensi memuat info sensitif seperti pola lokasi kerja dan tingkat penghasilan. Mengapa penyimpanan lokal cocok untuk pencatatan jam kerja, dan pendekatan Work Hours Tracker: penyimpanan lokal, kunci aplikasi biometrik, dan penggunaan offline."
+description: "Catatan absensi memuat info sensitif seperti pola lokasi kerja dan tingkat penghasilan. Mengapa penyimpanan lokal cocok untuk pencatatan jam kerja, dan pendekatan Time Tracker Now: penyimpanan lokal, kunci aplikasi biometrik, dan penggunaan offline."
 date: 2026-09-07
 lang: id
 slug: local-data-privacy
@@ -18,9 +18,9 @@ Satu catatan absensi lengkap bisa mengungkap jauh lebih dari "jam masuk dan jam 
 
 Alat yang mewajibkan registrasi akun dan menyinkronkan data ke server berarti catatan Anda setidaknya tersedia di luar kendali Anda: server diretas, perusahaan mengubah kebijakan privasi, atau layanan berhenti — semuanya bisa memengaruhi data Anda. Sebaliknya, alat penyimpanan lokal menyimpan data hanya di perangkat Anda dan tetap berfungsi penuh tanpa internet.
 
-## Cara Work Hours Tracker Melakukannya
+## Cara Time Tracker Now Melakukannya
 
-Work Hours Tracker memakai pendekatan lokal sepenuhnya:
+Time Tracker Now memakai pendekatan lokal sepenuhnya:
 
 - **Semua data disimpan secara lokal di perangkat** — tanpa akun, tanpa unggahan ke server;
 - **Mendukung penggunaan offline sepenuhnya**: absen, melihat catatan, dan memeriksa statistik tetap bisa tanpa jaringan;

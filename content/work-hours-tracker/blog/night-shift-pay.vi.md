@@ -1,6 +1,6 @@
 ---
 title: "Lương ca đêm tính thế nào? Ghi chép và kiểm toán"
-description: "Các thành phần thường thấy của lương ca đêm: xác định khoảng thời gian đêm, phụ cấp hoặc hệ số ca đêm, quan hệ với tiền tăng ca. Cách dùng Work Hours Tracker ghi giờ ca đêm và thống kê riêng thu nhập ca đêm."
+description: "Các thành phần thường thấy của lương ca đêm: xác định khoảng thời gian đêm, phụ cấp hoặc hệ số ca đêm, quan hệ với tiền tăng ca. Cách dùng Time Tracker Now ghi giờ ca đêm và thống kê riêng thu nhập ca đêm."
 date: 2026-09-07
 lang: vi
 slug: night-shift-pay
@@ -26,4 +26,4 @@ Ghi ca đêm bằng tay rất dễ sai: ca vượt nửa đêm, giờ kéo dài 
 
 ## Ghi ca đêm bằng ứng dụng
 
-Work Hours Tracker hỗ trợ ghi ca đêm: chấm công tự động ghi chính xác thời gian, không cần tự tay tách ngày và đêm; ứng dụng thống kê riêng giờ ca đêm và thu nhập ca đêm, kết hợp hệ số tăng ca theo tầng, những ca phức tạp vượt nửa đêm hay kéo dài cũng được tách và tính tự động. Trong biểu đồ thống kê có thể xem riêng xu hướng giờ và thu nhập liên quan ca đêm để đối chiếu trực tiếp khi kiểm tra lương.
+Time Tracker Now hỗ trợ ghi ca đêm: chấm công tự động ghi chính xác thời gian, không cần tự tay tách ngày và đêm; ứng dụng thống kê riêng giờ ca đêm và thu nhập ca đêm, kết hợp hệ số tăng ca theo tầng, những ca phức tạp vượt nửa đêm hay kéo dài cũng được tách và tính tự động. Trong biểu đồ thống kê có thể xem riêng xu hướng giờ và thu nhập liên quan ca đêm để đối chiếu trực tiếp khi kiểm tra lương.

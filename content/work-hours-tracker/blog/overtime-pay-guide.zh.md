@@ -1,6 +1,6 @@
 ---
 title: "加班费怎么算？从手算到自动计算"
-description: "加班费计算的一般方法：确认时薪、找出加班起算阈值、套用分层倍率。介绍如何用 Work Hours Tracker 的劳动法预设与自定义规则自动完成这些计算。"
+description: "加班费计算的一般方法：确认时薪、找出加班起算阈值、套用分层倍率。介绍如何用 Time Tracker Now 的劳动法预设与自定义规则自动完成这些计算。"
 date: 2026-09-07
 lang: zh
 slug: overtime-pay-guide
@@ -24,7 +24,7 @@ slug: overtime-pay-guide
 
 ## 用应用自动完成这三步
 
-Work Hours Tracker 把这三步全部自动化：
+Time Tracker Now 把这三步全部自动化：
 
 - 打卡自动记录每段工作时长的精确到分钟的数据；
 - 内置 13 个国家/地区的劳动法预设，选择所在地区即自动套用加班阈值与分层倍率；

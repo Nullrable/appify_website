@@ -1,12 +1,12 @@
 ---
-title: Informazioni su Work Hours Tracker - Timbratura, straordinari e paga
-description: Scopri come Work Hours Tracker trasforma una timbratura con un tocco in fogli ore precisi, calcolo automatico di straordinari e turno notturno, registri per più lavori e report esportabili, il tutto salvato sul tuo dispositivo, in 14 lingue.
+title: Informazioni su Time Tracker Now - Timbratura, straordinari e paga
+description: Scopri come Time Tracker Now trasforma una timbratura con un tocco in fogli ore precisi, calcolo automatico di straordinari e turno notturno, registri per più lavori e report esportabili, il tutto salvato sul tuo dispositivo, in 14 lingue.
 date: 2026-09-10
 lang: it
 slug: index
 ---
 
-Work Hours Tracker è un'app di rilevazione presenze per iOS pensata per chi lavora a ore, per i liberi professionisti, per chi organizza turni e per chiunque abbia bisogno di un registro preciso delle ore lavorate e della paga maturata. Sostituisce il quaderno di carta in fondo al cassetto: un tocco quando arrivi, un tocco quando te ne vai, e il resto succede da solo. I minuti si sommano, le pause vengono sottratte, gli straordinari vengono applicati, e il totale corrente di quanto ti spetta resta sempre aggiornato.
+Time Tracker Now è un'app di rilevazione presenze per iOS pensata per chi lavora a ore, per i liberi professionisti, per chi organizza turni e per chiunque abbia bisogno di un registro preciso delle ore lavorate e della paga maturata. Sostituisce il quaderno di carta in fondo al cassetto: un tocco quando arrivi, un tocco quando te ne vai, e il resto succede da solo. I minuti si sommano, le pause vengono sottratte, gli straordinari vengono applicati, e il totale corrente di quanto ti spetta resta sempre aggiornato.
 
 ## Timbratura di ingresso e uscita con un tocco
 
@@ -16,7 +16,7 @@ Puoi far girare più timer in parallelo. Una barista con un turno infrasettimana
 
 ## 13 preset di leggi sul lavoro - e regole completamente personalizzate
 
-Straordinari, indennità di turno notturno e limiti settimanali non sono uguali in ogni paese. Work Hours Tracker include preset per Cina, Stati Uniti (federale e California), Giappone, Corea del Sud, Germania, Francia, Regno Unito, Australia, Brasile, India, Messico e Singapore. Scegli la regione in cui lavori, e la soglia giornaliera, i moltiplicatori a scaglioni e la finestra notturna si applicano in automatico.
+Straordinari, indennità di turno notturno e limiti settimanali non sono uguali in ogni paese. Time Tracker Now include preset per Cina, Stati Uniti (federale e California), Giappone, Corea del Sud, Germania, Francia, Regno Unito, Australia, Brasile, India, Messico e Singapore. Scegli la regione in cui lavori, e la soglia giornaliera, i moltiplicatori a scaglioni e la finestra notturna si applicano in automatico.
 
 Se il tuo contratto o il tuo contratto collettivo prevede regole proprie, passa alla modalità Personalizzata: definisci con precisione quando iniziano gli straordinari, quanti scaglioni ci sono, il moltiplicatore di ogni scaglione, quando scatta l'indennità notturna e il tetto settimanale oltre il quale si applica una tariffa maggiore. Lo stesso motore di calcolo che gestisce i preset gestisce le tue regole personalizzate, quindi i numeri restano coerenti in qualsiasi modalità.
 
@@ -46,6 +46,6 @@ Tutti i tuoi dati restano sul dispositivo. Né la timbratura, né i calcoli, né
 
 Se un giorno disinstalli l'app, anche i suoi dati locali, compresi i record non ancora sincronizzati, vengono rimossi con lei.
 
-## Versione gratuita e Work Hours Tracker Pro
+## Versione gratuita e Time Tracker Now Pro
 
 La timbratura, la consultazione dei record, i grafici statistici, la sincronizzazione delle festività e l'esportazione CSV/PDF restano gratuiti per sempre, senza watermark e senza limiti giornalieri. Pro aggiunge un numero illimitato di lavori, gli inserimenti manuali, l'esportazione Excel con il dettaglio degli straordinari e la personalizzazione avanzata degli straordinari. Pro viene venduto come acquisto una tantum o abbonamento annuale tramite l'App Store, e una volta acquistato resta tuo su tutti i dispositivi e in tutti gli aggiornamenti futuri.

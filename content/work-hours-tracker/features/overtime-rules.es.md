@@ -1,6 +1,6 @@
 ---
 title: "13 ajustes de ley laboral y reglas de horas extra personalizadas"
-description: "Work Hours Tracker incluye ajustes de horas extra para China, EE. UU. (federal y California), Japón, Corea del Sur, Alemania, Francia, Reino Unido, Australia, Brasil, India, México y Singapur — además de reglas totalmente personalizables."
+description: "Time Tracker Now incluye ajustes de horas extra para China, EE. UU. (federal y California), Japón, Corea del Sur, Alemania, Francia, Reino Unido, Australia, Brasil, India, México y Singapur — además de reglas totalmente personalizables."
 date: 2026-09-07
 lang: es
 slug: overtime-rules
@@ -8,7 +8,7 @@ slug: overtime-rules
 
 ## 13 ajustes de ley laboral
 
-Las reglas de horas extra varían mucho entre países y regiones: el umbral diario donde empiezan, los multiplicadores y el tratamiento de descansos y festivos son distintos en cada lugar. Work Hours Tracker incluye ajustes para estos 13 países/regiones:
+Las reglas de horas extra varían mucho entre países y regiones: el umbral diario donde empiezan, los multiplicadores y el tratamiento de descansos y festivos son distintos en cada lugar. Time Tracker Now incluye ajustes para estos 13 países/regiones:
 
 - China
 - Estados Unidos (federal)

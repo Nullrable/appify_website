@@ -1,6 +1,6 @@
 ---
 title: "Dữ liệu giờ làm nên lưu ở đâu? Về lưu trữ cục bộ và riêng tư"
-description: "Bản ghi giờ làm chứa thông tin nhạy cảm như quy luật địa điểm làm việc, mức thu nhập. Vì sao lưu trữ cục bộ phù hợp với ghi giờ làm, và cách Work Hours Tracker làm: lưu cục bộ, khóa ứng dụng sinh trắc học, dùng ngoại tuyến."
+description: "Bản ghi giờ làm chứa thông tin nhạy cảm như quy luật địa điểm làm việc, mức thu nhập. Vì sao lưu trữ cục bộ phù hợp với ghi giờ làm, và cách Time Tracker Now làm: lưu cục bộ, khóa ứng dụng sinh trắc học, dùng ngoại tuyến."
 date: 2026-09-07
 lang: vi
 slug: local-data-privacy
@@ -18,9 +18,9 @@ Một bản ghi giờ làm hoàn chỉnh có thể khôi phục được nhiều
 
 Công cụ bắt đăng ký tài khoản và đồng bộ dữ liệu lên máy chủ nghĩa là bản ghi của bạn ít nhất tồn tại ở nơi ngoài tầm kiểm soát: máy chủ bị tấn công, công ty đổi chính sách riêng tư, dịch vụ ngừng hoạt động — điều nào cũng có thể ảnh hưởng đến dữ liệu của bạn. Trong khi đó, công cụ lưu trữ cục bộ giữ dữ liệu chỉ trên thiết bị của bạn, dùng đầy đủ ngay cả khi không có mạng.
 
-## Cách Work Hours Tracker làm
+## Cách Time Tracker Now làm
 
-Work Hours Tracker chọn phương án cục bộ triệt để:
+Time Tracker Now chọn phương án cục bộ triệt để:
 
 - **Toàn bộ dữ liệu lưu cục bộ trên thiết bị**, không cần đăng ký tài khoản, không tải lên máy chủ;
 - **Hỗ trợ hoàn toàn ngoại tuyến**: không có mạng vẫn chấm công, xem bản ghi và thống kê;

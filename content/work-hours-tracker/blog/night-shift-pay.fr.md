@@ -1,6 +1,6 @@
 ---
 title: "Comment est calculée la paie de nuit ? Suivi et vérification"
-description: "Les composantes courantes de la paie de nuit : définition de la période nocturne, indemnité ou majoration de nuit, et articulation avec les heures supplémentaires. Et comment Work Hours Tracker enregistre les heures de nuit et totalise les revenus nocturnes à part."
+description: "Les composantes courantes de la paie de nuit : définition de la période nocturne, indemnité ou majoration de nuit, et articulation avec les heures supplémentaires. Et comment Time Tracker Now enregistre les heures de nuit et totalise les revenus nocturnes à part."
 date: 2026-09-07
 lang: fr
 slug: night-shift-pay
@@ -26,4 +26,4 @@ Le suivi manuel des nuits se trompe facilement : shifts passant minuit, prolonga
 
 ## Enregistrer les nuits avec l'app
 
-Work Hours Tracker gère l'enregistrement de nuit : le pointage capture les durées exactes automatiquement, sans trier jour et nuit à la main ; l'app totalise à part heures et revenus nocturnes et, combinée aux coefficients par paliers, fractionne et calcule automatiquement les shifts complexes qui traversent minuit ou s'étirent. Dans les graphiques, suivez séparément les tendances des heures et revenus de nuit, prêts à comparer lors du contrôle de paie.
+Time Tracker Now gère l'enregistrement de nuit : le pointage capture les durées exactes automatiquement, sans trier jour et nuit à la main ; l'app totalise à part heures et revenus nocturnes et, combinée aux coefficients par paliers, fractionne et calcule automatiquement les shifts complexes qui traversent minuit ou s'étirent. Dans les graphiques, suivez séparément les tendances des heures et revenus de nuit, prêts à comparer lors du contrôle de paie.

@@ -1,6 +1,6 @@
 ---
 title: "근무 시간 데이터 내보내기와 백업"
-description: "Work Hours Tracker는 기록을 CSV, PDF, Excel(야근 내역 포함)로 내보낼 수 있고 완전한 백업·복원·공유 기능을 제공합니다. 내보내기는 Pro 기능입니다."
+description: "Time Tracker Now는 기록을 CSV, PDF, Excel(야근 내역 포함)로 내보낼 수 있고 완전한 백업·복원·공유 기능을 제공합니다. 내보내기는 Pro 기능입니다."
 date: 2026-09-07
 lang: ko
 slug: export-backup

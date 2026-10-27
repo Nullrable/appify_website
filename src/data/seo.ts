@@ -3,7 +3,7 @@
 const seoKeywords: Record<string, string[]> = {
   en: [
     // Short-tail keywords - App-specific
-    "work hours tracker app",
+    "Time Tracker Now app",
     "image to PDF converter",
     "expense tracker app",
     "time tracking app",

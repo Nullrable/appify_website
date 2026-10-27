@@ -1,6 +1,6 @@
 ---
 title: "Synchronisation des jours fériés"
-description: "Work Hours Tracker synchronise automatiquement les jours fériés de 15 pays/régions, clairement indiqués dans votre calendrier pour planifier le travail et vérifier les heures supplémentaires."
+description: "Time Tracker Now synchronise automatiquement les jours fériés de 15 pays/régions, clairement indiqués dans votre calendrier pour planifier le travail et vérifier les heures supplémentaires."
 date: 2026-09-07
 lang: fr
 slug: holidays
@@ -8,7 +8,7 @@ slug: holidays
 
 ## Synchronisation des jours fériés
 
-Le calendrier des jours fériés influence directement la planification du travail et le calcul des heures supplémentaires : comment organiser les rattrapages, et si travailler un jour férié compte comme heure sup. de jour de repos — tout dépend de savoir si le jour est férié. Work Hours Tracker peut synchroniser automatiquement les jours fériés de ces 15 pays/régions :
+Le calendrier des jours fériés influence directement la planification du travail et le calcul des heures supplémentaires : comment organiser les rattrapages, et si travailler un jour férié compte comme heure sup. de jour de repos — tout dépend de savoir si le jour est férié. Time Tracker Now peut synchroniser automatiquement les jours fériés de ces 15 pays/régions :
 
 Chine, Hong Kong (Chine), Taïwan (Chine), Japon, Corée du Sud, Singapour, États-Unis, Californie (États-Unis), Royaume-Uni, Allemagne, France, Australie, Brésil, Inde, Mexique.
 

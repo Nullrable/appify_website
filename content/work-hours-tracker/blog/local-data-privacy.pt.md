@@ -1,6 +1,6 @@
 ---
 title: "Onde guardar os dados de horas de trabalho? Armazenamento local e privacidade"
-description: "Os registros de horas contêm informações sensíveis como padrões de localização de trabalho e nível de renda. Por que o armazenamento local combina com controle de horas, e a abordagem do Work Hours Tracker: armazenamento local, bloqueio biométrico e uso offline."
+description: "Os registros de horas contêm informações sensíveis como padrões de localização de trabalho e nível de renda. Por que o armazenamento local combina com controle de horas, e a abordagem do Time Tracker Now: armazenamento local, bloqueio biométrico e uso offline."
 date: 2026-09-07
 lang: pt
 slug: local-data-privacy
@@ -18,9 +18,9 @@ Um registro completo revela muito mais do que "a que horas você bate o ponto": 
 
 Ferramentas que exigem conta e sincronizam dados com servidores significam que seus registros existem, ao menos em parte, fora do seu controle: um servidor invadido, uma mudança na política de privacidade da empresa ou o fim do serviço podem afetar seus dados. Já com uma ferramenta local, os dados vivem só no seu aparelho, e tudo funciona integralmente offline.
 
-## A abordagem do Work Hours Tracker
+## A abordagem do Time Tracker Now
 
-O Work Hours Tracker adota uma solução totalmente local:
+O Time Tracker Now adota uma solução totalmente local:
 
 - **Todos os dados ficam armazenados localmente no aparelho** — sem conta e sem upload para servidores;
 - **Uso offline completo**: bater ponto, ver registros e conferir estatísticas funciona sem rede nenhuma;

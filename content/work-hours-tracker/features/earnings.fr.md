@@ -1,6 +1,6 @@
 ---
 title: "Calcul automatique du salaire et des heures supplémentaires"
-description: "Après avoir défini votre taux horaire, Work Hours Tracker calcule automatiquement les revenus de chaque enregistrement : coefficients d'heures sup. par paliers, majoration de nuit et heures cumulées hebdomadaires — dans la devise de votre choix."
+description: "Après avoir défini votre taux horaire, Time Tracker Now calcule automatiquement les revenus de chaque enregistrement : coefficients d'heures sup. par paliers, majoration de nuit et heures cumulées hebdomadaires — dans la devise de votre choix."
 date: 2026-09-07
 lang: fr
 slug: earnings

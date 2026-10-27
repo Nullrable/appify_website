@@ -1,6 +1,6 @@
 ---
 title: "Wo sollten Arbeitszeitdaten liegen? Lokale Speicherung und Privatsphäre"
-description: "Zeitnachweise enthalten sensible Details wie Ortsmuster der Arbeit und Einkommensniveau. Warum lokale Speicherung zur Zeiterfassung passt und wie Work Hours Tracker es macht: lokale Speicherung, biometrischer App-Schutz, Offline-Nutzung."
+description: "Zeitnachweise enthalten sensible Details wie Ortsmuster der Arbeit und Einkommensniveau. Warum lokale Speicherung zur Zeiterfassung passt und wie Time Tracker Now es macht: lokale Speicherung, biometrischer App-Schutz, Offline-Nutzung."
 date: 2026-09-07
 lang: de
 slug: local-data-privacy
@@ -18,9 +18,9 @@ Ein vollständiger Zeitnachweis rekonstruiert weit mehr als „wann Sie stempeln
 
 Tools mit Pflichtkonto und Serversynchronisation bedeuten: Ihre Aufzeichnungen existieren zumindest teilweise außerhalb Ihrer Kontrolle — ein Serverhack, eine geänderte Datenschutzerklärung des Anbieters oder das Ende des Dienstes können Ihre Daten betreffen. Bei lokal speichernden Tools leben die Daten nur auf Ihrem Gerät, und alles funktioniert vollständig offline.
 
-## So macht es Work Hours Tracker
+## So macht es Time Tracker Now
 
-Work Hours Tracker verfolgt konsequent den lokalen Weg:
+Time Tracker Now verfolgt konsequent den lokalen Weg:
 
 - **Sämtliche Daten liegen lokal auf dem Gerät** — kein Konto, kein Upload auf Server;
 - **Vollständig offline nutzbar**: Stempeln, Einträge ansehen und Statistiken prüfen geht auch ohne Netz;

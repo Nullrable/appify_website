@@ -1,12 +1,12 @@
 ---
-title: "服务条款 - Work Hours Tracker"
-description: "使用 Work Hours Tracker 的规则。涵盖 Pro 订阅与自动续费、数据备份责任、计算结果免责声明、可接受使用与第三方服务。"
+title: "服务条款 - Time Tracker Now"
+description: "使用 Time Tracker Now 的规则。涵盖 Pro 订阅与自动续费、数据备份责任、计算结果免责声明、可接受使用与第三方服务。"
 date: 2026-09-07
 lang: zh
 slug: index
 ---
 
-本服务条款（"**本条款**"）约束您对 **Work Hours Tracker**（"**本应用**"）的访问和使用，本应用由开发者（"**我们**"）运营。下载、安装或使用本应用，即表示您同意本条款。
+本服务条款（"**本条款**"）约束您对 **Time Tracker Now**（"**本应用**"）的访问和使用，本应用由开发者（"**我们**"）运营。下载、安装或使用本应用，即表示您同意本条款。
 
 如不同意，请勿安装或使用本应用。
 

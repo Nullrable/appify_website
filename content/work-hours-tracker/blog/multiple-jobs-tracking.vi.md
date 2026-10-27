@@ -1,6 +1,6 @@
 ---
 title: "Nhiều công việc ghi giờ làm riêng thế nào"
-description: "Điểm then chốt khi ghi giờ cho công việc bán thời gian, nghề tay trái, ca kíp: ghi riêng theo từng việc, tách lương giờ và quy tắc, xem lại phân bổ thời gian định kỳ. Giới thiệu ghi nhiều công việc và biểu đồ phân bố công việc của Work Hours Tracker."
+description: "Điểm then chốt khi ghi giờ cho công việc bán thời gian, nghề tay trái, ca kíp: ghi riêng theo từng việc, tách lương giờ và quy tắc, xem lại phân bổ thời gian định kỳ. Giới thiệu ghi nhiều công việc và biểu đồ phân bố công việc của Time Tracker Now."
 date: 2026-09-07
 lang: vi
 slug: multiple-jobs-tracking
@@ -18,6 +18,6 @@ Làm vài việc cùng lúc không phải hiếm: ngày làm chính thức, tố
 
 ## Quản lý nhiều công việc bằng ứng dụng
 
-Work Hours Tracker hỗ trợ thêm nhiều công việc; khi chấm công chọn việc tương ứng, bản ghi và lương giờ của mỗi việc độc lập không can dự nhau. Biểu đồ phân bố công việc trong thống kê hiển thị tỷ lệ giờ và thu nhập của từng việc — việc nào ngốn nhiều thời gian nhất, việc nào lương giờ cao hơn, nhìn phát là biết.
+Time Tracker Now hỗ trợ thêm nhiều công việc; khi chấm công chọn việc tương ứng, bản ghi và lương giờ của mỗi việc độc lập không can dự nhau. Biểu đồ phân bố công việc trong thống kê hiển thị tỷ lệ giờ và thu nhập của từng việc — việc nào ngốn nhiều thời gian nhất, việc nào lương giờ cao hơn, nhìn phát là biết.
 
 Với ai muốn phân bổ lại thời gian cho việc có lợi hơn, biểu đồ tỷ lệ này đáng tin hơn cảm tính rất nhiều.

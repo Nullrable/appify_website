@@ -1,6 +1,6 @@
 ---
 title: "13 preset di leggi sul lavoro e regole personalizzate"
-description: "Work Hours Tracker include preset di straordinari per Cina, USA (federale e California), Giappone, Corea del Sud, Germania, Francia, Regno Unito, Australia, Brasile, India, Messico e Singapore — più regole totalmente personalizzabili."
+description: "Time Tracker Now include preset di straordinari per Cina, USA (federale e California), Giappone, Corea del Sud, Germania, Francia, Regno Unito, Australia, Brasile, India, Messico e Singapore — più regole totalmente personalizzabili."
 date: 2026-09-07
 lang: it
 slug: overtime-rules
@@ -8,7 +8,7 @@ slug: overtime-rules
 
 ## 13 preset di leggi sul lavoro
 
-Le regole sugli straordinari variano molto tra paesi e regioni: la soglia giornaliera di inizio, i coefficienti e il trattamento di riposi e festività cambiano ovunque. Work Hours Tracker include preset per questi 13 paesi/regioni:
+Le regole sugli straordinari variano molto tra paesi e regioni: la soglia giornaliera di inizio, i coefficienti e il trattamento di riposi e festività cambiano ovunque. Time Tracker Now include preset per questi 13 paesi/regioni:
 
 - Cina
 - Stati Uniti (federale)

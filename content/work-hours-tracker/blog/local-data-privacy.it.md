@@ -1,6 +1,6 @@
 ---
 title: "Dove dovrebbero stare i dati delle ore di lavoro? Archiviazione locale e privacy"
-description: "I registri delle ore contengono informazioni sensibili come le abitudini di luogo di lavoro e il livello di reddito. Perché l'archiviazione locale si addice al rilevamento delle ore, e l'approccio di Work Hours Tracker: archiviazione locale, blocco biometrico e uso offline."
+description: "I registri delle ore contengono informazioni sensibili come le abitudini di luogo di lavoro e il livello di reddito. Perché l'archiviazione locale si addice al rilevamento delle ore, e l'approccio di Time Tracker Now: archiviazione locale, blocco biometrico e uso offline."
 date: 2026-09-07
 lang: it
 slug: local-data-privacy
@@ -18,9 +18,9 @@ Un registro completo ricostruisce ben più di "a che ora entri e esci": rivela i
 
 Gli strumenti che richiedono un account e sincronizzano i dati con i server implicano che i tuoi registri esistano, almeno in parte, fuori dal tuo controllo: un server violato, un cambio di politica sulla privacy dell'azienda, la chiusura del servizio — ognuna può ripercuotersi sui tuoi dati. Con uno strumento locale, i dati vivono solo sul tuo dispositivo e tutto funziona pienamente offline.
 
-## L'approccio di Work Hours Tracker
+## L'approccio di Time Tracker Now
 
-Work Hours Tracker adotta una soluzione radicalmente locale:
+Time Tracker Now adotta una soluzione radicalmente locale:
 
 - **Tutti i dati sono archiviati localmente sul dispositivo** — nessun account, nessun upload su server;
 - **Uso offline completo**: timbrare, consultare i registri e controllare le statistiche funziona senza alcuna rete;

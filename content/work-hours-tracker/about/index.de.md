@@ -1,12 +1,12 @@
 ---
-title: Über Work Hours Tracker - Zeiterfassung, Überstunden und Verdienst
-description: Erfahren Sie, wie Work Hours Tracker aus einem einzigen Tipp präzise Stundenzettel, automatische Überstunden- und Nachtschichtberechnung, mehrere Jobs in getrennten Büchern und exportierbare Berichte macht - alles auf Ihrem Gerät gespeichert, in 14 Sprachen.
+title: Über Time Tracker Now - Zeiterfassung, Überstunden und Verdienst
+description: Erfahren Sie, wie Time Tracker Now aus einem einzigen Tipp präzise Stundenzettel, automatische Überstunden- und Nachtschichtberechnung, mehrere Jobs in getrennten Büchern und exportierbare Berichte macht - alles auf Ihrem Gerät gespeichert, in 14 Sprachen.
 date: 2026-09-10
 lang: de
 slug: index
 ---
 
-Work Hours Tracker ist eine iOS-Zeiterfassungs-App für Schichtarbeiter, Freiberufler, Dienstplan-Planer und alle, die eine präzise Übersicht über ihre geleisteten Stunden und ihren tatsächlichen Verdienst brauchen. Sie ersetzt das vergilbte Notizbuch in der Schublade: einmal tippen, wenn Sie anfangen, einmal tippen, wenn Sie aufhören, der Rest passiert automatisch - Minuten werden addiert, Pausen abgezogen, Überstunden angewendet, und der laufende Saldo Ihres Verdiensts bleibt immer aktuell.
+Time Tracker Now ist eine iOS-Zeiterfassungs-App für Schichtarbeiter, Freiberufler, Dienstplan-Planer und alle, die eine präzise Übersicht über ihre geleisteten Stunden und ihren tatsächlichen Verdienst brauchen. Sie ersetzt das vergilbte Notizbuch in der Schublade: einmal tippen, wenn Sie anfangen, einmal tippen, wenn Sie aufhören, der Rest passiert automatisch - Minuten werden addiert, Pausen abgezogen, Überstunden angewendet, und der laufende Saldo Ihres Verdiensts bleibt immer aktuell.
 
 ## Stempeln mit einem Tipp
 
@@ -16,7 +16,7 @@ Sie können mehrere Timer parallel laufen lassen. Eine Barista mit einer Wochent
 
 ## 13 Arbeitsrechts-Voreinstellungen - und vollständig eigene Regeln
 
-Überstunden, Nachtschichtzuschläge und Wochenhöchstarbeitszeiten sind von Land zu Land verschieden. Work Hours Tracker liefert Voreinstellungen für China, die USA (Bundesrecht und Kalifornien), Japan, Südkorea, Deutschland, Frankreich, Großbritannien, Australien, Brasilien, Indien, Mexiko und Singapur. Wählen Sie Ihre Arbeitsregion, und die tägliche Schwelle, die gestaffelten Faktoren sowie das Nachtfenster werden automatisch angewendet.
+Überstunden, Nachtschichtzuschläge und Wochenhöchstarbeitszeiten sind von Land zu Land verschieden. Time Tracker Now liefert Voreinstellungen für China, die USA (Bundesrecht und Kalifornien), Japan, Südkorea, Deutschland, Frankreich, Großbritannien, Australien, Brasilien, Indien, Mexiko und Singapur. Wählen Sie Ihre Arbeitsregion, und die tägliche Schwelle, die gestaffelten Faktoren sowie das Nachtfenster werden automatisch angewendet.
 
 Wenn Ihr Arbeitsvertrag oder Ihr Tarifvertrag eigene Regeln vorsieht, wechseln Sie in den benutzerdefinierten Modus: Legen Sie genau fest, wann Überstunden beginnen, wie viele Stufen es gibt, welcher Faktor für welche Stufe gilt, ab wann Nachtzuschlag greift und welche Wochenschwelle einen höheren Satz auslöst. Derselbe Rechenkern, der die Voreinstellungen steuert, steuert auch Ihre eigenen Regeln - die Mathematik bleibt in jedem Modus konsistent.
 
@@ -46,6 +46,6 @@ Alle Ihre Daten bleiben auf Ihrem Gerät. Stempeln, Berechnungen, Exporte, Backu
 
 Wenn Sie die App eines Tages deinstallieren, werden auch ihre lokalen Daten - inklusive nicht synchronisierter Einträge - mit entfernt.
 
-## Gratis-Version und Work Hours Tracker Pro
+## Gratis-Version und Time Tracker Now Pro
 
 Stempeln, das Ansehen der Einträge, Statistikdiagramme, Feiertagssynchronisation sowie CSV-/PDF-Export bleiben auf Dauer kostenlos, ohne Wasserzeichen und ohne Tageslimit. Pro ergänzt eine unbegrenzte Anzahl von Jobs, manuelle Einträge, Excel-Export mit Überstundenaufschlüsselung und erweiterte Überstundenanpassung. Pro wird als Einmalkauf oder Jahresabonnement über den App Store verkauft und bleibt nach dem Erwerb geräte- und updateübergreifend erhalten.

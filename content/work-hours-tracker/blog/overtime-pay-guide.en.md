@@ -1,6 +1,6 @@
 ---
 title: "How Is Overtime Pay Calculated? From Hand Calculation to Automatic"
-description: "The general method for calculating overtime pay: confirm your hourly rate, find the overtime threshold, and apply tiered multipliers. See how Work Hours Tracker automates all of it with labor law presets and custom rules."
+description: "The general method for calculating overtime pay: confirm your hourly rate, find the overtime threshold, and apply tiered multipliers. See how Time Tracker Now automates all of it with labor law presets and custom rules."
 date: 2026-09-07
 lang: en
 slug: overtime-pay-guide
@@ -24,7 +24,7 @@ Overtime rates are usually tiered: just past the threshold one multiplier applie
 
 ## Let the App Do All Three Steps
 
-Work Hours Tracker automates all of it:
+Time Tracker Now automates all of it:
 
 - Clocking in and out records every work session to the minute;
 - Built-in labor law presets for 13 countries/regions — pick yours and thresholds and tiered multipliers apply automatically;

@@ -1,6 +1,6 @@
 ---
 title: "Fichar con un toque"
-description: "Guía de fichaje en Work Hours Tracker: inicia y detén el cronómetro con un toque, consulta en tiempo real tus horas e ingresos estimados del día y recibe un aviso al entrar en horas extra — sin introducir nada a mano."
+description: "Guía de fichaje en Time Tracker Now: inicia y detén el cronómetro con un toque, consulta en tiempo real tus horas e ingresos estimados del día y recibe un aviso al entrar en horas extra — sin introducir nada a mano."
 date: 2026-09-07
 lang: es
 slug: clock-in

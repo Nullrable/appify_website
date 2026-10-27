@@ -1,6 +1,6 @@
 ---
 title: "Grafik Statistik: Lihat ke Mana Waktu Anda Pergi"
-description: "Work Hours Tracker menyediakan tiga jenis grafik — tren jam kerja, tren penghasilan, dan distribusi pekerjaan — untuk meninjau jam kerja dan komposisi penghasilan Anda sekilas."
+description: "Time Tracker Now menyediakan tiga jenis grafik — tren jam kerja, tren penghasilan, dan distribusi pekerjaan — untuk meninjau jam kerja dan komposisi penghasilan Anda sekilas."
 date: 2026-09-07
 lang: id
 slug: statistics
@@ -8,7 +8,7 @@ slug: statistics
 
 ## Grafik Statistik: Lihat ke Mana Waktu Anda Pergi
 
-Satu catatan hanya mencerminkan satu hari. Untuk menjawab "berapa jam saya bekerja bulan ini", "apakah penghasilan saya tumbuh", atau "pekerjaan mana yang paling banyak menyita waktu", yang Anda butuhkan adalah grafik statistik. Work Hours Tracker menyediakan tiga jenis:
+Satu catatan hanya mencerminkan satu hari. Untuk menjawab "berapa jam saya bekerja bulan ini", "apakah penghasilan saya tumbuh", atau "pekerjaan mana yang paling banyak menyita waktu", yang Anda butuhkan adalah grafik statistik. Time Tracker Now menyediakan tiga jenis:
 
 ## Tren Jam Kerja
 

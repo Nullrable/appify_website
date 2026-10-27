@@ -1,6 +1,6 @@
 ---
 title: "13 Labor Law Presets and Custom Overtime Rules"
-description: "Work Hours Tracker ships with overtime presets for China, US (federal and California), Japan, South Korea, Germany, France, UK, Australia, Brazil, India, Mexico, and Singapore — plus fully custom rules."
+description: "Time Tracker Now ships with overtime presets for China, US (federal and California), Japan, South Korea, Germany, France, UK, Australia, Brazil, India, Mexico, and Singapore — plus fully custom rules."
 date: 2026-09-07
 lang: en
 slug: overtime-rules
@@ -8,7 +8,7 @@ slug: overtime-rules
 
 ## 13 Labor Law Presets
 
-Overtime rules differ widely between countries and regions: the daily threshold where overtime starts, the multipliers, and the rules for rest days and public holidays all vary. Work Hours Tracker ships with presets for these 13 countries/regions:
+Overtime rules differ widely between countries and regions: the daily threshold where overtime starts, the multipliers, and the rules for rest days and public holidays all vary. Time Tracker Now ships with presets for these 13 countries/regions:
 
 - China
 - United States (federal)

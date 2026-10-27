@@ -1,6 +1,6 @@
 ---
 title: "Chấm công vào/ra một chạm"
-description: "Hướng dẫn chấm công một chạm trong Work Hours Tracker: bắt đầu và kết thúc hẹn giờ chỉ với một chạm, xem giờ làm và thu nhập ước tính hôm nay theo thời gian thực, nhận nhắc nhở khi bắt đầu tăng ca — không cần nhập tay."
+description: "Hướng dẫn chấm công một chạm trong Time Tracker Now: bắt đầu và kết thúc hẹn giờ chỉ với một chạm, xem giờ làm và thu nhập ước tính hôm nay theo thời gian thực, nhận nhắc nhở khi bắt đầu tăng ca — không cần nhập tay."
 date: 2026-09-07
 lang: vi
 slug: clock-in

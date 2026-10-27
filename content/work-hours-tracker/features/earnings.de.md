@@ -1,6 +1,6 @@
 ---
 title: "Automatische Lohn- und Überstundenberechnung"
-description: "Nach dem Festlegen Ihres Stundensatzes berechnet Work Hours Tracker das Einkommen jedes Eintrags automatisch: gestaffelte Überstundenfaktoren, Nachtzuschläge und wöchentlich kumulierte Stunden — in Ihrer Währung."
+description: "Nach dem Festlegen Ihres Stundensatzes berechnet Time Tracker Now das Einkommen jedes Eintrags automatisch: gestaffelte Überstundenfaktoren, Nachtzuschläge und wöchentlich kumulierte Stunden — in Ihrer Währung."
 date: 2026-09-07
 lang: de
 slug: earnings

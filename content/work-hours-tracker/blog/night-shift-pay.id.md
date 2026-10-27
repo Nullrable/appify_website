@@ -1,6 +1,6 @@
 ---
 title: "Bagaimana Upah Shift Malam Dihitung? Pencatatan dan Verifikasi"
-description: "Komponen umum upah shift malam: penetapan periode malam, tunjangan atau pengali malam, dan kaitannya dengan lembur. Cara Work Hours Tracker mencatat jam malam dan menghitung penghasilan malam secara terpisah."
+description: "Komponen umum upah shift malam: penetapan periode malam, tunjangan atau pengali malam, dan kaitannya dengan lembur. Cara Time Tracker Now mencatat jam malam dan menghitung penghasilan malam secara terpisah."
 date: 2026-09-07
 lang: id
 slug: night-shift-pay
@@ -26,4 +26,4 @@ Pencatatan shift malam manual mudah keliru: shift yang melewati tengah malam, pe
 
 ## Mencatat Shift Malam dengan Aplikasi
 
-Work Hours Tracker mendukung pencatatan shift malam: absen mencatat durasi pasti secara otomatis, tanpa perlu memisahkan siang dan malam secara manual; aplikasi menghitung jam dan penghasilan shift malam secara terpisah, dan dikombinasikan dengan pengali lembur berjenjang, shift kompleks yang melewati tengah malam atau berdurasi panjang otomatis dipecah dan dihitung. Di grafik statistik Anda bisa melihat tren jam dan penghasilan malam secara khusus, siap dibandingkan saat memeriksa gaji.
+Time Tracker Now mendukung pencatatan shift malam: absen mencatat durasi pasti secara otomatis, tanpa perlu memisahkan siang dan malam secara manual; aplikasi menghitung jam dan penghasilan shift malam secara terpisah, dan dikombinasikan dengan pengali lembur berjenjang, shift kompleks yang melewati tengah malam atau berdurasi panjang otomatis dipecah dan dihitung. Di grafik statistik Anda bisa melihat tren jam dan penghasilan malam secara khusus, siap dibandingkan saat memeriksa gaji.

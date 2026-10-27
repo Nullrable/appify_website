@@ -1,6 +1,6 @@
 ---
 title: "Hitung Otomatis Gaji dan Lembur"
-description: "Setelah mengatur tarif per jam, Work Hours Tracker menghitung penghasilan setiap catatan secara otomatis: pengali lembur berjenjang, upah shift malam, dan akumulasi jam mingguan — dengan mata uang pilihan Anda."
+description: "Setelah mengatur tarif per jam, Time Tracker Now menghitung penghasilan setiap catatan secara otomatis: pengali lembur berjenjang, upah shift malam, dan akumulasi jam mingguan — dengan mata uang pilihan Anda."
 date: 2026-09-07
 lang: id
 slug: earnings

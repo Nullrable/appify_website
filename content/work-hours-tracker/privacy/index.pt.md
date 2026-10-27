@@ -1,12 +1,12 @@
 ---
-title: "Política de Privacidade - Work Hours Tracker"
-description: "Política de privacidade do Work Hours Tracker: todos os dados de horas ficam no seu dispositivo — sem conta e sem uploads para servidores; a sincronização de feriados não contém dados pessoais; a biometria é processada pelo sistema."
+title: "Política de Privacidade - Time Tracker Now"
+description: "Política de privacidade do Time Tracker Now: todos os dados de horas ficam no seu dispositivo — sem conta e sem uploads para servidores; a sincronização de feriados não contém dados pessoais; a biometria é processada pelo sistema."
 date: 2026-09-07
 lang: pt
 slug: index
 ---
 
-Esta Política de Privacidade explica como o **Work Hours Tracker** (o "**App**") trata as informações sobre você. Em resumo: seus dados de horas de trabalho ficam no seu dispositivo — nós não vendemos, não coletamos e não conseguimos vê-los.
+Esta Política de Privacidade explica como o **Time Tracker Now** (o "**App**") trata as informações sobre você. Em resumo: seus dados de horas de trabalho ficam no seu dispositivo — nós não vendemos, não coletamos e não conseguimos vê-los.
 
 Valorizamos sua privacidade e construímos o App com um design "local primeiro" para cumprir esse compromisso.
 

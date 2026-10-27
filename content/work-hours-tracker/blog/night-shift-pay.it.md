@@ -1,6 +1,6 @@
 ---
 title: "Come si calcola la retribuzione notturna? Registrazione e verifica"
-description: "I componenti comuni della retribuzione notturna: definizione del periodo notturno, indennità o coefficiente di notte, e il rapporto con gli straordinari. Come Work Hours Tracker registra le ore notturne e totalizza il reddito notturno a parte."
+description: "I componenti comuni della retribuzione notturna: definizione del periodo notturno, indennità o coefficiente di notte, e il rapporto con gli straordinari. Come Time Tracker Now registra le ore notturne e totalizza il reddito notturno a parte."
 date: 2026-09-07
 lang: it
 slug: night-shift-pay
@@ -26,4 +26,4 @@ Segnare i turni notturni a mano fallisce facilmente: turni a cavallo della mezza
 
 ## Registrare i turni notturni con l'app
 
-Work Hours Tracker supporta la registrazione notturna: la timbratura cattura durate esatte in automatico, senza separare a mano giorno e notte; l'app totalizza a parte ore e reddito notturni e, combinata con le maggiorazioni a scaglioni, scompone e calcola automaticamente turni complessi che attraversano la mezzanotte o si prolungano. Nei grafici statistici puoi seguire a parte l'andamento di ore e reddito notturni, pronti da confrontare al controllo della busta paga.
+Time Tracker Now supporta la registrazione notturna: la timbratura cattura durate esatte in automatico, senza separare a mano giorno e notte; l'app totalizza a parte ore e reddito notturni e, combinata con le maggiorazioni a scaglioni, scompone e calcola automaticamente turni complessi che attraversano la mezzanotte o si prolungano. Nei grafici statistici puoi seguire a parte l'andamento di ore e reddito notturni, pronti da confrontare al controllo della busta paga.

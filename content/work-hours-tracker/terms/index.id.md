@@ -1,12 +1,12 @@
 ---
-title: "Ketentuan Layanan - Work Hours Tracker"
-description: "Aturan penggunaan Work Hours Tracker. Mencakup langganan Pro dan perpanjangan otomatis, tanggung jawab cadangan, sifat hasil perhitungan sebagai referensi, penggunaan yang dapat diterima, dan layanan pihak ketiga."
+title: "Ketentuan Layanan - Time Tracker Now"
+description: "Aturan penggunaan Time Tracker Now. Mencakup langganan Pro dan perpanjangan otomatis, tanggung jawab cadangan, sifat hasil perhitungan sebagai referensi, penggunaan yang dapat diterima, dan layanan pihak ketiga."
 date: 2026-09-07
 lang: id
 slug: index
 ---
 
-Ketentuan Layanan ini ("**Ketentuan**") mengatur akses dan penggunaan Anda atas **Work Hours Tracker** ("**Aplikasi**"), yang dioperasikan oleh pengembang ("**kami**"). Dengan mengunduh, memasang, atau menggunakan Aplikasi, Anda menyetujui Ketentuan ini.
+Ketentuan Layanan ini ("**Ketentuan**") mengatur akses dan penggunaan Anda atas **Time Tracker Now** ("**Aplikasi**"), yang dioperasikan oleh pengembang ("**kami**"). Dengan mengunduh, memasang, atau menggunakan Aplikasi, Anda menyetujui Ketentuan ini.
 
 Jika tidak setuju, mohon tidak memasang atau menggunakan Aplikasi.
 

@@ -1,12 +1,12 @@
 ---
-title: Sobre o Work Hours Tracker - Ponto, horas extras e pagamento
-description: Saiba como o Work Hours Tracker transforma um único toque de ponto em folhas de ponto precisas, cálculo automático de horas extras e adicional noturno, livros-razão para vários empregos e relatórios exportáveis - tudo armazenado no seu dispositivo, em 14 idiomas.
+title: Sobre o Time Tracker Now - Ponto, horas extras e pagamento
+description: Saiba como o Time Tracker Now transforma um único toque de ponto em folhas de ponto precisas, cálculo automático de horas extras e adicional noturno, livros-razão para vários empregos e relatórios exportáveis - tudo armazenado no seu dispositivo, em 14 idiomas.
 date: 2026-09-10
 lang: pt
 slug: index
 ---
 
-O Work Hours Tracker é um aplicativo de folha de ponto para iOS feito para quem trabalha por hora, freelancers, profissionais com turnos alternados e qualquer pessoa que precise de um controle preciso das horas trabalhadas e do pagamento recebido. Ele substitui aquele caderninho de papel no fundo da gaveta: toque uma vez ao chegar, toque outra vez ao sair, e o resto acontece sozinho. Os minutos se acumulam, os intervalos são descontados, as horas extras são aplicadas, e o total acumulado do que você tem a receber fica sempre atualizado.
+O Time Tracker Now é um aplicativo de folha de ponto para iOS feito para quem trabalha por hora, freelancers, profissionais com turnos alternados e qualquer pessoa que precise de um controle preciso das horas trabalhadas e do pagamento recebido. Ele substitui aquele caderninho de papel no fundo da gaveta: toque uma vez ao chegar, toque outra vez ao sair, e o resto acontece sozinho. Os minutos se acumulam, os intervalos são descontados, as horas extras são aplicadas, e o total acumulado do que você tem a receber fica sempre atualizado.
 
 ## Bater ponto com um único toque
 
@@ -16,7 +16,7 @@ Você pode rodar vários cronômetros em paralelo. Um barista com turno de café
 
 ## 13 predefinições de leis trabalhistas - e regras totalmente personalizadas
 
-Horas extras, adicional noturno e limites semanais não são iguais em todos os países. O Work Hours Tracker traz predefinições para China, Estados Unidos (federal e Califórnia), Japão, Coreia do Sul, Alemanha, França, Reino Unido, Austrália, Brasil, Índia, México e Singapura. Escolha a região onde você trabalha, e o limite diário, os multiplicadores por faixa e a janela noturna entram em vigor automaticamente.
+Horas extras, adicional noturno e limites semanais não são iguais em todos os países. O Time Tracker Now traz predefinições para China, Estados Unidos (federal e Califórnia), Japão, Coreia do Sul, Alemanha, França, Reino Unido, Austrália, Brasil, Índia, México e Singapura. Escolha a região onde você trabalha, e o limite diário, os multiplicadores por faixa e a janela noturna entram em vigor automaticamente.
 
 Se o seu contrato ou acordo coletivo tem regras próprias, mude para o modo Personalizado: defina exatamente quando começam as horas extras, quantas faixas existem, o multiplicador de cada faixa, quando o adicional noturno entra em ação e o teto semanal acima do qual vale uma tarifa maior. O mesmo motor de cálculo que roda as predefinições roda as suas regras, então as contas ficam consistentes em qualquer modo.
 
@@ -46,6 +46,6 @@ Todos os seus dados ficam no seu dispositivo. Bater ponto, os cálculos, as expo
 
 Se um dia você desinstalar o app, os dados locais dele - inclusive registros ainda não sincronizados - serão removidos junto.
 
-## Versão grátis e Work Hours Tracker Pro
+## Versão grátis e Time Tracker Now Pro
 
 Bater ponto, consultar registros, gráficos de estatísticas, sincronização de feriados e exportação em CSV e PDF continuam grátis para sempre, sem marca d'água e sem limite diário. O Pro acrescenta empregos ilimitados, lançamentos manuais, exportação em Excel com detalhamento de horas extras e personalização avançada das horas extras. O Pro é vendido como compra única ou assinatura anual na App Store, e uma vez adquirido ele continua com você em todos os dispositivos e nas próximas atualizações.

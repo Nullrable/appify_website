@@ -1,12 +1,12 @@
 ---
-title: "Kebijakan Privasi - Work Hours Tracker"
-description: "Kebijakan privasi Work Hours Tracker: seluruh data jam kerja tersimpan di perangkat — tanpa akun, tanpa unggahan ke server; sinkronisasi hari libur tanpa data pribadi; biometrik diproses oleh sistem."
+title: "Kebijakan Privasi - Time Tracker Now"
+description: "Kebijakan privasi Time Tracker Now: seluruh data jam kerja tersimpan di perangkat — tanpa akun, tanpa unggahan ke server; sinkronisasi hari libur tanpa data pribadi; biometrik diproses oleh sistem."
 date: 2026-09-07
 lang: id
 slug: index
 ---
 
-Kebijakan Privasi ini menjelaskan bagaimana **Work Hours Tracker** ("**Aplikasi**") menangani informasi tentang Anda. Singkatnya: data jam kerja Anda hanya tersimpan di perangkat Anda — kami tidak menjualnya, tidak mengumpulkannya, dan tidak dapat melihatnya.
+Kebijakan Privasi ini menjelaskan bagaimana **Time Tracker Now** ("**Aplikasi**") menangani informasi tentang Anda. Singkatnya: data jam kerja Anda hanya tersimpan di perangkat Anda — kami tidak menjualnya, tidak mengumpulkannya, dan tidak dapat melihatnya.
 
 Kami menghargai privasi Anda dan membangun Aplikasi dengan desain "lokal-dahulu" untuk menepati komitmen itu.
 

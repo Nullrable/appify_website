@@ -1,6 +1,6 @@
 ---
 title: "13 cài đặt luật lao động và quy tắc tăng ca tùy chỉnh"
-description: "Work Hours Tracker tích hợp sẵn cài đặt tăng ca cho Trung Quốc, Hoa Kỳ (liên bang và California), Nhật Bản, Hàn Quốc, Đức, Pháp, Anh, Úc, Brazil, Ấn Độ, Mexico, Singapore — cùng quy tắc tùy chỉnh hoàn toàn."
+description: "Time Tracker Now tích hợp sẵn cài đặt tăng ca cho Trung Quốc, Hoa Kỳ (liên bang và California), Nhật Bản, Hàn Quốc, Đức, Pháp, Anh, Úc, Brazil, Ấn Độ, Mexico, Singapore — cùng quy tắc tùy chỉnh hoàn toàn."
 date: 2026-09-07
 lang: vi
 slug: overtime-rules
@@ -8,7 +8,7 @@ slug: overtime-rules
 
 ## 13 cài đặt luật lao động
 
-Quy tắc tăng ca khác nhau đáng kể giữa các quốc gia và vùng lãnh thổ: ngưỡng bắt đầu tính tăng ca hàng ngày, hệ số, quy định về ngày nghỉ và ngày lễ đều không giống nhau. Work Hours Tracker tích hợp sẵn cài đặt cho 13 quốc gia/vùng lãnh thổ sau:
+Quy tắc tăng ca khác nhau đáng kể giữa các quốc gia và vùng lãnh thổ: ngưỡng bắt đầu tính tăng ca hàng ngày, hệ số, quy định về ngày nghỉ và ngày lễ đều không giống nhau. Time Tracker Now tích hợp sẵn cài đặt cho 13 quốc gia/vùng lãnh thổ sau:
 
 - Trung Quốc
 - Hoa Kỳ (liên bang)

@@ -1,6 +1,6 @@
 ---
 title: "One-Tap Clock In and Out"
-description: "How to use clock in/out in Work Hours Tracker: start and stop the timer with one tap, see today's hours and estimated earnings in real time, and get a reminder when you enter overtime — no manual entry needed."
+description: "How to use clock in/out in Time Tracker Now: start and stop the timer with one tap, see today's hours and estimated earnings in real time, and get a reminder when you enter overtime — no manual entry needed."
 date: 2026-09-07
 lang: en
 slug: clock-in

@@ -1,6 +1,6 @@
 ---
 title: "Arbeitsstunden für mehrere Jobs getrennt erfassen"
-description: "Die wichtigsten Punkte für Teilzeit, Nebenjobs und Schichtdienst: pro Job erfassen, Löhne und Regeln trennen, die Zeiteinteilung regelmäßig prüfen. Multi-Job-Erfassung und Verteilungsdiagramm in Work Hours Tracker."
+description: "Die wichtigsten Punkte für Teilzeit, Nebenjobs und Schichtdienst: pro Job erfassen, Löhne und Regeln trennen, die Zeiteinteilung regelmäßig prüfen. Multi-Job-Erfassung und Verteilungsdiagramm in Time Tracker Now."
 date: 2026-09-07
 lang: de
 slug: multiple-jobs-tracking
@@ -18,6 +18,6 @@ Viele arbeiten in mehreren Jobs gleichzeitig: tagsüber Vollzeit, abends Teilzei
 
 ## Mehrere Jobs mit der App verwalten
 
-Work Hours Tracker unterstützt mehrere Jobs. Beim Stempeln wählen Sie den Job; Einträge und Stundensatz jedes Jobs bleiben unabhängig. Das Verteilungsdiagramm in den Statistiken zeigt Stunden- und Einkommensanteil jedes Jobs — welcher Job die meiste Zeit frisst und welcher am besten zahlt, ist sofort erkennbar.
+Time Tracker Now unterstützt mehrere Jobs. Beim Stempeln wählen Sie den Job; Einträge und Stundensatz jedes Jobs bleiben unabhängig. Das Verteilungsdiagramm in den Statistiken zeigt Stunden- und Einkommensanteil jedes Jobs — welcher Job die meiste Zeit frisst und welcher am besten zahlt, ist sofort erkennbar.
 
 Wer seine Zeit neu auf lohnendere Arbeit verteilen möchte, vertraut diesem Diagramm mehr als dem Bauchgefühl.

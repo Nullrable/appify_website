@@ -1,6 +1,6 @@
 ---
 title: "Absen Masuk dan Keluar Satu Ketuk"
-description: "Panduan absen satu ketuk di Work Hours Tracker: mulai dan hentikan timer dengan satu ketukan, lihat jam kerja dan perkiraan penghasilan hari ini secara real-time, dan dapatkan pengingat saat mulai lembur — tanpa input manual."
+description: "Panduan absen satu ketuk di Time Tracker Now: mulai dan hentikan timer dengan satu ketukan, lihat jam kerja dan perkiraan penghasilan hari ini secara real-time, dan dapatkan pengingat saat mulai lembur — tanpa input manual."
 date: 2026-09-07
 lang: id
 slug: clock-in

@@ -1,6 +1,6 @@
 ---
 title: "13 Preset Hukum Ketenagakerjaan dan Aturan Lembur Kustom"
-description: "Work Hours Tracker hadir dengan preset lembur untuk Tiongkok, AS (federal dan California), Jepang, Korea Selatan, Jerman, Prancis, Inggris, Australia, Brasil, India, Meksiko, dan Singapura — plus aturan kustom sepenuhnya."
+description: "Time Tracker Now hadir dengan preset lembur untuk Tiongkok, AS (federal dan California), Jepang, Korea Selatan, Jerman, Prancis, Inggris, Australia, Brasil, India, Meksiko, dan Singapura — plus aturan kustom sepenuhnya."
 date: 2026-09-07
 lang: id
 slug: overtime-rules
@@ -8,7 +8,7 @@ slug: overtime-rules
 
 ## 13 Preset Hukum Ketenagakerjaan
 
-Aturan lembur berbeda jauh antar negara dan wilayah: ambang batas harian saat lembur dimulai, pengali, serta aturan hari libur dan hari besar semuanya berbeda. Work Hours Tracker hadir dengan preset untuk 13 negara/wilayah berikut:
+Aturan lembur berbeda jauh antar negara dan wilayah: ambang batas harian saat lembur dimulai, pengali, serta aturan hari libur dan hari besar semuanya berbeda. Time Tracker Now hadir dengan preset untuk 13 negara/wilayah berikut:
 
 - Tiongkok
 - Amerika Serikat (federal)

@@ -1,12 +1,12 @@
 ---
-title: "Terms of Service - Work Hours Tracker"
-description: "The rules for using Work Hours Tracker. Covers the Pro subscription and auto-renewal, your backup responsibility, the informational nature of calculations, acceptable use, and third-party services."
+title: "Terms of Service - Time Tracker Now"
+description: "The rules for using Time Tracker Now. Covers the Pro subscription and auto-renewal, your backup responsibility, the informational nature of calculations, acceptable use, and third-party services."
 date: 2026-09-07
 lang: en
 slug: index
 ---
 
-These Terms of Service (the "**Terms**") govern your access to and use of **Work Hours Tracker** (the "**App**"), operated by the developer ("**we**"). By downloading, installing, or using the App, you agree to these Terms.
+These Terms of Service (the "**Terms**") govern your access to and use of **Time Tracker Now** (the "**App**"), operated by the developer ("**we**"). By downloading, installing, or using the App, you agree to these Terms.
 
 If you do not agree, please do not install or use the App.
 

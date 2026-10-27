@@ -1,12 +1,12 @@
 ---
-title: "Nutzungsbedingungen - Work Hours Tracker"
-description: "Die Regeln für die Nutzung von Work Hours Tracker. Behandeln das Pro-Abo und die automatische Verlängerung, Ihre Backup-Verantwortung, den unverbindlichen Charakter der Berechnungen, zulässige Nutzung und Drittanbieterdienste."
+title: "Nutzungsbedingungen - Time Tracker Now"
+description: "Die Regeln für die Nutzung von Time Tracker Now. Behandeln das Pro-Abo und die automatische Verlängerung, Ihre Backup-Verantwortung, den unverbindlichen Charakter der Berechnungen, zulässige Nutzung und Drittanbieterdienste."
 date: 2026-09-07
 lang: de
 slug: index
 ---
 
-Diese Nutzungsbedingungen (die „**Bedingungen**") regeln Ihren Zugriff auf und Ihre Nutzung von **Work Hours Tracker** (der „**App**"), betrieben vom Entwickler („**wir**"). Mit dem Herunterladen, Installieren oder Verwenden der App stimmen Sie diesen Bedingungen zu.
+Diese Nutzungsbedingungen (die „**Bedingungen**") regeln Ihren Zugriff auf und Ihre Nutzung von **Time Tracker Now** (der „**App**"), betrieben vom Entwickler („**wir**"). Mit dem Herunterladen, Installieren oder Verwenden der App stimmen Sie diesen Bedingungen zu.
 
 Wenn Sie nicht einverstanden sind, installieren oder nutzen Sie die App bitte nicht.
 

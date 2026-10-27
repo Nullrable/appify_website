@@ -1,6 +1,6 @@
 ---
 title: "給与・残業代の自動計算"
-description: "時給を設定すれば、Work Hours Tracker が全記録の収入を自動計算。段階的な残業倍率、夜勤手当、週の累積残業に対応し、通貨も選べます。"
+description: "時給を設定すれば、Time Tracker Now が全記録の収入を自動計算。段階的な残業倍率、夜勤手当、週の累積残業に対応し、通貨も選べます。"
 date: 2026-09-07
 lang: ja
 slug: earnings

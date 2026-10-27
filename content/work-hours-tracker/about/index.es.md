@@ -1,12 +1,12 @@
 ---
-title: Acerca de Work Hours Tracker - Fichaje, horas extra y pago
-description: Descubre cómo Work Hours Tracker convierte un fichaje con un toque en hojas de horas precisas, cálculo automático de horas extra y turno nocturno, libros contables para varios trabajos e informes exportables, todo almacenado en tu dispositivo, en 14 idiomas.
+title: Acerca de Time Tracker Now - Fichaje, horas extra y pago
+description: Descubre cómo Time Tracker Now convierte un fichaje con un toque en hojas de horas precisas, cálculo automático de horas extra y turno nocturno, libros contables para varios trabajos e informes exportables, todo almacenado en tu dispositivo, en 14 idiomas.
 date: 2026-09-10
 lang: es
 slug: index
 ---
 
-Work Hours Tracker es una app de control horario para iOS pensada para trabajadores por hora, autónomos, personas con turnos rotativos y cualquiera que necesite un registro fiable de las horas trabajadas y el pago generado. Sustituye al cuaderno de papel del fondo del cajón: tocas una vez al llegar, tocas otra vez al irte, y todo lo demás ocurre automáticamente. Los minutos se acumulan, los descansos se descuentan, las horas extra se aplican y el total acumulado de lo que te deben se mantiene siempre actualizado.
+Time Tracker Now es una app de control horario para iOS pensada para trabajadores por hora, autónomos, personas con turnos rotativos y cualquiera que necesite un registro fiable de las horas trabajadas y el pago generado. Sustituye al cuaderno de papel del fondo del cajón: tocas una vez al llegar, tocas otra vez al irte, y todo lo demás ocurre automáticamente. Los minutos se acumulan, los descansos se descuentan, las horas extra se aplican y el total acumulado de lo que te deben se mantiene siempre actualizado.
 
 ## Fichar entrada y salida con un toque
 
@@ -16,7 +16,7 @@ Puedes ejecutar varios cronómetros en paralelo. Una camarera con turno de cafet
 
 ## 13 ajustes de ley laboral, y reglas totalmente personalizadas
 
-Las horas extra, el pago del turno nocturno y los topes semanales no son iguales en todos los países. Work Hours Tracker incluye ajustes para China, Estados Unidos (federal y California), Japón, Corea del Sur, Alemania, Francia, Reino Unido, Australia, Brasil, India, México y Singapur. Elige la región donde trabajas y el umbral diario, los multiplicadores por tramos y la ventana nocturna se aplican automáticamente.
+Las horas extra, el pago del turno nocturno y los topes semanales no son iguales en todos los países. Time Tracker Now incluye ajustes para China, Estados Unidos (federal y California), Japón, Corea del Sur, Alemania, Francia, Reino Unido, Australia, Brasil, India, México y Singapur. Elige la región donde trabajas y el umbral diario, los multiplicadores por tramos y la ventana nocturna se aplican automáticamente.
 
 Si tu contrato o tu convenio tiene reglas propias, cambia al modo Personalizado: define con precisión cuándo empiezan las horas extra, cuántos tramos hay, el multiplicador de cada tramo, cuándo entra el pago nocturno y el tope semanal por encima del cual se aplica una tarifa mayor. El mismo motor de cálculo que ejecuta los ajustes predeterminados ejecuta tus reglas personalizadas, de modo que las cuentas se mantienen coherentes en cualquier modo.
 
@@ -46,6 +46,6 @@ Todos tus datos se quedan en tu dispositivo. Ni fichar, ni los cálculos, ni las
 
 Si algún día desinstalas la app, sus datos locales, incluidos los registros aún no sincronizados, se borran con ella.
 
-## Versión gratis y Work Hours Tracker Pro
+## Versión gratis y Time Tracker Now Pro
 
 Fichar, consultar registros, las gráficas de estadísticas, la sincronización de festivos y la exportación a CSV y PDF son gratis para siempre, sin marca de agua y sin límite diario. Pro añade un número ilimitado de trabajos, registros manuales, exportación a Excel con desglose de horas extra y personalización avanzada de las reglas de horas extra. Pro se vende como compra única o suscripción anual en el App Store, y una vez lo tienes es tuyo en todos tus dispositivos y en las próximas actualizaciones.

@@ -1,6 +1,6 @@
 ---
 title: "勤怠データのエクスポートとバックアップ"
-description: "Work Hours Tracker は勤務記録をCSV・PDF・Excel（残業内訳付き）でエクスポートでき、バックアップ・復元・共有も可能。エクスポートはPro機能です。"
+description: "Time Tracker Now は勤務記録をCSV・PDF・Excel（残業内訳付き）でエクスポートでき、バックアップ・復元・共有も可能。エクスポートはPro機能です。"
 date: 2026-09-07
 lang: ja
 slug: export-backup

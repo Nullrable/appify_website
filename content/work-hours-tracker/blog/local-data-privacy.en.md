@@ -1,6 +1,6 @@
 ---
 title: "Where Should Work-Hours Data Live? Local Storage and Privacy"
-description: "Timesheet records contain sensitive details like work-location patterns and income level. Why local storage suits time tracking, and how Work Hours Tracker does it: local storage, biometric app lock, and offline use."
+description: "Timesheet records contain sensitive details like work-location patterns and income level. Why local storage suits time tracking, and how Time Tracker Now does it: local storage, biometric app lock, and offline use."
 date: 2026-09-07
 lang: en
 slug: local-data-privacy
@@ -18,9 +18,9 @@ A complete timesheet reveals far more than "what time you clock in and out": it 
 
 Tools that require an account and sync data to servers mean your records exist, at least partly, somewhere outside your control: a server breach, a change in the company's privacy policy, or the service shutting down can all affect your data. With a local-storage tool, the data lives only on your device, and everything works fully offline.
 
-## How Work Hours Tracker Does It
+## How Time Tracker Now Does It
 
-Work Hours Tracker takes a thoroughly local approach:
+Time Tracker Now takes a thoroughly local approach:
 
 - **All data is stored locally on the device** — no account, nothing uploaded to servers;
 - **Fully offline-capable**: clock in, view records, and check statistics with no network at all;

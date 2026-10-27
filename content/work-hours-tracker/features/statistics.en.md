@@ -1,6 +1,6 @@
 ---
 title: "Statistics Charts: See Where Your Time Goes"
-description: "Work Hours Tracker provides three types of charts — work-hours trends, earning trends, and job distribution — to help you review your working hours and income composition at a glance."
+description: "Time Tracker Now provides three types of charts — work-hours trends, earning trends, and job distribution — to help you review your working hours and income composition at a glance."
 date: 2026-09-07
 lang: en
 slug: statistics
@@ -8,7 +8,7 @@ slug: statistics
 
 ## Statistics Charts: See Where Your Time Goes
 
-A single record only reflects one day. To answer questions like "how many hours did I work this month", "is my income growing", or "which job takes the most time", you need statistics charts. Work Hours Tracker provides three types:
+A single record only reflects one day. To answer questions like "how many hours did I work this month", "is my income growing", or "which job takes the most time", you need statistics charts. Time Tracker Now provides three types:
 
 ## Work-Hours Trend
 

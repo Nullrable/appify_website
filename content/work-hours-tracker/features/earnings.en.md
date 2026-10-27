@@ -1,6 +1,6 @@
 ---
 title: "Automatic Pay and Overtime Calculation"
-description: "After setting your hourly rate, Work Hours Tracker calculates earnings for every record automatically: tiered overtime multipliers, night-shift pay, and weekly accumulated overtime — in the currency of your choice."
+description: "After setting your hourly rate, Time Tracker Now calculates earnings for every record automatically: tiered overtime multipliers, night-shift pay, and weekly accumulated overtime — in the currency of your choice."
 date: 2026-09-07
 lang: en
 slug: earnings

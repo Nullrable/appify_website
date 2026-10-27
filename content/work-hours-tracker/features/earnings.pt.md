@@ -1,6 +1,6 @@
 ---
 title: "Cálculo automático de salário e horas extras"
-description: "Depois de definir seu valor por hora, o Work Hours Tracker calcula os ganhos de cada registro automaticamente: multiplicadores por faixa, pagamento noturno e horas acumuladas por semana — na moeda que você escolher."
+description: "Depois de definir seu valor por hora, o Time Tracker Now calcula os ganhos de cada registro automaticamente: multiplicadores por faixa, pagamento noturno e horas acumuladas por semana — na moeda que você escolher."
 date: 2026-09-07
 lang: pt
 slug: earnings

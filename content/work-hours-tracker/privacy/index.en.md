@@ -1,12 +1,12 @@
 ---
-title: "Privacy Policy - Work Hours Tracker"
-description: "Work Hours Tracker privacy policy: all work-hours data stays on your device — no account, no server uploads; holiday sync contains no personal data; biometric verification handled by the system."
+title: "Privacy Policy - Time Tracker Now"
+description: "Time Tracker Now privacy policy: all work-hours data stays on your device — no account, no server uploads; holiday sync contains no personal data; biometric verification handled by the system."
 date: 2026-09-07
 lang: en
 slug: index
 ---
 
-This Privacy Policy explains how **Work Hours Tracker** (the "**App**") handles information about you. In short: your work-hours data stays on your device — we don't sell it, don't collect it, and can't see it.
+This Privacy Policy explains how **Time Tracker Now** (the "**App**") handles information about you. In short: your work-hours data stays on your device — we don't sell it, don't collect it, and can't see it.
 
 We value your privacy and built the App with a "local-first" design to honor that commitment.
 

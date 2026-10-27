@@ -1,6 +1,6 @@
 ---
 title: "Cómo registrar por separado las horas de varios trabajos"
-description: "Claves para registrar horas de empleos a tiempo parcial, side jobs y turnos rotatorios: registrar por trabajo, separar tarifas y reglas, revisar la asignación de tiempo. Presentación del registro multi-trabajo y el gráfico de distribución de Work Hours Tracker."
+description: "Claves para registrar horas de empleos a tiempo parcial, side jobs y turnos rotatorios: registrar por trabajo, separar tarifas y reglas, revisar la asignación de tiempo. Presentación del registro multi-trabajo y el gráfico de distribución de Time Tracker Now."
 date: 2026-09-07
 lang: es
 slug: multiple-jobs-tracking
@@ -18,6 +18,6 @@ Son muchos los que encadenan varios empleos: jornada completa de día, parcial d
 
 ## Gestionar varios trabajos con la app
 
-Work Hours Tracker permite añadir varios trabajos. Al fichar, eliges el trabajo; los registros y la tarifa de cada uno permanecen independientes. El gráfico de distribución en las estadísticas muestra la parte de horas e ingresos de cada trabajo — cuál consume más tiempo y cuál paga mejor se ve de un vistazo.
+Time Tracker Now permite añadir varios trabajos. Al fichar, eliges el trabajo; los registros y la tarifa de cada uno permanecen independientes. El gráfico de distribución en las estadísticas muestra la parte de horas e ingresos de cada trabajo — cuál consume más tiempo y cuál paga mejor se ve de un vistazo.
 
 Para quien quiera reasignar su tiempo a lo que mejor paga, ese gráfico de proporciones es mucho más fiable que la sensación.

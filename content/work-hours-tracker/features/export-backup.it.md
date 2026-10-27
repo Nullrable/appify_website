@@ -1,6 +1,6 @@
 ---
 title: "Esporta e salva i dati delle tue ore di lavoro"
-description: "Work Hours Tracker esporta i record in CSV, PDF o Excel (con dettaglio degli straordinari) e offre backup, ripristino e condivisione completi. L'esportazione è una funzione Pro."
+description: "Time Tracker Now esporta i record in CSV, PDF o Excel (con dettaglio degli straordinari) e offre backup, ripristino e condivisione completi. L'esportazione è una funzione Pro."
 date: 2026-09-07
 lang: it
 slug: export-backup

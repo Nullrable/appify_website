@@ -1,6 +1,6 @@
 ---
 title: "원터치 출퇴근 기록"
-description: "Work Hours Tracker 원터치 출퇴근 기록 사용법: 한 번의 터치로 기록 시작 및 종료, 오늘의 근무 시간과 예상 수입 실시간 확인, 야근 시작 시 자동 알림. 수동 입력이 필요 없습니다."
+description: "Time Tracker Now 원터치 출퇴근 기록 사용법: 한 번의 터치로 기록 시작 및 종료, 오늘의 근무 시간과 예상 수입 실시간 확인, 야근 시작 시 자동 알림. 수동 입력이 필요 없습니다."
 date: 2026-09-07
 lang: ko
 slug: clock-in

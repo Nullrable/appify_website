@@ -1,6 +1,6 @@
 ---
 title: "Bagaimana Upah Lembur Dihitung? Dari Manual ke Otomatis"
-description: "Metode umum menghitung upah lembur: pastikan tarif per jam, temukan ambang batas lembur, terapkan pengali berjenjang. Lihat bagaimana Work Hours Tracker mengotomatiskannya dengan preset hukum dan aturan kustom."
+description: "Metode umum menghitung upah lembur: pastikan tarif per jam, temukan ambang batas lembur, terapkan pengali berjenjang. Lihat bagaimana Time Tracker Now mengotomatiskannya dengan preset hukum dan aturan kustom."
 date: 2026-09-07
 lang: id
 slug: overtime-pay-guide
@@ -24,7 +24,7 @@ Tarif lembur biasanya bertingkat: begitu melewati ambang berlaku satu pengali, l
 
 ## Biarkan Aplikasi Menjalankan Ketiga Langkah
 
-Work Hours Tracker mengotomatiskan semuanya:
+Time Tracker Now mengotomatiskan semuanya:
 
 - Absen mencatat setiap sesi kerja akurat hingga menit;
 - Preset hukum ketenagakerjaan untuk 13 negara/wilayah — pilih wilayah Anda, ambang dan pengali berjenjang diterapkan otomatis;

@@ -1,12 +1,12 @@
 ---
-title: "Informativa sulla privacy - Work Hours Tracker"
-description: "Informativa sulla privacy di Work Hours Tracker: tutti i dati delle ore restano sul tuo dispositivo — senza account e senza upload su server; la sincronizzazione festività non contiene dati personali; la biometria è gestita dal sistema."
+title: "Informativa sulla privacy - Time Tracker Now"
+description: "Informativa sulla privacy di Time Tracker Now: tutti i dati delle ore restano sul tuo dispositivo — senza account e senza upload su server; la sincronizzazione festività non contiene dati personali; la biometria è gestita dal sistema."
 date: 2026-09-07
 lang: it
 slug: index
 ---
 
-Questa Informativa sulla privacy spiega come **Work Hours Tracker** (l'**App**) tratta le informazioni che ti riguardano. In breve: i tuoi dati sulle ore di lavoro restano sul tuo dispositivo — non li vendiamo, non li raccogliamo e non possiamo vederli.
+Questa Informativa sulla privacy spiega come **Time Tracker Now** (l'**App**) tratta le informazioni che ti riguardano. In breve: i tuoi dati sulle ore di lavoro restano sul tuo dispositivo — non li vendiamo, non li raccogliamo e non possiamo vederli.
 
 Teniamo alla tua privacy e abbiamo costruito l'App con un design "locale prima di tutto" per onorare questo impegno.
 

@@ -1,12 +1,12 @@
 ---
-title: "Datenschutzerklärung - Work Hours Tracker"
-description: "Datenschutzerklärung von Work Hours Tracker: Alle Arbeitszeitdaten bleiben auf deinem Gerät — kein Konto, keine Server-Uploads; Feiertagssync ohne personenbezogene Daten; Biometrie wird vom System verarbeitet."
+title: "Datenschutzerklärung - Time Tracker Now"
+description: "Datenschutzerklärung von Time Tracker Now: Alle Arbeitszeitdaten bleiben auf deinem Gerät — kein Konto, keine Server-Uploads; Feiertagssync ohne personenbezogene Daten; Biometrie wird vom System verarbeitet."
 date: 2026-09-07
 lang: de
 slug: index
 ---
 
-Diese Datenschutzerklärung erklärt, wie **Work Hours Tracker** (die „**App**") mit Informationen über Sie umgeht. Kurz gesagt: Ihre Arbeitszeitdaten bleiben auf Ihrem Gerät — wir verkaufen sie nicht, sammeln sie nicht und können sie nicht einsehen.
+Diese Datenschutzerklärung erklärt, wie **Time Tracker Now** (die „**App**") mit Informationen über Sie umgeht. Kurz gesagt: Ihre Arbeitszeitdaten bleiben auf Ihrem Gerät — wir verkaufen sie nicht, sammeln sie nicht und können sie nicht einsehen.
 
 Wir nehmen Ihre Privatsphäre ernst und haben die App nach dem „Local-first"-Prinzip entwickelt, um dieses Versprechen einzulösen.
 

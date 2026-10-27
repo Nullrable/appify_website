@@ -1,6 +1,6 @@
 ---
 title: "Come si calcolano gli straordinari? Dal calcolo manuale all'automatico"
-description: "Il metodo generale per calcolare gli straordinari: confermare la paga oraria, trovare la soglia di inizio e applicare le maggiorazioni a scaglioni. Ecco come Work Hours Tracker automatizza tutto con preset di legge e regole personalizzate."
+description: "Il metodo generale per calcolare gli straordinari: confermare la paga oraria, trovare la soglia di inizio e applicare le maggiorazioni a scaglioni. Ecco come Time Tracker Now automatizza tutto con preset di legge e regole personalizzate."
 date: 2026-09-07
 lang: it
 slug: overtime-pay-guide
@@ -24,7 +24,7 @@ Le tariffe sono a gradini: appena superata la soglia un coefficiente, con durate
 
 ## L'app esegue i tre passi
 
-Work Hours Tracker automatizza tutto:
+Time Tracker Now automatizza tutto:
 
 - la timbratura registra ogni sessione al minuto;
 - preset di leggi sul lavoro per 13 paesi/regioni — scegli il tuo e soglie e scaglioni si applicano da soli;

@@ -1,6 +1,6 @@
 ---
 title: "Sincronización de festivos oficiales"
-description: "Work Hours Tracker sincroniza automáticamente los festivos oficiales de 15 países/regiones, marcados claramente en tu calendario para planificar el trabajo y revisar las horas extra."
+description: "Time Tracker Now sincroniza automáticamente los festivos oficiales de 15 países/regiones, marcados claramente en tu calendario para planificar el trabajo y revisar las horas extra."
 date: 2026-09-07
 lang: es
 slug: holidays
@@ -8,7 +8,7 @@ slug: holidays
 
 ## Sincronización de festivos oficiales
 
-El calendario de festivos afecta directamente a la planificación del trabajo y al cómputo de horas extra: cómo organizar las recuperaciones y si trabajar un festivo cuenta como hora extra de día de descanso — todo depende de si ese día es festivo oficial. Work Hours Tracker puede sincronizar automáticamente los festivos de estos 15 países/regiones:
+El calendario de festivos afecta directamente a la planificación del trabajo y al cómputo de horas extra: cómo organizar las recuperaciones y si trabajar un festivo cuenta como hora extra de día de descanso — todo depende de si ese día es festivo oficial. Time Tracker Now puede sincronizar automáticamente los festivos de estos 15 países/regiones:
 
 China, Hong Kong (China), Taiwán (China), Japón, Corea del Sur, Singapur, Estados Unidos, California (EE. UU.), Reino Unido, Alemania, Francia, Australia, Brasil, India, México.
 

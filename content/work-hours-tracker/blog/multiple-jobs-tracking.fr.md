@@ -1,6 +1,6 @@
 ---
 title: "Comment suivre séparément les heures de plusieurs emplois"
-description: "Les points clés du suivi pour temps partiel, activités secondaires et horaires alternants : enregistrer par emploi, séparer taux et règles, revoir régulièrement la répartition du temps. Présentation du multi-emploi et du graphique de répartition de Work Hours Tracker."
+description: "Les points clés du suivi pour temps partiel, activités secondaires et horaires alternants : enregistrer par emploi, séparer taux et règles, revoir régulièrement la répartition du temps. Présentation du multi-emploi et du graphique de répartition de Time Tracker Now."
 date: 2026-09-07
 lang: fr
 slug: multiple-jobs-tracking
@@ -18,6 +18,6 @@ Nombreux sont ceux qui enchaînent plusieurs emplois : plein temps le jour, temp
 
 ## Gérer plusieurs emplois avec l'app
 
-Work Hours Tracker permet d'ajouter plusieurs emplois. Au pointage, choisissez l'emploi ; les enregistrements et taux de chacun restent indépendants. Le graphique de répartition dans les statistiques montre la part de chaque emploi en heures et en revenus — lequel consomme le plus de temps et lequel paie le mieux se lit d'un coup d'œil.
+Time Tracker Now permet d'ajouter plusieurs emplois. Au pointage, choisissez l'emploi ; les enregistrements et taux de chacun restent indépendants. Le graphique de répartition dans les statistiques montre la part de chaque emploi en heures et en revenus — lequel consomme le plus de temps et lequel paie le mieux se lit d'un coup d'œil.
 
 Pour quiconque veut rediriger son temps vers ce qui rapporte le plus, ce graphique vaut mieux que l'intuition.

@@ -1,6 +1,6 @@
 ---
 title: "¿Cómo se calcula el salario del turno nocturno? Registro y verificación"
-description: "Los componentes habituales del salario nocturno: definición del periodo nocturno, complemento o multiplicador de noche, y su relación con las horas extra. Cómo Work Hours Tracker registra horas nocturnas y totaliza el ingreso nocturno por separado."
+description: "Los componentes habituales del salario nocturno: definición del periodo nocturno, complemento o multiplicador de noche, y su relación con las horas extra. Cómo Time Tracker Now registra horas nocturnas y totaliza el ingreso nocturno por separado."
 date: 2026-09-07
 lang: es
 slug: night-shift-pay
@@ -26,4 +26,4 @@ Anotar turnos nocturnos a mano falla con facilidad: turnos que cruzan la mediano
 
 ## Registrar turnos nocturnos con la app
 
-Work Hours Tracker admite el registro nocturno: el fichaje captura duraciones exactas automáticamente, sin separar a mano día y noche; la app totaliza por separado horas e ingresos nocturnos y, combinada con los multiplicadores por tramos, desglosa y calcula automáticamente turnos complejos que cruzan la medianoche o se alargan. En los gráficos estadísticos puedes ver por su cuenta la evolución de horas e ingresos nocturnos, listos para comparar al revisar la nómina.
+Time Tracker Now admite el registro nocturno: el fichaje captura duraciones exactas automáticamente, sin separar a mano día y noche; la app totaliza por separado horas e ingresos nocturnos y, combinada con los multiplicadores por tramos, desglosa y calcula automáticamente turnos complejos que cruzan la medianoche o se alargan. En los gráficos estadísticos puedes ver por su cuenta la evolución de horas e ingresos nocturnos, listos para comparar al revisar la nómina.

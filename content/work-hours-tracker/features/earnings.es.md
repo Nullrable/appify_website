@@ -1,6 +1,6 @@
 ---
 title: "Cálculo automático de salario y horas extra"
-description: "Tras establecer tu tarifa por hora, Work Hours Tracker calcula los ingresos de cada registro automáticamente: multiplicadores por tramos, pago de turno nocturno y horas acumuladas por semana — en la moneda que elijas."
+description: "Tras establecer tu tarifa por hora, Time Tracker Now calcula los ingresos de cada registro automáticamente: multiplicadores por tramos, pago de turno nocturno y horas acumuladas por semana — en la moneda que elijas."
 date: 2026-09-07
 lang: es
 slug: earnings

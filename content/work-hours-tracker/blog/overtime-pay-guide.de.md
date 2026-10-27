@@ -1,6 +1,6 @@
 ---
 title: "Wie wird Überstundenvergütung berechnet? Von Hand bis automatisch"
-description: "Die allgemeine Methode zur Berechnung von Überstunden: Stundensatz bestätigen, Überstundenschwelle finden, gestaffelte Faktoren anwenden. So automatisiert Work Hours Tracker alles mit Arbeitsgesetz-Voreinstellungen und eigenen Regeln."
+description: "Die allgemeine Methode zur Berechnung von Überstunden: Stundensatz bestätigen, Überstundenschwelle finden, gestaffelte Faktoren anwenden. So automatisiert Time Tracker Now alles mit Arbeitsgesetz-Voreinstellungen und eigenen Regeln."
 date: 2026-09-07
 lang: de
 slug: overtime-pay-guide
@@ -24,7 +24,7 @@ In den meisten Regionen zählt die tägliche Arbeitszeit ab einer Schwelle (häu
 
 ## Die App übernimmt alle drei Schritte
 
-Work Hours Tracker automatisiert alles:
+Time Tracker Now automatisiert alles:
 
 - Das Stempeln erfasst jede Arbeitssession minutengenau;
 - Eingebaute Arbeitsgesetz-Voreinstellungen für 13 Länder/Regionen — Region wählen, Schwellen und Staffelfaktoren greifen automatisch;

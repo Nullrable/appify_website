@@ -1,6 +1,6 @@
 ---
 title: "급여 및 야근수당 자동 계산"
-description: "시급을 설정하면 Work Hours Tracker가 모든 기록의 수입을 자동 계산합니다. 단계별 야근 배율, 야간수당, 주간 누적 야근을 지원하고 통화도 선택할 수 있습니다."
+description: "시급을 설정하면 Time Tracker Now가 모든 기록의 수입을 자동 계산합니다. 단계별 야근 배율, 야간수당, 주간 누적 야근을 지원하고 통화도 선택할 수 있습니다."
 date: 2026-09-07
 lang: ko
 slug: earnings

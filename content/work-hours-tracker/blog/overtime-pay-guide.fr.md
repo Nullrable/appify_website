@@ -1,6 +1,6 @@
 ---
 title: "Comment calculer les heures supplémentaires ? Du calcul manuel à l'automatique"
-description: "La méthode générale de calcul des heures supplémentaires : confirmer votre taux horaire, repérer le seuil de déclenchement, appliquer les coefficients par paliers. Découvrez comment Work Hours Tracker automatise tout via préréglages et règles personnalisées."
+description: "La méthode générale de calcul des heures supplémentaires : confirmer votre taux horaire, repérer le seuil de déclenchement, appliquer les coefficients par paliers. Découvrez comment Time Tracker Now automatise tout via préréglages et règles personnalisées."
 date: 2026-09-07
 lang: fr
 slug: overtime-pay-guide
@@ -24,7 +24,7 @@ Les taux sont généralement paliers : juste au-delà du seuil un coefficient, a
 
 ## L'app réalise les trois étapes
 
-Work Hours Tracker automatise tout :
+Time Tracker Now automatise tout :
 
 - le pointage enregistre chaque session à la minute près ;
 - préréglages de droit du travail pour 13 pays/régions — choisissez le vôtre, seuils et coefficients s'appliquent seuls ;

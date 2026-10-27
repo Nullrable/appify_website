@@ -1,12 +1,12 @@
 ---
-title: À propos de Work Hours Tracker - Pointage, heures sup. et paie
-description: Découvrez comment Work Hours Tracker transforme un pointage en un clic en feuilles de temps précises, en calcul automatique des heures supplémentaires et du travail de nuit, en registres multi-emplois et en rapports exportables — le tout stocké sur votre appareil, en 14 langues.
+title: À propos de Time Tracker Now - Pointage, heures sup. et paie
+description: Découvrez comment Time Tracker Now transforme un pointage en un clic en feuilles de temps précises, en calcul automatique des heures supplémentaires et du travail de nuit, en registres multi-emplois et en rapports exportables — le tout stocké sur votre appareil, en 14 langues.
 date: 2026-09-10
 lang: fr
 slug: index
 ---
 
-Work Hours Tracker est une application de pointage iOS conçue pour les salariés horaires, les travailleurs indépendants, les planificateurs de shifts et toute personne ayant besoin d'un relevé précis des heures travaillées et de la rémunération perçue. Elle remplace le carnet papier au fond du tiroir : un appui pour pointer à l'arrivée, un appui pour pointer au départ, et le reste se fait automatiquement — les minutes s'additionnent, les pauses sont déduites, les heures supplémentaires sont appliquées, et le total courant de ce qui vous est dû reste à jour en permanence.
+Time Tracker Now est une application de pointage iOS conçue pour les salariés horaires, les travailleurs indépendants, les planificateurs de shifts et toute personne ayant besoin d'un relevé précis des heures travaillées et de la rémunération perçue. Elle remplace le carnet papier au fond du tiroir : un appui pour pointer à l'arrivée, un appui pour pointer au départ, et le reste se fait automatiquement — les minutes s'additionnent, les pauses sont déduites, les heures supplémentaires sont appliquées, et le total courant de ce qui vous est dû reste à jour en permanence.
 
 ## Pointage d'arrivée et de départ en un appui
 
@@ -16,7 +16,7 @@ Vous pouvez faire tourner plusieurs chronomètres en parallèle. Une barista ave
 
 ## 13 préréglages de droit du travail — et des règles entièrement personnalisées
 
-Les heures supplémentaires, le travail de nuit et les plafonds hebdomadaires ne se ressemblent pas d'un pays à l'autre. Work Hours Tracker embarque des préréglages pour la Chine, les États-Unis (fédéral et Californie), le Japon, la Corée du Sud, l'Allemagne, la France, le Royaume-Uni, l'Australie, le Brésil, l'Inde, le Mexique et Singapour. Choisissez votre région de travail et le seuil quotidien, les coefficients par paliers et la fenêtre de nuit s'appliquent automatiquement.
+Les heures supplémentaires, le travail de nuit et les plafonds hebdomadaires ne se ressemblent pas d'un pays à l'autre. Time Tracker Now embarque des préréglages pour la Chine, les États-Unis (fédéral et Californie), le Japon, la Corée du Sud, l'Allemagne, la France, le Royaume-Uni, l'Australie, le Brésil, l'Inde, le Mexique et Singapour. Choisissez votre région de travail et le seuil quotidien, les coefficients par paliers et la fenêtre de nuit s'appliquent automatiquement.
 
 Si votre contrat ou votre convention collective prévoit des règles propres, passez en mode Personnalisé : définissez précisément quand commencent les heures sup., combien de paliers existent, le coefficient de chaque palier, à quel moment le travail de nuit s'active, et le plafond hebdomadaire au-delà duquel s'applique un taux supérieur. Le même moteur de calcul anime les préréglages et vos règles personnalisées : les chiffres restent cohérents quel que soit le mode choisi.
 
@@ -46,6 +46,6 @@ Toutes vos données restent sur votre appareil. Le pointage, les calculs, les ex
 
 Si vous désinstallez un jour l'application, ses données locales — y compris les relevés non synchronisés — sont supprimées avec elle.
 
-## Version gratuite et Work Hours Tracker Pro
+## Version gratuite et Time Tracker Now Pro
 
 Le pointage, la consultation des relevés, les graphiques statistiques, la synchronisation des jours fériés et l'export CSV/PDF restent gratuits à vie, sans filigrane et sans limite quotidienne. Pro ajoute un nombre illimité d'emplois, les saisies manuelles, l'export Excel avec détail des heures sup. et une personnalisation avancée des heures supplémentaires. Pro est vendu en achat unique ou en abonnement annuel sur l'App Store, et une fois acquis, il reste à vous sur tous vos appareils et pour toutes les mises à jour à venir.

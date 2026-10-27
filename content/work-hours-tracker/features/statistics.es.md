@@ -1,6 +1,6 @@
 ---
 title: "Gráficos estadísticos: mira a dónde va tu tiempo"
-description: "Work Hours Tracker ofrece tres tipos de gráficos — tendencias de horas, tendencias de ingresos y distribución entre trabajos — para repasar de un vistazo tus horas trabajadas y la composición de tus ingresos."
+description: "Time Tracker Now ofrece tres tipos de gráficos — tendencias de horas, tendencias de ingresos y distribución entre trabajos — para repasar de un vistazo tus horas trabajadas y la composición de tus ingresos."
 date: 2026-09-07
 lang: es
 slug: statistics
@@ -8,7 +8,7 @@ slug: statistics
 
 ## Gráficos estadísticos: mira a dónde va tu tiempo
 
-Un solo registro refleja un solo día. Para responder a preguntas como "cuántas horas trabajé este mes", "está creciendo mi ingreso" o "qué trabajo quita más tiempo", necesitas gráficos estadísticos. Work Hours Tracker ofrece tres tipos:
+Un solo registro refleja un solo día. Para responder a preguntas como "cuántas horas trabajé este mes", "está creciendo mi ingreso" o "qué trabajo quita más tiempo", necesitas gráficos estadísticos. Time Tracker Now ofrece tres tipos:
 
 ## Tendencia de horas
 

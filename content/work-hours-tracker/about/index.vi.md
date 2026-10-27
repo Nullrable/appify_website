@@ -1,12 +1,12 @@
 ---
-title: Giới thiệu Work Hours Tracker - Chấm công, tăng ca và lương
-description: Tìm hiểu cách Work Hours Tracker biến một lần chạm chấm công thành bảng chấm công chính xác, tự động tính tăng ca và ca đêm, sổ công việc đa nhiệm và báo cáo có thể xuất — tất cả lưu trên thiết bị, hỗ trợ 14 ngôn ngữ.
+title: Giới thiệu Time Tracker Now - Chấm công, tăng ca và lương
+description: Tìm hiểu cách Time Tracker Now biến một lần chạm chấm công thành bảng chấm công chính xác, tự động tính tăng ca và ca đêm, sổ công việc đa nhiệm và báo cáo có thể xuất — tất cả lưu trên thiết bị, hỗ trợ 14 ngôn ngữ.
 date: 2026-09-10
 lang: vi
 slug: index
 ---
 
-Work Hours Tracker là ứng dụng chấm công trên iOS dành cho người làm theo giờ, freelancer, người quản lý ca làm và bất kỳ ai cần ghi lại chính xác số giờ đã làm và số tiền đã kiếm được. Nó thay thế cuốn sổ tay giấy nằm sâu trong ngăn kéo: chạm một lần khi đến, chạm một lần khi về, phần còn lại diễn ra hoàn toàn tự động — phút được cộng dồn, giờ giải lao được trừ, làm thêm được áp dụng, và tổng số tiền bạn được nhận luôn được cập nhật.
+Time Tracker Now là ứng dụng chấm công trên iOS dành cho người làm theo giờ, freelancer, người quản lý ca làm và bất kỳ ai cần ghi lại chính xác số giờ đã làm và số tiền đã kiếm được. Nó thay thế cuốn sổ tay giấy nằm sâu trong ngăn kéo: chạm một lần khi đến, chạm một lần khi về, phần còn lại diễn ra hoàn toàn tự động — phút được cộng dồn, giờ giải lao được trừ, làm thêm được áp dụng, và tổng số tiền bạn được nhận luôn được cập nhật.
 
 ## Chấm công vào/ra chỉ với một chạm
 
@@ -16,7 +16,7 @@ Bạn có thể chạy nhiều đồng hồ song song. Một barista vừa có c
 
 ## 13 cài đặt sẵn luật lao động và quy tắc tùy chỉnh hoàn toàn
 
-Tăng ca, lương ca đêm và giới hạn tuần không giống nhau ở mỗi quốc gia. Work Hours Tracker có sẵn cài đặt cho Trung Quốc, Hoa Kỳ (liên bang và California), Nhật Bản, Hàn Quốc, Đức, Pháp, Anh, Úc, Brazil, Ấn Độ, Mexico và Singapore. Chọn khu vực bạn làm việc, ngưỡng tăng ca theo ngày, hệ số theo bậc và khung giờ ban đêm sẽ được áp dụng tự động.
+Tăng ca, lương ca đêm và giới hạn tuần không giống nhau ở mỗi quốc gia. Time Tracker Now có sẵn cài đặt cho Trung Quốc, Hoa Kỳ (liên bang và California), Nhật Bản, Hàn Quốc, Đức, Pháp, Anh, Úc, Brazil, Ấn Độ, Mexico và Singapore. Chọn khu vực bạn làm việc, ngưỡng tăng ca theo ngày, hệ số theo bậc và khung giờ ban đêm sẽ được áp dụng tự động.
 
 Nếu hợp đồng lao động hay thỏa ước tập thể của bạn có điều khoản riêng, hãy chuyển sang chế độ Tùy chỉnh: xác định chính xác khi nào bắt đầu tăng ca, có bao nhiêu bậc, hệ số cho mỗi bậc, khi nào ca đêm được kích hoạt, và mức trần tuần mà ở đó áp dụng tỷ lệ cao hơn. Cùng một động cơ tính toán vận hành cả cài đặt sẵn lẫn quy tắc tùy chỉnh, nên phép tính luôn nhất quán bất kể bạn chọn chế độ nào.
 
@@ -46,6 +46,6 @@ Toàn bộ dữ liệu của bạn ở lại trên thiết bị. Chấm công, t
 
 Nếu bạn gỡ cài đặt ứng dụng, dữ liệu cục bộ — bao gồm cả bản ghi chưa đồng bộ — cũng sẽ bị xóa theo.
 
-## Phiên bản miễn phí và Work Hours Tracker Pro
+## Phiên bản miễn phí và Time Tracker Now Pro
 
 Chấm công vào/ra, xem bản ghi, biểu đồ thống kê, đồng bộ ngày lễ và xuất CSV/PDF luôn miễn phí vĩnh viễn, không hình mờ, không giới hạn hàng ngày. Pro bổ sung số lượng việc làm không giới hạn, nhập thủ công, xuất Excel kèm chi tiết tăng ca và tùy chỉnh tăng ca nâng cao. Pro được bán qua App Store dưới dạng mua một lần hoặc thuê bao hàng năm, và khi đã sở hữu, bạn dùng được trên mọi thiết bị và các bản cập nhật sau này.

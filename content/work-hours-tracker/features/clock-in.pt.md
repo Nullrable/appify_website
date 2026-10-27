@@ -1,6 +1,6 @@
 ---
 title: "Bater ponto com um toque"
-description: "Guia de registro de ponto no Work Hours Tracker: comece e pare o cronômetro com um toque, acompanhe em tempo real as horas e ganhos estimados do dia e receba um alerta ao entrar em horas extras — sem digitar nada."
+description: "Guia de registro de ponto no Time Tracker Now: comece e pare o cronômetro com um toque, acompanhe em tempo real as horas e ganhos estimados do dia e receba um alerta ao entrar em horas extras — sem digitar nada."
 date: 2026-09-07
 lang: pt
 slug: clock-in

@@ -1,6 +1,6 @@
 ---
 title: "Pointer en un geste"
-description: "Guide du pointage dans Work Hours Tracker : lancez et arrêtez le chronomètre d'un geste, suivez en temps réel vos heures et revenus estimés du jour, et recevez une alerte à l'entrée en heures supplémentaires — sans saisie manuelle."
+description: "Guide du pointage dans Time Tracker Now : lancez et arrêtez le chronomètre d'un geste, suivez en temps réel vos heures et revenus estimés du jour, et recevez une alerte à l'entrée en heures supplémentaires — sans saisie manuelle."
 date: 2026-09-07
 lang: fr
 slug: clock-in

@@ -1,6 +1,6 @@
 ---
 title: "Ekspor dan Cadangkan Data Jam Kerja Anda"
-description: "Work Hours Tracker dapat mengekspor catatan ke CSV, PDF, atau Excel (dengan rincian lembur) serta menyediakan cadangkan, pulihkan, dan bagikan secara lengkap. Ekspor adalah fitur Pro."
+description: "Time Tracker Now dapat mengekspor catatan ke CSV, PDF, atau Excel (dengan rincian lembur) serta menyediakan cadangkan, pulihkan, dan bagikan secara lengkap. Ekspor adalah fitur Pro."
 date: 2026-09-07
 lang: id
 slug: export-backup
